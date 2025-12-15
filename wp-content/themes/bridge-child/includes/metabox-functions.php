@@ -86,6 +86,34 @@ function bridge_child_register_demo_metabox() {
 		'desc' => esc_html__( 'To generate Google File link Click on File=>Publish to the web, copy link and add only link here.', 'bridge-child' ),
 		'type' => 'oembed',
 	) );
+	$cmb_demo->add_field( array(
+		'name' => esc_html__( 'Effective Begin Date', 'bridge-child' ),
+		'id'   => '_' . $document_prefix . 'effective_begin_date',
+		'type' => 'text_date',
+		'date_format' => 'Y-m-d',
+		'after_field' => esc_html__( 'Select the effective begin date for this document.', 'bridge-child' ),
+	) );
+
+	$cmb_demo->add_field( array(
+		'name' => esc_html__( 'Effective End Date', 'bridge-child' ),
+		'id'   => '_' . $document_prefix . 'effective_end_date',
+		'type' => 'text_date',
+		'date_format' => 'Y-m-d',
+		'after_field' => esc_html__( 'Select the effective end date for this document.', 'bridge-child' ),
+	) );
+
+	$cmb_demo->add_field( array(
+		'name' => esc_html__( 'Pending Flag', 'bridge-child' ),
+		'id'   => '_' . $document_prefix . 'pending_flag',
+		'type' => 'select',
+		'desc' => esc_html__( 'Select whether this document is pending.', 'bridge-child' ),
+		'options' => array(
+			'no' => __( 'No', 'bridge-child' ),
+			'yes' => __( 'Yes', 'bridge-child' ),
+		),
+		'default' => 'no',
+	) );
+
 
 	// Register metabox for CPT (frontend_documents)
 
