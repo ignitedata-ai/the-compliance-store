@@ -1,0 +1,214 @@
+#welcome-myaccount .full_section_inner {
+    display: table;
+    width: 100%;
+    margin-bottom: 30px !important;
+}
+#welcome-myaccount .full_section_inner .wpb_column {
+    display: table-cell;
+}
+
+#welcome-myaccount .wpb_column {
+    border-top: 2px;
+    border-bottom: 2px;
+    border-left: 1px;
+    border-right: 1px;
+    border-style: solid;
+    border-color: #e0dede;
+}
+#welcome-myaccount .wpb_column:first-child {
+    border-left: 0px;
+}
+#welcome-myaccount .wpb_column:last-child {
+    border-right: 0px;
+}
+
+#welcome-myaccount .wpb_column .vc_column-inner {
+       padding: 20px 5px 20px 15px;
+}
+
+.pt-myaccount-ul li {
+    background-color: #cccccc !important;
+}
+.pt-myaccount-ul li a {
+    color: #019eda;
+    font-weight: 600 !important;
+}
+.pt-myaccount-ul li.ui-tabs-active {
+    background-color: #019eda !important;
+}
+.pt-myaccount-ul li.ui-tabs-active a {
+    color: #fff !important;
+    font-weight: 600 !important;
+}
+
+/* User Custom Fields Style */
+.form-field .pt-text-field {
+    width: 25em !important;
+}
+
+
+/* Dashboard tab */
+.pt-dashboard-row {
+    border: 2px solid #00a0d7;
+    margin-top: 15px;
+}
+.pt-dashboard-row .pt-dashboard-table {
+    border: 1px solid #00a0d7;
+    margin: 15px;
+}
+.pt-dashboard-row li.service_table_content li{
+    text-align: left;
+}
+
+/* Select - Drop down */
+.pt-select-dropdown {
+    width: 100%;
+    margin: 0 0 20px;
+    padding: 15px 12px;
+    background: none !important;
+    border: 1px solid #d9e1e6 !important;
+    font-size: 16px !important;
+    color: #303030;
+}
+
+.profile-form {
+    margin-bottom: 50px;
+}
+.pt-dashboard-table {
+    padding: 20px;
+}
+.profile-form h3 {
+    color: #00a0d7;
+    margin-bottom: 10px;
+}
+.profile-form .service_table_inner li.service_table_title_holder,
+.pt-dashboard-table .service_table_inner li.service_table_title_holder {
+    padding: 0;
+}
+.profile-form input[type=text], .profile-form input[type=password], .profile-form input[type=email], .profile-form select {
+    background-color: #f6f6f6;
+    color: #0d0d0d;
+    padding: 15px;
+    text-decoration: none;
+    font-size: 16px;
+        margin-bottom: 15px;
+    width: 90%;
+    border: 2px solid #f6f6f6;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+    -webkit-border-radius: 5px 5px 5px 5px;
+    border-radius: 5px 5px 5px 5px;
+}
+.profile-form select {
+    width: 93%;
+}
+.profile-form label {
+    font-size: 16px;
+}
+.error {
+    color: red;
+}
+.success {
+    color: green;
+}
+.profile-form input[type=submit] {
+    background-color: #56baed;
+    border: none;
+    color: white;
+    padding: 15px 40px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    line-height: initial;
+    height: initial;
+    font-size: 13px;
+    -webkit-box-shadow: 0 10px 30px 0 rgba(95,186,233,0.4);
+    box-shadow: 0 10px 30px 0 rgba(95,186,233,0.4);
+    -webkit-border-radius: 5px 5px 5px 5px;
+    border-radius: 5px 5px 5px 5px;
+    margin: 0;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+.profile-form input[type=text]:focus, .profile-form input[type=password]:focus, .profile-form input[type=email]:focus{
+    background-color: #fff;
+    border-bottom: 2px solid #5fbae9;
+    outline: 0;
+}
+.profile-form input[type=button]:active, .profile-form input[type=submit]:active, .profile-form input[type=reset]:active {
+    -moz-transform: scale(0.95);
+    -webkit-transform: scale(0.95);
+    -o-transform: scale(0.95);
+    -ms-transform: scale(0.95);
+    transform: scale(0.95);
+}
+.profile-form input[type=button]:hover, .profile-form input[type=submit]:hover, .profile-form input[type=reset]:hover {
+    background-color: #39ace7;
+}
+.edit-profile-form input[type=text], .edit-profile-form input[type=email] {
+        width: 66%;
+        margin-bottom: 0;
+
+}
+.edit-profile-form .service_table_inner li li {
+    padding: 10px;
+}
+.edit-profile-form label {
+    width: 24%;
+    display: inline-block;
+}
+.profile-btn-wrapper input {
+    cursor: pointer;
+}
+.profile-btn-wrapper {
+    margin-top: 15px;
+    display: block;
+    position: relative;
+    text-align: center;
+}
+meter {
+    /* Reset the default appearance */
+/*    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;*/
+            
+    margin: 0.5em auto 0;
+    width: 180px;
+    height: .5em;
+    
+    /* Applicable only to Firefox */
+    background: none;
+    background-color: rgba(0,0,0,0.1);
+}
+
+meter::-webkit-meter-bar {
+    background: none;
+    background-color: rgba(0,0,0,0.1);
+}
+
+meter[value="1"]::-webkit-meter-optimum-value { background: red; }
+meter[value="2"]::-webkit-meter-optimum-value { background: yellow; }
+meter[value="3"]::-webkit-meter-optimum-value { background: orange; }
+meter[value="4"]::-webkit-meter-optimum-value { background: green; }
+
+meter[value="1"]::-moz-meter-bar { background: red; }
+meter[value="2"]::-moz-meter-bar { background: yellow; }
+meter[value="3"]::-moz-meter-bar { background: orange; }
+meter[value="4"]::-moz-meter-bar { background: green; }
+
+.profile-form .feedback {
+    color: #9ab;
+    font-size: 90%;
+    padding: 0 .25em;
+    margin-top: 1em;
+}
+#tab-user-list .vc_column-inner {
+    padding: 5px;
+    border: 1px solid #e0dede;
+}

@@ -1,0 +1,121 @@
+/**
+ * All of the CSS for your admin-specific functionality should be
+ * included in this file.
+ */
+ a.file-download-btn {
+    color: #555;
+    border-color: #ccc;
+    background: #f7f7f7;
+    box-shadow: 0 1px 0 #ccc;
+    vertical-align: top;
+    display: inline-block;
+    text-decoration: none;
+    font-size: 13px;
+    line-height: 26px;
+    height: 28px;
+    margin-top: 15px;
+    padding: 0 10px 1px;
+    cursor: pointer;
+    border-width: 1px;
+    border-style: solid;
+    -webkit-appearance: none;
+    border-radius: 3px;
+    white-space: nowrap;
+    box-sizing: border-box;
+}
+a.file-download-btn:hover, a.file-download-btn:focus {
+    background: #fafafa;
+    border-color: #999;
+    color: #23282d;
+}
+
+#ajax-loader {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+    background: #00000073;
+    text-align: center;
+    z-index: 99999999;
+}
+img#loader {
+    position: absolute;
+    top: 30%;
+    transform: translate(-50%, -50%);
+}
+#ajax-loader h3 {
+    color: #fff;
+    position: absolute;
+    top: 20%;
+    left: 0%;
+    width: 100%;
+}
+.user_activity_date_result a {
+  position: relative;
+}
+.user_activity_date_result a::after {
+    content: '';
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    border: 3px solid #0085ba;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: ring 1.5s infinite;
+    z-index: 9;
+}
+
+#reports_view_date_buttons button:active,
+#reports_view_date_buttons button:focus {
+    background: #0085ba;
+    color: #fff;
+}
+
+.deleted-documents-logs-wrapper {
+  background:#ECECEC;
+  border:1px solid #CCC;
+  padding:0 10px;
+  margin-top:5px;
+  border-radius:5px;
+  -moz-border-radius:5px;
+  -webkit-border-radius:5px;
+}
+
+.reports-notification-wrapper {
+  background:#ECECEC;
+  border:1px solid #CCC;
+  padding:0 10px;
+  margin-top:5px;
+  border-radius:5px;
+  -moz-border-radius:5px;
+  -webkit-border-radius:5px;
+}
+
+#views_filters_action,
+#downloads_filters_action {
+  margin-left: 5px;
+}
+
+#reports_views-filter .company-dropdown,
+#reports_downloads-filter .company-dropdown {
+  width: 185px;
+}
+
+.user-status-filter {
+  margin-left: 5px;
+}
+
+@keyframes ring {
+  0% {
+    width: 30px;
+    height: 30px;
+    opacity: 1;
+  }
+  100% {
+    width: 150px;
+    height: 150px;
+    opacity: 0;
+  }
+}

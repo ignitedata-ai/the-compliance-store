@@ -1,0 +1,28 @@
+.wpsc-epr-fields .wpsc-tff {
+	padding-left: 0;
+	padding-right: 0;
+}
+
+/* Email logger Popup */
+.wpsc-ep-log-info {
+	display: flex;
+	flex-direction: column;
+	border-bottom: 1px solid #ccc;
+	margin-bottom: 10px;
+}
+.wpsc-ep-log-info div {
+	display: flex;
+	margin-bottom: 10px;
+}
+.wpsc-ep-log-info div span {
+	margin-right: 5px;
+}
+.wpsc-ep-logs ul {
+	list-style-type: disc;
+	margin: 10px 15px;
+}
+.wpsc-ep-log-item {
+	padding: 5px 0;
+	background-color: #f9f9f9;
+	border-bottom: 1px solid #ddd;
+}

@@ -1,0 +1,200 @@
+# Copyright (C) 2025 SupportCandy
+# This file is distributed under the same license as the SupportCandy - Reports plugin.
+msgid ""
+msgstr ""
+"Project-Id-Version: SupportCandy - Reports 3.1.4\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wpsc-reports\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2025-10-09T04:22:26+00:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.12.0\n"
+"X-Domain: wpsc-reports\n"
+
+#. Plugin Name of the plugin
+#: wpsc-reports.php
+msgid "SupportCandy - Reports"
+msgstr ""
+
+#. Plugin URI of the plugin
+#. Author URI of the plugin
+#: wpsc-reports.php
+msgid "https://supportcandy.net/"
+msgstr ""
+
+#. Description of the plugin
+#: wpsc-reports.php
+msgid "Reports for SupportCandy"
+msgstr ""
+
+#. Author of the plugin
+#: wpsc-reports.php
+msgid "SupportCandy"
+msgstr ""
+
+#: includes/class-wpsc-rp-admin-submenu.php:71
+#: includes/class-wpsc-rp-admin-submenu.php:72
+#: includes/class-wpsc-rp-admin-submenu.php:167
+#: includes/class-wpsc-rp-settings.php:112
+msgid "Reports"
+msgstr ""
+
+#: includes/class-wpsc-rp-admin-submenu.php:98
+#: includes/reports/class-wpsc-rp-ticket-statistics.php:32
+msgid "Ticket Statistics"
+msgstr ""
+
+#: includes/class-wpsc-rp-admin-submenu.php:108
+#: includes/reports/class-wpsc-rp-response-delay.php:32
+msgid "Response Delay"
+msgstr ""
+
+#: includes/class-wpsc-rp-admin-submenu.php:118
+#: includes/reports/class-wpsc-rp-closing-delay.php:32
+msgid "Ticket Closing Delay"
+msgstr ""
+
+#: includes/class-wpsc-rp-admin-submenu.php:128
+#: includes/reports/class-wpsc-rp-communication-gap.php:32
+msgid "Communication Gap"
+msgstr ""
+
+#: includes/class-wpsc-rp-filters.php:34
+msgid "Duration"
+msgstr ""
+
+#: includes/class-wpsc-rp-filters.php:36
+#: includes/class-wpsc-rp-settings.php:146
+msgid "Today"
+msgstr ""
+
+#: includes/class-wpsc-rp-filters.php:37
+#: includes/class-wpsc-rp-settings.php:147
+msgid "Yesterday"
+msgstr ""
+
+#: includes/class-wpsc-rp-filters.php:38
+#: includes/class-wpsc-rp-settings.php:148
+msgid "This Week"
+msgstr ""
+
+#: includes/class-wpsc-rp-filters.php:39
+#: includes/class-wpsc-rp-settings.php:149
+msgid "Last Week"
+msgstr ""
+
+#: includes/class-wpsc-rp-filters.php:40
+#: includes/class-wpsc-rp-settings.php:150
+msgid "Last 30 Days"
+msgstr ""
+
+#: includes/class-wpsc-rp-filters.php:41
+#: includes/class-wpsc-rp-settings.php:151
+msgid "This Month"
+msgstr ""
+
+#: includes/class-wpsc-rp-filters.php:42
+#: includes/class-wpsc-rp-settings.php:152
+msgid "Last Month"
+msgstr ""
+
+#: includes/class-wpsc-rp-filters.php:43
+#: includes/class-wpsc-rp-settings.php:153
+msgid "This Quarter"
+msgstr ""
+
+#: includes/class-wpsc-rp-filters.php:44
+#: includes/class-wpsc-rp-settings.php:154
+msgid "Last Quarter"
+msgstr ""
+
+#: includes/class-wpsc-rp-filters.php:45
+#: includes/class-wpsc-rp-settings.php:155
+msgid "This Year"
+msgstr ""
+
+#: includes/class-wpsc-rp-filters.php:46
+#: includes/class-wpsc-rp-settings.php:156
+msgid "Last Year"
+msgstr ""
+
+#: includes/class-wpsc-rp-filters.php:47
+#: includes/class-wpsc-rp-filters.php:84
+#: includes/class-wpsc-rp-filters.php:331
+#: includes/class-wpsc-rp-filters.php:416
+msgid "Custom"
+msgstr ""
+
+#: includes/class-wpsc-rp-filters.php:178
+msgid "Custom Filter"
+msgstr ""
+
+#: includes/class-wpsc-rp-settings.php:138
+msgid "Report Settings"
+msgstr ""
+
+#: includes/class-wpsc-rp-settings.php:143
+msgid "Default Duration"
+msgstr ""
+
+#: includes/class-wpsc-rp-settings.php:162
+msgid "Generate reports for custom fields"
+msgstr ""
+
+#: includes/class-wpsc-rp-settings.php:260
+#: includes/class-wpsc-rp-settings.php:288
+msgid "View Reports"
+msgstr ""
+
+#: includes/reports/class-wpsc-rp-closing-delay.php:37
+#: includes/reports/class-wpsc-rp-communication-gap.php:37
+#: includes/reports/class-wpsc-rp-response-delay.php:37
+#: includes/reports/class-wpsc-rp-ticket-statistics.php:37
+#: includes/reports/custom-field-types/class-wpsc-rp-category.php:85
+#: includes/reports/custom-field-types/class-wpsc-rp-checkbox.php:80
+#: includes/reports/custom-field-types/class-wpsc-rp-multi-select.php:80
+#: includes/reports/custom-field-types/class-wpsc-rp-priority.php:80
+#: includes/reports/custom-field-types/class-wpsc-rp-radio-button.php:80
+#: includes/reports/custom-field-types/class-wpsc-rp-single-select.php:80
+msgid "From Date"
+msgstr ""
+
+#: includes/reports/class-wpsc-rp-closing-delay.php:41
+#: includes/reports/class-wpsc-rp-communication-gap.php:41
+#: includes/reports/class-wpsc-rp-response-delay.php:41
+#: includes/reports/class-wpsc-rp-ticket-statistics.php:41
+#: includes/reports/custom-field-types/class-wpsc-rp-category.php:89
+#: includes/reports/custom-field-types/class-wpsc-rp-checkbox.php:84
+#: includes/reports/custom-field-types/class-wpsc-rp-multi-select.php:84
+#: includes/reports/custom-field-types/class-wpsc-rp-priority.php:84
+#: includes/reports/custom-field-types/class-wpsc-rp-radio-button.php:84
+#: includes/reports/custom-field-types/class-wpsc-rp-single-select.php:84
+msgid "To Date"
+msgstr ""
+
+#: includes/reports/class-wpsc-rp-closing-delay.php:66
+msgid "Average Closing Delay (Days)"
+msgstr ""
+
+#: includes/reports/class-wpsc-rp-communication-gap.php:66
+msgid "Average communication gap for this period"
+msgstr ""
+
+#: includes/reports/class-wpsc-rp-response-delay.php:66
+msgid "First Response Delay (Hours)"
+msgstr ""
+
+#: includes/reports/class-wpsc-rp-response-delay.php:67
+msgid "Average Response Delay (Hours)"
+msgstr ""
+
+#: includes/reports/class-wpsc-rp-ticket-statistics.php:66
+msgid "Total tickets created"
+msgstr ""
+
+#: includes/reports/class-wpsc-rp-ticket-statistics.php:67
+msgid "Total tickets closed"
+msgstr ""

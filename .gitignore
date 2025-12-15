@@ -1,0 +1,11 @@
+wp-content/uploads
+wp-content/old-uploads
+
+# Large files
+wp_tcssecure-2019-11-08-6f05fa4.sql
+wp_tcssecurestg-2022-08-15-55827f2.sql
+
+# Caching and local folders
+.DS_Store
+.htaccess
+.tmb/

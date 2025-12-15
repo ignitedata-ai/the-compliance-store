@@ -1,0 +1,823 @@
+0000.000 (0) Opened log file at time: Fri, 16 Sep 2022 10:38:24 +0000 on https://secure.thecompliancestore.net
+0000.003 (0) UpdraftPlus WordPress backup plugin (https://updraftplus.com): 1.22.21 WP: 6.0.2 PHP: 7.4.28 (fpm-fcgi, Linux pod-204867 5.4.188+ #1 SMP Sun Apr 24 10:03:06 PDT 2022 x86_64) MySQL: 5.7.39-42-log (max packet size=16777216) WPLANG: en_US Server: nginx safe_mode: 0 max_execution_time: 900 memory_limit: 512M (used: 22.4M | 6M) multisite: N openssl: OpenSSL 1.1.1  11 Sep 2018 mcrypt: N LANG:  ZipArchive::addFile: Y
+0000.006 (0) Free space on disk containing Updraft's temporary directory: Unknown
+0000.010 (0) Tasks: Backup files: 1 (schedule: unset) Backup DB: 1 (schedule: unset)
+0000.016 (0) Requesting semaphore lock (fd) (apparently not via scheduler)
+0000.021 (0) Semaphore (fd, wp_options) was stuck, set lock time to 2022-09-16 10:38:24
+0000.026 (0) Semaphore (fd, wp_options) reset to 1
+0000.030 (0) Set semaphore last lock (fd) time to 2022-09-16 10:38:24
+0000.033 (0) Semaphore lock (fd) complete
+0000.041 (0) Backup run: resumption=0, nonce=2ea88fd52a8b, file_nonce=2ea88fd52a8b begun at=1663324704 (0s ago), job type=backup
+0000.046 (0) Scheduling a resumption (1) after 300 seconds (1663325004) in case this run gets aborted
+0000.073 (0) Checking if we have a zip executable available
+0000.079 (0) Creation of backups of directories: beginning
+0000.087 (0) Beginning creation of dump of plugins (split every: 400 MB)
+0000.374 (0) Total entities for the zip file: 2094 directories, 10358 files (0 skipped as non-modified), 227.9 MB
+0000.385 (0) Zip: backup_2022-09-16-0538_TCS_Secure_2ea88fd52a8b-plugins.zip.tmp: 100 files added (on-disk size: 0 KB)
+0000.391 (0) Zip: backup_2022-09-16-0538_TCS_Secure_2ea88fd52a8b-plugins.zip.tmp: 200 files added (on-disk size: 0 KB)
+0000.397 (0) Zip: backup_2022-09-16-0538_TCS_Secure_2ea88fd52a8b-plugins.zip.tmp: 300 files added (on-disk size: 0 KB)
+0000.403 (0) Zip: backup_2022-09-16-0538_TCS_Secure_2ea88fd52a8b-plugins.zip.tmp: 400 files added (on-disk size: 0 KB)
+0000.409 (0) Zip: backup_2022-09-16-0538_TCS_Secure_2ea88fd52a8b-plugins.zip.tmp: 500 files added (on-disk size: 0 KB)
+0000.415 (0) Zip: backup_2022-09-16-0538_TCS_Secure_2ea88fd52a8b-plugins.zip.tmp: 600 files added (on-disk size: 0 KB)
+0000.423 (0) Zip: backup_2022-09-16-0538_TCS_Secure_2ea88fd52a8b-plugins.zip.tmp: 700 files added (on-disk size: 0 KB)
+0000.431 (0) Zip: backup_2022-09-16-0538_TCS_Secure_2ea88fd52a8b-plugins.zip.tmp: 800 files added (on-disk size: 0 KB)
+0000.437 (0) Zip: backup_2022-09-16-0538_TCS_Secure_2ea88fd52a8b-plugins.zip.tmp: 900 files added (on-disk size: 0 KB)
+0000.442 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 25 MB added on this batch (25 MB, 10358 files batched, 958 (958) added so far); re-opening (prior size: 0 KB)
+0003.010 (0) A useful amount of data was added after this amount of zip processing: 3.5 s (normalised: 3.5 s, rate: 7322.8 KB/s)
+0003.015 (0) Performance is good - will increase the amount of data we attempt to batch (time=3.49608588219, normalised_time=3.49591078259, max_time=3.01260018349, data points known=1, old_max_bytes=26214400, new_max_bytes=44991537)
+0003.045 (0) Zip: backup_2022-09-16-0538_TCS_Secure_2ea88fd52a8b-plugins.zip.tmp: 1000 files added (on-disk size: 8914.5 KB)
+0003.053 (0) Zip: backup_2022-09-16-0538_TCS_Secure_2ea88fd52a8b-plugins.zip.tmp: 1100 files added (on-disk size: 8914.5 KB)
+0003.060 (0) Zip: backup_2022-09-16-0538_TCS_Secure_2ea88fd52a8b-plugins.zip.tmp: 1200 files added (on-disk size: 8914.5 KB)
+0003.067 (0) Zip: backup_2022-09-16-0538_TCS_Secure_2ea88fd52a8b-plugins.zip.tmp: 1300 files added (on-disk size: 8914.5 KB)
+0003.073 (0) Zip: backup_2022-09-16-0538_TCS_Secure_2ea88fd52a8b-plugins.zip.tmp: 1400 files added (on-disk size: 8914.5 KB)
+0003.080 (0) Zip: backup_2022-09-16-0538_TCS_Secure_2ea88fd52a8b-plugins.zip.tmp: 1500 files added (on-disk size: 8914.5 KB)
+0003.086 (0) Zip: backup_2022-09-16-0538_TCS_Secure_2ea88fd52a8b-plugins.zip.tmp: 1600 files added (on-disk size: 8914.5 KB)
+0003.092 (0) Zip: backup_2022-09-16-0538_TCS_Secure_2ea88fd52a8b-plugins.zip.tmp: 1700 files added (on-disk size: 8914.5 KB)
+0003.099 (0) Zip: backup_2022-09-16-0538_TCS_Secure_2ea88fd52a8b-plugins.zip.tmp: 1800 files added (on-disk size: 8914.5 KB)
+0003.105 (0) Zip: backup_2022-09-16-0538_TCS_Secure_2ea88fd52a8b-plugins.zip.tmp: 1900 files added (on-disk size: 8914.5 KB)
+0003.109 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 1000 files added on this batch (4.8 MB, 10358 files batched, 1001 (1959) added so far); re-opening (prior size: 8914.5 KB)
+0004.014 (0) Zip: backup_2022-09-16-0538_TCS_Secure_2ea88fd52a8b-plugins.zip.tmp: 2000 files added (on-disk size: 10464.6 KB)
+0004.020 (0) Zip: backup_2022-09-16-0538_TCS_Secure_2ea88fd52a8b-plugins.zip.tmp: 2100 files added (on-disk size: 10464.6 KB)
+0004.026 (0) Zip: backup_2022-09-16-0538_TCS_Secure_2ea88fd52a8b-plugins.zip.tmp: 2200 files added (on-disk size: 10464.6 KB)
+0004.032 (0) Zip: backup_2022-09-16-0538_TCS_Secure_2ea88fd52a8b-plugins.zip.tmp: 2300 files added (on-disk size: 10464.6 KB)
+0004.038 (0) Zip: backup_2022-09-16-0538_TCS_Secure_2ea88fd52a8b-plugins.zip.tmp: 2400 files added (on-disk size: 10464.6 KB)
+0004.044 (0) Zip: backup_2022-09-16-0538_TCS_Secure_2ea88fd52a8b-plugins.zip.tmp: 2500 files added (on-disk size: 10464.6 KB)
+0004.049 (0) Zip: backup_2022-09-16-0538_TCS_Secure_2ea88fd52a8b-plugins.zip.tmp: 2600 files added (on-disk size: 10464.6 KB)
+0004.055 (0) Zip: backup_2022-09-16-0538_TCS_Secure_2ea88fd52a8b-plugins.zip.tmp: 2700 files added (on-disk size: 10464.6 KB)
+0004.062 (0) Zip: backup_2022-09-16-0538_TCS_Secure_2ea88fd52a8b-plugins.zip.tmp: 2800 files added (on-disk size: 10464.6 KB)
+0004.069 (0) Zip: backup_2022-09-16-0538_TCS_Secure_2ea88fd52a8b-plugins.zip.tmp: 2900 files added (on-disk size: 10464.6 KB)
+0004.074 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 1000 files added on this batch (12 MB, 10358 files batched, 1001 (2960) added so far); re-opening (prior size: 10464.6 KB)
+0005.140 (0) Zip: backup_2022-09-16-0538_TCS_Secure_2ea88fd52a8b-plugins.zip.tmp: 3000 files added (on-disk size: 16083.5 KB)
+0005.146 (0) Zip: backup_2022-09-16-0538_TCS_Secure_2ea88fd52a8b-plugins.zip.tmp: 3100 files added (on-disk size: 16083.5 KB)
+0005.151 (0) Zip: backup_2022-09-16-0538_TCS_Secure_2ea88fd52a8b-plugins.zip.tmp: 3200 files added (on-disk size: 16083.5 KB)
+0005.156 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 42.9 MB added on this batch (62.2 MB, 10358 files batched, 320 (3280) added so far); re-opening (prior size: 16083.5 KB)
+0008.200 (0) A useful amount of data was added after this amount of zip processing: 3.7 s (normalised: 2.5 s, rate: 17271.1 KB/s)
+0008.205 (0) Performance is good - will increase the amount of data we attempt to batch (time=3.68554496765, normalised_time=2.5439660931, max_time=8.20225214958, data points known=1, old_max_bytes=44991537, new_max_bytes=106113529)
+0008.240 (0) Zip: backup_2022-09-16-0538_TCS_Secure_2ea88fd52a8b-plugins.zip.tmp: 3300 files added (on-disk size: 30560.8 KB)
+0008.245 (0) Zip: backup_2022-09-16-0538_TCS_Secure_2ea88fd52a8b-plugins.zip.tmp: 3400 files added (on-disk size: 30560.8 KB)
+0008.251 (0) Zip: backup_2022-09-16-0538_TCS_Secure_2ea88fd52a8b-plugins.zip.tmp: 3500 files added (on-disk size: 30560.8 KB)
+0008.257 (0) Zip: backup_2022-09-16-0538_TCS_Secure_2ea88fd52a8b-plugins.zip.tmp: 3600 files added (on-disk size: 30560.8 KB)
+0008.263 (0) Zip: backup_2022-09-16-0538_TCS_Secure_2ea88fd52a8b-plugins.zip.tmp: 3700 files added (on-disk size: 30560.8 KB)
+0008.268 (0) Zip: backup_2022-09-16-0538_TCS_Secure_2ea88fd52a8b-plugins.zip.tmp: 3800 files added (on-disk size: 30560.8 KB)
+0008.274 (0) Zip: backup_2022-09-16-0538_TCS_Secure_2ea88fd52a8b-plugins.zip.tmp: 3900 files added (on-disk size: 30560.8 KB)
+0008.280 (0) Zip: backup_2022-09-16-0538_TCS_Secure_2ea88fd52a8b-plugins.zip.tmp: 4000 files added (on-disk size: 30560.8 KB)
+0008.287 (0) Zip: backup_2022-09-16-0538_TCS_Secure_2ea88fd52a8b-plugins.zip.tmp: 4100 files added (on-disk size: 30560.8 KB)
+0008.294 (0) Zip: backup_2022-09-16-0538_TCS_Secure_2ea88fd52a8b-plugins.zip.tmp: 4200 files added (on-disk size: 30560.8 KB)
+0008.300 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 1000 files added on this batch (28.3 MB, 10358 files batched, 1001 (4281) added so far); re-opening (prior size: 30560.8 KB)
+0010.523 (0) Zip: backup_2022-09-16-0538_TCS_Secure_2ea88fd52a8b-plugins.zip.tmp: 4300 files added (on-disk size: 43345.5 KB)
+0010.530 (0) Zip: backup_2022-09-16-0538_TCS_Secure_2ea88fd52a8b-plugins.zip.tmp: 4400 files added (on-disk size: 43345.5 KB)
+0010.536 (0) Zip: backup_2022-09-16-0538_TCS_Secure_2ea88fd52a8b-plugins.zip.tmp: 4500 files added (on-disk size: 43345.5 KB)
+0010.542 (0) Zip: backup_2022-09-16-0538_TCS_Secure_2ea88fd52a8b-plugins.zip.tmp: 4600 files added (on-disk size: 43345.5 KB)
+0010.548 (0) Zip: backup_2022-09-16-0538_TCS_Secure_2ea88fd52a8b-plugins.zip.tmp: 4700 files added (on-disk size: 43345.5 KB)
+0010.555 (0) Zip: backup_2022-09-16-0538_TCS_Secure_2ea88fd52a8b-plugins.zip.tmp: 4800 files added (on-disk size: 43345.5 KB)
+0010.561 (0) Zip: backup_2022-09-16-0538_TCS_Secure_2ea88fd52a8b-plugins.zip.tmp: 4900 files added (on-disk size: 43345.5 KB)
+0010.566 (0) Zip: backup_2022-09-16-0538_TCS_Secure_2ea88fd52a8b-plugins.zip.tmp: 5000 files added (on-disk size: 43345.5 KB)
+0010.571 (0) Zip: backup_2022-09-16-0538_TCS_Secure_2ea88fd52a8b-plugins.zip.tmp: 5100 files added (on-disk size: 43345.5 KB)
+0010.577 (0) Zip: backup_2022-09-16-0538_TCS_Secure_2ea88fd52a8b-plugins.zip.tmp: 5200 files added (on-disk size: 43345.5 KB)
+0010.582 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 1000 files added on this batch (14.8 MB, 10358 files batched, 1001 (5282) added so far); re-opening (prior size: 43345.5 KB)
+0012.405 (0) Zip: backup_2022-09-16-0538_TCS_Secure_2ea88fd52a8b-plugins.zip.tmp: 5300 files added (on-disk size: 47368.1 KB)
+0012.412 (0) Zip: backup_2022-09-16-0538_TCS_Secure_2ea88fd52a8b-plugins.zip.tmp: 5400 files added (on-disk size: 47368.1 KB)
+0012.418 (0) Zip: backup_2022-09-16-0538_TCS_Secure_2ea88fd52a8b-plugins.zip.tmp: 5500 files added (on-disk size: 47368.1 KB)
+0012.425 (0) Zip: backup_2022-09-16-0538_TCS_Secure_2ea88fd52a8b-plugins.zip.tmp: 5600 files added (on-disk size: 47368.1 KB)
+0012.432 (0) Zip: backup_2022-09-16-0538_TCS_Secure_2ea88fd52a8b-plugins.zip.tmp: 5700 files added (on-disk size: 47368.1 KB)
+0012.438 (0) Zip: backup_2022-09-16-0538_TCS_Secure_2ea88fd52a8b-plugins.zip.tmp: 5800 files added (on-disk size: 47368.1 KB)
+0012.444 (0) Zip: backup_2022-09-16-0538_TCS_Secure_2ea88fd52a8b-plugins.zip.tmp: 5900 files added (on-disk size: 47368.1 KB)
+0012.451 (0) Zip: backup_2022-09-16-0538_TCS_Secure_2ea88fd52a8b-plugins.zip.tmp: 6000 files added (on-disk size: 47368.1 KB)
+0012.457 (0) Zip: backup_2022-09-16-0538_TCS_Secure_2ea88fd52a8b-plugins.zip.tmp: 6100 files added (on-disk size: 47368.1 KB)
+0012.463 (0) Zip: backup_2022-09-16-0538_TCS_Secure_2ea88fd52a8b-plugins.zip.tmp: 6200 files added (on-disk size: 47368.1 KB)
+0012.469 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 1000 files added on this batch (19.5 MB, 10358 files batched, 1001 (6283) added so far); re-opening (prior size: 47368.1 KB)
+0015.525 (0) Zip: backup_2022-09-16-0538_TCS_Secure_2ea88fd52a8b-plugins.zip.tmp: 6300 files added (on-disk size: 54685.4 KB)
+0015.531 (0) Zip: backup_2022-09-16-0538_TCS_Secure_2ea88fd52a8b-plugins.zip.tmp: 6400 files added (on-disk size: 54685.4 KB)
+0015.537 (0) Zip: backup_2022-09-16-0538_TCS_Secure_2ea88fd52a8b-plugins.zip.tmp: 6500 files added (on-disk size: 54685.4 KB)
+0015.544 (0) Zip: backup_2022-09-16-0538_TCS_Secure_2ea88fd52a8b-plugins.zip.tmp: 6600 files added (on-disk size: 54685.4 KB)
+0015.550 (0) Zip: backup_2022-09-16-0538_TCS_Secure_2ea88fd52a8b-plugins.zip.tmp: 6700 files added (on-disk size: 54685.4 KB)
+0015.556 (0) Zip: backup_2022-09-16-0538_TCS_Secure_2ea88fd52a8b-plugins.zip.tmp: 6800 files added (on-disk size: 54685.4 KB)
+0015.563 (0) Zip: backup_2022-09-16-0538_TCS_Secure_2ea88fd52a8b-plugins.zip.tmp: 6900 files added (on-disk size: 54685.4 KB)
+0015.570 (0) Zip: backup_2022-09-16-0538_TCS_Secure_2ea88fd52a8b-plugins.zip.tmp: 7000 files added (on-disk size: 54685.4 KB)
+0015.576 (0) Zip: backup_2022-09-16-0538_TCS_Secure_2ea88fd52a8b-plugins.zip.tmp: 7100 files added (on-disk size: 54685.4 KB)
+0015.583 (0) Zip: backup_2022-09-16-0538_TCS_Secure_2ea88fd52a8b-plugins.zip.tmp: 7200 files added (on-disk size: 54685.4 KB)
+0015.589 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 1000 files added on this batch (10.6 MB, 10358 files batched, 1001 (7284) added so far); re-opening (prior size: 54685.4 KB)
+0017.258 (0) Zip: backup_2022-09-16-0538_TCS_Secure_2ea88fd52a8b-plugins.zip.tmp: 7300 files added (on-disk size: 57498.6 KB)
+0017.265 (0) Zip: backup_2022-09-16-0538_TCS_Secure_2ea88fd52a8b-plugins.zip.tmp: 7400 files added (on-disk size: 57498.6 KB)
+0017.273 (0) Zip: backup_2022-09-16-0538_TCS_Secure_2ea88fd52a8b-plugins.zip.tmp: 7500 files added (on-disk size: 57498.6 KB)
+0017.279 (0) Zip: backup_2022-09-16-0538_TCS_Secure_2ea88fd52a8b-plugins.zip.tmp: 7600 files added (on-disk size: 57498.6 KB)
+0017.284 (0) Zip: backup_2022-09-16-0538_TCS_Secure_2ea88fd52a8b-plugins.zip.tmp: 7700 files added (on-disk size: 57498.6 KB)
+0017.290 (0) Zip: backup_2022-09-16-0538_TCS_Secure_2ea88fd52a8b-plugins.zip.tmp: 7800 files added (on-disk size: 57498.6 KB)
+0017.294 (0) Zip: backup_2022-09-16-0538_TCS_Secure_2ea88fd52a8b-plugins.zip.tmp: 7900 files added (on-disk size: 57498.6 KB)
+0017.300 (0) Zip: backup_2022-09-16-0538_TCS_Secure_2ea88fd52a8b-plugins.zip.tmp: 8000 files added (on-disk size: 57498.6 KB)
+0017.305 (0) Zip: backup_2022-09-16-0538_TCS_Secure_2ea88fd52a8b-plugins.zip.tmp: 8100 files added (on-disk size: 57498.6 KB)
+0017.312 (0) Zip: backup_2022-09-16-0538_TCS_Secure_2ea88fd52a8b-plugins.zip.tmp: 8200 files added (on-disk size: 57498.6 KB)
+0017.317 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 1000 files added on this batch (12.8 MB, 10358 files batched, 1001 (8285) added so far); re-opening (prior size: 57498.6 KB)
+0018.443 (0) Zip: backup_2022-09-16-0538_TCS_Secure_2ea88fd52a8b-plugins.zip.tmp: 8300 files added (on-disk size: 61090.2 KB)
+0018.450 (0) Zip: backup_2022-09-16-0538_TCS_Secure_2ea88fd52a8b-plugins.zip.tmp: 8400 files added (on-disk size: 61090.2 KB)
+0018.456 (0) Zip: backup_2022-09-16-0538_TCS_Secure_2ea88fd52a8b-plugins.zip.tmp: 8500 files added (on-disk size: 61090.2 KB)
+0018.462 (0) Zip: backup_2022-09-16-0538_TCS_Secure_2ea88fd52a8b-plugins.zip.tmp: 8600 files added (on-disk size: 61090.2 KB)
+0018.468 (0) Zip: backup_2022-09-16-0538_TCS_Secure_2ea88fd52a8b-plugins.zip.tmp: 8700 files added (on-disk size: 61090.2 KB)
+0018.473 (0) Zip: backup_2022-09-16-0538_TCS_Secure_2ea88fd52a8b-plugins.zip.tmp: 8800 files added (on-disk size: 61090.2 KB)
+0018.478 (0) Zip: backup_2022-09-16-0538_TCS_Secure_2ea88fd52a8b-plugins.zip.tmp: 8900 files added (on-disk size: 61090.2 KB)
+0018.484 (0) Zip: backup_2022-09-16-0538_TCS_Secure_2ea88fd52a8b-plugins.zip.tmp: 9000 files added (on-disk size: 61090.2 KB)
+0018.490 (0) Zip: backup_2022-09-16-0538_TCS_Secure_2ea88fd52a8b-plugins.zip.tmp: 9100 files added (on-disk size: 61090.2 KB)
+0018.496 (0) Zip: backup_2022-09-16-0538_TCS_Secure_2ea88fd52a8b-plugins.zip.tmp: 9200 files added (on-disk size: 61090.2 KB)
+0018.502 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 1000 files added on this batch (15 MB, 10358 files batched, 1001 (9286) added so far); re-opening (prior size: 61090.2 KB)
+0020.029 (0) Zip: backup_2022-09-16-0538_TCS_Secure_2ea88fd52a8b-plugins.zip.tmp: 9300 files added (on-disk size: 65205 KB)
+0020.037 (0) Zip: backup_2022-09-16-0538_TCS_Secure_2ea88fd52a8b-plugins.zip.tmp: 9400 files added (on-disk size: 65205 KB)
+0020.043 (0) Zip: backup_2022-09-16-0538_TCS_Secure_2ea88fd52a8b-plugins.zip.tmp: 9500 files added (on-disk size: 65205 KB)
+0020.049 (0) Zip: backup_2022-09-16-0538_TCS_Secure_2ea88fd52a8b-plugins.zip.tmp: 9600 files added (on-disk size: 65205 KB)
+0020.054 (0) Zip: backup_2022-09-16-0538_TCS_Secure_2ea88fd52a8b-plugins.zip.tmp: 9700 files added (on-disk size: 65205 KB)
+0020.059 (0) Zip: backup_2022-09-16-0538_TCS_Secure_2ea88fd52a8b-plugins.zip.tmp: 9800 files added (on-disk size: 65205 KB)
+0020.064 (0) Zip: backup_2022-09-16-0538_TCS_Secure_2ea88fd52a8b-plugins.zip.tmp: 9900 files added (on-disk size: 65205 KB)
+0020.071 (0) Zip: backup_2022-09-16-0538_TCS_Secure_2ea88fd52a8b-plugins.zip.tmp: 10000 files added (on-disk size: 65205 KB)
+0020.077 (0) Zip: backup_2022-09-16-0538_TCS_Secure_2ea88fd52a8b-plugins.zip.tmp: 10100 files added (on-disk size: 65205 KB)
+0020.084 (0) Zip: backup_2022-09-16-0538_TCS_Secure_2ea88fd52a8b-plugins.zip.tmp: 10200 files added (on-disk size: 65205 KB)
+0020.091 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 1000 files added on this batch (22.7 MB, 10358 files batched, 1001 (10287) added so far); re-opening (prior size: 65205 KB)
+0022.532 (0) Zip: backup_2022-09-16-0538_TCS_Secure_2ea88fd52a8b-plugins.zip.tmp: 10300 files added (on-disk size: 73251.8 KB)
+0022.914 (0) Creating zip file manifest (backup_2022-09-16-0538_TCS_Secure_2ea88fd52a8b-plugins.zip.list-temp.tmp)
+0022.942 (0) Successfully created zip file manifest (size: 925916)
+0023.532 (0) Created plugins zip (0) - 73357.3 KB in 23.4 s (3129.7 KB/s) (sha1: 9479bb034e2bb6e291787d6b01fd0fac1e0c324d, sha256: f05922951c56e3519abdb81f2c4832d5f7d7cb3ebc1d64ae25664b3eba6447ff)
+0023.546 (0) Cloud backup selection (1/1): none with instance (1/1) (last)
+0023.549 (0) No remote despatch: user chose no remote backup service
+0023.552 (0) Recording as successfully uploaded: backup_2022-09-16-0538_TCS_Secure_2ea88fd52a8b-plugins.zip
+0023.556 (0) Deleting zip manifest (backup_2022-09-16-0538_TCS_Secure_2ea88fd52a8b-plugins.zip.list.tmp)
+0023.563 (0) Retain: beginning examination of existing backup sets; user setting: retain_files=2, retain_db=2
+0023.565 (0) Number of backup sets in history: 1; groups (db): 1
+0023.568 (0) Examining (for databases) backup set with group_id=0, nonce=70a6837a29a9, datestamp=1660304549 (Aug 12 2022 11:42:29)
+0023.570 (0) This backup set remains non-empty (f=1/d=1); will retain in history
+0023.572 (0) Number of backup sets in history: 1; groups (files): 1
+0023.574 (0) Examining (for files) backup set with nonce=70a6837a29a9, datestamp=1660304549 (Aug 12 2022 11:42:29)
+0023.574 (0) This backup set remains non-empty (f=1/d=1); will retain in history
+0023.577 (0) Retain: saving new backup history (sets now: 1) and finishing retain operation
+0023.594 (0) Beginning creation of dump of themes (split every: 400 MB)
+0023.641 (0) Total entities for the zip file: 321 directories, 1719 files (0 skipped as non-modified), 65.3 MB
+0023.648 (0) Zip: backup_2022-09-16-0538_TCS_Secure_2ea88fd52a8b-themes.zip.tmp: 100 files added (on-disk size: 0 KB)
+0023.655 (0) Zip: backup_2022-09-16-0538_TCS_Secure_2ea88fd52a8b-themes.zip.tmp: 200 files added (on-disk size: 0 KB)
+0023.661 (0) Zip: backup_2022-09-16-0538_TCS_Secure_2ea88fd52a8b-themes.zip.tmp: 300 files added (on-disk size: 0 KB)
+0023.666 (0) Zip: backup_2022-09-16-0538_TCS_Secure_2ea88fd52a8b-themes.zip.tmp: 400 files added (on-disk size: 0 KB)
+0023.672 (0) Zip: backup_2022-09-16-0538_TCS_Secure_2ea88fd52a8b-themes.zip.tmp: 500 files added (on-disk size: 0 KB)
+0023.678 (0) Zip: backup_2022-09-16-0538_TCS_Secure_2ea88fd52a8b-themes.zip.tmp: 600 files added (on-disk size: 0 KB)
+0023.685 (0) Zip: backup_2022-09-16-0538_TCS_Secure_2ea88fd52a8b-themes.zip.tmp: 700 files added (on-disk size: 0 KB)
+0023.692 (0) Zip: backup_2022-09-16-0538_TCS_Secure_2ea88fd52a8b-themes.zip.tmp: 800 files added (on-disk size: 0 KB)
+0023.697 (0) Zip: backup_2022-09-16-0538_TCS_Secure_2ea88fd52a8b-themes.zip.tmp: 900 files added (on-disk size: 0 KB)
+0023.702 (0) Zip: backup_2022-09-16-0538_TCS_Secure_2ea88fd52a8b-themes.zip.tmp: 1000 files added (on-disk size: 0 KB)
+0023.704 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 1000 files added on this batch (53 MB, 1719 files batched, 1001 (1001) added so far); re-opening (prior size: 0 KB)
+0025.704 (0) Zip: backup_2022-09-16-0538_TCS_Secure_2ea88fd52a8b-themes.zip.tmp: 1100 files added (on-disk size: 36277.4 KB)
+0025.710 (0) Zip: backup_2022-09-16-0538_TCS_Secure_2ea88fd52a8b-themes.zip.tmp: 1200 files added (on-disk size: 36277.4 KB)
+0025.717 (0) Zip: backup_2022-09-16-0538_TCS_Secure_2ea88fd52a8b-themes.zip.tmp: 1300 files added (on-disk size: 36277.4 KB)
+0025.724 (0) Zip: backup_2022-09-16-0538_TCS_Secure_2ea88fd52a8b-themes.zip.tmp: 1400 files added (on-disk size: 36277.4 KB)
+0025.730 (0) Zip: backup_2022-09-16-0538_TCS_Secure_2ea88fd52a8b-themes.zip.tmp: 1500 files added (on-disk size: 36277.4 KB)
+0025.736 (0) Zip: backup_2022-09-16-0538_TCS_Secure_2ea88fd52a8b-themes.zip.tmp: 1600 files added (on-disk size: 36277.4 KB)
+0025.743 (0) Zip: backup_2022-09-16-0538_TCS_Secure_2ea88fd52a8b-themes.zip.tmp: 1700 files added (on-disk size: 36277.4 KB)
+0026.507 (0) Creating zip file manifest (backup_2022-09-16-0538_TCS_Secure_2ea88fd52a8b-themes.zip.list-temp.tmp)
+0026.514 (0) Successfully created zip file manifest (size: 120869)
+0026.868 (0) Created themes zip (0) - 44333 KB in 3.3 s (13567.5 KB/s) (sha1: c81858bd1a934e1eb0b5a23e2fd3fb1e7319cb90, sha256: 71b0c6e9c7d50dda4ae4840cf703efe8409869b845cc2e8516c48fbf87cd569b)
+0026.878 (0) Cloud backup selection (1/1): none with instance (1/1) (last)
+0026.880 (0) No remote despatch: user chose no remote backup service
+0026.883 (0) Recording as successfully uploaded: backup_2022-09-16-0538_TCS_Secure_2ea88fd52a8b-themes.zip
+0026.888 (0) Deleting zip manifest (backup_2022-09-16-0538_TCS_Secure_2ea88fd52a8b-themes.zip.list.tmp)
+0026.895 (0) Retain: beginning examination of existing backup sets; user setting: retain_files=2, retain_db=2
+0026.898 (0) Number of backup sets in history: 1; groups (db): 1
+0026.900 (0) Examining (for databases) backup set with group_id=0, nonce=70a6837a29a9, datestamp=1660304549 (Aug 12 2022 11:42:29)
+0026.900 (0) This backup set remains non-empty (f=1/d=1); will retain in history
+0026.903 (0) Number of backup sets in history: 1; groups (files): 1
+0026.906 (0) Examining (for files) backup set with nonce=70a6837a29a9, datestamp=1660304549 (Aug 12 2022 11:42:29)
+0026.906 (0) This backup set remains non-empty (f=1/d=1); will retain in history
+0026.909 (0) Retain: saving new backup history (sets now: 1) and finishing retain operation
+0026.920 (0) No backup of uploads: excluded by user's options
+0026.922 (0) No backup of others: excluded by user's options
+0026.932 (0) Saving backup status to database (elements: 4)
+0026.938 (0) Beginning creation of database dump (WordPress DB)
+0026.941 (0) SQL compatibility mode is: ERROR_FOR_DIVISION_BY_ZERO,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION
+0026.964 (0) Table wp_options: Total expected rows (approximate): 2526
+0027.150 (0) Table wp_options: Rows added in this batch (next record: 423038): 1682 (uncompressed bytes in this segment=6666226) in 0.19 seconds
+0027.162 (0) Table wp_options: finishing file(s) (2, 664.5 KB)
+0027.168 (0) Table wp_users: Total expected rows (approximate): 20153
+0027.530 (0) Table wp_users: Rows added in this batch (next record: 42276): 20818 (uncompressed bytes in this segment=4088728) in 0.36 seconds
+0027.539 (0) Table wp_users: finishing file(s) (2, 1284 KB)
+0028.109 (0) Table wp_usermeta: Total expected rows (approximate): 801940
+0028.115 (0) [Warning] Table wp_usermeta has very many rows (801940) - we hope your web hosting company gives you enough resources to dump out that table in the backup. If not, you will need to either remove data from this table, or contact your hosting company to request more resources.
+0030.565 (0) Table wp_usermeta: Rows added in this batch (next record: 1123431): 384000 (uncompressed bytes in this segment=19371120) in 3.02 seconds
+0030.748 (0) Table wp_usermeta: Total expected rows (via COUNT): 824135
+0030.753 (0) [Warning] Table wp_usermeta has very many rows (824135) - we hope your web hosting company gives you enough resources to dump out that table in the backup. If not, you will need to either remove data from this table, or contact your hosting company to request more resources.
+0033.130 (0) Table wp_usermeta: Rows added in this batch (next record: 1866885): 384000 (uncompressed bytes in this segment=21464864) in 2.55 seconds
+0033.341 (0) Table wp_usermeta: Total expected rows (via COUNT): 824135
+0033.344 (0) [Warning] Table wp_usermeta has very many rows (824135) - we hope your web hosting company gives you enough resources to dump out that table in the backup. If not, you will need to either remove data from this table, or contact your hosting company to request more resources.
+0034.708 (0) Table wp_usermeta: Rows added in this batch (next record: 1948218): 56135 (uncompressed bytes in this segment=55438006) in 1.56 seconds
+0034.724 (0) Table wp_usermeta: finishing file(s) (4, 9787.9 KB)
+0034.736 (0) Table wp_commentmeta: Total expected rows (via COUNT): 0
+0034.740 (0) Table wp_commentmeta: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=685) in 0.01 seconds
+0034.751 (0) Table wp_commentmeta: finishing file(s) (2, 0.4 KB)
+0034.760 (0) Table wp_comments: Total expected rows (via COUNT): 0
+0034.766 (0) Table wp_comments: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=1705) in 0.01 seconds
+0034.774 (0) Table wp_comments: finishing file(s) (2, 0.5 KB)
+0034.786 (0) Table wp_evf_entrymeta: Total expected rows (approximate): 1729
+0034.808 (0) Table wp_evf_entrymeta: Rows added in this batch (next record: 1782): 1782 (uncompressed bytes in this segment=142879) in 0.03 seconds
+0034.820 (0) Table wp_evf_entrymeta: finishing file(s) (2, 43.5 KB)
+0034.828 (0) Table wp_links: Total expected rows (via COUNT): 0
+0034.834 (0) Table wp_links: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=1310) in 0.01 seconds
+0034.842 (0) Table wp_links: finishing file(s) (2, 0.5 KB)
+0034.929 (0) Table wp_postmeta: Total expected rows (approximate): 91599
+0035.805 (0) Table wp_postmeta: Rows added in this batch (next record: 2030792): 102851 (uncompressed bytes in this segment=13827771) in 0.96 seconds
+0035.818 (0) Table wp_postmeta: finishing file(s) (2, 1355.2 KB)
+0035.846 (0) Table wp_posts: Total expected rows (approximate): 19730
+0036.651 (0) Table wp_posts: Rows added in this batch (next record: 473990): 20138 (uncompressed bytes in this segment=11709467) in 0.83 seconds
+0036.666 (0) Table wp_posts: finishing file(s) (2, 2046.6 KB)
+0036.675 (0) Table wp_term_relationships: Total expected rows (approximate): 106882
+0037.278 (0) Table wp_term_relationships: Rows added in this batch (next record: 300000): 106173 (uncompressed bytes in this segment=2092021) in 0.60 seconds
+0037.289 (0) Table wp_term_relationships: finishing file(s) (2, 316.3 KB)
+0037.321 (0) Table wp_term_taxonomy: Total expected rows (approximate): 17023
+0037.473 (0) Table wp_term_taxonomy: Rows added in this batch (next record: 22746): 17511 (uncompressed bytes in this segment=842881) in 0.17 seconds
+0037.487 (0) Table wp_term_taxonomy: finishing file(s) (2, 132.6 KB)
+0037.512 (0) Table wp_termmeta: Total expected rows (approximate): 9294
+0037.591 (0) Table wp_termmeta: Rows added in this batch (next record: 10245): 9472 (uncompressed bytes in this segment=554364) in 0.09 seconds
+0037.609 (0) Table wp_termmeta: finishing file(s) (2, 71.1 KB)
+0037.617 (0) Table wp_terms: Total expected rows (approximate): 17668
+0037.767 (0) Table wp_terms: Rows added in this batch (next record: 22746): 17511 (uncompressed bytes in this segment=969469) in 0.15 seconds
+0037.786 (0) Table wp_terms: finishing file(s) (2, 240.2 KB)
+0037.804 (0) Table wp_evf_entries: Total expected rows (via COUNT): 302
+0037.809 (0) Table is relatively small; fetch_rows will thus be: 500 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0037.830 (0) Table wp_evf_entries: Rows added in this batch (next record: 302): 302 (uncompressed bytes in this segment=285146) in 0.03 seconds
+0037.845 (0) Table wp_evf_entries: finishing file(s) (2, 39.7 KB)
+0037.856 (0) Table wp_evf_sessions: Total expected rows (via COUNT): 0
+0037.862 (0) Table wp_evf_sessions: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=687) in 0.01 seconds
+0037.875 (0) Table wp_evf_sessions: finishing file(s) (2, 0.4 KB)
+0037.896 (0) Table wp_exactmetrics_pageinsights_cache: Total expected rows (approximate): 8886
+0038.024 (0) Table wp_exactmetrics_pageinsights_cache: Rows added in this batch (next record: 9000): 9000 (uncompressed bytes in this segment=3504193) in 0.14 seconds
+0038.037 (0) Table wp_exactmetrics_pageinsights_cache: finishing file(s) (2, 202.4 KB)
+0038.044 (0) Table wp_fa_user_logins: Total expected rows (approximate): 331332
+0038.049 (0) [Warning] Table wp_fa_user_logins has very many rows (331332) - we hope your web hosting company gives you enough resources to dump out that table in the backup. If not, you will need to either remove data from this table, or contact your hosting company to request more resources.
+0040.572 (0) Table wp_fa_user_logins: Rows added in this batch (next record: 122701): 100000 (uncompressed bytes in this segment=36549855) in 2.53 seconds
+0041.340 (0) Table wp_fa_user_logins: Total expected rows (via COUNT): 343238
+0041.346 (0) [Warning] Table wp_fa_user_logins has very many rows (343238) - we hope your web hosting company gives you enough resources to dump out that table in the backup. If not, you will need to either remove data from this table, or contact your hosting company to request more resources.
+0043.973 (0) Table wp_fa_user_logins: Rows added in this batch (next record: 241886): 100000 (uncompressed bytes in this segment=39016730) in 3.38 seconds
+0044.061 (0) Table wp_fa_user_logins: Total expected rows (via COUNT): 343238
+0044.064 (0) [Warning] Table wp_fa_user_logins has very many rows (343238) - we hope your web hosting company gives you enough resources to dump out that table in the backup. If not, you will need to either remove data from this table, or contact your hosting company to request more resources.
+0046.741 (0) Table wp_fa_user_logins: Rows added in this batch (next record: 343274): 100000 (uncompressed bytes in this segment=39743389) in 2.75 seconds
+0046.834 (0) Table wp_fa_user_logins: Total expected rows (via COUNT): 343238
+0046.838 (0) [Warning] Table wp_fa_user_logins has very many rows (343238) - we hope your web hosting company gives you enough resources to dump out that table in the backup. If not, you will need to either remove data from this table, or contact your hosting company to request more resources.
+0047.938 (0) Table wp_fa_user_logins: Rows added in this batch (next record: 387098): 43238 (uncompressed bytes in this segment=17139971) in 1.18 seconds
+0047.952 (0) Table wp_fa_user_logins: finishing file(s) (5, 24612.2 KB)
+0047.962 (0) Table wp_forum_ads: Total expected rows (via COUNT): 0
+0047.965 (0) Table wp_forum_ads: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=615) in 0.01 seconds
+0047.975 (0) Table wp_forum_ads: finishing file(s) (2, 0.4 KB)
+0047.982 (0) Table wp_frontend_doc_downloads: Total expected rows (approximate): 3236
+0048.017 (0) Table wp_frontend_doc_downloads: Rows added in this batch (next record: 3128): 3128 (uncompressed bytes in this segment=387691) in 0.04 seconds
+0048.026 (0) Table wp_frontend_doc_downloads: finishing file(s) (2, 36.9 KB)
+0048.033 (0) Table wp_frontend_doc_views: Total expected rows (via COUNT): 0
+0048.036 (0) Table wp_frontend_doc_views: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=714) in 0.00 seconds
+0048.044 (0) Table wp_frontend_doc_views: finishing file(s) (2, 0.4 KB)
+0048.050 (0) Table wp_kickout_users: Total expected rows (via COUNT): 0
+0048.053 (0) Table wp_kickout_users: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=592) in 0.00 seconds
+0048.060 (0) Table wp_kickout_users: finishing file(s) (2, 0.3 KB)
+0048.067 (0) Table wp_reports_activity: Total expected rows (approximate): 10718
+0048.137 (0) Table wp_reports_activity: Rows added in this batch (next record: 12433): 10662 (uncompressed bytes in this segment=295452) in 0.07 seconds
+0048.147 (0) Table wp_reports_activity: finishing file(s) (2, 95.3 KB)
+0048.154 (0) Table wp_reports_deleted_documents: Total expected rows (via COUNT): 243
+0048.156 (0) Table is relatively small; fetch_rows will thus be: 250 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0048.163 (0) Table wp_reports_deleted_documents: Rows added in this batch (next record: 243): 243 (uncompressed bytes in this segment=20788) in 0.01 seconds
+0048.173 (0) Table wp_reports_deleted_documents: finishing file(s) (2, 6.1 KB)
+0048.181 (0) Table wp_reports_downloads: Total expected rows (approximate): 909594
+0048.186 (0) [Warning] Table wp_reports_downloads has very many rows (909594) - we hope your web hosting company gives you enough resources to dump out that table in the backup. If not, you will need to either remove data from this table, or contact your hosting company to request more resources.
+0049.041 (0) Table wp_reports_downloads: Rows added in this batch (next record: 124057): 100000 (uncompressed bytes in this segment=6410039) in 0.86 seconds
+0049.283 (0) Table wp_reports_downloads: Total expected rows (via COUNT): 933258
+0049.288 (0) [Warning] Table wp_reports_downloads has very many rows (933258) - we hope your web hosting company gives you enough resources to dump out that table in the backup. If not, you will need to either remove data from this table, or contact your hosting company to request more resources.
+0050.117 (0) Table wp_reports_downloads: Rows added in this batch (next record: 250601): 100000 (uncompressed bytes in this segment=6531168) in 1.06 seconds
+0050.365 (0) Table wp_reports_downloads: Total expected rows (via COUNT): 933258
+0050.368 (0) [Warning] Table wp_reports_downloads has very many rows (933258) - we hope your web hosting company gives you enough resources to dump out that table in the backup. If not, you will need to either remove data from this table, or contact your hosting company to request more resources.
+0051.208 (0) Table wp_reports_downloads: Rows added in this batch (next record: 381334): 100000 (uncompressed bytes in this segment=6524568) in 1.08 seconds
+0051.414 (0) Table wp_reports_downloads: Total expected rows (via COUNT): 933258
+0051.417 (0) [Warning] Table wp_reports_downloads has very many rows (933258) - we hope your web hosting company gives you enough resources to dump out that table in the backup. If not, you will need to either remove data from this table, or contact your hosting company to request more resources.
+0052.252 (0) Table wp_reports_downloads: Rows added in this batch (next record: 507700): 100000 (uncompressed bytes in this segment=6520084) in 1.04 seconds
+0052.447 (0) Table wp_reports_downloads: Total expected rows (via COUNT): 933258
+0052.450 (0) [Warning] Table wp_reports_downloads has very many rows (933258) - we hope your web hosting company gives you enough resources to dump out that table in the backup. If not, you will need to either remove data from this table, or contact your hosting company to request more resources.
+0053.306 (0) Table wp_reports_downloads: Rows added in this batch (next record: 617361): 100000 (uncompressed bytes in this segment=6514520) in 1.04 seconds
+0053.509 (0) Table wp_reports_downloads: Total expected rows (via COUNT): 933258
+0053.513 (0) [Warning] Table wp_reports_downloads has very many rows (933258) - we hope your web hosting company gives you enough resources to dump out that table in the backup. If not, you will need to either remove data from this table, or contact your hosting company to request more resources.
+0054.357 (0) Table wp_reports_downloads: Rows added in this batch (next record: 720037): 100000 (uncompressed bytes in this segment=6516847) in 1.04 seconds
+0054.554 (0) Table wp_reports_downloads: Total expected rows (via COUNT): 933258
+0054.557 (0) [Warning] Table wp_reports_downloads has very many rows (933258) - we hope your web hosting company gives you enough resources to dump out that table in the backup. If not, you will need to either remove data from this table, or contact your hosting company to request more resources.
+0055.421 (0) Table wp_reports_downloads: Rows added in this batch (next record: 820783): 100000 (uncompressed bytes in this segment=6517275) in 1.05 seconds
+0055.660 (0) Table wp_reports_downloads: Total expected rows (via COUNT): 933258
+0055.663 (0) [Warning] Table wp_reports_downloads has very many rows (933258) - we hope your web hosting company gives you enough resources to dump out that table in the backup. If not, you will need to either remove data from this table, or contact your hosting company to request more resources.
+0056.523 (0) Table wp_reports_downloads: Rows added in this batch (next record: 921094): 100000 (uncompressed bytes in this segment=6522535) in 1.09 seconds
+0056.718 (0) Table wp_reports_downloads: Total expected rows (via COUNT): 933258
+0056.722 (0) [Warning] Table wp_reports_downloads has very many rows (933258) - we hope your web hosting company gives you enough resources to dump out that table in the backup. If not, you will need to either remove data from this table, or contact your hosting company to request more resources.
+0057.603 (0) Table wp_reports_downloads: Rows added in this batch (next record: 1021156): 100000 (uncompressed bytes in this segment=6550919) in 1.07 seconds
+0057.821 (0) Table wp_reports_downloads: Total expected rows (via COUNT): 933258
+0057.825 (0) [Warning] Table wp_reports_downloads has very many rows (933258) - we hope your web hosting company gives you enough resources to dump out that table in the backup. If not, you will need to either remove data from this table, or contact your hosting company to request more resources.
+0058.096 (0) Table wp_reports_downloads: Rows added in this batch (next record: 1054414): 33258 (uncompressed bytes in this segment=2204912) in 0.48 seconds
+0058.108 (0) Table wp_reports_downloads: finishing file(s) (11, 11303.8 KB)
+0058.115 (0) Table wp_reports_views: Total expected rows (approximate): 593580
+0058.121 (0) [Warning] Table wp_reports_views has very many rows (593580) - we hope your web hosting company gives you enough resources to dump out that table in the backup. If not, you will need to either remove data from this table, or contact your hosting company to request more resources.
+0058.963 (0) Table wp_reports_views: Rows added in this batch (next record: 134788): 100000 (uncompressed bytes in this segment=6430725) in 0.85 seconds
+0059.112 (0) Table wp_reports_views: Total expected rows (via COUNT): 607544
+0059.120 (0) [Warning] Table wp_reports_views has very many rows (607544) - we hope your web hosting company gives you enough resources to dump out that table in the backup. If not, you will need to either remove data from this table, or contact your hosting company to request more resources.
+0059.996 (0) Table wp_reports_views: Rows added in this batch (next record: 272695): 100000 (uncompressed bytes in this segment=6552699) in 1.02 seconds
+0060.154 (0) Table wp_reports_views: Total expected rows (via COUNT): 607544
+0060.158 (0) [Warning] Table wp_reports_views has very many rows (607544) - we hope your web hosting company gives you enough resources to dump out that table in the backup. If not, you will need to either remove data from this table, or contact your hosting company to request more resources.
+0061.054 (0) Table wp_reports_views: Rows added in this batch (next record: 396736): 100000 (uncompressed bytes in this segment=6533803) in 1.05 seconds
+0061.193 (0) Table wp_reports_views: Total expected rows (via COUNT): 607544
+0061.196 (0) [Warning] Table wp_reports_views has very many rows (607544) - we hope your web hosting company gives you enough resources to dump out that table in the backup. If not, you will need to either remove data from this table, or contact your hosting company to request more resources.
+0062.011 (0) Table wp_reports_views: Rows added in this batch (next record: 505806): 100000 (uncompressed bytes in this segment=6534793) in 0.95 seconds
+0062.145 (0) Table wp_reports_views: Total expected rows (via COUNT): 607544
+0062.149 (0) [Warning] Table wp_reports_views has very many rows (607544) - we hope your web hosting company gives you enough resources to dump out that table in the backup. If not, you will need to either remove data from this table, or contact your hosting company to request more resources.
+0063.002 (0) Table wp_reports_views: Rows added in this batch (next record: 607281): 100000 (uncompressed bytes in this segment=6537823) in 0.98 seconds
+0063.143 (0) Table wp_reports_views: Total expected rows (via COUNT): 607544
+0063.146 (0) [Warning] Table wp_reports_views has very many rows (607544) - we hope your web hosting company gives you enough resources to dump out that table in the backup. If not, you will need to either remove data from this table, or contact your hosting company to request more resources.
+0064.000 (0) Table wp_reports_views: Rows added in this batch (next record: 707374): 100000 (uncompressed bytes in this segment=6536092) in 0.99 seconds
+0064.136 (0) Table wp_reports_views: Total expected rows (via COUNT): 607544
+0064.139 (0) [Warning] Table wp_reports_views has very many rows (607544) - we hope your web hosting company gives you enough resources to dump out that table in the backup. If not, you will need to either remove data from this table, or contact your hosting company to request more resources.
+0064.212 (0) Table wp_reports_views: Rows added in this batch (next record: 714918): 7544 (uncompressed bytes in this segment=492775) in 0.20 seconds
+0064.225 (0) Table wp_reports_views: finishing file(s) (8, 7499.2 KB)
+0064.232 (0) Table wp_search_results: Total expected rows (approximate): 518577
+0064.238 (0) [Warning] Table wp_search_results has very many rows (518577) - we hope your web hosting company gives you enough resources to dump out that table in the backup. If not, you will need to either remove data from this table, or contact your hosting company to request more resources.
+0065.081 (0) Table wp_search_results: Rows added in this batch (next record: 124245): 100000 (uncompressed bytes in this segment=7624634) in 0.85 seconds
+0065.202 (0) Table wp_search_results: Total expected rows (via COUNT): 532667
+0065.210 (0) [Warning] Table wp_search_results has very many rows (532667) - we hope your web hosting company gives you enough resources to dump out that table in the backup. If not, you will need to either remove data from this table, or contact your hosting company to request more resources.
+0066.169 (0) Table wp_search_results: Rows added in this batch (next record: 249472): 100000 (uncompressed bytes in this segment=7777262) in 1.08 seconds
+0066.304 (0) Table wp_search_results: Total expected rows (via COUNT): 532667
+0066.308 (0) [Warning] Table wp_search_results has very many rows (532667) - we hope your web hosting company gives you enough resources to dump out that table in the backup. If not, you will need to either remove data from this table, or contact your hosting company to request more resources.
+0067.272 (0) Table wp_search_results: Rows added in this batch (next record: 358624): 100000 (uncompressed bytes in this segment=7752364) in 1.09 seconds
+0067.400 (0) Table wp_search_results: Total expected rows (via COUNT): 532667
+0067.403 (0) [Warning] Table wp_search_results has very many rows (532667) - we hope your web hosting company gives you enough resources to dump out that table in the backup. If not, you will need to either remove data from this table, or contact your hosting company to request more resources.
+0068.319 (0) Table wp_search_results: Rows added in this batch (next record: 459499): 100000 (uncompressed bytes in this segment=7734601) in 1.04 seconds
+0068.441 (0) Table wp_search_results: Total expected rows (via COUNT): 532667
+0068.444 (0) [Warning] Table wp_search_results has very many rows (532667) - we hope your web hosting company gives you enough resources to dump out that table in the backup. If not, you will need to either remove data from this table, or contact your hosting company to request more resources.
+0069.312 (0) Table wp_search_results: Rows added in this batch (next record: 559711): 100000 (uncompressed bytes in this segment=7695006) in 0.98 seconds
+0069.438 (0) Table wp_search_results: Total expected rows (via COUNT): 532667
+0069.442 (0) [Warning] Table wp_search_results has very many rows (532667) - we hope your web hosting company gives you enough resources to dump out that table in the backup. If not, you will need to either remove data from this table, or contact your hosting company to request more resources.
+0069.717 (0) Table wp_search_results: Rows added in this batch (next record: 592378): 32667 (uncompressed bytes in this segment=2532331) in 0.39 seconds
+0069.728 (0) Table wp_search_results: finishing file(s) (7, 8726.7 KB)
+0069.736 (0) Table wp_shortpixel_folders: Total expected rows (via COUNT): 0
+0069.739 (0) Table wp_shortpixel_folders: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=983) in 0.01 seconds
+0069.747 (0) Table wp_shortpixel_folders: finishing file(s) (2, 0.5 KB)
+0069.755 (0) Table wp_shortpixel_meta: Total expected rows (via COUNT): 0
+0069.761 (0) Table wp_shortpixel_meta: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=1609) in 0.01 seconds
+0069.770 (0) Table wp_shortpixel_meta: finishing file(s) (2, 0.6 KB)
+0069.781 (0) Table wp_shortpixel_postmeta: Total expected rows (via COUNT): 707
+0069.784 (0) Table is relatively small; fetch_rows will thus be: 500 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0069.799 (0) Table wp_shortpixel_postmeta: Rows added in this batch (next record: 779): 707 (uncompressed bytes in this segment=185415) in 0.02 seconds
+0069.812 (0) Table wp_shortpixel_postmeta: finishing file(s) (2, 15 KB)
+0069.822 (0) Table wp_shortpixel_queue: Total expected rows (via COUNT): 0
+0069.828 (0) Table wp_shortpixel_queue: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=1197) in 0.01 seconds
+0069.839 (0) Table wp_shortpixel_queue: finishing file(s) (2, 0.5 KB)
+0069.846 (0) Table wp_wpfm_backup: Total expected rows (via COUNT): 0
+0069.849 (0) Table wp_wpfm_backup: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=514) in 0.00 seconds
+0069.858 (0) Table wp_wpfm_backup: finishing file(s) (2, 0.3 KB)
+0069.867 (0) Table wp_wpforo_accesses: Total expected rows (via COUNT): 5
+0069.870 (0) Table is relatively small; fetch_rows will thus be: 20 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0069.876 (0) Table wp_wpforo_accesses: Rows added in this batch (next record: 5): 5 (uncompressed bytes in this segment=3516) in 0.01 seconds
+0069.888 (0) Table wp_wpforo_accesses: finishing file(s) (2, 0.8 KB)
+0069.896 (0) Table wp_wpforo_activity: Total expected rows (via COUNT): 14
+0069.899 (0) Table is relatively small; fetch_rows will thus be: 20 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0069.902 (0) Table wp_wpforo_activity: Rows added in this batch (next record: 19): 14 (uncompressed bytes in this segment=4292) in 0.01 seconds
+0069.910 (0) Table wp_wpforo_activity: finishing file(s) (2, 1.3 KB)
+0069.924 (0) Table wp_wpforo_forums: Total expected rows (via COUNT): 14
+0069.926 (0) Table is relatively small; fetch_rows will thus be: 20 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0069.930 (0) Table wp_wpforo_forums: Rows added in this batch (next record: 14): 14 (uncompressed bytes in this segment=5408) in 0.01 seconds
+0069.943 (0) Table wp_wpforo_forums: finishing file(s) (2, 1.2 KB)
+0069.951 (0) Table wp_wpforo_languages: Total expected rows (via COUNT): 1
+0069.954 (0) Table is relatively small; fetch_rows will thus be: 20 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0069.958 (0) Table wp_wpforo_languages: Rows added in this batch (next record: 1): 1 (uncompressed bytes in this segment=644) in 0.01 seconds
+0069.967 (0) Table wp_wpforo_languages: finishing file(s) (2, 0.4 KB)
+0069.974 (0) Table wp_wpforo_likes: Total expected rows (via COUNT): 5
+0069.977 (0) Table is relatively small; fetch_rows will thus be: 20 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0069.981 (0) Table wp_wpforo_likes: Rows added in this batch (next record: 5): 5 (uncompressed bytes in this segment=802) in 0.01 seconds
+0069.989 (0) Table wp_wpforo_likes: finishing file(s) (2, 0.4 KB)
+0069.996 (0) Table wp_wpforo_logs: Total expected rows (via COUNT): 2
+0069.998 (0) Table is relatively small; fetch_rows will thus be: 20 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0070.001 (0) Table wp_wpforo_logs: Rows added in this batch (next record: 521): 2 (uncompressed bytes in this segment=984) in 0.01 seconds
+0070.009 (0) Table wp_wpforo_logs: finishing file(s) (2, 0.6 KB)
+0070.018 (0) Table wp_wpforo_phrases: Total expected rows (via COUNT): 712
+0070.029 (0) Table wp_wpforo_phrases: Rows added in this batch (next record: 712): 712 (uncompressed bytes in this segment=56050) in 0.01 seconds
+0070.039 (0) Table wp_wpforo_phrases: finishing file(s) (2, 10.8 KB)
+0070.052 (0) Table wp_wpforo_post_revisions: Total expected rows (via COUNT): 3
+0070.054 (0) Table is relatively small; fetch_rows will thus be: 20 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0070.060 (0) Table wp_wpforo_post_revisions: Rows added in this batch (next record: 3): 3 (uncompressed bytes in this segment=1919) in 0.01 seconds
+0070.072 (0) Table wp_wpforo_post_revisions: finishing file(s) (2, 0.9 KB)
+0070.080 (0) Table wp_wpforo_postmeta: Total expected rows (via COUNT): 0
+0070.086 (0) Table wp_wpforo_postmeta: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=1093) in 0.01 seconds
+0070.094 (0) Table wp_wpforo_postmeta: finishing file(s) (2, 0.5 KB)
+0070.106 (0) Table wp_wpforo_posts: Total expected rows (via COUNT): 26
+0070.108 (0) Table is relatively small; fetch_rows will thus be: 50 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0070.114 (0) Table wp_wpforo_posts: Rows added in this batch (next record: 26): 26 (uncompressed bytes in this segment=14431) in 0.01 seconds
+0070.126 (0) Table wp_wpforo_posts: finishing file(s) (2, 5.3 KB)
+0070.150 (0) Table wp_wpforo_profiles: Total expected rows (approximate): 26000
+0302.098 (1) Opened log file at time: Fri, 16 Sep 2022 10:43:26 +0000 on https://secure.thecompliancestore.net
+0302.101 (1) UpdraftPlus WordPress backup plugin (https://updraftplus.com): 1.22.21 WP: 6.0.2 PHP: 7.4.28 (fpm-fcgi, Linux pod-204867 5.4.188+ #1 SMP Sun Apr 24 10:03:06 PDT 2022 x86_64) MySQL: 5.7.39-42-log (max packet size=16777216) WPLANG: en_US Server: nginx safe_mode: 0 max_execution_time: 900 memory_limit: 512M (used: 20.1M | 2M) multisite: N openssl: OpenSSL 1.1.1  11 Sep 2018 mcrypt: N LANG:  ZipArchive::addFile: Y
+0302.104 (1) Free space on disk containing Updraft's temporary directory: Unknown
+0302.107 (1) Requesting backup semaphore lock (2ea88fd52a8b)
+0302.113 (1) [Debug] Lock option (updraft_lock_2ea88fd52a8b, wp_options) was created in the database
+0302.115 (1) [Info] Lock (updraft_lock_2ea88fd52a8b, wp_options) acquired after initialising the database
+0302.120 (1) Backup run: resumption=1, nonce=2ea88fd52a8b, file_nonce=2ea88fd52a8b begun at=1663324704 (302s ago), job type=backup, previous check-in=70.12s
+0302.126 (1) Scheduling a resumption (2) after 300 seconds (1663325306) in case this run gets aborted
+0302.131 (1) Checking if we have a zip executable available
+0302.134 (1) Creation of backups of directories: already finished
+0302.136 (1) Saving backup status to database (elements: 4)
+0302.142 (1) Resuming creation of database dump (WordPress DB)
+0302.145 (1) SQL compatibility mode is: ERROR_FOR_DIVISION_BY_ZERO,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION
+0302.152 (1) Table wp_options: corresponding file already exists; moving on
+0302.155 (1) Table wp_users: corresponding file already exists; moving on
+0302.157 (1) Table wp_usermeta: corresponding file already exists; moving on
+0302.160 (1) Table wp_commentmeta: corresponding file already exists; moving on
+0302.160 (1) Table wp_comments: corresponding file already exists; moving on
+0302.160 (1) Table wp_evf_entrymeta: corresponding file already exists; moving on
+0302.161 (1) Table wp_links: corresponding file already exists; moving on
+0302.161 (1) Table wp_postmeta: corresponding file already exists; moving on
+0302.161 (1) Table wp_posts: corresponding file already exists; moving on
+0302.161 (1) Table wp_term_relationships: corresponding file already exists; moving on
+0302.161 (1) Table wp_term_taxonomy: corresponding file already exists; moving on
+0302.161 (1) Table wp_termmeta: corresponding file already exists; moving on
+0302.161 (1) Table wp_terms: corresponding file already exists; moving on
+0302.161 (1) Table wp_evf_entries: corresponding file already exists; moving on
+0302.161 (1) Table wp_evf_sessions: corresponding file already exists; moving on
+0302.161 (1) Table wp_exactmetrics_pageinsights_cache: corresponding file already exists; moving on
+0302.161 (1) Table wp_fa_user_logins: corresponding file already exists; moving on
+0302.161 (1) Table wp_forum_ads: corresponding file already exists; moving on
+0302.162 (1) Table wp_frontend_doc_downloads: corresponding file already exists; moving on
+0302.164 (1) Table wp_frontend_doc_views: corresponding file already exists; moving on
+0302.164 (1) Table wp_kickout_users: corresponding file already exists; moving on
+0302.164 (1) Table wp_reports_activity: corresponding file already exists; moving on
+0302.164 (1) Table wp_reports_deleted_documents: corresponding file already exists; moving on
+0302.165 (1) Table wp_reports_downloads: corresponding file already exists; moving on
+0302.165 (1) Table wp_reports_views: corresponding file already exists; moving on
+0302.165 (1) Table wp_search_results: corresponding file already exists; moving on
+0302.165 (1) Table wp_shortpixel_folders: corresponding file already exists; moving on
+0302.165 (1) Table wp_shortpixel_meta: corresponding file already exists; moving on
+0302.165 (1) Table wp_shortpixel_postmeta: corresponding file already exists; moving on
+0302.165 (1) Table wp_shortpixel_queue: corresponding file already exists; moving on
+0302.165 (1) Table wp_wpfm_backup: corresponding file already exists; moving on
+0302.165 (1) Table wp_wpforo_accesses: corresponding file already exists; moving on
+0302.165 (1) Table wp_wpforo_activity: corresponding file already exists; moving on
+0302.165 (1) Table wp_wpforo_forums: corresponding file already exists; moving on
+0302.165 (1) Table wp_wpforo_languages: corresponding file already exists; moving on
+0302.165 (1) Table wp_wpforo_likes: corresponding file already exists; moving on
+0302.165 (1) Table wp_wpforo_logs: corresponding file already exists; moving on
+0302.165 (1) Table wp_wpforo_phrases: corresponding file already exists; moving on
+0302.165 (1) Table wp_wpforo_post_revisions: corresponding file already exists; moving on
+0302.165 (1) Table wp_wpforo_postmeta: corresponding file already exists; moving on
+0302.166 (1) Table wp_wpforo_posts: corresponding file already exists; moving on
+0302.168 (1) Table wp_wpforo_profiles: Total expected rows (approximate): 26000
+0302.720 (1) Table wp_wpforo_profiles: Rows added in this batch (next record: 42276): 26097 (uncompressed bytes in this segment=5492494) in 0.55 seconds
+0302.737 (1) Table wp_wpforo_profiles: finishing file(s) (2, 596.5 KB)
+0302.744 (1) Table wp_wpforo_subscribes: Total expected rows (via COUNT): 16
+0302.747 (1) Last successful resumption was 1 runs ago; fetch_rows will thus be: 20 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0302.754 (1) Table wp_wpforo_subscribes: Rows added in this batch (next record: 36): 16 (uncompressed bytes in this segment=2260) in 0.01 seconds
+0302.763 (1) Table wp_wpforo_subscribes: finishing file(s) (2, 1 KB)
+0302.771 (1) Table wp_wpforo_tags: Total expected rows (via COUNT): 12
+0302.775 (1) Last successful resumption was 1 runs ago; fetch_rows will thus be: 20 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0302.779 (1) Table wp_wpforo_tags: Rows added in this batch (next record: 12): 12 (uncompressed bytes in this segment=1094) in 0.01 seconds
+0302.790 (1) Table wp_wpforo_tags: finishing file(s) (2, 0.6 KB)
+0302.802 (1) Table wp_wpforo_topics: Total expected rows (via COUNT): 13
+0302.807 (1) Last successful resumption was 1 runs ago; fetch_rows will thus be: 20 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0302.812 (1) Table wp_wpforo_topics: Rows added in this batch (next record: 13): 13 (uncompressed bytes in this segment=4903) in 0.01 seconds
+0302.822 (1) Table wp_wpforo_topics: finishing file(s) (2, 1.6 KB)
+0302.834 (1) Table wp_wpforo_usergroups: Total expected rows (via COUNT): 5
+0302.837 (1) Last successful resumption was 1 runs ago; fetch_rows will thus be: 20 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0302.841 (1) Table wp_wpforo_usergroups: Rows added in this batch (next record: 5): 5 (uncompressed bytes in this segment=4844) in 0.01 seconds
+0302.852 (1) Table wp_wpforo_usergroups: finishing file(s) (2, 0.9 KB)
+0302.861 (1) Table wp_wpforo_views: Total expected rows (via COUNT): 0
+0302.867 (1) Table wp_wpforo_views: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=645) in 0.01 seconds
+0302.876 (1) Table wp_wpforo_views: finishing file(s) (2, 0.4 KB)
+0302.887 (1) Table wp_wpforo_visits: Total expected rows (via COUNT): 197
+0302.892 (1) Last successful resumption was 1 runs ago; fetch_rows will thus be: 250 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0302.899 (1) Table wp_wpforo_visits: Rows added in this batch (next record: 479): 197 (uncompressed bytes in this segment=10236) in 0.01 seconds
+0302.908 (1) Table wp_wpforo_visits: finishing file(s) (2, 3.2 KB)
+0302.914 (1) Table wp_wpforo_votes: Total expected rows (via COUNT): 0
+0302.920 (1) Table wp_wpforo_votes: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=655) in 0.01 seconds
+0302.927 (1) Table wp_wpforo_votes: finishing file(s) (2, 0.4 KB)
+0302.934 (1) Table wp_wplnst_scans: Total expected rows (via COUNT): 0
+0302.937 (1) Table wp_wplnst_scans: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=1823) in 0.00 seconds
+0302.944 (1) Table wp_wplnst_scans: finishing file(s) (2, 0.6 KB)
+0302.950 (1) Table wp_wplnst_scans_objects: Total expected rows (approximate): 0
+0302.953 (1) Table wp_wplnst_scans_objects: Rows added in this batch (next record: 0): 0 (uncompressed bytes in this segment=823) in 0.00 seconds
+0302.961 (1) Table wp_wplnst_scans_objects: finishing file(s) (2, 0.4 KB)
+0302.968 (1) Table wp_wplnst_urls: Total expected rows (approximate): 8399
+0303.160 (1) Table wp_wplnst_urls: Rows added in this batch (next record: 8585): 8585 (uncompressed bytes in this segment=3542539) in 0.19 seconds
+0303.170 (1) Table wp_wplnst_urls: finishing file(s) (2, 614.3 KB)
+0303.179 (1) Table wp_wplnst_urls_locations: Total expected rows (via COUNT): 0
+0303.182 (1) Table wp_wplnst_urls_locations: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=2423) in 0.01 seconds
+0303.191 (1) Table wp_wplnst_urls_locations: finishing file(s) (2, 0.7 KB)
+0303.198 (1) Table wp_wplnst_urls_locations_att: Total expected rows (via COUNT): 0
+0303.202 (1) Table wp_wplnst_urls_locations_att: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=887) in 0.01 seconds
+0303.210 (1) Table wp_wplnst_urls_locations_att: finishing file(s) (2, 0.4 KB)
+0303.217 (1) Table wp_wplnst_urls_status: Total expected rows (approximate): 0
+0303.221 (1) Table wp_wplnst_urls_status: Rows added in this batch (next record: 0): 0 (uncompressed bytes in this segment=2493) in 0.00 seconds
+0303.229 (1) Table wp_wplnst_urls_status: finishing file(s) (2, 0.7 KB)
+0303.238 (1) Table wp_wpsc_email_notification: Total expected rows (via COUNT): 0
+0303.241 (1) Table wp_wpsc_email_notification: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=893) in 0.01 seconds
+0303.252 (1) Table wp_wpsc_email_notification: finishing file(s) (2, 0.4 KB)
+0303.261 (1) Table wp_wpsc_ticket: Total expected rows (via COUNT): 167
+0303.263 (1) Last successful resumption was 1 runs ago; fetch_rows will thus be: 250 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0303.271 (1) Table wp_wpsc_ticket: Rows added in this batch (next record: 167): 167 (uncompressed bytes in this segment=36400) in 0.01 seconds
+0303.281 (1) Table wp_wpsc_ticket: finishing file(s) (2, 10.9 KB)
+0303.293 (1) Table wp_wpsc_ticketmeta: Total expected rows (via COUNT): 566
+0303.295 (1) Last successful resumption was 1 runs ago; fetch_rows will thus be: 500 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0303.304 (1) Table wp_wpsc_ticketmeta: Rows added in this batch (next record: 875): 566 (uncompressed bytes in this segment=24048) in 0.02 seconds
+0303.315 (1) Table wp_wpsc_ticketmeta: finishing file(s) (2, 5 KB)
+0303.322 (1) Table wp_wpsc_timer: Total expected rows (via COUNT): 19
+0303.324 (1) Last successful resumption was 1 runs ago; fetch_rows will thus be: 20 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0303.330 (1) Table wp_wpsc_timer: Rows added in this batch (next record: 19): 19 (uncompressed bytes in this segment=1881) in 0.01 seconds
+0303.338 (1) Table wp_wpsc_timer: finishing file(s) (2, 0.8 KB)
+0305.298 (1) Table wp_wsal_metadata: Total expected rows (approximate): 2185295
+0305.303 (1) [Warning] Table wp_wsal_metadata has very many rows (2185295) - we hope your web hosting company gives you enough resources to dump out that table in the backup. If not, you will need to either remove data from this table, or contact your hosting company to request more resources.
+0306.062 (1) Table wp_wsal_metadata: Rows added in this batch (next record: 381629): 100000 (uncompressed bytes in this segment=7877812) in 2.72 seconds
+0307.423 (1) Table wp_wsal_metadata: Total expected rows (via COUNT): 2382490
+0307.431 (1) [Warning] Table wp_wsal_metadata has very many rows (2382490) - we hope your web hosting company gives you enough resources to dump out that table in the backup. If not, you will need to either remove data from this table, or contact your hosting company to request more resources.
+0308.215 (1) Table wp_wsal_metadata: Rows added in this batch (next record: 753829): 100000 (uncompressed bytes in this segment=8324683) in 2.14 seconds
+0308.722 (1) Table wp_wsal_metadata: Total expected rows (via COUNT): 2382490
+0308.727 (1) [Warning] Table wp_wsal_metadata has very many rows (2382490) - we hope your web hosting company gives you enough resources to dump out that table in the backup. If not, you will need to either remove data from this table, or contact your hosting company to request more resources.
+0309.471 (1) Table wp_wsal_metadata: Rows added in this batch (next record: 1127556): 100000 (uncompressed bytes in this segment=8296151) in 1.25 seconds
+0309.981 (1) Table wp_wsal_metadata: Total expected rows (via COUNT): 2382490
+0309.984 (1) [Warning] Table wp_wsal_metadata has very many rows (2382490) - we hope your web hosting company gives you enough resources to dump out that table in the backup. If not, you will need to either remove data from this table, or contact your hosting company to request more resources.
+0310.792 (1) Table wp_wsal_metadata: Rows added in this batch (next record: 1492906): 100000 (uncompressed bytes in this segment=8459615) in 1.31 seconds
+0311.292 (1) Table wp_wsal_metadata: Total expected rows (via COUNT): 2382490
+0311.295 (1) [Warning] Table wp_wsal_metadata has very many rows (2382490) - we hope your web hosting company gives you enough resources to dump out that table in the backup. If not, you will need to either remove data from this table, or contact your hosting company to request more resources.
+0312.014 (1) Table wp_wsal_metadata: Rows added in this batch (next record: 1874823): 100000 (uncompressed bytes in this segment=8528038) in 1.21 seconds
+0312.486 (1) Table wp_wsal_metadata: Total expected rows (via COUNT): 2382490
+0312.490 (1) [Warning] Table wp_wsal_metadata has very many rows (2382490) - we hope your web hosting company gives you enough resources to dump out that table in the backup. If not, you will need to either remove data from this table, or contact your hosting company to request more resources.
+0313.206 (1) Table wp_wsal_metadata: Rows added in this batch (next record: 2255550): 100000 (uncompressed bytes in this segment=8288962) in 1.18 seconds
+0313.680 (1) Table wp_wsal_metadata: Total expected rows (via COUNT): 2382490
+0313.684 (1) [Warning] Table wp_wsal_metadata has very many rows (2382490) - we hope your web hosting company gives you enough resources to dump out that table in the backup. If not, you will need to either remove data from this table, or contact your hosting company to request more resources.
+0314.411 (1) Table wp_wsal_metadata: Rows added in this batch (next record: 2629112): 100000 (uncompressed bytes in this segment=7963411) in 1.19 seconds
+0314.893 (1) Table wp_wsal_metadata: Total expected rows (via COUNT): 2382490
+0314.896 (1) [Warning] Table wp_wsal_metadata has very many rows (2382490) - we hope your web hosting company gives you enough resources to dump out that table in the backup. If not, you will need to either remove data from this table, or contact your hosting company to request more resources.
+0315.641 (1) Table wp_wsal_metadata: Rows added in this batch (next record: 3011984): 100000 (uncompressed bytes in this segment=8065185) in 1.22 seconds
+0316.181 (1) Table wp_wsal_metadata: Total expected rows (via COUNT): 2382490
+0316.185 (1) [Warning] Table wp_wsal_metadata has very many rows (2382490) - we hope your web hosting company gives you enough resources to dump out that table in the backup. If not, you will need to either remove data from this table, or contact your hosting company to request more resources.
+0316.930 (1) Table wp_wsal_metadata: Rows added in this batch (next record: 3397833): 100000 (uncompressed bytes in this segment=8214957) in 1.28 seconds
+0317.413 (1) Table wp_wsal_metadata: Total expected rows (via COUNT): 2382490
+0317.416 (1) [Warning] Table wp_wsal_metadata has very many rows (2382490) - we hope your web hosting company gives you enough resources to dump out that table in the backup. If not, you will need to either remove data from this table, or contact your hosting company to request more resources.
+0318.115 (1) Table wp_wsal_metadata: Rows added in this batch (next record: 3784534): 100000 (uncompressed bytes in this segment=8224558) in 1.17 seconds
+0318.601 (1) Table wp_wsal_metadata: Total expected rows (via COUNT): 2382490
+0318.604 (1) [Warning] Table wp_wsal_metadata has very many rows (2382490) - we hope your web hosting company gives you enough resources to dump out that table in the backup. If not, you will need to either remove data from this table, or contact your hosting company to request more resources.
+0319.284 (1) Table wp_wsal_metadata: Rows added in this batch (next record: 4160078): 100000 (uncompressed bytes in this segment=8356828) in 1.16 seconds
+0319.759 (1) Table wp_wsal_metadata: Total expected rows (via COUNT): 2382490
+0319.762 (1) [Warning] Table wp_wsal_metadata has very many rows (2382490) - we hope your web hosting company gives you enough resources to dump out that table in the backup. If not, you will need to either remove data from this table, or contact your hosting company to request more resources.
+0320.458 (1) Table wp_wsal_metadata: Rows added in this batch (next record: 4554385): 100000 (uncompressed bytes in this segment=8102330) in 1.16 seconds
+0320.930 (1) Table wp_wsal_metadata: Total expected rows (via COUNT): 2382490
+0320.934 (1) [Warning] Table wp_wsal_metadata has very many rows (2382490) - we hope your web hosting company gives you enough resources to dump out that table in the backup. If not, you will need to either remove data from this table, or contact your hosting company to request more resources.
+0321.665 (1) Table wp_wsal_metadata: Rows added in this batch (next record: 4910350): 100000 (uncompressed bytes in this segment=8891011) in 1.20 seconds
+0322.150 (1) Table wp_wsal_metadata: Total expected rows (via COUNT): 2382490
+0322.154 (1) [Warning] Table wp_wsal_metadata has very many rows (2382490) - we hope your web hosting company gives you enough resources to dump out that table in the backup. If not, you will need to either remove data from this table, or contact your hosting company to request more resources.
+0322.822 (1) Table wp_wsal_metadata: Rows added in this batch (next record: 5276480): 100000 (uncompressed bytes in this segment=8306066) in 1.15 seconds
+0323.275 (1) Table wp_wsal_metadata: Total expected rows (via COUNT): 2382490
+0323.279 (1) [Warning] Table wp_wsal_metadata has very many rows (2382490) - we hope your web hosting company gives you enough resources to dump out that table in the backup. If not, you will need to either remove data from this table, or contact your hosting company to request more resources.
+0323.977 (1) Table wp_wsal_metadata: Rows added in this batch (next record: 5647375): 100000 (uncompressed bytes in this segment=8612896) in 1.15 seconds
+0324.441 (1) Table wp_wsal_metadata: Total expected rows (via COUNT): 2382490
+0324.444 (1) [Warning] Table wp_wsal_metadata has very many rows (2382490) - we hope your web hosting company gives you enough resources to dump out that table in the backup. If not, you will need to either remove data from this table, or contact your hosting company to request more resources.
+0325.140 (1) Table wp_wsal_metadata: Rows added in this batch (next record: 5902034): 100000 (uncompressed bytes in this segment=8458747) in 1.15 seconds
+0325.663 (1) Table wp_wsal_metadata: Total expected rows (via COUNT): 2382490
+0325.666 (1) [Warning] Table wp_wsal_metadata has very many rows (2382490) - we hope your web hosting company gives you enough resources to dump out that table in the backup. If not, you will need to either remove data from this table, or contact your hosting company to request more resources.
+0326.377 (1) Table wp_wsal_metadata: Rows added in this batch (next record: 6002034): 100000 (uncompressed bytes in this segment=8740236) in 1.23 seconds
+0326.914 (1) Table wp_wsal_metadata: Total expected rows (via COUNT): 2382490
+0326.918 (1) [Warning] Table wp_wsal_metadata has very many rows (2382490) - we hope your web hosting company gives you enough resources to dump out that table in the backup. If not, you will need to either remove data from this table, or contact your hosting company to request more resources.
+0327.645 (1) Table wp_wsal_metadata: Rows added in this batch (next record: 6102034): 100000 (uncompressed bytes in this segment=8268772) in 1.26 seconds
+0328.126 (1) Table wp_wsal_metadata: Total expected rows (via COUNT): 2382490
+0328.129 (1) [Warning] Table wp_wsal_metadata has very many rows (2382490) - we hope your web hosting company gives you enough resources to dump out that table in the backup. If not, you will need to either remove data from this table, or contact your hosting company to request more resources.
+0328.850 (1) Table wp_wsal_metadata: Rows added in this batch (next record: 6202034): 100000 (uncompressed bytes in this segment=8455491) in 1.20 seconds
+0329.354 (1) Table wp_wsal_metadata: Total expected rows (via COUNT): 2382490
+0329.357 (1) [Warning] Table wp_wsal_metadata has very many rows (2382490) - we hope your web hosting company gives you enough resources to dump out that table in the backup. If not, you will need to either remove data from this table, or contact your hosting company to request more resources.
+0330.100 (1) Table wp_wsal_metadata: Rows added in this batch (next record: 6302034): 100000 (uncompressed bytes in this segment=8281158) in 1.24 seconds
+0330.572 (1) Table wp_wsal_metadata: Total expected rows (via COUNT): 2382490
+0330.575 (1) [Warning] Table wp_wsal_metadata has very many rows (2382490) - we hope your web hosting company gives you enough resources to dump out that table in the backup. If not, you will need to either remove data from this table, or contact your hosting company to request more resources.
+0331.262 (1) Table wp_wsal_metadata: Rows added in this batch (next record: 6402034): 100000 (uncompressed bytes in this segment=8419331) in 1.15 seconds
+0331.720 (1) Table wp_wsal_metadata: Total expected rows (via COUNT): 2382490
+0331.724 (1) [Warning] Table wp_wsal_metadata has very many rows (2382490) - we hope your web hosting company gives you enough resources to dump out that table in the backup. If not, you will need to either remove data from this table, or contact your hosting company to request more resources.
+0332.443 (1) Table wp_wsal_metadata: Rows added in this batch (next record: 6502034): 100000 (uncompressed bytes in this segment=8469693) in 1.17 seconds
+0332.942 (1) Table wp_wsal_metadata: Total expected rows (via COUNT): 2382490
+0332.945 (1) [Warning] Table wp_wsal_metadata has very many rows (2382490) - we hope your web hosting company gives you enough resources to dump out that table in the backup. If not, you will need to either remove data from this table, or contact your hosting company to request more resources.
+0333.669 (1) Table wp_wsal_metadata: Rows added in this batch (next record: 6602034): 100000 (uncompressed bytes in this segment=8490556) in 1.21 seconds
+0334.157 (1) Table wp_wsal_metadata: Total expected rows (via COUNT): 2382490
+0334.160 (1) [Warning] Table wp_wsal_metadata has very many rows (2382490) - we hope your web hosting company gives you enough resources to dump out that table in the backup. If not, you will need to either remove data from this table, or contact your hosting company to request more resources.
+0334.756 (1) Table wp_wsal_metadata: Rows added in this batch (next record: 6684524): 82490 (uncompressed bytes in this segment=7030135) in 1.08 seconds
+0334.771 (1) Table wp_wsal_metadata: finishing file(s) (25, 27309.4 KB)
+0334.777 (1) Table wp_wsal_occurrences: Total expected rows (approximate): 673680
+0334.783 (1) [Warning] Table wp_wsal_occurrences has very many rows (673680) - we hope your web hosting company gives you enough resources to dump out that table in the backup. If not, you will need to either remove data from this table, or contact your hosting company to request more resources.
+0336.553 (1) Table wp_wsal_occurrences: Rows added in this batch (next record: 100000): 100000 (uncompressed bytes in this segment=25523811) in 1.78 seconds
+0336.851 (1) Table wp_wsal_occurrences: Total expected rows (via COUNT): 714019
+0336.857 (1) [Warning] Table wp_wsal_occurrences has very many rows (714019) - we hope your web hosting company gives you enough resources to dump out that table in the backup. If not, you will need to either remove data from this table, or contact your hosting company to request more resources.
+0338.684 (1) Table wp_wsal_occurrences: Rows added in this batch (next record: 200000): 100000 (uncompressed bytes in this segment=25654196) in 2.11 seconds
+0338.834 (1) Table wp_wsal_occurrences: Total expected rows (via COUNT): 714019
+0338.837 (1) [Warning] Table wp_wsal_occurrences has very many rows (714019) - we hope your web hosting company gives you enough resources to dump out that table in the backup. If not, you will need to either remove data from this table, or contact your hosting company to request more resources.
+0340.678 (1) Table wp_wsal_occurrences: Rows added in this batch (next record: 300000): 100000 (uncompressed bytes in this segment=26012560) in 1.98 seconds
+0340.832 (1) Table wp_wsal_occurrences: Total expected rows (via COUNT): 714019
+0340.835 (1) [Warning] Table wp_wsal_occurrences has very many rows (714019) - we hope your web hosting company gives you enough resources to dump out that table in the backup. If not, you will need to either remove data from this table, or contact your hosting company to request more resources.
+0342.538 (1) Table wp_wsal_occurrences: Rows added in this batch (next record: 400000): 100000 (uncompressed bytes in this segment=24679831) in 1.85 seconds
+0342.687 (1) Table wp_wsal_occurrences: Total expected rows (via COUNT): 714019
+0342.692 (1) [Warning] Table wp_wsal_occurrences has very many rows (714019) - we hope your web hosting company gives you enough resources to dump out that table in the backup. If not, you will need to either remove data from this table, or contact your hosting company to request more resources.
+0344.360 (1) Table wp_wsal_occurrences: Rows added in this batch (next record: 514323): 100000 (uncompressed bytes in this segment=23487142) in 1.81 seconds
+0344.519 (1) Table wp_wsal_occurrences: Total expected rows (via COUNT): 714019
+0344.522 (1) [Warning] Table wp_wsal_occurrences has very many rows (714019) - we hope your web hosting company gives you enough resources to dump out that table in the backup. If not, you will need to either remove data from this table, or contact your hosting company to request more resources.
+0346.283 (1) Table wp_wsal_occurrences: Rows added in this batch (next record: 614323): 100000 (uncompressed bytes in this segment=23657021) in 1.91 seconds
+0346.431 (1) Table wp_wsal_occurrences: Total expected rows (via COUNT): 714019
+0346.434 (1) [Warning] Table wp_wsal_occurrences has very many rows (714019) - we hope your web hosting company gives you enough resources to dump out that table in the backup. If not, you will need to either remove data from this table, or contact your hosting company to request more resources.
+0348.099 (1) Table wp_wsal_occurrences: Rows added in this batch (next record: 714323): 100000 (uncompressed bytes in this segment=23931702) in 1.80 seconds
+0348.256 (1) Table wp_wsal_occurrences: Total expected rows (via COUNT): 714019
+0348.260 (1) [Warning] Table wp_wsal_occurrences has very many rows (714019) - we hope your web hosting company gives you enough resources to dump out that table in the backup. If not, you will need to either remove data from this table, or contact your hosting company to request more resources.
+0348.529 (1) Table wp_wsal_occurrences: Rows added in this batch (next record: 728342): 14019 (uncompressed bytes in this segment=3725782) in 0.42 seconds
+0348.542 (1) Table wp_wsal_occurrences: finishing file(s) (9, 14043.8 KB)
+0348.545 (1) backup_2022-09-16-0538_TCS_Secure_2ea88fd52a8b-db-table-wp_options.table.tmpr423039.gz (1/61/fopen): adding to final database dump
+0348.555 (1) backup_2022-09-16-0538_TCS_Secure_2ea88fd52a8b-db-table-wp_options.table.gz (2/61/fopen): adding to final database dump
+0348.557 (1) backup_2022-09-16-0538_TCS_Secure_2ea88fd52a8b-db-table-wp_users.table.tmpr42277.gz (3/61/fopen): adding to final database dump
+0348.572 (1) backup_2022-09-16-0538_TCS_Secure_2ea88fd52a8b-db-table-wp_users.table.gz (4/61/fopen): adding to final database dump
+0348.575 (1) backup_2022-09-16-0538_TCS_Secure_2ea88fd52a8b-db-table-wp_usermeta.table.tmpr1123431.gz (5/61/fopen): adding to final database dump
+0348.608 (1) backup_2022-09-16-0538_TCS_Secure_2ea88fd52a8b-db-table-wp_usermeta.table.tmpr1866885.gz (6/61/fopen): adding to final database dump
+0348.647 (1) backup_2022-09-16-0538_TCS_Secure_2ea88fd52a8b-db-table-wp_usermeta.table.tmpr1948219.gz (7/61/fopen): adding to final database dump
+0348.684 (1) backup_2022-09-16-0538_TCS_Secure_2ea88fd52a8b-db-table-wp_usermeta.table.gz (8/61/fopen): adding to final database dump
+0348.687 (1) backup_2022-09-16-0538_TCS_Secure_2ea88fd52a8b-db-table-wp_commentmeta.table.tmpr0.gz (9/61/fopen): adding to final database dump
+0348.690 (1) backup_2022-09-16-0538_TCS_Secure_2ea88fd52a8b-db-table-wp_commentmeta.table.gz (10/61/fopen): adding to final database dump
+0348.692 (1) backup_2022-09-16-0538_TCS_Secure_2ea88fd52a8b-db-table-wp_comments.table.tmpr0.gz (11/61/fopen): adding to final database dump
+0348.694 (1) backup_2022-09-16-0538_TCS_Secure_2ea88fd52a8b-db-table-wp_comments.table.gz (12/61/fopen): adding to final database dump
+0348.696 (1) backup_2022-09-16-0538_TCS_Secure_2ea88fd52a8b-db-table-wp_evf_entrymeta.table.tmpr1783.gz (13/61/fopen): adding to final database dump
+0348.699 (1) backup_2022-09-16-0538_TCS_Secure_2ea88fd52a8b-db-table-wp_evf_entrymeta.table.gz (14/61/fopen): adding to final database dump
+0348.702 (1) backup_2022-09-16-0538_TCS_Secure_2ea88fd52a8b-db-table-wp_links.table.tmpr0.gz (15/61/fopen): adding to final database dump
+0348.704 (1) backup_2022-09-16-0538_TCS_Secure_2ea88fd52a8b-db-table-wp_links.table.gz (16/61/fopen): adding to final database dump
+0348.706 (1) backup_2022-09-16-0538_TCS_Secure_2ea88fd52a8b-db-table-wp_postmeta.table.tmpr2030793.gz (17/61/fopen): adding to final database dump
+0348.728 (1) backup_2022-09-16-0538_TCS_Secure_2ea88fd52a8b-db-table-wp_postmeta.table.gz (18/61/fopen): adding to final database dump
+0348.732 (1) backup_2022-09-16-0538_TCS_Secure_2ea88fd52a8b-db-table-wp_posts.table.tmpr473991.gz (19/61/fopen): adding to final database dump
+0348.756 (1) backup_2022-09-16-0538_TCS_Secure_2ea88fd52a8b-db-table-wp_posts.table.gz (20/61/fopen): adding to final database dump
+0348.759 (1) backup_2022-09-16-0538_TCS_Secure_2ea88fd52a8b-db-table-wp_term_relationships.table.tmpr300001.gz (21/61/fopen): adding to final database dump
+0348.765 (1) backup_2022-09-16-0538_TCS_Secure_2ea88fd52a8b-db-table-wp_term_relationships.table.gz (22/61/fopen): adding to final database dump
+0348.768 (1) backup_2022-09-16-0538_TCS_Secure_2ea88fd52a8b-db-table-wp_term_taxonomy.table.tmpr22747.gz (23/61/fopen): adding to final database dump
+0348.772 (1) backup_2022-09-16-0538_TCS_Secure_2ea88fd52a8b-db-table-wp_term_taxonomy.table.gz (24/61/fopen): adding to final database dump
+0348.776 (1) backup_2022-09-16-0538_TCS_Secure_2ea88fd52a8b-db-table-wp_termmeta.table.tmpr10246.gz (25/61/fopen): adding to final database dump
+0348.779 (1) backup_2022-09-16-0538_TCS_Secure_2ea88fd52a8b-db-table-wp_termmeta.table.gz (26/61/fopen): adding to final database dump
+0348.782 (1) backup_2022-09-16-0538_TCS_Secure_2ea88fd52a8b-db-table-wp_terms.table.tmpr22747.gz (27/61/fopen): adding to final database dump
+0348.788 (1) backup_2022-09-16-0538_TCS_Secure_2ea88fd52a8b-db-table-wp_terms.table.gz (28/61/fopen): adding to final database dump
+0348.792 (1) backup_2022-09-16-0538_TCS_Secure_2ea88fd52a8b-db-table-wp_evf_entries.table.tmpr303.gz (29/61/fopen): adding to final database dump
+0348.795 (1) backup_2022-09-16-0538_TCS_Secure_2ea88fd52a8b-db-table-wp_evf_entries.table.gz (30/61/fopen): adding to final database dump
+0348.797 (1) backup_2022-09-16-0538_TCS_Secure_2ea88fd52a8b-db-table-wp_evf_sessions.table.tmpr0.gz (31/61/fopen): adding to final database dump
+0348.799 (1) backup_2022-09-16-0538_TCS_Secure_2ea88fd52a8b-db-table-wp_evf_sessions.table.gz (32/61/fopen): adding to final database dump
+0348.802 (1) backup_2022-09-16-0538_TCS_Secure_2ea88fd52a8b-db-table-wp_exactmetrics_pageinsights_cache.table.tmpr9001.gz (33/61/fopen): adding to final database dump
+0348.808 (1) backup_2022-09-16-0538_TCS_Secure_2ea88fd52a8b-db-table-wp_exactmetrics_pageinsights_cache.table.gz (34/61/fopen): adding to final database dump
+0348.810 (1) backup_2022-09-16-0538_TCS_Secure_2ea88fd52a8b-db-table-wp_fa_user_logins.table.tmpr122701.gz (35/61/fopen): adding to final database dump
+0348.886 (1) backup_2022-09-16-0538_TCS_Secure_2ea88fd52a8b-db-table-wp_fa_user_logins.table.tmpr241886.gz (36/61/fopen): adding to final database dump
+0348.980 (1) backup_2022-09-16-0538_TCS_Secure_2ea88fd52a8b-db-table-wp_fa_user_logins.table.tmpr343274.gz (37/61/fopen): adding to final database dump
+0349.071 (1) backup_2022-09-16-0538_TCS_Secure_2ea88fd52a8b-db-table-wp_fa_user_logins.table.tmpr387099.gz (38/61/fopen): adding to final database dump
+0349.112 (1) backup_2022-09-16-0538_TCS_Secure_2ea88fd52a8b-db-table-wp_fa_user_logins.table.gz (39/61/fopen): adding to final database dump
+0349.115 (1) backup_2022-09-16-0538_TCS_Secure_2ea88fd52a8b-db-table-wp_forum_ads.table.tmpr0.gz (40/61/fopen): adding to final database dump
+0349.118 (1) backup_2022-09-16-0538_TCS_Secure_2ea88fd52a8b-db-table-wp_forum_ads.table.gz (41/61/fopen): adding to final database dump
+0349.121 (1) backup_2022-09-16-0538_TCS_Secure_2ea88fd52a8b-db-table-wp_frontend_doc_downloads.table.tmpr3129.gz (42/61/fopen): adding to final database dump
+0349.124 (1) backup_2022-09-16-0538_TCS_Secure_2ea88fd52a8b-db-table-wp_frontend_doc_downloads.table.gz (43/61/fopen): adding to final database dump
+0349.126 (1) backup_2022-09-16-0538_TCS_Secure_2ea88fd52a8b-db-table-wp_frontend_doc_views.table.tmpr0.gz (44/61/fopen): adding to final database dump
+0349.129 (1) backup_2022-09-16-0538_TCS_Secure_2ea88fd52a8b-db-table-wp_frontend_doc_views.table.gz (45/61/fopen): adding to final database dump
+0349.132 (1) backup_2022-09-16-0538_TCS_Secure_2ea88fd52a8b-db-table-wp_kickout_users.table.tmpr0.gz (46/61/fopen): adding to final database dump
+0349.134 (1) backup_2022-09-16-0538_TCS_Secure_2ea88fd52a8b-db-table-wp_kickout_users.table.gz (47/61/fopen): adding to final database dump
+0349.137 (1) backup_2022-09-16-0538_TCS_Secure_2ea88fd52a8b-db-table-wp_reports_activity.table.tmpr12434.gz (48/61/fopen): adding to final database dump
+0349.141 (1) backup_2022-09-16-0538_TCS_Secure_2ea88fd52a8b-db-table-wp_reports_activity.table.gz (49/61/fopen): adding to final database dump
+0349.143 (1) backup_2022-09-16-0538_TCS_Secure_2ea88fd52a8b-db-table-wp_reports_deleted_documents.table.tmpr244.gz (50/61/fopen): adding to final database dump
+0349.146 (1) backup_2022-09-16-0538_TCS_Secure_2ea88fd52a8b-db-table-wp_reports_deleted_documents.table.gz (51/61/fopen): adding to final database dump
+0349.149 (1) backup_2022-09-16-0538_TCS_Secure_2ea88fd52a8b-db-table-wp_reports_downloads.table.tmpr124057.gz (52/61/fopen): adding to final database dump
+0349.164 (1) backup_2022-09-16-0538_TCS_Secure_2ea88fd52a8b-db-table-wp_reports_downloads.table.tmpr250601.gz (53/61/fopen): adding to final database dump
+0349.179 (1) backup_2022-09-16-0538_TCS_Secure_2ea88fd52a8b-db-table-wp_reports_downloads.table.tmpr381334.gz (54/61/fopen): adding to final database dump
+0349.197 (1) backup_2022-09-16-0538_TCS_Secure_2ea88fd52a8b-db-table-wp_reports_downloads.table.tmpr507700.gz (55/61/fopen): adding to final database dump
+0349.214 (1) backup_2022-09-16-0538_TCS_Secure_2ea88fd52a8b-db-table-wp_reports_downloads.table.tmpr617361.gz (56/61/fopen): adding to final database dump
+0349.231 (1) backup_2022-09-16-0538_TCS_Secure_2ea88fd52a8b-db-table-wp_reports_downloads.table.tmpr720037.gz (57/61/fopen): adding to final database dump
+0349.248 (1) backup_2022-09-16-0538_TCS_Secure_2ea88fd52a8b-db-table-wp_reports_downloads.table.tmpr820783.gz (58/61/fopen): adding to final database dump
+0349.264 (1) backup_2022-09-16-0538_TCS_Secure_2ea88fd52a8b-db-table-wp_reports_downloads.table.tmpr921094.gz (59/61/fopen): adding to final database dump
+0349.281 (1) backup_2022-09-16-0538_TCS_Secure_2ea88fd52a8b-db-table-wp_reports_downloads.table.tmpr1021156.gz (60/61/fopen): adding to final database dump
+0349.298 (1) backup_2022-09-16-0538_TCS_Secure_2ea88fd52a8b-db-table-wp_reports_downloads.table.tmpr1054415.gz (61/61/fopen): adding to final database dump
+0349.306 (1) backup_2022-09-16-0538_TCS_Secure_2ea88fd52a8b-db-table-wp_reports_downloads.table.gz (62/61/fopen): adding to final database dump
+0349.309 (1) backup_2022-09-16-0538_TCS_Secure_2ea88fd52a8b-db-table-wp_reports_views.table.tmpr134788.gz (63/61/fopen): adding to final database dump
+0349.326 (1) backup_2022-09-16-0538_TCS_Secure_2ea88fd52a8b-db-table-wp_reports_views.table.tmpr272695.gz (64/61/fopen): adding to final database dump
+0349.346 (1) backup_2022-09-16-0538_TCS_Secure_2ea88fd52a8b-db-table-wp_reports_views.table.tmpr396736.gz (65/61/fopen): adding to final database dump
+0349.362 (1) backup_2022-09-16-0538_TCS_Secure_2ea88fd52a8b-db-table-wp_reports_views.table.tmpr505806.gz (66/61/fopen): adding to final database dump
+0349.379 (1) backup_2022-09-16-0538_TCS_Secure_2ea88fd52a8b-db-table-wp_reports_views.table.tmpr607281.gz (67/61/fopen): adding to final database dump
+0349.402 (1) backup_2022-09-16-0538_TCS_Secure_2ea88fd52a8b-db-table-wp_reports_views.table.tmpr707374.gz (68/61/fopen): adding to final database dump
+0349.424 (1) backup_2022-09-16-0538_TCS_Secure_2ea88fd52a8b-db-table-wp_reports_views.table.tmpr714919.gz (69/61/fopen): adding to final database dump
+0349.430 (1) backup_2022-09-16-0538_TCS_Secure_2ea88fd52a8b-db-table-wp_reports_views.table.gz (70/61/fopen): adding to final database dump
+0349.434 (1) backup_2022-09-16-0538_TCS_Secure_2ea88fd52a8b-db-table-wp_search_results.table.tmpr124245.gz (71/61/fopen): adding to final database dump
+0349.454 (1) backup_2022-09-16-0538_TCS_Secure_2ea88fd52a8b-db-table-wp_search_results.table.tmpr249472.gz (72/61/fopen): adding to final database dump
+0349.478 (1) backup_2022-09-16-0538_TCS_Secure_2ea88fd52a8b-db-table-wp_search_results.table.tmpr358624.gz (73/61/fopen): adding to final database dump
+0349.504 (1) backup_2022-09-16-0538_TCS_Secure_2ea88fd52a8b-db-table-wp_search_results.table.tmpr459499.gz (74/61/fopen): adding to final database dump
+0349.531 (1) backup_2022-09-16-0538_TCS_Secure_2ea88fd52a8b-db-table-wp_search_results.table.tmpr559711.gz (75/61/fopen): adding to final database dump
+0349.557 (1) backup_2022-09-16-0538_TCS_Secure_2ea88fd52a8b-db-table-wp_search_results.table.tmpr592379.gz (76/61/fopen): adding to final database dump
+0349.567 (1) backup_2022-09-16-0538_TCS_Secure_2ea88fd52a8b-db-table-wp_search_results.table.gz (77/61/fopen): adding to final database dump
+0349.569 (1) backup_2022-09-16-0538_TCS_Secure_2ea88fd52a8b-db-table-wp_shortpixel_folders.table.tmpr0.gz (78/61/fopen): adding to final database dump
+0349.572 (1) backup_2022-09-16-0538_TCS_Secure_2ea88fd52a8b-db-table-wp_shortpixel_folders.table.gz (79/61/fopen): adding to final database dump
+0349.575 (1) backup_2022-09-16-0538_TCS_Secure_2ea88fd52a8b-db-table-wp_shortpixel_meta.table.tmpr0.gz (80/61/fopen): adding to final database dump
+0349.577 (1) backup_2022-09-16-0538_TCS_Secure_2ea88fd52a8b-db-table-wp_shortpixel_meta.table.gz (81/61/fopen): adding to final database dump
+0349.580 (1) backup_2022-09-16-0538_TCS_Secure_2ea88fd52a8b-db-table-wp_shortpixel_postmeta.table.tmpr780.gz (82/61/fopen): adding to final database dump
+0349.583 (1) backup_2022-09-16-0538_TCS_Secure_2ea88fd52a8b-db-table-wp_shortpixel_postmeta.table.gz (83/61/fopen): adding to final database dump
+0349.586 (1) backup_2022-09-16-0538_TCS_Secure_2ea88fd52a8b-db-table-wp_shortpixel_queue.table.tmpr0.gz (84/61/fopen): adding to final database dump
+0349.588 (1) backup_2022-09-16-0538_TCS_Secure_2ea88fd52a8b-db-table-wp_shortpixel_queue.table.gz (85/61/fopen): adding to final database dump
+0349.591 (1) backup_2022-09-16-0538_TCS_Secure_2ea88fd52a8b-db-table-wp_wpfm_backup.table.tmpr0.gz (86/61/fopen): adding to final database dump
+0349.593 (1) backup_2022-09-16-0538_TCS_Secure_2ea88fd52a8b-db-table-wp_wpfm_backup.table.gz (87/61/fopen): adding to final database dump
+0349.596 (1) backup_2022-09-16-0538_TCS_Secure_2ea88fd52a8b-db-table-wp_wpforo_accesses.table.tmpr6.gz (88/61/fopen): adding to final database dump
+0349.599 (1) backup_2022-09-16-0538_TCS_Secure_2ea88fd52a8b-db-table-wp_wpforo_accesses.table.gz (89/61/fopen): adding to final database dump
+0349.601 (1) backup_2022-09-16-0538_TCS_Secure_2ea88fd52a8b-db-table-wp_wpforo_activity.table.tmpr20.gz (90/61/fopen): adding to final database dump
+0349.604 (1) backup_2022-09-16-0538_TCS_Secure_2ea88fd52a8b-db-table-wp_wpforo_activity.table.gz (91/61/fopen): adding to final database dump
+0349.606 (1) backup_2022-09-16-0538_TCS_Secure_2ea88fd52a8b-db-table-wp_wpforo_forums.table.tmpr15.gz (92/61/fopen): adding to final database dump
+0349.609 (1) backup_2022-09-16-0538_TCS_Secure_2ea88fd52a8b-db-table-wp_wpforo_forums.table.gz (93/61/fopen): adding to final database dump
+0349.611 (1) backup_2022-09-16-0538_TCS_Secure_2ea88fd52a8b-db-table-wp_wpforo_languages.table.tmpr2.gz (94/61/fopen): adding to final database dump
+0349.614 (1) backup_2022-09-16-0538_TCS_Secure_2ea88fd52a8b-db-table-wp_wpforo_languages.table.gz (95/61/fopen): adding to final database dump
+0349.616 (1) backup_2022-09-16-0538_TCS_Secure_2ea88fd52a8b-db-table-wp_wpforo_likes.table.tmpr6.gz (96/61/fopen): adding to final database dump
+0349.620 (1) backup_2022-09-16-0538_TCS_Secure_2ea88fd52a8b-db-table-wp_wpforo_likes.table.gz (97/61/fopen): adding to final database dump
+0349.623 (1) backup_2022-09-16-0538_TCS_Secure_2ea88fd52a8b-db-table-wp_wpforo_logs.table.tmpr522.gz (98/61/fopen): adding to final database dump
+0349.625 (1) backup_2022-09-16-0538_TCS_Secure_2ea88fd52a8b-db-table-wp_wpforo_logs.table.gz (99/61/fopen): adding to final database dump
+0349.631 (1) backup_2022-09-16-0538_TCS_Secure_2ea88fd52a8b-db-table-wp_wpforo_phrases.table.tmpr713.gz (100/61/fopen): adding to final database dump
+0349.634 (1) backup_2022-09-16-0538_TCS_Secure_2ea88fd52a8b-db-table-wp_wpforo_phrases.table.gz (101/61/fopen): adding to final database dump
+0349.636 (1) backup_2022-09-16-0538_TCS_Secure_2ea88fd52a8b-db-table-wp_wpforo_post_revisions.table.tmpr4.gz (102/61/fopen): adding to final database dump
+0349.639 (1) backup_2022-09-16-0538_TCS_Secure_2ea88fd52a8b-db-table-wp_wpforo_post_revisions.table.gz (103/61/fopen): adding to final database dump
+0349.641 (1) backup_2022-09-16-0538_TCS_Secure_2ea88fd52a8b-db-table-wp_wpforo_postmeta.table.tmpr0.gz (104/61/fopen): adding to final database dump
+0349.644 (1) backup_2022-09-16-0538_TCS_Secure_2ea88fd52a8b-db-table-wp_wpforo_postmeta.table.gz (105/61/fopen): adding to final database dump
+0349.646 (1) backup_2022-09-16-0538_TCS_Secure_2ea88fd52a8b-db-table-wp_wpforo_posts.table.tmpr27.gz (106/61/fopen): adding to final database dump
+0349.649 (1) backup_2022-09-16-0538_TCS_Secure_2ea88fd52a8b-db-table-wp_wpforo_posts.table.gz (107/61/fopen): adding to final database dump
+0349.652 (1) backup_2022-09-16-0538_TCS_Secure_2ea88fd52a8b-db-table-wp_wpforo_profiles.table.tmpr42277.gz (108/61/fopen): adding to final database dump
+0349.661 (1) backup_2022-09-16-0538_TCS_Secure_2ea88fd52a8b-db-table-wp_wpforo_profiles.table.gz (109/61/fopen): adding to final database dump
+0349.664 (1) backup_2022-09-16-0538_TCS_Secure_2ea88fd52a8b-db-table-wp_wpforo_subscribes.table.tmpr37.gz (110/61/fopen): adding to final database dump
+0349.666 (1) backup_2022-09-16-0538_TCS_Secure_2ea88fd52a8b-db-table-wp_wpforo_subscribes.table.gz (111/61/fopen): adding to final database dump
+0349.669 (1) backup_2022-09-16-0538_TCS_Secure_2ea88fd52a8b-db-table-wp_wpforo_tags.table.tmpr13.gz (112/61/fopen): adding to final database dump
+0349.671 (1) backup_2022-09-16-0538_TCS_Secure_2ea88fd52a8b-db-table-wp_wpforo_tags.table.gz (113/61/fopen): adding to final database dump
+0349.674 (1) backup_2022-09-16-0538_TCS_Secure_2ea88fd52a8b-db-table-wp_wpforo_topics.table.tmpr14.gz (114/61/fopen): adding to final database dump
+0349.677 (1) backup_2022-09-16-0538_TCS_Secure_2ea88fd52a8b-db-table-wp_wpforo_topics.table.gz (115/61/fopen): adding to final database dump
+0349.679 (1) backup_2022-09-16-0538_TCS_Secure_2ea88fd52a8b-db-table-wp_wpforo_usergroups.table.tmpr6.gz (116/61/fopen): adding to final database dump
+0349.682 (1) backup_2022-09-16-0538_TCS_Secure_2ea88fd52a8b-db-table-wp_wpforo_usergroups.table.gz (117/61/fopen): adding to final database dump
+0349.685 (1) backup_2022-09-16-0538_TCS_Secure_2ea88fd52a8b-db-table-wp_wpforo_views.table.tmpr0.gz (118/61/fopen): adding to final database dump
+0349.687 (1) backup_2022-09-16-0538_TCS_Secure_2ea88fd52a8b-db-table-wp_wpforo_views.table.gz (119/61/fopen): adding to final database dump
+0349.690 (1) backup_2022-09-16-0538_TCS_Secure_2ea88fd52a8b-db-table-wp_wpforo_visits.table.tmpr480.gz (120/61/fopen): adding to final database dump
+0349.692 (1) backup_2022-09-16-0538_TCS_Secure_2ea88fd52a8b-db-table-wp_wpforo_visits.table.gz (121/61/fopen): adding to final database dump
+0349.696 (1) backup_2022-09-16-0538_TCS_Secure_2ea88fd52a8b-db-table-wp_wpforo_votes.table.tmpr0.gz (122/61/fopen): adding to final database dump
+0349.698 (1) backup_2022-09-16-0538_TCS_Secure_2ea88fd52a8b-db-table-wp_wpforo_votes.table.gz (123/61/fopen): adding to final database dump
+0349.701 (1) backup_2022-09-16-0538_TCS_Secure_2ea88fd52a8b-db-table-wp_wplnst_scans.table.tmpr0.gz (124/61/fopen): adding to final database dump
+0349.704 (1) backup_2022-09-16-0538_TCS_Secure_2ea88fd52a8b-db-table-wp_wplnst_scans.table.gz (125/61/fopen): adding to final database dump
+0349.706 (1) backup_2022-09-16-0538_TCS_Secure_2ea88fd52a8b-db-table-wp_wplnst_scans_objects.table.tmpr1.gz (126/61/fopen): adding to final database dump
+0349.709 (1) backup_2022-09-16-0538_TCS_Secure_2ea88fd52a8b-db-table-wp_wplnst_scans_objects.table.gz (127/61/fopen): adding to final database dump
+0349.711 (1) backup_2022-09-16-0538_TCS_Secure_2ea88fd52a8b-db-table-wp_wplnst_urls.table.tmpr8586.gz (128/61/fopen): adding to final database dump
+0349.720 (1) backup_2022-09-16-0538_TCS_Secure_2ea88fd52a8b-db-table-wp_wplnst_urls.table.gz (129/61/fopen): adding to final database dump
+0349.723 (1) backup_2022-09-16-0538_TCS_Secure_2ea88fd52a8b-db-table-wp_wplnst_urls_locations.table.tmpr0.gz (130/61/fopen): adding to final database dump
+0349.725 (1) backup_2022-09-16-0538_TCS_Secure_2ea88fd52a8b-db-table-wp_wplnst_urls_locations.table.gz (131/61/fopen): adding to final database dump
+0349.727 (1) backup_2022-09-16-0538_TCS_Secure_2ea88fd52a8b-db-table-wp_wplnst_urls_locations_att.table.tmpr0.gz (132/61/fopen): adding to final database dump
+0349.730 (1) backup_2022-09-16-0538_TCS_Secure_2ea88fd52a8b-db-table-wp_wplnst_urls_locations_att.table.gz (133/61/fopen): adding to final database dump
+0349.733 (1) backup_2022-09-16-0538_TCS_Secure_2ea88fd52a8b-db-table-wp_wplnst_urls_status.table.tmpr1.gz (134/61/fopen): adding to final database dump
+0349.735 (1) backup_2022-09-16-0538_TCS_Secure_2ea88fd52a8b-db-table-wp_wplnst_urls_status.table.gz (135/61/fopen): adding to final database dump
+0349.737 (1) backup_2022-09-16-0538_TCS_Secure_2ea88fd52a8b-db-table-wp_wpsc_email_notification.table.tmpr0.gz (136/61/fopen): adding to final database dump
+0349.739 (1) backup_2022-09-16-0538_TCS_Secure_2ea88fd52a8b-db-table-wp_wpsc_email_notification.table.gz (137/61/fopen): adding to final database dump
+0349.742 (1) backup_2022-09-16-0538_TCS_Secure_2ea88fd52a8b-db-table-wp_wpsc_ticket.table.tmpr168.gz (138/61/fopen): adding to final database dump
+0349.744 (1) backup_2022-09-16-0538_TCS_Secure_2ea88fd52a8b-db-table-wp_wpsc_ticket.table.gz (139/61/fopen): adding to final database dump
+0349.747 (1) backup_2022-09-16-0538_TCS_Secure_2ea88fd52a8b-db-table-wp_wpsc_ticketmeta.table.tmpr876.gz (140/61/fopen): adding to final database dump
+0349.749 (1) backup_2022-09-16-0538_TCS_Secure_2ea88fd52a8b-db-table-wp_wpsc_ticketmeta.table.gz (141/61/fopen): adding to final database dump
+0349.752 (1) backup_2022-09-16-0538_TCS_Secure_2ea88fd52a8b-db-table-wp_wpsc_timer.table.tmpr20.gz (142/61/fopen): adding to final database dump
+0349.754 (1) backup_2022-09-16-0538_TCS_Secure_2ea88fd52a8b-db-table-wp_wpsc_timer.table.gz (143/61/fopen): adding to final database dump
+0349.757 (1) backup_2022-09-16-0538_TCS_Secure_2ea88fd52a8b-db-table-wp_wsal_metadata.table.tmpr381629.gz (144/61/fopen): adding to final database dump
+0349.772 (1) backup_2022-09-16-0538_TCS_Secure_2ea88fd52a8b-db-table-wp_wsal_metadata.table.tmpr753829.gz (145/61/fopen): adding to final database dump
+0349.793 (1) backup_2022-09-16-0538_TCS_Secure_2ea88fd52a8b-db-table-wp_wsal_metadata.table.tmpr1127556.gz (146/61/fopen): adding to final database dump
+0349.809 (1) backup_2022-09-16-0538_TCS_Secure_2ea88fd52a8b-db-table-wp_wsal_metadata.table.tmpr1492906.gz (147/61/fopen): adding to final database dump
+0349.825 (1) backup_2022-09-16-0538_TCS_Secure_2ea88fd52a8b-db-table-wp_wsal_metadata.table.tmpr1874823.gz (148/61/fopen): adding to final database dump
+0349.848 (1) backup_2022-09-16-0538_TCS_Secure_2ea88fd52a8b-db-table-wp_wsal_metadata.table.tmpr2255550.gz (149/61/fopen): adding to final database dump
+0349.866 (1) backup_2022-09-16-0538_TCS_Secure_2ea88fd52a8b-db-table-wp_wsal_metadata.table.tmpr2629112.gz (150/61/fopen): adding to final database dump
+0349.883 (1) backup_2022-09-16-0538_TCS_Secure_2ea88fd52a8b-db-table-wp_wsal_metadata.table.tmpr3011984.gz (151/61/fopen): adding to final database dump
+0349.905 (1) backup_2022-09-16-0538_TCS_Secure_2ea88fd52a8b-db-table-wp_wsal_metadata.table.tmpr3397833.gz (152/61/fopen): adding to final database dump
+0349.924 (1) backup_2022-09-16-0538_TCS_Secure_2ea88fd52a8b-db-table-wp_wsal_metadata.table.tmpr3784534.gz (153/61/fopen): adding to final database dump
+0349.939 (1) backup_2022-09-16-0538_TCS_Secure_2ea88fd52a8b-db-table-wp_wsal_metadata.table.tmpr4160078.gz (154/61/fopen): adding to final database dump
+0349.955 (1) backup_2022-09-16-0538_TCS_Secure_2ea88fd52a8b-db-table-wp_wsal_metadata.table.tmpr4554385.gz (155/61/fopen): adding to final database dump
+0349.969 (1) backup_2022-09-16-0538_TCS_Secure_2ea88fd52a8b-db-table-wp_wsal_metadata.table.tmpr4910350.gz (156/61/fopen): adding to final database dump
+0349.985 (1) backup_2022-09-16-0538_TCS_Secure_2ea88fd52a8b-db-table-wp_wsal_metadata.table.tmpr5276480.gz (157/61/fopen): adding to final database dump
+0350.001 (1) backup_2022-09-16-0538_TCS_Secure_2ea88fd52a8b-db-table-wp_wsal_metadata.table.tmpr5647375.gz (158/61/fopen): adding to final database dump
+0350.018 (1) backup_2022-09-16-0538_TCS_Secure_2ea88fd52a8b-db-table-wp_wsal_metadata.table.tmpr5902034.gz (159/61/fopen): adding to final database dump
+0350.032 (1) backup_2022-09-16-0538_TCS_Secure_2ea88fd52a8b-db-table-wp_wsal_metadata.table.tmpr6002034.gz (160/61/fopen): adding to final database dump
+0350.049 (1) backup_2022-09-16-0538_TCS_Secure_2ea88fd52a8b-db-table-wp_wsal_metadata.table.tmpr6102034.gz (161/61/fopen): adding to final database dump
+0350.064 (1) backup_2022-09-16-0538_TCS_Secure_2ea88fd52a8b-db-table-wp_wsal_metadata.table.tmpr6202034.gz (162/61/fopen): adding to final database dump
+0350.079 (1) backup_2022-09-16-0538_TCS_Secure_2ea88fd52a8b-db-table-wp_wsal_metadata.table.tmpr6302034.gz (163/61/fopen): adding to final database dump
+0350.094 (1) backup_2022-09-16-0538_TCS_Secure_2ea88fd52a8b-db-table-wp_wsal_metadata.table.tmpr6402034.gz (164/61/fopen): adding to final database dump
+0350.110 (1) backup_2022-09-16-0538_TCS_Secure_2ea88fd52a8b-db-table-wp_wsal_metadata.table.tmpr6502034.gz (165/61/fopen): adding to final database dump
+0350.125 (1) backup_2022-09-16-0538_TCS_Secure_2ea88fd52a8b-db-table-wp_wsal_metadata.table.tmpr6602034.gz (166/61/fopen): adding to final database dump
+0350.140 (1) backup_2022-09-16-0538_TCS_Secure_2ea88fd52a8b-db-table-wp_wsal_metadata.table.tmpr6684525.gz (167/61/fopen): adding to final database dump
+0350.154 (1) backup_2022-09-16-0538_TCS_Secure_2ea88fd52a8b-db-table-wp_wsal_metadata.table.gz (168/61/fopen): adding to final database dump
+0350.157 (1) backup_2022-09-16-0538_TCS_Secure_2ea88fd52a8b-db-table-wp_wsal_occurrences.table.tmpr100000.gz (169/61/fopen): adding to final database dump
+0350.182 (1) backup_2022-09-16-0538_TCS_Secure_2ea88fd52a8b-db-table-wp_wsal_occurrences.table.tmpr200000.gz (170/61/fopen): adding to final database dump
+0350.223 (1) backup_2022-09-16-0538_TCS_Secure_2ea88fd52a8b-db-table-wp_wsal_occurrences.table.tmpr300000.gz (171/61/fopen): adding to final database dump
+0350.275 (1) backup_2022-09-16-0538_TCS_Secure_2ea88fd52a8b-db-table-wp_wsal_occurrences.table.tmpr400000.gz (172/61/fopen): adding to final database dump
+0350.304 (1) backup_2022-09-16-0538_TCS_Secure_2ea88fd52a8b-db-table-wp_wsal_occurrences.table.tmpr514323.gz (173/61/fopen): adding to final database dump
+0350.324 (1) backup_2022-09-16-0538_TCS_Secure_2ea88fd52a8b-db-table-wp_wsal_occurrences.table.tmpr614323.gz (174/61/fopen): adding to final database dump
+0350.347 (1) backup_2022-09-16-0538_TCS_Secure_2ea88fd52a8b-db-table-wp_wsal_occurrences.table.tmpr714323.gz (175/61/fopen): adding to final database dump
+0350.367 (1) backup_2022-09-16-0538_TCS_Secure_2ea88fd52a8b-db-table-wp_wsal_occurrences.table.tmpr728343.gz (176/61/fopen): adding to final database dump
+0350.373 (1) backup_2022-09-16-0538_TCS_Secure_2ea88fd52a8b-db-table-wp_wsal_occurrences.table.gz (177/61/fopen): adding to final database dump
+0350.378 (1) backup_2022-09-16-0538_TCS_Secure_2ea88fd52a8b-db.gz: finished writing out complete database file (111097.4 KB)
+0351.254 (1) Total database tables backed up: 61 (backup_2022-09-16-0538_TCS_Secure_2ea88fd52a8b-db.gz, size: 113763892, sha1: 2d7ad3ff851a2d469c5a60a59863310678fd11dd, sha256: 2af2eca09d76090ff0f2f93c84da85d0890e473cd258ed54a7e9fb06dbd050c3)
+0351.267 (1) backup_2022-09-16-0538_TCS_Secure_2ea88fd52a8b-plugins.zip: plugins: This file has already been successfully uploaded
+0351.270 (1) backup_2022-09-16-0538_TCS_Secure_2ea88fd52a8b-themes.zip: themes: This file has already been successfully uploaded
+0351.272 (1) backup_2022-09-16-0538_TCS_Secure_2ea88fd52a8b-db.gz: db: This file has not yet been successfully uploaded: will queue
+0351.275 (1) Saving backup history. Total backup size: 223.4 MB
+0351.282 (1) Requesting upload of the files that have not yet been successfully uploaded (1)
+0351.290 (1) Cloud backup selection (1/1): none with instance (1/1) (last)
+0351.294 (1) No remote despatch: user chose no remote backup service
+0351.296 (1) Recording as successfully uploaded: backup_2022-09-16-0538_TCS_Secure_2ea88fd52a8b-db.gz
+0351.306 (1) Retain: beginning examination of existing backup sets; user setting: retain_files=2, retain_db=2
+0351.309 (1) Number of backup sets in history: 2; groups (db): 1
+0351.312 (1) Examining (for databases) backup set with group_id=0, nonce=2ea88fd52a8b, datestamp=1663324704 (Sep 16 2022 10:38:24)
+0351.315 (1) This backup set is the backup set just made, so will not be deleted.
+0351.315 (1) Examining (for databases) backup set with group_id=0, nonce=70a6837a29a9, datestamp=1660304549 (Aug 12 2022 11:42:29)
+0351.315 (1) This backup set remains non-empty (f=1/d=1); will retain in history
+0351.318 (1) Number of backup sets in history: 2; groups (files): 1
+0351.320 (1) Examining (for files) backup set with nonce=2ea88fd52a8b, datestamp=1663324704 (Sep 16 2022 10:38:24)
+0351.320 (1) This backup set is the backup set just made, so will not be deleted.
+0351.323 (1) This backup set is the backup set just made, so will not be deleted.
+0351.323 (1) This backup set remains non-empty (f=1/d=1); will retain in history
+0351.325 (1) Examining (for files) backup set with nonce=70a6837a29a9, datestamp=1660304549 (Aug 12 2022 11:42:29)
+0351.325 (1) This backup set remains non-empty (f=1/d=1); will retain in history
+0351.325 (1) Retain: saving new backup history (sets now: 2) and finishing retain operation
+0351.332 (1) Resume backup (2ea88fd52a8b, 1): finish run
+0351.338 (1) [Info] Lock option (updraft_lock_2ea88fd52a8b, wp_options) released
+0351.343 (1) There were no errors in the uploads, so the 'resume' event (2) is being unscheduled
+0351.352 (1) No email will/can be sent - the user has not configured an email address.
+0351.355 (1) The backup apparently succeeded and is now complete

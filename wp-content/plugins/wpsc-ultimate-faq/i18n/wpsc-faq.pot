@@ -1,0 +1,87 @@
+# Copyright (C) 2025 SupportCandy
+# This file is distributed under the same license as the SupportCandy - FAQ plugin.
+msgid ""
+msgstr ""
+"Project-Id-Version: SupportCandy - FAQ 3.0.8\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wpsc-ultimate-faq\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2025-10-09T04:22:27+00:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.12.0\n"
+"X-Domain: wpsc-faq\n"
+
+#. Plugin Name of the plugin
+#: wpsc-ultimate-faq.php
+msgid "SupportCandy - FAQ"
+msgstr ""
+
+#. Plugin URI of the plugin
+#. Author URI of the plugin
+#: wpsc-ultimate-faq.php
+msgid "https://supportcandy.net/"
+msgstr ""
+
+#. Description of the plugin
+#: wpsc-ultimate-faq.php
+msgid "FAQ integration for SupportCandy!"
+msgstr ""
+
+#. Author of the plugin
+#: wpsc-ultimate-faq.php
+msgid "SupportCandy"
+msgstr ""
+
+#: includes/class-wpsc-faq-settings.php:68
+#: includes/class-wpsc-faq-settings.php:86
+#: includes/integrations/class-wpsc-acronix-faq.php:64
+#: includes/integrations/class-wpsc-acronix-faq.php:139
+#: includes/integrations/class-wpsc-acronix-faq.php:151
+#: includes/integrations/class-wpsc-betterdocs-faq.php:64
+#: includes/integrations/class-wpsc-betterdocs-faq.php:91
+#: includes/integrations/class-wpsc-betterdocs-faq.php:101
+#: includes/integrations/class-wpsc-easy-accordion-faq.php:62
+#: includes/integrations/class-wpsc-easy-accordion-faq.php:92
+#: includes/integrations/class-wpsc-easy-accordion-faq.php:101
+#: includes/integrations/class-wpsc-ultimate-faq.php:64
+#: includes/integrations/class-wpsc-ultimate-faq.php:139
+#: includes/integrations/class-wpsc-ultimate-faq.php:151
+msgid "FAQ"
+msgstr ""
+
+#: includes/integrations/class-wpsc-acronix-faq.php:150
+#: includes/integrations/class-wpsc-betterdocs-faq.php:100
+#: includes/integrations/class-wpsc-easy-accordion-faq.php:100
+#: includes/integrations/class-wpsc-ultimate-faq.php:150
+msgid "Insert"
+msgstr ""
+
+#: includes/integrations/class-wpsc-acronix-faq.php:167
+#: includes/integrations/class-wpsc-betterdocs-faq.php:117
+#: includes/integrations/class-wpsc-ultimate-faq.php:167
+msgid "Uncategorized"
+msgstr ""
+
+#: includes/integrations/class-wpsc-acronix-faq.php:172
+#: includes/integrations/class-wpsc-betterdocs-faq.php:123
+#: includes/integrations/class-wpsc-easy-accordion-faq.php:110
+#: includes/integrations/class-wpsc-ultimate-faq.php:172
+msgid "Link"
+msgstr ""
+
+#: includes/integrations/class-wpsc-acronix-faq.php:173
+#: includes/integrations/class-wpsc-betterdocs-faq.php:124
+#: includes/integrations/class-wpsc-easy-accordion-faq.php:111
+#: includes/integrations/class-wpsc-ultimate-faq.php:173
+msgid "Content"
+msgstr ""
+
+#: includes/integrations/class-wpsc-acronix-faq.php:252
+#: includes/integrations/class-wpsc-betterdocs-faq.php:234
+#: includes/integrations/class-wpsc-easy-accordion-faq.php:216
+#: includes/integrations/class-wpsc-ultimate-faq.php:247
+msgid "No FAQ suggestions found!"
+msgstr ""

@@ -1,0 +1,210 @@
+# Copyright (C) 2025 SupportCandy
+# This file is distributed under the same license as the SupportCandy - Timer plugin.
+msgid ""
+msgstr ""
+"Project-Id-Version: SupportCandy - Timer 3.1.6\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wpsc-timer\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2025-10-09T04:22:27+00:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.12.0\n"
+"X-Domain: wpsc-timer\n"
+
+#. Plugin Name of the plugin
+#: wpsc-timer.php
+msgid "SupportCandy - Timer"
+msgstr ""
+
+#. Plugin URI of the plugin
+#. Author URI of the plugin
+#: wpsc-timer.php
+msgid "https://supportcandy.net/"
+msgstr ""
+
+#. Description of the plugin
+#: wpsc-timer.php
+msgid "Timer add-on for SupportCandy"
+msgstr ""
+
+#. Author of the plugin
+#: wpsc-timer.php
+msgid "SupportCandy"
+msgstr ""
+
+#: class-wpsc-timer-installation.php:149
+#: includes/class-wpsc-timer-ag-settings.php:182
+#: includes/class-wpsc-timer-ag-settings.php:306
+#: includes/dashboard/widgets/class-wpsc-dbw-agents-active-timer.php:118
+#: includes/widget/class-wpsc-tw-timer.php:1243
+#: includes/widget/class-wpsc-tw-timer.php:1392
+msgid "Time Spent"
+msgstr ""
+
+#: class-wpsc-timer-installation.php:251
+#: includes/dashboard/widgets/class-wpsc-dbw-active-timer.php:123
+#: includes/settings/class-wpsc-timer-settings.php:68
+#: includes/settings/class-wpsc-timer-settings.php:89
+msgid "Timer"
+msgstr ""
+
+#: includes/class-wpsc-timer-ag-settings.php:64
+#: includes/class-wpsc-timer-ag-settings.php:92
+msgid "Modify others time log"
+msgstr ""
+
+#: includes/class-wpsc-timer-ag-settings.php:120
+msgid "Total time spent"
+msgstr ""
+
+#. translators: %1$s: time spent (e.g. 2h 3m)
+#: includes/class-wpsc-timer-ag-settings.php:234
+#, php-format
+msgid "Total time spent: %1$s"
+msgstr ""
+
+#: includes/class-wpsc-timer-ag-settings.php:261
+msgid "Timer logs"
+msgstr ""
+
+#: includes/class-wpsc-timer-ag-settings.php:304
+#: includes/widget/class-wpsc-tw-timer.php:625
+#: includes/widget/class-wpsc-tw-timer.php:1027
+#: includes/widget/class-wpsc-tw-timer.php:1241
+#: includes/widget/class-wpsc-tw-timer.php:1390
+#: includes/widget/class-wpsc-tw-timer.php:1545
+msgid "Author"
+msgstr ""
+
+#: includes/class-wpsc-timer-ag-settings.php:305
+#: includes/widget/class-wpsc-tw-timer.php:1242
+#: includes/widget/class-wpsc-tw-timer.php:1391
+msgid "Date Started"
+msgstr ""
+
+#: includes/dashboard/widgets/class-wpsc-dbw-active-timer.php:121
+#: includes/dashboard/widgets/class-wpsc-dbw-agents-active-timer.php:115
+msgid "Ticket"
+msgstr ""
+
+#: includes/dashboard/widgets/class-wpsc-dbw-active-timer.php:122
+#: includes/dashboard/widgets/class-wpsc-dbw-agents-active-timer.php:117
+msgid "Subject"
+msgstr ""
+
+#: includes/dashboard/widgets/class-wpsc-dbw-agents-active-timer.php:116
+msgid "Agent"
+msgstr ""
+
+#: includes/settings/class-wpsc-timer-settings.php:95
+msgid "Auto start on create new ticket"
+msgstr ""
+
+#: includes/settings/class-wpsc-timer-settings.php:104
+msgid "Default agent for auto start"
+msgstr ""
+
+#: includes/settings/class-wpsc-timer-settings.php:118
+msgid "Auto stop on close ticket"
+msgstr ""
+
+#: includes/widget/class-wpsc-tw-timer.php:195
+#: includes/widget/class-wpsc-tw-timer.php:326
+msgid "View logs"
+msgstr ""
+
+#: includes/widget/class-wpsc-tw-timer.php:235
+msgid "Pause"
+msgstr ""
+
+#: includes/widget/class-wpsc-tw-timer.php:236
+#: includes/widget/class-wpsc-tw-timer.php:241
+msgid "Stop Timer"
+msgstr ""
+
+#: includes/widget/class-wpsc-tw-timer.php:240
+msgid "Resume"
+msgstr ""
+
+#: includes/widget/class-wpsc-tw-timer.php:246
+msgid "Start Timer"
+msgstr ""
+
+#: includes/widget/class-wpsc-tw-timer.php:255
+msgid "Running"
+msgstr ""
+
+#: includes/widget/class-wpsc-tw-timer.php:256
+msgid "Paused"
+msgstr ""
+
+#: includes/widget/class-wpsc-tw-timer.php:257
+msgid "Stopped"
+msgstr ""
+
+#: includes/widget/class-wpsc-tw-timer.php:288
+msgid "Just started"
+msgstr ""
+
+#. translators: %1$s: time spent %2$s: timer status e.g. 1h 45m (Running)
+#: includes/widget/class-wpsc-tw-timer.php:298
+#, php-format
+msgid "%1$s (%2$s)"
+msgstr ""
+
+#: includes/widget/class-wpsc-tw-timer.php:308
+msgid "Stop"
+msgstr ""
+
+#: includes/widget/class-wpsc-tw-timer.php:325
+#: includes/widget/class-wpsc-tw-timer.php:586
+#: includes/widget/class-wpsc-tw-timer.php:987
+msgid "Add new log"
+msgstr ""
+
+#: includes/widget/class-wpsc-tw-timer.php:327
+msgid "Export logs"
+msgstr ""
+
+#: includes/widget/class-wpsc-tw-timer.php:331
+msgid "Reset timer"
+msgstr ""
+
+#: includes/widget/class-wpsc-tw-timer.php:596
+#: includes/widget/class-wpsc-tw-timer.php:997
+#: includes/widget/class-wpsc-tw-timer.php:1515
+msgid "Time spent"
+msgstr ""
+
+#: includes/widget/class-wpsc-tw-timer.php:606
+#: includes/widget/class-wpsc-tw-timer.php:1007
+#: includes/widget/class-wpsc-tw-timer.php:1525
+msgid "Date started"
+msgstr ""
+
+#: includes/widget/class-wpsc-tw-timer.php:644
+#: includes/widget/class-wpsc-tw-timer.php:1042
+#: includes/widget/class-wpsc-tw-timer.php:1244
+#: includes/widget/class-wpsc-tw-timer.php:1560
+msgid "Description"
+msgstr ""
+
+#: includes/widget/class-wpsc-tw-timer.php:703
+#: includes/widget/class-wpsc-tw-timer.php:1617
+msgid "Delete log"
+msgstr ""
+
+#: includes/widget/class-wpsc-tw-timer.php:1225
+msgid "Time logs"
+msgstr ""
+
+#: includes/widget/class-wpsc-tw-timer.php:1233
+msgid "Total time spent:"
+msgstr ""
+
+#: includes/widget/class-wpsc-tw-timer.php:1505
+msgid "Edit log"
+msgstr ""

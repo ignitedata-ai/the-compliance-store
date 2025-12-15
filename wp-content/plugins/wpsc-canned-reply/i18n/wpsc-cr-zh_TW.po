@@ -1,0 +1,125 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: wpsc-cr\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-05-24 10:48+0530\n"
+"PO-Revision-Date: 2023-05-24 10:51+0530\n"
+"Last-Translator: Alen Lin\n"
+"Language-Team: Chinese (Taiwan)\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Poedit 3.0.1\n"
+"X-Loco-Source-Locale: en-US\n"
+"X-Loco-Project-Id: 131496\n"
+"X-Loco-Api-Version: 1.0.26 20220711-1\n"
+
+#: includes/class-wpsc-canned-reply-data.php:35
+#: includes/class-wpsc-canned-reply-data.php:188
+#: includes/class-wpsc-canned-reply-data.php:243
+#: includes/class-wpsc-canned-reply-data.php:412
+#: includes/class-wpsc-canned-reply-data.php:470
+#: includes/class-wpsc-cr-categories.php:72
+#: includes/class-wpsc-cr-categories.php:165
+#: includes/class-wpsc-cr-categories.php:219
+#: includes/class-wpsc-cr-categories.php:244
+#: includes/class-wpsc-cr-categories.php:306
+#: includes/class-wpsc-cr-categories.php:335
+#: includes/class-wpsc-cr-categories.php:403
+#: includes/class-wpsc-cr-license.php:107
+#: includes/class-wpsc-cr-license.php:157
+msgid "Unauthorized access!"
+msgstr ""
+
+#: includes/class-wpsc-canned-reply-data.php:126
+#: includes/class-wpsc-canned-reply-data.php:345
+#: includes/class-wpsc-cr-frontend.php:128
+#: includes/class-wpsc-cr-frontend.php:281
+#: includes/class-wpsc-cr-submenu.php:76
+msgid "Categories"
+msgstr "類別"
+
+#: includes/class-wpsc-canned-reply-data.php:148
+#: includes/class-wpsc-canned-reply-data.php:372
+#: includes/class-wpsc-cr-submenu.php:77
+msgid "Visibility"
+msgstr "可視性"
+
+#: includes/class-wpsc-canned-reply-data.php:152
+#: includes/class-wpsc-canned-reply-data.php:375
+#: includes/class-wpsc-cr-submenu.php:86
+msgid "Private"
+msgstr "私人的"
+
+#: includes/class-wpsc-canned-reply-data.php:153
+#: includes/class-wpsc-canned-reply-data.php:376
+#: includes/class-wpsc-cr-submenu.php:86
+msgid "Public"
+msgstr "公開"
+
+#: includes/class-wpsc-cr-categories.php:60
+#: includes/class-wpsc-cr-categories.php:79
+msgid "Canned Reply Categories"
+msgstr "罐頭訊息回覆類別"
+
+#: includes/class-wpsc-cr-categories.php:224
+#: includes/class-wpsc-cr-categories.php:251
+#: includes/class-wpsc-cr-categories.php:311
+#: includes/class-wpsc-cr-categories.php:316
+#: includes/class-wpsc-cr-categories.php:340
+#: includes/class-wpsc-cr-categories.php:412
+#: includes/class-wpsc-cr-categories.php:417
+#: includes/class-wpsc-cr-categories.php:422
+#: includes/class-wpsc-cr-categories.php:427
+#: includes/class-wpsc-cr-license.php:112
+#: includes/class-wpsc-cr-license.php:162
+msgid "Bad request!"
+msgstr ""
+
+#: includes/class-wpsc-cr-categories.php:343
+msgid "Delete canned reply category"
+msgstr "刪除罐頭訊息回覆類別"
+
+#: includes/class-wpsc-cr-categories.php:353
+msgid "Replace with"
+msgstr "替換為"
+
+#: includes/class-wpsc-cr-categories.php:378
+msgid "Submit"
+msgstr "提交"
+
+#: includes/class-wpsc-cr-categories.php:381
+msgid "Cancel"
+msgstr "取消"
+
+#: includes/class-wpsc-cr-frontend.php:83
+#: includes/class-wpsc-cr-frontend.php:118
+#: includes/class-wpsc-cr-frontend.php:240
+#: includes/class-wpsc-cr-submenu.php:29 includes/class-wpsc-cr-submenu.php:30
+#: includes/class-wpsc-cr-submenu.php:49
+msgid "Canned Reply"
+msgstr "罐頭訊息回覆"
+
+#: includes/class-wpsc-cr-frontend.php:216
+#: includes/class-wpsc-cr-frontend.php:262
+#: includes/class-wpsc-cr-frontend.php:391
+msgid "Unauthorized"
+msgstr ""
+
+#: includes/class-wpsc-cr-submenu.php:75
+msgid "Author"
+msgstr "作者"
+
+#~ msgid "SupportCandy - Canned Reply"
+#~ msgstr "罐頭訊息回覆"
+
+#~ msgid "https://supportcandy.net/"
+#~ msgstr "https://supportcandy.net/"
+
+#~ msgid "Canned Reply add-on for SupportCandy"
+#~ msgstr "罐頭訊息回覆外掛套件"
+
+#~ msgid "SupportCandy"
+#~ msgstr "客服系統"

@@ -1,0 +1,130 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: SupportCandy - Canned Reply\n"
+"POT-Creation-Date: 2023-05-24 10:48+0530\n"
+"PO-Revision-Date: 2023-05-24 10:50+0530\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: sv_SE\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 3.0.1\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-Flags-xgettext: --add-comments=translators:\n"
+"X-Poedit-WPHeader: wpsc-canned-reply.php\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;"
+"_n_noop:1,2;_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.min.js\n"
+
+#: includes/class-wpsc-canned-reply-data.php:35
+#: includes/class-wpsc-canned-reply-data.php:188
+#: includes/class-wpsc-canned-reply-data.php:243
+#: includes/class-wpsc-canned-reply-data.php:412
+#: includes/class-wpsc-canned-reply-data.php:470
+#: includes/class-wpsc-cr-categories.php:72
+#: includes/class-wpsc-cr-categories.php:165
+#: includes/class-wpsc-cr-categories.php:219
+#: includes/class-wpsc-cr-categories.php:244
+#: includes/class-wpsc-cr-categories.php:306
+#: includes/class-wpsc-cr-categories.php:335
+#: includes/class-wpsc-cr-categories.php:403
+#: includes/class-wpsc-cr-license.php:107
+#: includes/class-wpsc-cr-license.php:157
+msgid "Unauthorized access!"
+msgstr ""
+
+#: includes/class-wpsc-canned-reply-data.php:126
+#: includes/class-wpsc-canned-reply-data.php:345
+#: includes/class-wpsc-cr-frontend.php:128
+#: includes/class-wpsc-cr-frontend.php:281
+#: includes/class-wpsc-cr-submenu.php:76
+msgid "Categories"
+msgstr "Kategorier"
+
+#: includes/class-wpsc-canned-reply-data.php:148
+#: includes/class-wpsc-canned-reply-data.php:372
+#: includes/class-wpsc-cr-submenu.php:77
+msgid "Visibility"
+msgstr "Visibilitet"
+
+#: includes/class-wpsc-canned-reply-data.php:152
+#: includes/class-wpsc-canned-reply-data.php:375
+#: includes/class-wpsc-cr-submenu.php:86
+msgid "Private"
+msgstr "Privat"
+
+#: includes/class-wpsc-canned-reply-data.php:153
+#: includes/class-wpsc-canned-reply-data.php:376
+#: includes/class-wpsc-cr-submenu.php:86
+msgid "Public"
+msgstr "Publik"
+
+#: includes/class-wpsc-cr-categories.php:60
+#: includes/class-wpsc-cr-categories.php:79
+msgid "Canned Reply Categories"
+msgstr "Standard svarskategorier"
+
+#: includes/class-wpsc-cr-categories.php:224
+#: includes/class-wpsc-cr-categories.php:251
+#: includes/class-wpsc-cr-categories.php:311
+#: includes/class-wpsc-cr-categories.php:316
+#: includes/class-wpsc-cr-categories.php:340
+#: includes/class-wpsc-cr-categories.php:412
+#: includes/class-wpsc-cr-categories.php:417
+#: includes/class-wpsc-cr-categories.php:422
+#: includes/class-wpsc-cr-categories.php:427
+#: includes/class-wpsc-cr-license.php:112
+#: includes/class-wpsc-cr-license.php:162
+msgid "Bad request!"
+msgstr ""
+
+#: includes/class-wpsc-cr-categories.php:343
+msgid "Delete canned reply category"
+msgstr "Radera standard svarskategorier"
+
+#: includes/class-wpsc-cr-categories.php:353
+msgid "Replace with"
+msgstr "Ersätt med"
+
+#: includes/class-wpsc-cr-categories.php:378
+msgid "Submit"
+msgstr "Skicka/Spara"
+
+#: includes/class-wpsc-cr-categories.php:381
+msgid "Cancel"
+msgstr "Avbryt"
+
+#: includes/class-wpsc-cr-frontend.php:83
+#: includes/class-wpsc-cr-frontend.php:118
+#: includes/class-wpsc-cr-frontend.php:240
+#: includes/class-wpsc-cr-submenu.php:29 includes/class-wpsc-cr-submenu.php:30
+#: includes/class-wpsc-cr-submenu.php:49
+msgid "Canned Reply"
+msgstr "Standardsvar"
+
+#: includes/class-wpsc-cr-frontend.php:216
+#: includes/class-wpsc-cr-frontend.php:262
+#: includes/class-wpsc-cr-frontend.php:391
+msgid "Unauthorized"
+msgstr ""
+
+#: includes/class-wpsc-cr-submenu.php:75
+msgid "Author"
+msgstr "Författare"
+
+#~ msgid "SupportCandy - Canned Reply"
+#~ msgstr "SupportCandy - Standardsvar"
+
+#~ msgid "https://supportcandy.net/"
+#~ msgstr "https://supportcandy.net/"
+
+#~ msgid "Canned Reply add-on for SupportCandy"
+#~ msgstr "Standardsvar wordpress tillägg för SupportCandy"
+
+#~ msgid "SupportCandy"
+#~ msgstr "SupportCandy"

@@ -1,0 +1,33 @@
+.wpsc-timer-count{
+	font-size: 22px;
+	padding: 5px 0 10px 0;
+	font-weight: 600;
+}
+
+.wpsc-tln {
+	font-size: 14px;
+	font-weight: normal;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.wpsc-tlt {
+	font-size: 10px;
+	font-weight: 300;
+	font-style: italic;
+}
+
+.wpsc-stop-timer {
+	float: right;
+	width: 18px;
+	height: 18px;
+	cursor: pointer;
+	margin: 0px 0px 0px 3px;
+	box-sizing: border-box;
+}
+
+.wpsc-timer-actions svg {
+	color: #777;
+	height: 16px !important;
+}

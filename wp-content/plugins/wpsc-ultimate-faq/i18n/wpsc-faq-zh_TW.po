@@ -1,0 +1,80 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: wpsc-faq\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-05-24 11:01+0530\n"
+"PO-Revision-Date: 2023-05-24 11:03+0530\n"
+"Last-Translator: Alen Lin\n"
+"Language-Team: Chinese (Taiwan)\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Poedit 3.0.1\n"
+"X-Loco-Source-Locale: en-US\n"
+"X-Loco-Project-Id: 131504\n"
+"X-Loco-Api-Version: 1.0.26 20220711-1\n"
+
+#: includes/class-wpsc-faq-license.php:109
+#: includes/class-wpsc-faq-license.php:159
+#: includes/class-wpsc-faq-settings.php:82
+#: includes/class-wpsc-faq-settings.php:152
+#: includes/class-wpsc-faq-settings.php:177
+#, fuzzy
+#| msgid "Uncategorized"
+msgid "Unauthorized access!"
+msgstr "未分類"
+
+#: includes/class-wpsc-faq-license.php:114
+#: includes/class-wpsc-faq-license.php:164
+msgid "Bad request!"
+msgstr ""
+
+#: includes/class-wpsc-faq-settings.php:68
+#: includes/class-wpsc-faq-settings.php:86
+#: includes/integrations/class-wpsc-acronix-faq.php:64
+#: includes/integrations/class-wpsc-acronix-faq.php:139
+#: includes/integrations/class-wpsc-acronix-faq.php:151
+#: includes/integrations/class-wpsc-ultimate-faq.php:64
+#: includes/integrations/class-wpsc-ultimate-faq.php:139
+#: includes/integrations/class-wpsc-ultimate-faq.php:151
+msgid "FAQ"
+msgstr "常見問題"
+
+#: includes/integrations/class-wpsc-acronix-faq.php:150
+#: includes/integrations/class-wpsc-ultimate-faq.php:150
+msgid "Insert"
+msgstr "插入"
+
+#: includes/integrations/class-wpsc-acronix-faq.php:167
+#: includes/integrations/class-wpsc-ultimate-faq.php:167
+msgid "Uncategorized"
+msgstr "未分類"
+
+#: includes/integrations/class-wpsc-acronix-faq.php:172
+#: includes/integrations/class-wpsc-ultimate-faq.php:172
+msgid "Link"
+msgstr "連結"
+
+#: includes/integrations/class-wpsc-acronix-faq.php:173
+#: includes/integrations/class-wpsc-ultimate-faq.php:173
+msgid "Content"
+msgstr "內容"
+
+#: includes/integrations/class-wpsc-acronix-faq.php:252
+#: includes/integrations/class-wpsc-ultimate-faq.php:247
+msgid "No FAQ suggestions found!"
+msgstr "找不到常見問題建議！"
+
+#~ msgid "SupportCandy - FAQ"
+#~ msgstr "常見問題"
+
+#~ msgid "https://supportcandy.net/"
+#~ msgstr "https://supportcandy.net/"
+
+#~ msgid "FAQ integration for SupportCandy!"
+#~ msgstr "常見問題整合外掛套件!"
+
+#~ msgid "SupportCandy"
+#~ msgstr "客服系統"

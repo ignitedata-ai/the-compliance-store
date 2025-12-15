@@ -1,0 +1,80 @@
+# Copyright (C) 2025 SupportCandy
+# This file is distributed under the same license as the SupportCandy - Canned Reply plugin.
+msgid ""
+msgstr ""
+"Project-Id-Version: SupportCandy - Canned Reply 3.1.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wpsc-canned-reply\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2025-10-09T04:22:24+00:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.12.0\n"
+"X-Domain: wpsc-cr\n"
+
+#. Plugin Name of the plugin
+#: wpsc-canned-reply.php
+msgid "SupportCandy - Canned Reply"
+msgstr ""
+
+#. Plugin URI of the plugin
+#. Author URI of the plugin
+#: wpsc-canned-reply.php
+msgid "https://supportcandy.net/"
+msgstr ""
+
+#. Description of the plugin
+#: wpsc-canned-reply.php
+msgid "Canned Reply add-on for SupportCandy"
+msgstr ""
+
+#. Author of the plugin
+#: wpsc-canned-reply.php
+msgid "SupportCandy"
+msgstr ""
+
+#: includes/class-wpsc-canned-reply-data.php:126
+#: includes/class-wpsc-canned-reply-data.php:344
+#: includes/class-wpsc-cr-frontend.php:128
+#: includes/class-wpsc-cr-frontend.php:296
+#: includes/class-wpsc-cr-submenu.php:77
+msgid "Categories"
+msgstr ""
+
+#: includes/class-wpsc-canned-reply-data.php:148
+#: includes/class-wpsc-canned-reply-data.php:371
+#: includes/class-wpsc-cr-submenu.php:78
+msgid "Visibility"
+msgstr ""
+
+#: includes/class-wpsc-canned-reply-data.php:151
+#: includes/class-wpsc-canned-reply-data.php:374
+#: includes/class-wpsc-cr-submenu.php:87
+msgid "Private"
+msgstr ""
+
+#: includes/class-wpsc-canned-reply-data.php:152
+#: includes/class-wpsc-canned-reply-data.php:375
+#: includes/class-wpsc-cr-submenu.php:87
+msgid "Public"
+msgstr ""
+
+#: includes/class-wpsc-cr-categories.php:60
+#: includes/class-wpsc-cr-categories.php:79
+msgid "Canned Reply Categories"
+msgstr ""
+
+#: includes/class-wpsc-cr-frontend.php:83
+#: includes/class-wpsc-cr-frontend.php:118
+#: includes/class-wpsc-cr-frontend.php:255
+#: includes/class-wpsc-cr-submenu.php:29
+#: includes/class-wpsc-cr-submenu.php:30
+#: includes/class-wpsc-cr-submenu.php:50
+msgid "Canned Reply"
+msgstr ""
+
+#: includes/class-wpsc-cr-submenu.php:76
+msgid "Author"
+msgstr ""
