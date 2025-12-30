@@ -40,7 +40,21 @@ final class ExactMetrics_Report_Traffic_Source_Medium extends ExactMetrics_Repor
 	 * @return mixed
 	 */
 	public function prepare_report_data( $data ) {
-		return apply_filters( 'exactmetrics_report_traffic_sessions_chart_data', $data, $this->start_date, $this->end_date );
+		$data = apply_filters( 'exactmetrics_report_traffic_sessions_chart_data', $data, $this->start_date, $this->end_date );
+	
+		if ( ! empty( $data['data'] ) ) {
+			if ( empty( $data['data']['galinks'] ) || ! is_array( $data['data']['galinks'] ) ) {
+				$data['data']['galinks'] = array();
+			}
+
+			// Link to GA4 Traffic Acquisition with Source/Medium dimension selected.
+			$data['data']['galinks']['traffic_source_medium'] = $this->get_ga_report_url(
+				'lifecycle-traffic-acquisition',
+				$data['data'],
+				'_r.explorerCard..seldim=["sessionSourceMedium"]'
+			);
+		}
+		return $data;
 	}
 
 }

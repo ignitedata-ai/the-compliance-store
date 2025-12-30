@@ -1920,6 +1920,12 @@ class Template {
                         }
                     }
                 break;
+                case 'custom-top':
+                    $button_html = apply_filters( 'wpforo_template_buttons_top', $button_html, $button, $forum, $topic, $post );
+                break;
+                case 'custom-bottom':
+                    $button_html = apply_filters( 'wpforo_template_buttons_bottom', $button_html, $button, $forum, $topic, $post );
+                break;
                 default:
                     $bh = apply_filters( 'wpforo_template_buttons', '', $button, $forum, $topic, $post );
                     if( $bh ) $button_html[] = $bh;

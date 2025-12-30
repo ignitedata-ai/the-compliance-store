@@ -1504,7 +1504,7 @@ if(!function_exists('bridge_core_demos_list')) {
 				'title' => esc_html__('Creative Agency', 'bridge-core'),
 				'rev-sliders' => array(),
 				'layer-sliders' => array(),
-				'required-plugins' => array('js_composer', 'contact-form-7', 'qode-instagram-widget'),
+				'required-plugins' => array('js_composer', 'contact-form-7'),
 				'categories' => array(
 					'wpbakery'  => esc_html__('WPBakery', 'bridge-core'),
 					'business'	=> esc_html__('Business', 'bridge-core')
@@ -1736,7 +1736,7 @@ if(!function_exists('bridge_core_demos_list')) {
 				'title' => esc_html__('Metro Blog', 'bridge-core'),
 				'rev-sliders' => array(),
 				'layer-sliders' => array(),
-				'required-plugins' => array('js_composer', 'contact-form-7', 'qode-instagram-widget'),
+				'required-plugins' => array('js_composer', 'contact-form-7'),
 				'categories' => array(
 					'wpbakery'  => esc_html__('WPBakery', 'bridge-core'),
 					'blog'	=> esc_html__('Blog', 'bridge-core')
@@ -1746,7 +1746,7 @@ if(!function_exists('bridge_core_demos_list')) {
 				'title' => esc_html__('Nature Blog', 'bridge-core'),
 				'rev-sliders' => array(),
 				'layer-sliders' => array(),
-				'required-plugins' => array('js_composer', 'contact-form-7', 'qode-instagram-widget'),
+				'required-plugins' => array('js_composer', 'contact-form-7'),
 				'categories' => array(
 					'wpbakery'  => esc_html__('WPBakery', 'bridge-core'),
 					'blog'	=> esc_html__('Blog', 'bridge-core')
@@ -1756,7 +1756,7 @@ if(!function_exists('bridge_core_demos_list')) {
 				'title' => esc_html__('Modern Blog', 'bridge-core'),
 				'rev-sliders' => array(),
 				'layer-sliders' => array(),
-				'required-plugins' => array('js_composer', 'contact-form-7', 'qode-instagram-widget'),
+				'required-plugins' => array('js_composer', 'contact-form-7'),
 				'categories' => array(
 					'wpbakery'  => esc_html__('WPBakery', 'bridge-core'),
 					'blog'	=> esc_html__('Blog', 'bridge-core')
@@ -1786,7 +1786,7 @@ if(!function_exists('bridge_core_demos_list')) {
 				'title' => esc_html__('Fashion Blog', 'bridge-core'),
 				'rev-sliders' => array(),
 				'layer-sliders' => array(),
-				'required-plugins' => array('js_composer', 'contact-form-7', 'qode-instagram-widget'),
+				'required-plugins' => array('js_composer', 'contact-form-7'),
 				'categories' => array(
 					'wpbakery'  => esc_html__('WPBakery', 'bridge-core'),
 					'blog'	=> esc_html__('Blog', 'bridge-core')
@@ -1806,7 +1806,7 @@ if(!function_exists('bridge_core_demos_list')) {
 				'title' => esc_html__('Chequered Blog', 'bridge-core'),
 				'rev-sliders' => array(),
 				'layer-sliders' => array(),
-				'required-plugins' => array('js_composer', 'contact-form-7', 'qode-instagram-widget'),
+				'required-plugins' => array('js_composer', 'contact-form-7'),
 				'categories' => array(
 					'wpbakery'  => esc_html__('WPBakery', 'bridge-core'),
 					'blog'	=> esc_html__('Blog', 'bridge-core')
@@ -1912,7 +1912,7 @@ if(!function_exists('bridge_core_demos_list')) {
 				'title' => esc_html__('Developer', 'bridge-core'),
 				'rev-sliders' => array(),
 				'layer-sliders' => array(),
-				'required-plugins' => array('js_composer', 'contact-form-7', 'qode-instagram-widget', 'qode-twitter-feed'),
+				'required-plugins' => array('js_composer', 'contact-form-7', 'qode-twitter-feed'),
 				'categories' => array(
 					'wpbakery'  => esc_html__('WPBakery', 'bridge-core'),
 					'creative'	=> esc_html__('Creative', 'bridge-core'),
@@ -1969,7 +1969,7 @@ if(!function_exists('bridge_core_demos_list')) {
 				'title' => esc_html__('Sportswear', 'bridge-core'),
 				'rev-sliders' => array(),
 				'layer-sliders' => array(),
-				'required-plugins' => array('js_composer', 'contact-form-7', 'woocommerce', 'sellkit', 'qode-instagram-widget'),
+				'required-plugins' => array('js_composer', 'contact-form-7', 'woocommerce', 'sellkit'),
 				'categories' => array(
 					'wpbakery'  => esc_html__('WPBakery', 'bridge-core'),
 					'business'	=> esc_html__('Business', 'bridge-core'),
@@ -1992,7 +1992,7 @@ if(!function_exists('bridge_core_demos_list')) {
 				'title' => esc_html__('Boutique', 'bridge-core'),
 				'rev-sliders' => array(),
 				'layer-sliders' => array(),
-				'required-plugins' => array('js_composer', 'contact-form-7', 'woocommerce', 'sellkit', 'qode-instagram-widget'),
+				'required-plugins' => array('js_composer', 'contact-form-7', 'woocommerce', 'sellkit'),
 				'categories' => array(
 					'wpbakery'  => esc_html__('WPBakery', 'bridge-core'),
 					'shop'		=> esc_html__('Shop', 'bridge-core')
@@ -2002,7 +2002,7 @@ if(!function_exists('bridge_core_demos_list')) {
 				'title' => esc_html__('Summer Shop', 'bridge-core'),
 				'rev-sliders' => array(),
 				'layer-sliders' => array(),
-				'required-plugins' => array('js_composer', 'contact-form-7', 'woocommerce', 'sellkit', 'qode-instagram-widget', 'qode-twitter-feed'),
+				'required-plugins' => array('js_composer', 'contact-form-7', 'woocommerce', 'sellkit', 'qode-twitter-feed'),
 				'categories' => array(
 					'wpbakery'  => esc_html__('WPBakery', 'bridge-core'),
 					'shop'		=> esc_html__('Shop', 'bridge-core')
@@ -2023,7 +2023,7 @@ if(!function_exists('bridge_core_demos_list')) {
 				'title' => esc_html__('Leather Shop', 'bridge-core'),
 				'rev-sliders' => array(),
 				'layer-sliders' => array(),
-				'required-plugins' => array('js_composer', 'contact-form-7', 'woocommerce', 'sellkit', 'qode-instagram-widget'),
+				'required-plugins' => array('js_composer', 'contact-form-7', 'woocommerce', 'sellkit'),
 				'categories' => array(
 					'wpbakery'  => esc_html__('WPBakery', 'bridge-core'),
 					'business'	=> esc_html__('Business', 'bridge-core'),
@@ -2066,7 +2066,7 @@ if(!function_exists('bridge_core_demos_list')) {
 				'title' => esc_html__('Skater', 'bridge-core'),
 				'rev-sliders' => array(),
 				'layer-sliders' => array(),
-				'required-plugins' => array('js_composer', 'contact-form-7', 'woocommerce', 'sellkit', 'qode-instagram-widget'),
+				'required-plugins' => array('js_composer', 'contact-form-7', 'woocommerce', 'sellkit'),
 				'categories' => array(
 					'wpbakery'  => esc_html__('WPBakery', 'bridge-core'),
 					'business'	=> esc_html__('Business', 'bridge-core'),
@@ -2088,7 +2088,7 @@ if(!function_exists('bridge_core_demos_list')) {
 				'title' => esc_html__('Fashion Agency', 'bridge-core'),
 				'rev-sliders' => array(),
 				'layer-sliders' => array(),
-				'required-plugins' => array('js_composer', 'contact-form-7', 'qode-instagram-widget'),
+				'required-plugins' => array('js_composer', 'contact-form-7'),
 				'categories' => array(
 					'wpbakery'  => esc_html__('WPBakery', 'bridge-core'),
 					'business'	=> esc_html__('Business', 'bridge-core'),
@@ -2112,7 +2112,7 @@ if(!function_exists('bridge_core_demos_list')) {
 				'title' => esc_html__('Artist Portfolio', 'bridge-core'),
 				'rev-sliders' => array(),
 				'layer-sliders' => array(),
-				'required-plugins' => array('js_composer', 'contact-form-7', 'woocommerce', 'sellkit', 'qode-instagram-widget'),
+				'required-plugins' => array('js_composer', 'contact-form-7', 'woocommerce', 'sellkit'),
 				'categories' => array(
 					'wpbakery'  => esc_html__('WPBakery', 'bridge-core'),
 					'creative'	=> esc_html__('Creative', 'bridge-core'),
@@ -2124,7 +2124,7 @@ if(!function_exists('bridge_core_demos_list')) {
 				'title' => esc_html__('Hipster Agency', 'bridge-core'),
 				'rev-sliders' => array(),
 				'layer-sliders' => array(),
-				'required-plugins' => array('js_composer', 'contact-form-7', 'qode-instagram-widget'),
+				'required-plugins' => array('js_composer', 'contact-form-7'),
 				'categories' => array(
 					'wpbakery'  => esc_html__('WPBakery', 'bridge-core'),
 					'business'	=> esc_html__('Business', 'bridge-core'),
@@ -2135,7 +2135,7 @@ if(!function_exists('bridge_core_demos_list')) {
 				'title' => esc_html__('Barber', 'bridge-core'),
 				'rev-sliders' => array(),
 				'layer-sliders' => array(),
-				'required-plugins' => array('js_composer', 'contact-form-7', 'qode-instagram-widget'),
+				'required-plugins' => array('js_composer', 'contact-form-7'),
 				'categories' => array(
 					'wpbakery'  => esc_html__('WPBakery', 'bridge-core'),
 					'business'	=> esc_html__('Business', 'bridge-core'),
@@ -2157,7 +2157,7 @@ if(!function_exists('bridge_core_demos_list')) {
 				'title' => esc_html__('Skate Shop', 'bridge-core'),
 				'rev-sliders' => array(),
 				'layer-sliders' => array(),
-				'required-plugins' => array('js_composer', 'contact-form-7', 'woocommerce', 'sellkit', 'qode-instagram-widget'),
+				'required-plugins' => array('js_composer', 'contact-form-7', 'woocommerce', 'sellkit'),
 				'categories' => array(
 					'wpbakery'  => esc_html__('WPBakery', 'bridge-core'),
 					'shop'		=> esc_html__('Shop', 'bridge-core')
@@ -2167,7 +2167,7 @@ if(!function_exists('bridge_core_demos_list')) {
 				'title' => esc_html__('Outdoors', 'bridge-core'),
 				'rev-sliders' => array(),
 				'layer-sliders' => array(),
-				'required-plugins' => array('js_composer', 'contact-form-7', 'qode-instagram-widget'),
+				'required-plugins' => array('js_composer', 'contact-form-7'),
 				'categories' => array(
 					'wpbakery'  => esc_html__('WPBakery', 'bridge-core'),
 					'creative'	=> esc_html__('Creative', 'bridge-core'),
@@ -2181,7 +2181,7 @@ if(!function_exists('bridge_core_demos_list')) {
 				'title' => esc_html__('Jazz Bar', 'bridge-core'),
 				'rev-sliders' => array(),
 				'layer-sliders' => array(),
-				'required-plugins' => array('js_composer', 'contact-form-7', 'qode-instagram-widget'),
+				'required-plugins' => array('js_composer', 'contact-form-7'),
 				'categories' => array(
 					'wpbakery'  => esc_html__('WPBakery', 'bridge-core'),
 					'creative'	=> esc_html__('Creative', 'bridge-core'),
@@ -2192,7 +2192,7 @@ if(!function_exists('bridge_core_demos_list')) {
 				'title' => esc_html__('Hosting', 'bridge-core'),
 				'rev-sliders' => array('home_slider.zip'),
 				'layer-sliders' => array(),
-				'required-plugins' => array('js_composer', 'contact-form-7', 'qode-instagram-widget'),
+				'required-plugins' => array('js_composer', 'contact-form-7'),
 				'categories' => array(
 					'wpbakery'  => esc_html__('WPBakery', 'bridge-core'),
 					'business'	=> esc_html__('Business', 'bridge-core'),
@@ -2289,7 +2289,7 @@ if(!function_exists('bridge_core_demos_list')) {
 				'title' => esc_html__('Travel Agency', 'bridge-core'),
 				'rev-sliders' => array(),
 				'layer-sliders' => array(),
-				'required-plugins' => array('js_composer', 'contact-form-7', 'qode-instagram-widget'),
+				'required-plugins' => array('js_composer', 'contact-form-7'),
 				'categories' => array(
 					'wpbakery'  => esc_html__('WPBakery', 'bridge-core'),
 					'business'	=> esc_html__('Business', 'bridge-core'),
@@ -2341,7 +2341,7 @@ if(!function_exists('bridge_core_demos_list')) {
 				'title' => esc_html__('Church', 'bridge-core'),
 				'rev-sliders' => array('home-slider.zip'),
 				'layer-sliders' => array(),
-				'required-plugins' => array('js_composer', 'revslider', 'contact-form-7', 'qode-instagram-widget', 'qode-twitter-feed', 'timetable'),
+				'required-plugins' => array('js_composer', 'revslider', 'contact-form-7', 'qode-twitter-feed', 'timetable'),
 				'categories' => array(
 					'wpbakery'  => esc_html__('WPBakery', 'bridge-core'),
 					'business'	=> esc_html__('Business', 'bridge-core')
@@ -2491,7 +2491,7 @@ if(!function_exists('bridge_core_demos_list')) {
 				'title' => esc_html__('City Listing', 'bridge-core'),
 				'rev-sliders' => array(),
 				'layer-sliders' => array(),
-				'required-plugins' => array('js_composer', 'contact-form-7', 'qode-instagram-widget', 'qode-membership', 'qode-listing', 'woocommerce', 'sellkit', 'wp-job-manager', 'wp-job-manager-locations'),
+				'required-plugins' => array('js_composer', 'contact-form-7', 'qode-membership', 'qode-listing', 'woocommerce', 'sellkit', 'wp-job-manager', 'wp-job-manager-locations'),
 				'categories' => array(
 					'wpbakery'  => esc_html__('WPBakery', 'bridge-core'),
 					'business'	=> esc_html__('Business', 'bridge-core'),
@@ -2505,7 +2505,7 @@ if(!function_exists('bridge_core_demos_list')) {
 				'title' => esc_html__('Music Magazine', 'bridge-core'),
 				'rev-sliders' => array(),
 				'layer-sliders' => array(),
-				'required-plugins' => array('js_composer', 'contact-form-7', 'qode-instagram-widget', 'qode-twitter-feed', 'qode-news'),
+				'required-plugins' => array('js_composer', 'contact-form-7', 'qode-twitter-feed', 'qode-news'),
 				'categories' => array(
 					'wpbakery'  => esc_html__('WPBakery', 'bridge-core'),
 					'blog'		=> esc_html__('Blog', 'bridge-core'),
@@ -2635,7 +2635,7 @@ if(!function_exists('bridge_core_demos_list')) {
 				'title' => esc_html__('Winter Sports', 'bridge-core'),
 				'rev-sliders' => array('home-slider.zip'),
 				'layer-sliders' => array(),
-				'required-plugins' => array('js_composer', 'revslider', 'contact-form-7', 'qode-instagram-widget'),
+				'required-plugins' => array('js_composer', 'revslider', 'contact-form-7'),
 				'categories' => array(
 					'wpbakery'  => esc_html__('WPBakery', 'bridge-core'),
 					'business'	=> esc_html__('Business', 'bridge-core')
@@ -2655,7 +2655,7 @@ if(!function_exists('bridge_core_demos_list')) {
 				'title' => esc_html__('Yoga Center', 'bridge-core'),
 				'rev-sliders' => array('home.zip'),
 				'layer-sliders' => array(),
-				'required-plugins' => array('js_composer', 'revslider', 'contact-form-7', 'qode-instagram-widget', 'qode-twitter-feed', 'timetable'),
+				'required-plugins' => array('js_composer', 'revslider', 'contact-form-7', 'qode-twitter-feed', 'timetable'),
 				'categories' => array(
 					'wpbakery'  => esc_html__('WPBakery', 'bridge-core'),
 					'business'	=> esc_html__('Business', 'bridge-core')
@@ -2686,7 +2686,7 @@ if(!function_exists('bridge_core_demos_list')) {
 				'title' => esc_html__('Hair Salon', 'bridge-core'),
 				'rev-sliders' => array('home.zip'),
 				'layer-sliders' => array(),
-				'required-plugins' => array('js_composer', 'revslider', 'contact-form-7', 'qode-instagram-widget'),
+				'required-plugins' => array('js_composer', 'revslider', 'contact-form-7'),
 				'categories' => array(
 					'wpbakery'  => esc_html__('WPBakery', 'bridge-core'),
 					'business'	=> esc_html__('Business', 'bridge-core')
@@ -2730,7 +2730,7 @@ if(!function_exists('bridge_core_demos_list')) {
 				'title' => esc_html__('Beauty Center', 'bridge-core'),
 				'rev-sliders' => array('home-slider.zip'),
 				'layer-sliders' => array(),
-				'required-plugins' => array('js_composer', 'revslider', 'contact-form-7', 'qode-instagram-widget', 'qode-twitter-feed'),
+				'required-plugins' => array('js_composer', 'revslider', 'contact-form-7', 'qode-twitter-feed'),
 				'categories' => array(
 					'wpbakery'  => esc_html__('WPBakery', 'bridge-core'),
 					'business'	=> esc_html__('Business', 'bridge-core')
@@ -2740,7 +2740,7 @@ if(!function_exists('bridge_core_demos_list')) {
 				'title' => esc_html__('SEO Company', 'bridge-core'),
 				'rev-sliders' => array('home-slider.zip'),
 				'layer-sliders' => array(),
-				'required-plugins' => array('js_composer', 'revslider', 'contact-form-7', 'qode-instagram-widget', 'qode-twitter-feed'),
+				'required-plugins' => array('js_composer', 'revslider', 'contact-form-7', 'qode-twitter-feed'),
 				'categories' => array(
 					'wpbakery'  => esc_html__('WPBakery', 'bridge-core'),
 					'business'	=> esc_html__('Business', 'bridge-core')
@@ -2805,7 +2805,7 @@ if(!function_exists('bridge_core_demos_list')) {
 				'title' => esc_html__('Moving Company', 'bridge-core'),
 				'rev-sliders' => array('home.zip'),
 				'layer-sliders' => array(),
-				'required-plugins' => array('js_composer', 'revslider', 'contact-form-7', 'qode-instagram-widget'),
+				'required-plugins' => array('js_composer', 'revslider', 'contact-form-7'),
 				'categories' => array(
 					'wpbakery'  => esc_html__('WPBakery', 'bridge-core'),
 					'business'	=> esc_html__('Business', 'bridge-core')
@@ -2946,7 +2946,7 @@ if(!function_exists('bridge_core_demos_list')) {
 				'title' => esc_html__('Medical', 'bridge-core'),
 				'rev-sliders' => array('home.zip'),
 				'layer-sliders' => array(),
-				'required-plugins' => array('js_composer', 'revslider', 'contact-form-7', 'qode-instagram-widget', 'qode-twitter-feed'),
+				'required-plugins' => array('js_composer', 'revslider', 'contact-form-7', 'qode-twitter-feed'),
 				'categories' => array(
 					'wpbakery'  => esc_html__('WPBakery', 'bridge-core'),
 					'business'	=> esc_html__('Business', 'bridge-core')
@@ -2959,7 +2959,7 @@ if(!function_exists('bridge_core_demos_list')) {
 				'title' => esc_html__('Recording Studio', 'bridge-core'),
 				'rev-sliders' => array('home.zip'),
 				'layer-sliders' => array(),
-				'required-plugins' => array('js_composer', 'revslider', 'contact-form-7', 'qode-instagram-widget'),
+				'required-plugins' => array('js_composer', 'revslider', 'contact-form-7'),
 				'categories' => array(
 					'wpbakery'  => esc_html__('WPBakery', 'bridge-core'),
 					'creative'	=> esc_html__('Creative', 'bridge-core')
@@ -2969,7 +2969,7 @@ if(!function_exists('bridge_core_demos_list')) {
 				'title' => esc_html__('Mountain Biking', 'bridge-core'),
 				'rev-sliders' => array('home-1.zip', 'home-content.zip'),
 				'layer-sliders' => array(),
-				'required-plugins' => array('js_composer', 'revslider', 'contact-form-7', 'qode-instagram-widget'),
+				'required-plugins' => array('js_composer', 'revslider', 'contact-form-7'),
 				'categories' => array(
 					'wpbakery'  => esc_html__('WPBakery', 'bridge-core'),
 					'business'	=> esc_html__('Business', 'bridge-core')
@@ -2979,7 +2979,7 @@ if(!function_exists('bridge_core_demos_list')) {
 				'title' => esc_html__('Agriculture', 'bridge-core'),
 				'rev-sliders' => array('home.zip'),
 				'layer-sliders' => array(),
-				'required-plugins' => array('js_composer', 'revslider', 'contact-form-7', 'qode-instagram-widget', 'qode-twitter-feed'),
+				'required-plugins' => array('js_composer', 'revslider', 'contact-form-7', 'qode-twitter-feed'),
 				'categories' => array(
 					'wpbakery'  => esc_html__('WPBakery', 'bridge-core'),
 					'business'	=> esc_html__('Business', 'bridge-core'),
@@ -3143,7 +3143,7 @@ if(!function_exists('bridge_core_demos_list')) {
 				'title' => esc_html__('Business Consulting', 'bridge-core'),
 				'rev-sliders' => array('home.zip'),
 				'layer-sliders' => array(),
-				'required-plugins' => array('js_composer', 'revslider', 'contact-form-7', 'qode-instagram-widget'),
+				'required-plugins' => array('js_composer', 'revslider', 'contact-form-7'),
 				'categories' => array(
 					'wpbakery'  => esc_html__('WPBakery', 'bridge-core'),
 					'business'	=> esc_html__('Business', 'bridge-core')
@@ -3153,7 +3153,7 @@ if(!function_exists('bridge_core_demos_list')) {
 				'title' => esc_html__('Fitness', 'bridge-core'),
 				'rev-sliders' => array('home.zip'),
 				'layer-sliders' => array(),
-				'required-plugins' => array('js_composer', 'revslider', 'contact-form-7', 'timetable', 'qode-instagram-widget'),
+				'required-plugins' => array('js_composer', 'revslider', 'contact-form-7', 'timetable'),
 				'categories' => array(
 					'wpbakery'  => esc_html__('WPBakery', 'bridge-core'),
 					'business'	=> esc_html__('Business', 'bridge-core')
@@ -3225,7 +3225,7 @@ if(!function_exists('bridge_core_demos_list')) {
 				'title' => esc_html__('Candidate', 'bridge-core'),
 				'rev-sliders' => array('home-slider.zip'),
 				'layer-sliders' => array(),
-				'required-plugins' => array('js_composer', 'revslider', 'contact-form-7', 'qode-instagram-widget'),
+				'required-plugins' => array('js_composer', 'revslider', 'contact-form-7'),
 				'categories' => array(
 					'wpbakery'  => esc_html__('WPBakery', 'bridge-core'),
 					'business'	=> esc_html__('Business', 'bridge-core')
@@ -3235,7 +3235,7 @@ if(!function_exists('bridge_core_demos_list')) {
 				'title' => esc_html__('Wildlife', 'bridge-core'),
 				'rev-sliders' => array('home.zip'),
 				'layer-sliders' => array(),
-				'required-plugins' => array('js_composer', 'revslider', 'contact-form-7', 'qode-instagram-widget', 'qode-twitter-feed'),
+				'required-plugins' => array('js_composer', 'revslider', 'contact-form-7', 'qode-twitter-feed'),
 				'categories' => array(
 					'wpbakery'  => esc_html__('WPBakery', 'bridge-core'),
 					'business'	=> esc_html__('Business', 'bridge-core')
@@ -3255,7 +3255,7 @@ if(!function_exists('bridge_core_demos_list')) {
 				'title' => esc_html__('Explorer', 'bridge-core'),
 				'rev-sliders' => array('home-slider.zip'),
 				'layer-sliders' => array(),
-				'required-plugins' => array('js_composer', 'revslider', 'contact-form-7', 'qode-instagram-widget', 'qode-twitter-feed'),
+				'required-plugins' => array('js_composer', 'revslider', 'contact-form-7', 'qode-twitter-feed'),
 				'categories' => array(
 					'wpbakery'  => esc_html__('WPBakery', 'bridge-core'),
 					'blog'	=> esc_html__('Blog', 'bridge-core')
@@ -3281,7 +3281,7 @@ if(!function_exists('bridge_core_demos_list')) {
 				'title' => esc_html__('Recipes', 'bridge-core'),
 				'rev-sliders' => array(),
 				'layer-sliders' => array(),
-				'required-plugins' => array('js_composer', 'contact-form-7', 'qode-instagram-widget'),
+				'required-plugins' => array('js_composer', 'contact-form-7'),
 				'categories' => array(
 					'wpbakery'  => esc_html__('WPBakery', 'bridge-core'),
 					'blog'	=> esc_html__('Blog', 'bridge-core')
@@ -3291,7 +3291,7 @@ if(!function_exists('bridge_core_demos_list')) {
 				'title' => esc_html__('Nutritionist', 'bridge-core'),
 				'rev-sliders' => array('home.zip'),
 				'layer-sliders' => array(),
-				'required-plugins' => array('js_composer', 'revslider', 'contact-form-7', 'qode-instagram-widget', 'qode-twitter-feed'),
+				'required-plugins' => array('js_composer', 'revslider', 'contact-form-7', 'qode-twitter-feed'),
 				'categories' => array(
 					'wpbakery'  => esc_html__('WPBakery', 'bridge-core'),
 					'business'	=> esc_html__('Business', 'bridge-core')
@@ -3341,7 +3341,7 @@ if(!function_exists('bridge_core_demos_list')) {
 				'title' => esc_html__('Horse Riding', 'bridge-core'),
 				'rev-sliders' => array('home.zip'),
 				'layer-sliders' => array(),
-				'required-plugins' => array('js_composer', 'revslider', 'contact-form-7', 'qode-instagram-widget'),
+				'required-plugins' => array('js_composer', 'revslider', 'contact-form-7'),
 				'categories' => array(
 					'wpbakery'  => esc_html__('WPBakery', 'bridge-core'),
 					'business'	=> esc_html__('Business', 'bridge-core')
@@ -3351,7 +3351,7 @@ if(!function_exists('bridge_core_demos_list')) {
 				'title' => esc_html__('Barber Shop', 'bridge-core'),
 				'rev-sliders' => array('home.zip'),
 				'layer-sliders' => array(),
-				'required-plugins' => array('js_composer', 'revslider', 'contact-form-7', 'qode-instagram-widget'),
+				'required-plugins' => array('js_composer', 'revslider', 'contact-form-7'),
 				'categories' => array(
 					'wpbakery'  => esc_html__('WPBakery', 'bridge-core'),
 					'business'	=> esc_html__('Business', 'bridge-core')
@@ -3385,7 +3385,7 @@ if(!function_exists('bridge_core_demos_list')) {
 				'title' => esc_html__('Web Design Studio', 'bridge-core'),
 				'rev-sliders' => array('home.zip'),
 				'layer-sliders' => array(),
-				'required-plugins' => array('js_composer', 'revslider', 'contact-form-7', 'qode-instagram-widget', 'qode-twitter-feed'),
+				'required-plugins' => array('js_composer', 'revslider', 'contact-form-7', 'qode-twitter-feed'),
 				'categories' => array(
 					'wpbakery'  => esc_html__('WPBakery', 'bridge-core'),
 					'business'	=> esc_html__('Business', 'bridge-core'),
@@ -3422,7 +3422,7 @@ if(!function_exists('bridge_core_demos_list')) {
 				'title' => esc_html__('Gym', 'bridge-core'),
 				'rev-sliders' => array('home.zip'),
 				'layer-sliders' => array(),
-				'required-plugins' => array('js_composer', 'revslider', 'contact-form-7', 'qode-instagram-widget', 'timetable'),
+				'required-plugins' => array('js_composer', 'revslider', 'contact-form-7', 'timetable'),
 				'categories' => array(
 					'wpbakery'  => esc_html__('WPBakery', 'bridge-core'),
 					'business'	=> esc_html__('Business', 'bridge-core')
@@ -3432,7 +3432,7 @@ if(!function_exists('bridge_core_demos_list')) {
 				'title' => esc_html__('Makeup Artist', 'bridge-core'),
 				'rev-sliders' => array('home1.zip'),
 				'layer-sliders' => array(),
-				'required-plugins' => array('js_composer', 'revslider', 'contact-form-7', 'qode-instagram-widget', 'qode-twitter-feed'),
+				'required-plugins' => array('js_composer', 'revslider', 'contact-form-7', 'qode-twitter-feed'),
 				'categories' => array(
 					'wpbakery'  => esc_html__('WPBakery', 'bridge-core'),
 					'business'	=> esc_html__('Business', 'bridge-core')
@@ -3466,7 +3466,7 @@ if(!function_exists('bridge_core_demos_list')) {
 				'title' => esc_html__('Golf', 'bridge-core'),
 				'rev-sliders' => array('home.zip'),
 				'layer-sliders' => array(),
-				'required-plugins' => array('js_composer', 'revslider', 'contact-form-7', 'qode-instagram-widget'),
+				'required-plugins' => array('js_composer', 'revslider', 'contact-form-7'),
 				'categories' => array(
 					'wpbakery'  => esc_html__('WPBakery', 'bridge-core'),
 					'business'	=> esc_html__('Business', 'bridge-core')
@@ -3509,7 +3509,7 @@ if(!function_exists('bridge_core_demos_list')) {
 				'title' => esc_html__('Casino', 'bridge-core'),
 				'rev-sliders' => array('home-slider.zip'),
 				'layer-sliders' => array(),
-				'required-plugins' => array('js_composer', 'revslider', 'contact-form-7', 'qode-instagram-widget'),
+				'required-plugins' => array('js_composer', 'revslider', 'contact-form-7'),
 				'categories' => array(
 					'wpbakery'  => esc_html__('WPBakery', 'bridge-core'),
 					'business'	=> esc_html__('Business', 'bridge-core')
@@ -3529,7 +3529,7 @@ if(!function_exists('bridge_core_demos_list')) {
 				'title' => esc_html__('Craft Beer Bar', 'bridge-core'),
 				'rev-sliders' => array('home-slider.zip'),
 				'layer-sliders' => array(),
-				'required-plugins' => array('js_composer', 'revslider', 'contact-form-7', 'qode-instagram-widget', 'qode-twitter-feed'),
+				'required-plugins' => array('js_composer', 'revslider', 'contact-form-7', 'qode-twitter-feed'),
 				'categories' => array(
 					'wpbakery'  => esc_html__('WPBakery', 'bridge-core'),
 					'business'	=> esc_html__('Business', 'bridge-core')
@@ -3560,7 +3560,7 @@ if(!function_exists('bridge_core_demos_list')) {
 				'title' => esc_html__('Kindergarten', 'bridge-core'),
 				'rev-sliders' => array('home.zip'),
 				'layer-sliders' => array(),
-				'required-plugins' => array('js_composer', 'revslider', 'contact-form-7', 'qode-instagram-widget'),
+				'required-plugins' => array('js_composer', 'revslider', 'contact-form-7'),
 				'categories' => array(
 					'wpbakery'  => esc_html__('WPBakery', 'bridge-core'),
 					'business'	=> esc_html__('Business', 'bridge-core')
@@ -3570,7 +3570,7 @@ if(!function_exists('bridge_core_demos_list')) {
 				'title' => esc_html__('Tailor', 'bridge-core'),
 				'rev-sliders' => array('home.zip'),
 				'layer-sliders' => array(),
-				'required-plugins' => array('js_composer', 'revslider', 'contact-form-7', 'qode-instagram-widget', 'qode-twitter-feed'),
+				'required-plugins' => array('js_composer', 'revslider', 'contact-form-7', 'qode-twitter-feed'),
 				'categories' => array(
 					'wpbakery'  => esc_html__('WPBakery', 'bridge-core'),
 					'business'	=> esc_html__('Business', 'bridge-core')
@@ -3591,7 +3591,7 @@ if(!function_exists('bridge_core_demos_list')) {
 				'title' => esc_html__('Jewelry Store', 'bridge-core'),
 				'rev-sliders' => array(),
 				'layer-sliders' => array(),
-				'required-plugins' => array('js_composer', 'contact-form-7', 'qode-instagram-widget', 'woocommerce', 'sellkit'),
+				'required-plugins' => array('js_composer', 'contact-form-7', 'woocommerce', 'sellkit'),
 				'categories' => array(
 					'wpbakery'  => esc_html__('WPBakery', 'bridge-core'),
 					'shop'	=> esc_html__('Shop', 'bridge-core')
@@ -3614,7 +3614,7 @@ if(!function_exists('bridge_core_demos_list')) {
 				'title' => esc_html__('University III', 'bridge-core'),
 				'rev-sliders' => array('home.zip'),
 				'layer-sliders' => array(),
-				'required-plugins' => array('js_composer', 'revslider', 'contact-form-7', 'qode-instagram-widget'),
+				'required-plugins' => array('js_composer', 'revslider', 'contact-form-7'),
 				'categories' => array(
 					'wpbakery'  => esc_html__('WPBakery', 'bridge-core'),
 					'business'	=> esc_html__('Business', 'bridge-core')
@@ -3624,7 +3624,7 @@ if(!function_exists('bridge_core_demos_list')) {
 				'title' => esc_html__('Tattoo Studio', 'bridge-core'),
 				'rev-sliders' => array('home.zip'),
 				'layer-sliders' => array(),
-				'required-plugins' => array('js_composer', 'revslider', 'contact-form-7', 'qode-instagram-widget'),
+				'required-plugins' => array('js_composer', 'revslider', 'contact-form-7'),
 				'categories' => array(
 					'wpbakery'  => esc_html__('WPBakery', 'bridge-core'),
 					'business'	=> esc_html__('Business', 'bridge-core')
@@ -3680,7 +3680,7 @@ if(!function_exists('bridge_core_demos_list')) {
 				'title' => esc_html__('Floristry', 'bridge-core'),
 				'rev-sliders' => array('home.zip'),
 				'layer-sliders' => array(),
-				'required-plugins' => array('js_composer', 'revslider', 'contact-form-7', 'qode-instagram-widget'),
+				'required-plugins' => array('js_composer', 'revslider', 'contact-form-7'),
 				'categories' => array(
 					'wpbakery'  => esc_html__('WPBakery', 'bridge-core'),
 					'creative'	=> esc_html__('Creative', 'bridge-core')
@@ -3690,7 +3690,7 @@ if(!function_exists('bridge_core_demos_list')) {
 				'title' => esc_html__('Bicycle Shop', 'bridge-core'),
 				'rev-sliders' => array('home.zip'),
 				'layer-sliders' => array(),
-				'required-plugins' => array('js_composer', 'revslider', 'contact-form-7', 'woocommerce', 'sellkit', 'qode-instagram-widget'),
+				'required-plugins' => array('js_composer', 'revslider', 'contact-form-7', 'woocommerce', 'sellkit'),
 				'categories' => array(
 					'wpbakery'  => esc_html__('WPBakery', 'bridge-core'),
 					'creative'	=> esc_html__('Creative', 'bridge-core')
@@ -3700,7 +3700,7 @@ if(!function_exists('bridge_core_demos_list')) {
 				'title' => esc_html__('Asian Cuisine', 'bridge-core'),
 				'rev-sliders' => array('home.zip'),
 				'layer-sliders' => array(),
-				'required-plugins' => array('js_composer', 'revslider', 'contact-form-7', 'qode-instagram-widget'),
+				'required-plugins' => array('js_composer', 'revslider', 'contact-form-7'),
 				'categories' => array(
 					'wpbakery'  => esc_html__('WPBakery', 'bridge-core'),
 					'business'	=> esc_html__('Business', 'bridge-core'),
@@ -3762,7 +3762,7 @@ if(!function_exists('bridge_core_demos_list')) {
 				'title' => esc_html__('Creative Studio', 'bridge-core'),
 				'rev-sliders' => array('home.zip'),
 				'layer-sliders' => array(),
-				'required-plugins' => array('js_composer', 'revslider', 'contact-form-7', 'qode-instagram-widget'),
+				'required-plugins' => array('js_composer', 'revslider', 'contact-form-7'),
 				'categories' => array(
 					'wpbakery'  => esc_html__('WPBakery', 'bridge-core'),
 					'business'	=> esc_html__('Business', 'bridge-core'),
@@ -3773,7 +3773,7 @@ if(!function_exists('bridge_core_demos_list')) {
 				'title' => esc_html__('Pizza Parlor', 'bridge-core'),
 				'rev-sliders' => array('home.zip'),
 				'layer-sliders' => array(),
-				'required-plugins' => array('js_composer', 'revslider', 'contact-form-7', 'qode-instagram-widget', 'qode-restaurant'),
+				'required-plugins' => array('js_composer', 'revslider', 'contact-form-7', 'qode-restaurant'),
 				'categories' => array(
 					'wpbakery'  => esc_html__('WPBakery', 'bridge-core'),
 					'business'	=> esc_html__('Business', 'bridge-core'),
@@ -3808,7 +3808,7 @@ if(!function_exists('bridge_core_demos_list')) {
 				'title' => esc_html__('Kids Fashion', 'bridge-core'),
 				'rev-sliders' => array(),
 				'layer-sliders' => array(),
-				'required-plugins' => array('js_composer', 'contact-form-7', 'woocommerce', 'sellkit', 'qode-instagram-widget'),
+				'required-plugins' => array('js_composer', 'contact-form-7', 'woocommerce', 'sellkit'),
 				'categories' => array(
 					'wpbakery'  => esc_html__('WPBakery', 'bridge-core'),
 					'shop'	=> esc_html__('Shop', 'bridge-core')
@@ -3848,7 +3848,7 @@ if(!function_exists('bridge_core_demos_list')) {
 				'title' => esc_html__('Alternative Band', 'bridge-core'),
 				'rev-sliders' => array('home.zip'),
 				'layer-sliders' => array(),
-				'required-plugins' => array('js_composer', 'revslider', 'contact-form-7', 'qode-music', 'qode-instagram-widget'),
+				'required-plugins' => array('js_composer', 'revslider', 'contact-form-7', 'qode-music'),
 				'categories' => array(
 					'wpbakery'  => esc_html__('WPBakery', 'bridge-core'),
 					'business'	=> esc_html__('Business', 'bridge-core'),
@@ -3893,7 +3893,7 @@ if(!function_exists('bridge_core_demos_list')) {
 				'title' => esc_html__('New Album Release', 'bridge-core'),
 				'rev-sliders' => array('home.zip'),
 				'layer-sliders' => array(),
-				'required-plugins' => array('js_composer', 'revslider', 'contact-form-7', 'qode-music', 'qode-instagram-widget'),
+				'required-plugins' => array('js_composer', 'revslider', 'contact-form-7', 'qode-music'),
 				'categories' => array(
 					'wpbakery'  => esc_html__('WPBakery', 'bridge-core'),
 					'business'	=> esc_html__('Business', 'bridge-core'),
@@ -3924,7 +3924,7 @@ if(!function_exists('bridge_core_demos_list')) {
 				'title' => esc_html__('Travel', 'bridge-core'),
 				'rev-sliders' => array('home-slider.zip'),
 				'layer-sliders' => array(),
-				'required-plugins' => array('js_composer', 'revslider', 'contact-form-7', 'qode-tours', 'qode-instagram-widget', 'qode-membership', 'qode-twitter-feed'),
+				'required-plugins' => array('js_composer', 'revslider', 'contact-form-7', 'qode-tours', 'qode-membership', 'qode-twitter-feed'),
 				'categories' => array(
 					'wpbakery'  => esc_html__('WPBakery', 'bridge-core'),
 					'business'	=> esc_html__('Business', 'bridge-core'),
@@ -3948,7 +3948,7 @@ if(!function_exists('bridge_core_demos_list')) {
 				'title' => esc_html__('Pop Music Magazine', 'bridge-core'),
 				'rev-sliders' => array(),
 				'layer-sliders' => array(),
-				'required-plugins' => array('js_composer', 'contact-form-7', 'qode-news', 'qode-instagram-widget'),
+				'required-plugins' => array('js_composer', 'contact-form-7', 'qode-news'),
 				'categories' => array(
 					'wpbakery'  => esc_html__('WPBakery', 'bridge-core'),
 					'blog'		=> esc_html__('Blog', 'bridge-core'),
@@ -3991,7 +3991,7 @@ if(!function_exists('bridge_core_demos_list')) {
 				'title' => esc_html__('Nail Salon', 'bridge-core'),
 				'rev-sliders' => array('home.zip'),
 				'layer-sliders' => array(),
-				'required-plugins' => array('js_composer', 'revslider', 'contact-form-7', 'qode-instagram-widget'),
+				'required-plugins' => array('js_composer', 'revslider', 'contact-form-7'),
 				'categories' => array(
 					'wpbakery'  => esc_html__('WPBakery', 'bridge-core'),
 					'business'	=> esc_html__('Business', 'bridge-core')
@@ -4015,7 +4015,7 @@ if(!function_exists('bridge_core_demos_list')) {
 				'title' => esc_html__('Trendy Blog', 'bridge-core'),
 				'rev-sliders' => array(),
 				'layer-sliders' => array(),
-				'required-plugins' => array('js_composer', 'contact-form-7', 'qode-instagram-widget'),
+				'required-plugins' => array('js_composer', 'contact-form-7'),
 				'categories' => array(
 					'wpbakery'  => esc_html__('WPBakery', 'bridge-core'),
 					'blog'	=> esc_html__('Blog', 'bridge-core')
@@ -4045,7 +4045,7 @@ if(!function_exists('bridge_core_demos_list')) {
 				'title' => esc_html__('Mountain Climbing', 'bridge-core'),
 				'rev-sliders' => array('home.zip'),
 				'layer-sliders' => array(),
-				'required-plugins' => array('js_composer', 'revslider', 'contact-form-7', 'qode-instagram-widget'),
+				'required-plugins' => array('js_composer', 'revslider', 'contact-form-7'),
 				'categories' => array(
 					'wpbakery'  => esc_html__('WPBakery', 'bridge-core'),
 					'creative'	=> esc_html__('Creative', 'bridge-core')
@@ -4066,7 +4066,7 @@ if(!function_exists('bridge_core_demos_list')) {
 				'title' => esc_html__('Jewelry', 'bridge-core'),
 				'rev-sliders' => array('home.zip'),
 				'layer-sliders' => array(),
-				'required-plugins' => array('js_composer', 'revslider', 'contact-form-7', 'woocommerce', 'sellkit', 'qode-instagram-widget'),
+				'required-plugins' => array('js_composer', 'revslider', 'contact-form-7', 'woocommerce', 'sellkit'),
 				'categories' => array(
 					'wpbakery'  => esc_html__('WPBakery', 'bridge-core'),
 					'shop'	=> esc_html__('Shop', 'bridge-core')
@@ -4076,7 +4076,7 @@ if(!function_exists('bridge_core_demos_list')) {
 				'title' => esc_html__('Designer Presentation', 'bridge-core'),
 				'rev-sliders' => array('home.zip'),
 				'layer-sliders' => array(),
-				'required-plugins' => array('js_composer', 'revslider', 'contact-form-7', 'qode-instagram-widget'),
+				'required-plugins' => array('js_composer', 'revslider', 'contact-form-7'),
 				'categories' => array(
 					'wpbakery'  => esc_html__('WPBakery', 'bridge-core'),
 					'creative'	=> esc_html__('Creative', 'bridge-core')
@@ -4098,7 +4098,7 @@ if(!function_exists('bridge_core_demos_list')) {
 				'title' => esc_html__('Exotic Travels', 'bridge-core'),
 				'rev-sliders' => array('home.zip', 'section1.zip', 'video.zip'),
 				'layer-sliders' => array(),
-				'required-plugins' => array('js_composer', 'revslider', 'contact-form-7', 'qode-instagram-widget'),
+				'required-plugins' => array('js_composer', 'revslider', 'contact-form-7'),
 				'categories' => array(
 					'wpbakery'  => esc_html__('WPBakery', 'bridge-core'),
 					'business'	=> esc_html__('Business', 'bridge-core')
@@ -4287,7 +4287,7 @@ if(!function_exists('bridge_core_demos_list')) {
 				'title' => esc_html__('Architect', 'bridge-core'),
 				'rev-sliders' => array('home.zip'),
 				'layer-sliders' => array(),
-				'required-plugins' => array('elementor', 'qi-addons-for-elementor', 'revslider', 'contact-form-7', 'qode-instagram-widget'),
+				'required-plugins' => array('elementor', 'qi-addons-for-elementor', 'revslider', 'contact-form-7'),
 				'categories' => array(
 					'business'	=> esc_html__('Business', 'bridge-core'),
 					'elementor'	=> esc_html__('Elementor', 'bridge-core'),
@@ -4308,7 +4308,7 @@ if(!function_exists('bridge_core_demos_list')) {
 				'title' => esc_html__('Design Agency', 'bridge-core'),
 				'rev-sliders' => array('home-slider.zip'),
 				'layer-sliders' => array(),
-				'required-plugins' => array('elementor', 'qi-addons-for-elementor', 'revslider', 'contact-form-7', 'qode-instagram-widget'),
+				'required-plugins' => array('elementor', 'qi-addons-for-elementor', 'revslider', 'contact-form-7'),
 				'categories' => array(
 					'business'	=> esc_html__('Business', 'bridge-core'),
 					'creative'	=> esc_html__('Creative', 'bridge-core'),
@@ -4319,7 +4319,7 @@ if(!function_exists('bridge_core_demos_list')) {
 				'title' => esc_html__('Fundraising', 'bridge-core'),
 				'rev-sliders' => array('slider-1.zip'),
 				'layer-sliders' => array(),
-				'required-plugins' => array('elementor', 'qi-addons-for-elementor', 'revslider', 'contact-form-7', 'qode-instagram-widget'),
+				'required-plugins' => array('elementor', 'qi-addons-for-elementor', 'revslider', 'contact-form-7'),
 				'categories' => array(
 					'business'	=> esc_html__('Business', 'bridge-core'),
 					'elementor'	=> esc_html__('Elementor', 'bridge-core')
@@ -4329,7 +4329,7 @@ if(!function_exists('bridge_core_demos_list')) {
 				'title' => esc_html__('Speech Therapist', 'bridge-core'),
 				'rev-sliders' => array('home-slider.zip'),
 				'layer-sliders' => array(),
-				'required-plugins' => array('elementor', 'qi-addons-for-elementor', 'revslider', 'contact-form-7', 'qode-instagram-widget'),
+				'required-plugins' => array('elementor', 'qi-addons-for-elementor', 'revslider', 'contact-form-7'),
 				'categories' => array(
 					'business'	=> esc_html__('Business', 'bridge-core'),
 					'elementor'	=> esc_html__('Elementor', 'bridge-core'),
@@ -4340,7 +4340,7 @@ if(!function_exists('bridge_core_demos_list')) {
 				'title' => esc_html__('Catering Service', 'bridge-core'),
 				'rev-sliders' => array('home.zip'),
 				'layer-sliders' => array(),
-				'required-plugins' => array('elementor', 'qi-addons-for-elementor', 'revslider', 'contact-form-7', 'qode-instagram-widget'),
+				'required-plugins' => array('elementor', 'qi-addons-for-elementor', 'revslider', 'contact-form-7'),
 				'categories' => array(
 					'business'	=> esc_html__('Business', 'bridge-core'),
 					'elementor'	=> esc_html__('Elementor', 'bridge-core')
@@ -4350,7 +4350,7 @@ if(!function_exists('bridge_core_demos_list')) {
 				'title' => esc_html__('Accounting', 'bridge-core'),
 				'rev-sliders' => array('home.zip'),
 				'layer-sliders' => array(),
-				'required-plugins' => array('elementor', 'qi-addons-for-elementor', 'revslider', 'contact-form-7', 'qode-instagram-widget'),
+				'required-plugins' => array('elementor', 'qi-addons-for-elementor', 'revslider', 'contact-form-7'),
 				'categories' => array(
 					'business'	=> esc_html__('Business', 'bridge-core'),
 					'elementor'	=> esc_html__('Elementor', 'bridge-core')
@@ -4360,7 +4360,7 @@ if(!function_exists('bridge_core_demos_list')) {
 				'title' => esc_html__('Personal Resume', 'bridge-core'),
 				'rev-sliders' => array(),
 				'layer-sliders' => array(),
-				'required-plugins' => array('elementor', 'qi-addons-for-elementor', 'contact-form-7', 'qode-instagram-widget'),
+				'required-plugins' => array('elementor', 'qi-addons-for-elementor', 'contact-form-7'),
 				'categories' => array(
 					'creative'	=> esc_html__('Creative', 'bridge-core'),
 					'elementor'	=> esc_html__('Elementor', 'bridge-core'),
@@ -4372,7 +4372,7 @@ if(!function_exists('bridge_core_demos_list')) {
 				'title' => esc_html__('Landscape Architecture', 'bridge-core'),
 				'rev-sliders' => array(),
 				'layer-sliders' => array(),
-				'required-plugins' => array('elementor', 'qi-addons-for-elementor', 'contact-form-7', 'qode-instagram-widget'),
+				'required-plugins' => array('elementor', 'qi-addons-for-elementor', 'contact-form-7'),
 				'categories' => array(
 					'business'	=> esc_html__('Business', 'bridge-core'),
 					'elementor'	=> esc_html__('Elementor', 'bridge-core')
@@ -4382,7 +4382,7 @@ if(!function_exists('bridge_core_demos_list')) {
 				'title' => esc_html__('Astrology', 'bridge-core'),
 				'rev-sliders' => array('home-slider.zip'),
 				'layer-sliders' => array(),
-				'required-plugins' => array('elementor', 'qi-addons-for-elementor', 'revslider', 'contact-form-7', 'qode-instagram-widget'),
+				'required-plugins' => array('elementor', 'qi-addons-for-elementor', 'revslider', 'contact-form-7'),
 				'categories' => array(
 					'elementor'	=> esc_html__('Elementor', 'bridge-core'),
 					'business'  => esc_html__('Business', 'bridge-core')
@@ -4392,7 +4392,7 @@ if(!function_exists('bridge_core_demos_list')) {
 				'title' => esc_html__('Décor Store', 'bridge-core'),
 				'rev-sliders' => array('slider-1.zip'),
 				'layer-sliders' => array(),
-				'required-plugins' => array('elementor', 'qi-addons-for-elementor', 'revslider', 'contact-form-7', 'woocommerce', 'sellkit', 'qode-instagram-widget'),
+				'required-plugins' => array('elementor', 'qi-addons-for-elementor', 'revslider', 'contact-form-7', 'woocommerce', 'sellkit'),
 				'categories' => array(
 					'elementor'	=> esc_html__('Elementor', 'bridge-core'),
 					'shop'		=> esc_html__('Shop', 'bridge-core')
@@ -4402,7 +4402,7 @@ if(!function_exists('bridge_core_demos_list')) {
 				'title' => esc_html__('Farmers’ Market', 'bridge-core'),
 				'rev-sliders' => array('home.zip'),
 				'layer-sliders' => array(),
-				'required-plugins' => array('elementor', 'qi-addons-for-elementor', 'revslider', 'contact-form-7', 'woocommerce', 'sellkit', 'qode-instagram-widget'),
+				'required-plugins' => array('elementor', 'qi-addons-for-elementor', 'revslider', 'contact-form-7', 'woocommerce', 'sellkit'),
 				'categories' => array(
 					'business'	=> esc_html__('Business', 'bridge-core'),
 					'elementor'	=> esc_html__('Elementor', 'bridge-core'),
@@ -4413,7 +4413,7 @@ if(!function_exists('bridge_core_demos_list')) {
 				'title' => esc_html__('Cocktail Bar', 'bridge-core'),
 				'rev-sliders' => array('home-slider.zip'),
 				'layer-sliders' => array(),
-				'required-plugins' => array('elementor', 'qi-addons-for-elementor', 'revslider', 'contact-form-7', 'qode-restaurant', 'qode-instagram-widget'),
+				'required-plugins' => array('elementor', 'qi-addons-for-elementor', 'revslider', 'contact-form-7', 'qode-restaurant'),
 				'categories' => array(
 					'business'	=> esc_html__('Business', 'bridge-core'),
 					'elementor'	=> esc_html__('Elementor', 'bridge-core'),
@@ -4425,7 +4425,7 @@ if(!function_exists('bridge_core_demos_list')) {
 				'title' => esc_html__('Cinema', 'bridge-core'),
 				'rev-sliders' => array('home-slider.zip'),
 				'layer-sliders' => array(),
-				'required-plugins' => array('elementor', 'qi-addons-for-elementor', 'revslider', 'contact-form-7', 'qode-instagram-widget'),
+				'required-plugins' => array('elementor', 'qi-addons-for-elementor', 'revslider', 'contact-form-7'),
 				'categories' => array(
 					'business'	=> esc_html__('Business', 'bridge-core'),
 					'creative'	=> esc_html__('Creative', 'bridge-core'),
@@ -4436,7 +4436,7 @@ if(!function_exists('bridge_core_demos_list')) {
 				'title' => esc_html__('Wedding Photography', 'bridge-core'),
 				'rev-sliders' => array('slider-1.zip'),
 				'layer-sliders' => array(),
-				'required-plugins' => array('elementor', 'qi-addons-for-elementor', 'revslider', 'contact-form-7', 'qode-instagram-widget'),
+				'required-plugins' => array('elementor', 'qi-addons-for-elementor', 'revslider', 'contact-form-7'),
 				'categories' => array(
 					'business'	=> esc_html__('Business', 'bridge-core'),
 					'elementor'	=> esc_html__('Elementor', 'bridge-core'),
@@ -4447,7 +4447,7 @@ if(!function_exists('bridge_core_demos_list')) {
 				'title' => esc_html__('Fine Dining Restaurant', 'bridge-core'),
 				'rev-sliders' => array('home.zip'),
 				'layer-sliders' => array(),
-				'required-plugins' => array('elementor', 'qi-addons-for-elementor', 'revslider', 'contact-form-7', 'qode-instagram-widget', 'qode-restaurant'),
+				'required-plugins' => array('elementor', 'qi-addons-for-elementor', 'revslider', 'contact-form-7', 'qode-restaurant'),
 				'categories' => array(
 					'business'	=> esc_html__('Business', 'bridge-core'),
 					'elementor'	=> esc_html__('Elementor', 'bridge-core'),
@@ -4458,7 +4458,7 @@ if(!function_exists('bridge_core_demos_list')) {
 				'title' => esc_html__('Dairy Farm', 'bridge-core'),
 				'rev-sliders' => array('home-slider-1.zip'),
 				'layer-sliders' => array(),
-				'required-plugins' => array('elementor', 'qi-addons-for-elementor', 'revslider', 'contact-form-7', 'woocommerce', 'sellkit', 'qode-instagram-widget'),
+				'required-plugins' => array('elementor', 'qi-addons-for-elementor', 'revslider', 'contact-form-7', 'woocommerce', 'sellkit'),
 				'categories' => array(
 					'business'	=> esc_html__('Business', 'bridge-core'),
 					'elementor'	=> esc_html__('Elementor', 'bridge-core'),
@@ -4469,7 +4469,7 @@ if(!function_exists('bridge_core_demos_list')) {
 				'title' => esc_html__('Split Screen Portfolio', 'bridge-core'),
 				'rev-sliders' => array(),
 				'layer-sliders' => array(),
-				'required-plugins' => array('elementor', 'qi-addons-for-elementor', 'contact-form-7', 'qode-instagram-widget'),
+				'required-plugins' => array('elementor', 'qi-addons-for-elementor', 'contact-form-7'),
 				'categories' => array(
 					'creative'	=> esc_html__('Creative', 'bridge-core'),
 					'elementor'	=> esc_html__('Elementor', 'bridge-core'),
@@ -4480,7 +4480,7 @@ if(!function_exists('bridge_core_demos_list')) {
 				'title' => esc_html__('Cosmetic Surgery', 'bridge-core'),
 				'rev-sliders' => array('slider-1.zip', 'slider-2.zip'),
 				'layer-sliders' => array(),
-				'required-plugins' => array('elementor', 'qi-addons-for-elementor', 'revslider', 'contact-form-7', 'qode-instagram-widget'),
+				'required-plugins' => array('elementor', 'qi-addons-for-elementor', 'revslider', 'contact-form-7'),
 				'categories' => array(
 					'business'	=> esc_html__('Business', 'bridge-core'),
 					'elementor'	=> esc_html__('Elementor', 'bridge-core')
@@ -4501,7 +4501,7 @@ if(!function_exists('bridge_core_demos_list')) {
 				'title' => esc_html__('Travel Blogger', 'bridge-core'),
 				'rev-sliders' => array('slider-1.zip'),
 				'layer-sliders' => array(),
-				'required-plugins' => array('elementor', 'qi-addons-for-elementor', 'revslider', 'contact-form-7', 'qode-instagram-widget'),
+				'required-plugins' => array('elementor', 'qi-addons-for-elementor', 'revslider', 'contact-form-7'),
 				'categories' => array(
 					'blog'		=> esc_html__('Blog', 'bridge-core'),
 					'elementor'	=> esc_html__('Elementor', 'bridge-core')
@@ -4532,7 +4532,7 @@ if(!function_exists('bridge_core_demos_list')) {
 				'title' => esc_html__('Property Showcase', 'bridge-core'),
 				'rev-sliders' => array('content-slider-1.zip', 'home-slider-1.zip', 'single.zip'),
 				'layer-sliders' => array(),
-				'required-plugins' => array('elementor', 'qi-addons-for-elementor', 'revslider', 'contact-form-7', 'qode-instagram-widget'),
+				'required-plugins' => array('elementor', 'qi-addons-for-elementor', 'revslider', 'contact-form-7'),
 				'categories' => array(
 					'business'	=> esc_html__('Business', 'bridge-core'),
 					'elementor'	=> esc_html__('Elementor', 'bridge-core')
@@ -4542,7 +4542,7 @@ if(!function_exists('bridge_core_demos_list')) {
 				'title' => esc_html__('Ceramic Store', 'bridge-core'),
 				'rev-sliders' => array('home.zip'),
 				'layer-sliders' => array(),
-				'required-plugins' => array('elementor', 'qi-addons-for-elementor', 'revslider', 'contact-form-7', 'woocommerce', 'sellkit', 'qode-instagram-widget'),
+				'required-plugins' => array('elementor', 'qi-addons-for-elementor', 'revslider', 'contact-form-7', 'woocommerce', 'sellkit'),
 				'categories' => array(
 					'creative'	=> esc_html__('Creative', 'bridge-core'),
 					'elementor'	=> esc_html__('Elementor', 'bridge-core'),
@@ -4596,7 +4596,7 @@ if(!function_exists('bridge_core_demos_list')) {
 				'title' => esc_html__('Medical Marijuana', 'bridge-core'),
 				'rev-sliders' => array('home-slider-1.zip'),
 				'layer-sliders' => array(),
-				'required-plugins' => array('elementor', 'qi-addons-for-elementor', 'revslider', 'contact-form-7', 'woocommerce', 'sellkit', 'qode-instagram-widget'),
+				'required-plugins' => array('elementor', 'qi-addons-for-elementor', 'revslider', 'contact-form-7', 'woocommerce', 'sellkit'),
 				'categories' => array(
 					'business'	=> esc_html__('Business', 'bridge-core'),
 					'elementor'	=> esc_html__('Elementor', 'bridge-core'),
@@ -4607,7 +4607,7 @@ if(!function_exists('bridge_core_demos_list')) {
 				'title' => esc_html__('Esports', 'bridge-core'),
 				'rev-sliders' => array(),
 				'layer-sliders' => array(),
-				'required-plugins' => array('elementor', 'qi-addons-for-elementor', 'contact-form-7', 'qode-instagram-widget'),
+				'required-plugins' => array('elementor', 'qi-addons-for-elementor', 'contact-form-7'),
 				'categories' => array(
 					'business'	=> esc_html__('Business', 'bridge-core'),
 					'elementor'	=> esc_html__('Elementor', 'bridge-core')
@@ -4617,7 +4617,7 @@ if(!function_exists('bridge_core_demos_list')) {
 				'title' => esc_html__('Tattoo Parlor', 'bridge-core'),
 				'rev-sliders' => array('home.zip'),
 				'layer-sliders' => array(),
-				'required-plugins' => array('elementor', 'qi-addons-for-elementor', 'contact-form-7', 'woocommerce', 'sellkit', 'qode-instagram-widget'),
+				'required-plugins' => array('elementor', 'qi-addons-for-elementor', 'contact-form-7', 'woocommerce', 'sellkit'),
 				'categories' => array(
                     'business'	=> esc_html__('Business', 'bridge-core'),
                     'shop'	    => esc_html__('Shop', 'bridge-core'),
@@ -4639,7 +4639,7 @@ if(!function_exists('bridge_core_demos_list')) {
 				'title' => esc_html__('Running Crew', 'bridge-core'),
 				'rev-sliders' => array('home.zip'),
 				'layer-sliders' => array(),
-				'required-plugins' => array('elementor', 'qi-addons-for-elementor', 'contact-form-7', 'revslider', 'qode-instagram-widget'),
+				'required-plugins' => array('elementor', 'qi-addons-for-elementor', 'contact-form-7', 'revslider'),
 				'categories' => array(
 					'business'	=> esc_html__('Business', 'bridge-core'),
 					'elementor'	=> esc_html__('Elementor', 'bridge-core')
@@ -4704,7 +4704,7 @@ if(!function_exists('bridge_core_demos_list')) {
 				'title' => esc_html__('Environmental NGO', 'bridge-core'),
 				'rev-sliders' => array('home-slider.zip'),
 				'layer-sliders' => array(),
-				'required-plugins' => array('elementor', 'qi-addons-for-elementor', 'contact-form-7', 'revslider', 'qode-instagram-widget'),
+				'required-plugins' => array('elementor', 'qi-addons-for-elementor', 'contact-form-7', 'revslider'),
 				'categories' => array(
                     'business'	=> esc_html__('Business', 'bridge-core'),
                     'elementor'	=> esc_html__('Elementor', 'bridge-core')
@@ -4736,7 +4736,7 @@ if(!function_exists('bridge_core_demos_list')) {
 				'title' => esc_html__('Lingerie Shop', 'bridge-core'),
 				'rev-sliders' => array('slider-1.zip'),
 				'layer-sliders' => array(),
-				'required-plugins' => array('elementor', 'qi-addons-for-elementor', 'woocommerce', 'sellkit', 'contact-form-7', 'revslider', 'qode-instagram-widget'),
+				'required-plugins' => array('elementor', 'qi-addons-for-elementor', 'woocommerce', 'sellkit', 'contact-form-7', 'revslider'),
 				'categories' => array(
                     'elementor'	=> esc_html__('Elementor', 'bridge-core'),
                     'shop'	=> esc_html__('Shop', 'bridge-core')
@@ -4768,7 +4768,7 @@ if(!function_exists('bridge_core_demos_list')) {
                 'title' => esc_html__('Furniture Brand', 'bridge-core'),
                 'rev-sliders' => array(),
                 'layer-sliders' => array(),
-                'required-plugins' => array('elementor', 'qi-addons-for-elementor', 'woocommerce', 'sellkit', 'contact-form-7', 'qode-instagram-widget', 'qode-wishlist-for-woocommerce', 'qode-quick-view-for-woocommerce'),
+                'required-plugins' => array('elementor', 'qi-addons-for-elementor', 'woocommerce', 'sellkit', 'contact-form-7', 'qode-wishlist-for-woocommerce', 'qode-quick-view-for-woocommerce'),
                 'categories' => array(
                     'business'	=> esc_html__('Business', 'bridge-core'),
                     'elementor'	=> esc_html__('Elementor', 'bridge-core'),
@@ -4790,7 +4790,7 @@ if(!function_exists('bridge_core_demos_list')) {
                 'title' => esc_html__('Agency Showcase', 'bridge-core'),
                 'rev-sliders' => array(),
                 'layer-sliders' => array(),
-                'required-plugins' => array('elementor', 'qi-addons-for-elementor', 'contact-form-7', 'qode-instagram-widget'),
+                'required-plugins' => array('elementor', 'qi-addons-for-elementor', 'contact-form-7'),
                 'categories' => array(
                     'business'	=> esc_html__('Business', 'bridge-core'),
                     'elementor'	=> esc_html__('Elementor', 'bridge-core'),
@@ -4844,7 +4844,7 @@ if(!function_exists('bridge_core_demos_list')) {
                 'title' => esc_html__('Political Candidate', 'bridge-core'),
                 'rev-sliders' => array('home-slider.zip'),
                 'layer-sliders' => array(),
-                'required-plugins' => array('elementor', 'qi-addons-for-elementor', 'contact-form-7', 'revslider', 'qode-instagram-widget', 'qode-twitter-feed'),
+                'required-plugins' => array('elementor', 'qi-addons-for-elementor', 'contact-form-7', 'revslider', 'qode-twitter-feed'),
                 'categories' => array(
                     'business'	=> esc_html__('Business', 'bridge-core'),
                     'elementor'	=> esc_html__('Elementor', 'bridge-core'),
@@ -4885,7 +4885,7 @@ if(!function_exists('bridge_core_demos_list')) {
                 'title' => esc_html__('Music School', 'bridge-core'),
                 'rev-sliders' => array('home.zip'),
                 'layer-sliders' => array(),
-                'required-plugins' => array('elementor', 'qi-addons-for-elementor', 'contact-form-7', 'revslider', 'qode-instagram-widget'),
+                'required-plugins' => array('elementor', 'qi-addons-for-elementor', 'contact-form-7', 'revslider'),
                 'categories' => array(
                     'creative'	=> esc_html__('Creative', 'bridge-core'),
                     'elementor'	=> esc_html__('Elementor', 'bridge-core'),
@@ -4896,7 +4896,7 @@ if(!function_exists('bridge_core_demos_list')) {
                 'title' => esc_html__('Book Store', 'bridge-core'),
                 'rev-sliders' => array('home.zip'),
                 'layer-sliders' => array(),
-                'required-plugins' => array('elementor', 'qi-addons-for-elementor', 'contact-form-7', 'woocommerce', 'sellkit', 'revslider', 'qode-instagram-widget'),
+                'required-plugins' => array('elementor', 'qi-addons-for-elementor', 'contact-form-7', 'woocommerce', 'sellkit', 'revslider'),
                 'categories' => array(
                     'shop'	=> esc_html__('Shop', 'bridge-core'),
                     'elementor'	=> esc_html__('Elementor', 'bridge-core')
@@ -4927,7 +4927,7 @@ if(!function_exists('bridge_core_demos_list')) {
                 'title' => esc_html__('Manicure', 'bridge-core'),
                 'rev-sliders' => array(),
                 'layer-sliders' => array(),
-                'required-plugins' => array('elementor', 'qi-addons-for-elementor', 'contact-form-7', 'qode-instagram-widget'),
+                'required-plugins' => array('elementor', 'qi-addons-for-elementor', 'contact-form-7'),
                 'categories' => array(
                     'business'	=> esc_html__('Business', 'bridge-core'),
                     'elementor'	=> esc_html__('Elementor', 'bridge-core'),
@@ -5044,7 +5044,7 @@ if(!function_exists('bridge_core_demos_list')) {
                 'title' => esc_html__('Food Delivery', 'bridge-core'),
                 'rev-sliders' => array('home-slider.zip'),
                 'layer-sliders' => array(),
-                'required-plugins' => array('elementor', 'qi-addons-for-elementor', 'contact-form-7', 'revslider', 'qode-instagram-widget'),
+                'required-plugins' => array('elementor', 'qi-addons-for-elementor', 'contact-form-7', 'revslider'),
                 'categories' => array(
                     'business'	=> esc_html__('Business', 'bridge-core'),
                     'elementor'	=> esc_html__('Elementor', 'bridge-core'),
@@ -5066,7 +5066,7 @@ if(!function_exists('bridge_core_demos_list')) {
                 'title' => esc_html__('Architecture Showcase', 'bridge-core'),
                 'rev-sliders' => array(),
                 'layer-sliders' => array(),
-                'required-plugins' => array('elementor', 'qi-addons-for-elementor', 'contact-form-7', 'qode-instagram-widget'),
+                'required-plugins' => array('elementor', 'qi-addons-for-elementor', 'contact-form-7'),
                 'categories' => array(
                     'business'	=> esc_html__('Business', 'bridge-core'),
                     'elementor'	=> esc_html__('Elementor', 'bridge-core'),
@@ -5077,7 +5077,7 @@ if(!function_exists('bridge_core_demos_list')) {
                 'title' => esc_html__('Wedding Blog', 'bridge-core'),
                 'rev-sliders' => array(),
                 'layer-sliders' => array(),
-                'required-plugins' => array('elementor', 'qi-addons-for-elementor', 'contact-form-7', 'qode-instagram-widget'),
+                'required-plugins' => array('elementor', 'qi-addons-for-elementor', 'contact-form-7'),
                 'categories' => array(
                     'blog'	    => esc_html__('Blog', 'bridge-core'),
                     'elementor'	=> esc_html__('Elementor', 'bridge-core'),
@@ -5129,7 +5129,7 @@ if(!function_exists('bridge_core_demos_list')) {
                 'title' => esc_html__('Fashion Retail', 'bridge-core'),
                 'rev-sliders' => array('slider-1.zip'),
                 'layer-sliders' => array(),
-                'required-plugins' => array('elementor', 'qi-addons-for-elementor', 'contact-form-7', 'revslider', 'woocommerce', 'sellkit', 'qode-instagram-widget'),
+                'required-plugins' => array('elementor', 'qi-addons-for-elementor', 'contact-form-7', 'revslider', 'woocommerce', 'sellkit'),
                 'categories' => array(
                     'elementor'	=> esc_html__('Elementor', 'bridge-core'),
                     'shop'	=> esc_html__('Shop', 'bridge-core'),
@@ -5149,7 +5149,7 @@ if(!function_exists('bridge_core_demos_list')) {
                 'title' => esc_html__('Construction Firm', 'bridge-core'),
                 'rev-sliders' => array('home-slider.zip'),
                 'layer-sliders' => array(),
-                'required-plugins' => array('elementor', 'qi-addons-for-elementor', 'contact-form-7', 'revslider', 'qode-instagram-widget', 'qode-twitter-feed'),
+                'required-plugins' => array('elementor', 'qi-addons-for-elementor', 'contact-form-7', 'revslider', 'qode-twitter-feed'),
                 'categories' => array(
                     'elementor'	=> esc_html__('Elementor', 'bridge-core'),
                     'business'	=> esc_html__('Business', 'bridge-core'),
@@ -5170,7 +5170,7 @@ if(!function_exists('bridge_core_demos_list')) {
                 'title' => esc_html__('Food Truck', 'bridge-core'),
                 'rev-sliders' => array(),
                 'layer-sliders' => array(),
-                'required-plugins' => array('elementor', 'qi-addons-for-elementor', 'contact-form-7', 'woocommerce', 'sellkit', 'qode-instagram-widget', 'qode-twitter-feed', 'qode-restaurant'),
+                'required-plugins' => array('elementor', 'qi-addons-for-elementor', 'contact-form-7', 'woocommerce', 'sellkit', 'qode-twitter-feed', 'qode-restaurant'),
                 'categories' => array(
                     'shop'	=> esc_html__('Shop', 'bridge-core'),
                     'elementor'	=> esc_html__('Elementor', 'bridge-core'),
@@ -5222,7 +5222,7 @@ if(!function_exists('bridge_core_demos_list')) {
                 'title' => esc_html__('Skiing', 'bridge-core'),
                 'rev-sliders' => array('1-home-slider.zip'),
                 'layer-sliders' => array(),
-                'required-plugins' => array('elementor', 'qi-addons-for-elementor', 'contact-form-7', 'revslider', 'qode-instagram-widget'),
+                'required-plugins' => array('elementor', 'qi-addons-for-elementor', 'contact-form-7', 'revslider'),
                 'categories' => array(
                     'elementor'	=> esc_html__('Elementor', 'bridge-core'),
                     'business'	=> esc_html__('Business', 'bridge-core'),
@@ -5253,7 +5253,7 @@ if(!function_exists('bridge_core_demos_list')) {
                 'title' => esc_html__('Antique Store', 'bridge-core'),
                 'rev-sliders' => array('home-slider.zip'),
                 'layer-sliders' => array(),
-                'required-plugins' => array('elementor', 'qi-addons-for-elementor', 'contact-form-7', 'woocommerce', 'sellkit', 'revslider', 'qode-instagram-widget'),
+                'required-plugins' => array('elementor', 'qi-addons-for-elementor', 'contact-form-7', 'woocommerce', 'sellkit', 'revslider'),
                 'categories' => array(
                     'elementor'	=> esc_html__('Elementor', 'bridge-core'),
                     'shop'	=> esc_html__('Shop', 'bridge-core'),
@@ -5307,7 +5307,7 @@ if(!function_exists('bridge_core_demos_list')) {
                 'title' => esc_html__('Guitar Making', 'bridge-core'),
                 'rev-sliders' => array('home-slider.zip'),
                 'layer-sliders' => array(),
-                'required-plugins' => array('elementor', 'qi-addons-for-elementor', 'contact-form-7', 'revslider', 'qode-instagram-widget'),
+                'required-plugins' => array('elementor', 'qi-addons-for-elementor', 'contact-form-7', 'revslider'),
                 'categories' => array(
                     'elementor'	=> esc_html__('Elementor', 'bridge-core'),
                     'business'	=> esc_html__('Business', 'bridge-core'),
@@ -5328,7 +5328,7 @@ if(!function_exists('bridge_core_demos_list')) {
                 'title' => esc_html__('Art Museum', 'bridge-core'),
                 'rev-sliders' => array('home-slider.zip'),
                 'layer-sliders' => array(),
-                'required-plugins' => array('elementor', 'qi-addons-for-elementor', 'contact-form-7', 'revslider', 'woocommerce', 'sellkit', 'qode-instagram-widget'),
+                'required-plugins' => array('elementor', 'qi-addons-for-elementor', 'contact-form-7', 'revslider', 'woocommerce', 'sellkit'),
                 'categories' => array(
                     'business'	=> esc_html__('Business', 'bridge-core'),
                     'elementor'	=> esc_html__('Elementor', 'bridge-core'),
@@ -5381,7 +5381,7 @@ if(!function_exists('bridge_core_demos_list')) {
                 'title' => esc_html__('Ice Hockey', 'bridge-core'),
                 'rev-sliders' => array('01-home-slider.zip'),
                 'layer-sliders' => array(),
-                'required-plugins' => array('elementor', 'qi-addons-for-elementor', 'contact-form-7', 'revslider', 'qode-instagram-widget', 'qode-twitter-feed'),
+                'required-plugins' => array('elementor', 'qi-addons-for-elementor', 'contact-form-7', 'revslider', 'qode-twitter-feed'),
                 'categories' => array(
                     'elementor'	=> esc_html__('Elementor', 'bridge-core'),
                     'business'	=> esc_html__('Business', 'bridge-core')
@@ -5401,7 +5401,7 @@ if(!function_exists('bridge_core_demos_list')) {
                 'title' => esc_html__('Gym Dark', 'bridge-core'),
                 'rev-sliders' => array('home-slider.zip'),
                 'layer-sliders' => array(),
-                'required-plugins' => array('elementor', 'qi-addons-for-elementor', 'contact-form-7', 'revslider', 'qode-instagram-widget', 'timetable'),
+                'required-plugins' => array('elementor', 'qi-addons-for-elementor', 'contact-form-7', 'revslider', 'timetable'),
                 'categories' => array(
                     'elementor'	=> esc_html__('Elementor', 'bridge-core'),
                     'business'	=> esc_html__('Business', 'bridge-core')
@@ -5421,7 +5421,7 @@ if(!function_exists('bridge_core_demos_list')) {
                 'title' => esc_html__('Creative Magazine', 'bridge-core'),
                 'rev-sliders' => array(),
                 'layer-sliders' => array(),
-                'required-plugins' => array('elementor', 'qi-addons-for-elementor', 'contact-form-7', 'qode-news', 'qode-instagram-widget', 'qode-twitter-feed'),
+                'required-plugins' => array('elementor', 'qi-addons-for-elementor', 'contact-form-7', 'qode-news', 'qode-twitter-feed'),
                 'categories' => array(
                     'blog'	=> esc_html__('Blog', 'bridge-core'),
                     'creative'	=> esc_html__('Creative', 'bridge-core'),
@@ -5433,7 +5433,7 @@ if(!function_exists('bridge_core_demos_list')) {
                 'title' => esc_html__('Interior Design Blog', 'bridge-core'),
                 'rev-sliders' => array(),
                 'layer-sliders' => array(),
-                'required-plugins' => array('elementor', 'qi-addons-for-elementor', 'contact-form-7', 'qode-instagram-widget'),
+                'required-plugins' => array('elementor', 'qi-addons-for-elementor', 'contact-form-7'),
                 'categories' => array(
                     'blog'	=> esc_html__('Blog', 'bridge-core'),
                     'creative'	=> esc_html__('Creative', 'bridge-core'),
@@ -5518,7 +5518,7 @@ if(!function_exists('bridge_core_demos_list')) {
                 'title' => esc_html__('Massage Parlor', 'bridge-core'),
                 'rev-sliders' => array('slider-1.zip'),
                 'layer-sliders' => array(),
-                'required-plugins' => array('elementor', 'qi-addons-for-elementor', 'contact-form-7', 'revslider', 'qode-instagram-widget'),
+                'required-plugins' => array('elementor', 'qi-addons-for-elementor', 'contact-form-7', 'revslider'),
                 'categories' => array(
                     'business'	=> esc_html__('Business', 'bridge-core'),
                     'elementor'	=> esc_html__('Elementor', 'bridge-core'),
@@ -5538,7 +5538,7 @@ if(!function_exists('bridge_core_demos_list')) {
 				'title' => esc_html__('Travel Tours', 'bridge-core'),
 				'rev-sliders' => array('home-slider.zip'),
 				'layer-sliders' => array(),
-				'required-plugins' => array('elementor', 'qi-addons-for-elementor', 'contact-form-7', 'revslider', 'qode-tours', 'qode-instagram-widget', 'qode-twitter-feed'),
+				'required-plugins' => array('elementor', 'qi-addons-for-elementor', 'contact-form-7', 'revslider', 'qode-tours', 'qode-twitter-feed'),
 				'categories' => array(
 					'business'	=> esc_html__('Business', 'bridge-core'),
 					'elementor'	=> esc_html__('Elementor', 'bridge-core'),
@@ -5559,7 +5559,7 @@ if(!function_exists('bridge_core_demos_list')) {
 				'title' => esc_html__('Aromatherapy', 'bridge-core'),
 				'rev-sliders' => array('home-slider.zip'),
 				'layer-sliders' => array(),
-				'required-plugins' => array('elementor', 'qi-addons-for-elementor', 'contact-form-7', 'revslider', 'qode-instagram-widget'),
+				'required-plugins' => array('elementor', 'qi-addons-for-elementor', 'contact-form-7', 'revslider'),
 				'categories' => array(
 					'business'	=> esc_html__('Business', 'bridge-core'),
 					'elementor'	=> esc_html__('Elementor', 'bridge-core'),
@@ -5569,7 +5569,7 @@ if(!function_exists('bridge_core_demos_list')) {
 				'title' => esc_html__('Hairdresser', 'bridge-core'),
 				'rev-sliders' => array('slider-1.zip'),
 				'layer-sliders' => array(),
-				'required-plugins' => array('elementor', 'qi-addons-for-elementor', 'contact-form-7', 'revslider', 'qode-instagram-widget'),
+				'required-plugins' => array('elementor', 'qi-addons-for-elementor', 'contact-form-7', 'revslider'),
 				'categories' => array(
 					'business'	=> esc_html__('Business', 'bridge-core'),
 					'elementor'	=> esc_html__('Elementor', 'bridge-core'),
@@ -5908,7 +5908,7 @@ if(!function_exists('bridge_core_demos_list')) {
 				'title' => esc_html__('Fashion II', 'bridge-core'),
 				'rev-sliders' => array(),
 				'layer-sliders' => array(),
-				'required-plugins' => array('elementor', 'qi-addons-for-elementor', 'contact-form-7', 'qode-instagram-widget'),
+				'required-plugins' => array('elementor', 'qi-addons-for-elementor', 'contact-form-7'),
                 'categories' => array(
                     'blog'  => esc_html__('Blog', 'bridge-core'),
                     'elementor'	=> esc_html__('Elementor', 'bridge-core')
@@ -5929,7 +5929,7 @@ if(!function_exists('bridge_core_demos_list')) {
 				'title' => esc_html__('Fashion Blogger', 'bridge-core'),
 				'rev-sliders' => array(),
 				'layer-sliders' => array(),
-				'required-plugins' => array('elementor', 'qi-addons-for-elementor', 'contact-form-7', 'qode-instagram-widget'),
+				'required-plugins' => array('elementor', 'qi-addons-for-elementor', 'contact-form-7'),
 				'categories' => array(
 					'blog'  => esc_html__('Blog', 'bridge-core'),
 					'elementor'	=> esc_html__('Elementor', 'bridge-core')
@@ -6001,7 +6001,7 @@ if(!function_exists('bridge_core_demos_list')) {
                 'title' => esc_html__('Food Blog', 'bridge-core'),
                 'rev-sliders' => array(),
                 'layer-sliders' => array(),
-                'required-plugins' => array('elementor', 'qi-addons-for-elementor', 'contact-form-7', 'qode-news', 'qode-instagram-widget'),
+                'required-plugins' => array('elementor', 'qi-addons-for-elementor', 'contact-form-7', 'qode-news'),
                 'categories' => array(
 	                'blog'  => esc_html__('Blog', 'bridge-core'),
 	                'special'  => esc_html__('Special', 'bridge-core'),
@@ -6066,7 +6066,7 @@ if(!function_exists('bridge_core_demos_list')) {
 	                '7-about-slider-4.zip',
                 ),
                 'layer-sliders' => array(),
-                'required-plugins' => array('elementor', 'qi-addons-for-elementor', 'contact-form-7', 'revslider', 'qode-instagram-widget', 'qode-twitter-feed'),
+                'required-plugins' => array('elementor', 'qi-addons-for-elementor', 'contact-form-7', 'revslider', 'qode-twitter-feed'),
                 'categories' => array(
 	                'creative'  => esc_html__('Creative', 'bridge-core'),
 	                'business'  => esc_html__('Business', 'bridge-core'),
@@ -6092,7 +6092,7 @@ if(!function_exists('bridge_core_demos_list')) {
 					'slider-1.zip'
                 ),
                 'layer-sliders' => array(),
-                'required-plugins' => array('elementor', 'qi-addons-for-elementor', 'contact-form-7', 'revslider', 'qode-instagram-widget'),
+                'required-plugins' => array('elementor', 'qi-addons-for-elementor', 'contact-form-7', 'revslider'),
                 'categories' => array(
 	                'blog'  => esc_html__('Blog', 'bridge-core'),
                     'elementor'	=> esc_html__('Elementor', 'bridge-core')
@@ -6267,7 +6267,7 @@ if(!function_exists('bridge_core_demos_list')) {
                 'title' => esc_html__('Music Magazine', 'bridge-core'),
                 'rev-sliders' => array(),
                 'layer-sliders' => array(),
-                'required-plugins' => array('elementor', 'contact-form-7', 'qode-instagram-widget', 'qode-twitter-feed', 'qode-news', 'qi-addons-for-elementor'),
+                'required-plugins' => array('elementor', 'contact-form-7', 'qode-twitter-feed', 'qode-news', 'qi-addons-for-elementor'),
                 'categories' => array(
 	                'elementor' => esc_html__('Elementor', 'bridge-core'),
 	                'blog'		=> esc_html__('Blog', 'bridge-core'),
@@ -6279,7 +6279,7 @@ if(!function_exists('bridge_core_demos_list')) {
 				'title' => esc_html__('Medical', 'bridge-core'),
 				'rev-sliders' => array('home.zip'),
 				'layer-sliders' => array(),
-				'required-plugins' => array('elementor', 'revslider', 'contact-form-7', 'qode-instagram-widget', 'qode-twitter-feed', 'qi-addons-for-elementor'),
+				'required-plugins' => array('elementor', 'revslider', 'contact-form-7', 'qode-twitter-feed', 'qi-addons-for-elementor'),
 				'categories' => array(
 					'elementor' => esc_html__('Elementor', 'bridge-core'),
 					'business'	=> esc_html__('Business', 'bridge-core')
@@ -6348,7 +6348,7 @@ if(!function_exists('bridge_core_demos_list')) {
                 'title' => esc_html__('Travel', 'bridge-core'),
                 'rev-sliders' => array('home-slider.zip'),
                 'layer-sliders' => array(),
-                'required-plugins' => array('elementor', 'revslider', 'contact-form-7', 'qode-tours', 'qode-instagram-widget', 'qode-membership', 'qode-twitter-feed', 'qi-addons-for-elementor'),
+                'required-plugins' => array('elementor', 'revslider', 'contact-form-7', 'qode-tours', 'qode-membership', 'qode-twitter-feed', 'qi-addons-for-elementor'),
                 'categories' => array(
                     'elementor'  => esc_html__('Elementor', 'bridge-core'),
                     'business'	=> esc_html__('Business', 'bridge-core'),
@@ -6428,7 +6428,7 @@ if(!function_exists('bridge_core_demos_list')) {
                 'title' => esc_html__('Exotic Travels', 'bridge-core'),
                 'rev-sliders' => array('home.zip', 'section1.zip', 'video.zip'),
                 'layer-sliders' => array(),
-                'required-plugins' => array('elementor', 'revslider', 'contact-form-7', 'qode-instagram-widget', 'qi-addons-for-elementor'),
+                'required-plugins' => array('elementor', 'revslider', 'contact-form-7', 'qi-addons-for-elementor'),
                 'categories' => array(
                     'elementor'  => esc_html__('Elementor', 'bridge-core'),
                     'business'	=> esc_html__('Business', 'bridge-core')
@@ -6450,7 +6450,7 @@ if(!function_exists('bridge_core_demos_list')) {
                 'title' => esc_html__('Jewelry Store', 'bridge-core'),
                 'rev-sliders' => array(),
                 'layer-sliders' => array(),
-                'required-plugins' => array('elementor', 'contact-form-7', 'qode-instagram-widget', 'woocommerce', 'sellkit', 'qi-addons-for-elementor'),
+                'required-plugins' => array('elementor', 'contact-form-7', 'woocommerce', 'sellkit', 'qi-addons-for-elementor'),
                 'categories' => array(
                     'elementor'  => esc_html__('Elementor', 'bridge-core'),
                     'shop'	=> esc_html__('Shop', 'bridge-core')
@@ -6461,7 +6461,7 @@ if(!function_exists('bridge_core_demos_list')) {
                 'title' => esc_html__('Explorer', 'bridge-core'),
                 'rev-sliders' => array('home-slider.zip'),
                 'layer-sliders' => array(),
-                'required-plugins' => array('elementor', 'revslider', 'contact-form-7', 'qode-instagram-widget', 'qode-twitter-feed', 'qi-addons-for-elementor'),
+                'required-plugins' => array('elementor', 'revslider', 'contact-form-7', 'qode-twitter-feed', 'qi-addons-for-elementor'),
                 'categories' => array(
                     'elementor'  => esc_html__('Elementor', 'bridge-core'),
                     'blog'	=> esc_html__('Blog', 'bridge-core')
@@ -6506,7 +6506,7 @@ if(!function_exists('bridge_core_demos_list')) {
                 'title' => esc_html__('Web Design Studio', 'bridge-core'),
                 'rev-sliders' => array('home.zip'),
                 'layer-sliders' => array(),
-                'required-plugins' => array('elementor', 'revslider', 'contact-form-7', 'qode-instagram-widget', 'qode-twitter-feed', 'qi-addons-for-elementor'),
+                'required-plugins' => array('elementor', 'revslider', 'contact-form-7', 'qode-twitter-feed', 'qi-addons-for-elementor'),
                 'categories' => array(
                     'elementor'  => esc_html__('Elementor', 'bridge-core'),
                     'business'	=> esc_html__('Business', 'bridge-core'),
@@ -6541,7 +6541,7 @@ if(!function_exists('bridge_core_demos_list')) {
                 'title' => esc_html__('Designer Presentation', 'bridge-core'),
                 'rev-sliders' => array('home.zip'),
                 'layer-sliders' => array(),
-                'required-plugins' => array('elementor', 'revslider', 'contact-form-7', 'qode-instagram-widget', 'qi-addons-for-elementor'),
+                'required-plugins' => array('elementor', 'revslider', 'contact-form-7', 'qi-addons-for-elementor'),
                 'categories' => array(
                     'elementor'  => esc_html__('Elementor', 'bridge-core'),
                     'creative'	=> esc_html__('Creative', 'bridge-core')
@@ -6575,7 +6575,7 @@ if(!function_exists('bridge_core_demos_list')) {
                 'title' => esc_html__('Moving Company', 'bridge-core'),
                 'rev-sliders' => array('home.zip'),
                 'layer-sliders' => array(),
-                'required-plugins' => array('elementor', 'revslider', 'contact-form-7', 'qode-instagram-widget', 'qi-addons-for-elementor'),
+                'required-plugins' => array('elementor', 'revslider', 'contact-form-7', 'qi-addons-for-elementor'),
                 'categories' => array(
                     'elementor'  => esc_html__('Elementor', 'bridge-core'),
                     'business'	 => esc_html__('Business', 'bridge-core')
@@ -6598,7 +6598,7 @@ if(!function_exists('bridge_core_demos_list')) {
                 'title' => esc_html__('Makeup Artist', 'bridge-core'),
                 'rev-sliders' => array('home11.zip'),
                 'layer-sliders' => array(),
-                'required-plugins' => array('elementor', 'revslider', 'contact-form-7', 'qode-instagram-widget', 'qode-twitter-feed', 'qi-addons-for-elementor'),
+                'required-plugins' => array('elementor', 'revslider', 'contact-form-7', 'qode-twitter-feed', 'qi-addons-for-elementor'),
                 'categories' => array(
                     'elementor'  => esc_html__('Elementor', 'bridge-core'),
                     'business'	 => esc_html__('Business', 'bridge-core')
@@ -6620,7 +6620,7 @@ if(!function_exists('bridge_core_demos_list')) {
                 'title' => esc_html__('City Listing', 'bridge-core'),
                 'rev-sliders' => array(),
                 'layer-sliders' => array(),
-                'required-plugins' => array('elementor', 'contact-form-7', 'qode-instagram-widget', 'qode-membership', 'qode-listing', 'woocommerce', 'sellkit', 'wp-job-manager', 'wp-job-manager-locations', 'qi-addons-for-elementor'),
+                'required-plugins' => array('elementor', 'contact-form-7', 'qode-membership', 'qode-listing', 'woocommerce', 'sellkit', 'wp-job-manager', 'wp-job-manager-locations', 'qi-addons-for-elementor'),
                 'categories' => array(
                     'elementor'  => esc_html__('Elementor', 'bridge-core'),
                     'business'	 => esc_html__('Business', 'bridge-core'),
@@ -6678,7 +6678,7 @@ if(!function_exists('bridge_core_demos_list')) {
                 'title' => esc_html__('Outdoors', 'bridge-core'),
                 'rev-sliders' => array('slider-1.zip'),
                 'layer-sliders' => array(),
-                'required-plugins' => array('elementor', 'revslider', 'contact-form-7', 'qode-instagram-widget', 'qi-addons-for-elementor'),
+                'required-plugins' => array('elementor', 'revslider', 'contact-form-7', 'qi-addons-for-elementor'),
                 'categories' => array(
                     'elementor'  => esc_html__('Elementor', 'bridge-core'),
                     'creative'	 => esc_html__('Creative', 'bridge-core'),
@@ -7044,7 +7044,7 @@ if(!function_exists('bridge_core_demos_list')) {
 				'title' => esc_html__('Bridge Landing', 'bridge-core'),
 				'rev-sliders' => array('elements-rev-slider.zip', 'equation-slider.zip', 'features.zip', 'features-design.zip', 'features-shop.zip', 'landing-342.zip', 'landing-test-sale.zip'),
 				'layer-sliders' => array(),
-				'required-plugins' => array('js_composer', 'revslider', 'contact-form-7', 'woocommerce', 'sellkit', 'LayerSlider', 'qode-instagram-widget', 'qode-twitter-feed', 'qode-wishlist-for-woocommerce', 'qode-quick-view-for-woocommerce')
+				'required-plugins' => array('js_composer', 'revslider', 'contact-form-7', 'woocommerce', 'sellkit', 'LayerSlider', 'qode-twitter-feed', 'qode-wishlist-for-woocommerce', 'qode-quick-view-for-woocommerce')
 			)
 		);
 

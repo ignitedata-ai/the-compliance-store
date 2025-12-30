@@ -37,6 +37,7 @@
   "hooks/vc-single-image.php": "add bc for single image",
   "hooks/vc-undoredo.php": "Undo Redo logic",
   "hooks/admin/vc-post-type-default-template.php": "Load default templates",
+  "hooks/hook-vc-element-teasers.php": "Element teasers",
   "overrides/vc-override-wp-functions.php": "Override native wp functions",
   "overrides/vc-override-php-functions.php": "Override native php functions",
   "vc-pages/automapper.php": "",
@@ -45,8 +46,8 @@
   "vc-pages/pages.php": "Vc Special pages.",
   "vc-pages/settings-tabs.php": "Vc Special pages.",
   "vc-pages/welcome-screen.php": "Vc Special pages.",
-  "classes/class-vc-notice-controller.php": "Plugin Notice System",
-  "classes/class-vc-expire-notice-controller.php": "Plugin Expire Notice System",
+  "classes/notifications/class-vc-notice-controller.php": "Plugin Notice System",
+  "classes/notifications/class-vc-expire-notice-controller.php": "Plugin Expire Notice System",
   "classes/class-local-fonts.php": "Local Google fonts",
   "globals/vc-globals-var.php": "Set up plugin globals variables here"
 }

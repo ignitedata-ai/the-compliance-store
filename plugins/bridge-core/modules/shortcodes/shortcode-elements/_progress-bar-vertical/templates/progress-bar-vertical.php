@@ -51,7 +51,7 @@
 	$html .= "<div class='progress_content_outer' style='" . esc_attr($bar_holder_styles) . "'>";
 	$html .= "<div data-percentage='" . esc_attr( $percent ) . "' class='progress_content' style='" . esc_attr( $bar_styles ) . "'></div>";
 	$html .= "</div>"; // close progress_content_outer
-	$html .= "<" . esc_html($title_tag) . " class='progress_title' style='" . esc_attr( $title_styles ) . "'>" . esc_html( $title ) . "</" . esc_html($title_tag) . ">";
+	$html .= "<" . bridge_qode_get_escape_title_tag($title_tag) . " class='progress_title' style='" . esc_attr( $title_styles ) . "'>" . esc_html( $title ) . "</" . bridge_qode_get_escape_title_tag($title_tag) . ">";
 	$html .= "<span class='progress_number' style='" . esc_attr($percentage_styles) . "'>";
 	$html .= "<span>" . esc_html($percent) . "</span>%";
 	$html .= "</span>"; // close progress_number

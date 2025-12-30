@@ -456,6 +456,10 @@ class ExactMetrics_Rest_Routes {
 		$parsed_addons['cookie_yes'] = array(
 			'active' => defined( 'CLI_SETTINGS_FIELD' ),
 		);
+		// Consent Manager
+		$parsed_addons['consentmanager'] = array(
+			'active' => class_exists( 'ConsentManagerMain' ),
+		);
 		// Google AMP.
 		$parsed_addons['google_amp'] = array(
 			'active' => defined( 'AMP__FILE__' ),
@@ -810,6 +814,19 @@ class ExactMetrics_Rest_Routes {
 		$parsed_addons['formidable_forms'] = array(
 			'active' => class_exists( 'FrmHooksController' ),
 		);
+
+		// OptinMonster.
+		$parsed_addons['optinmonster'] = array(
+			'active'    => class_exists( 'OMAPI' ),
+			'icon'      => plugin_dir_url( EXACTMETRICS_PLUGIN_FILE ) . 'assets/images/plugins/plugin-om.png',
+			'title'     => 'OptinMonster',
+			'excerpt'   => __( 'Instantly get more subscribers, leads, and sales with the #1 conversion optimization toolkit. Create high converting popups, announcement bars, spin a wheel, and more with smart targeting and personalization.', 'exactmetrics-premium' ),
+			'installed' => array_key_exists( 'optinmonster/optin-monster-wp-api.php', $installed_plugins ),
+			'basename'  => 'optinmonster/optin-monster-wp-api.php',
+			'slug'      => 'optinmonster',
+			'settings'  => admin_url( 'admin.php?page=optin-monster-dashboard' ),
+		);
+
 		// Manual UA Addon.
 		if ( ! isset( $parsed_addons['manual_ua'] ) ) {
 			$parsed_addons['manual_ua'] = array(

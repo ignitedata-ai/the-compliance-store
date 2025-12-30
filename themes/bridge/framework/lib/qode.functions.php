@@ -1110,14 +1110,6 @@ if ( ! function_exists('bridge_qode_add_custom_upload_mimes') ) {
 	add_filter('upload_mimes', 'bridge_qode_add_custom_upload_mimes');
 }
 
-if ( ! function_exists( 'bridge_qode_return_global_options' ) ) {
-	function bridge_qode_return_global_options() {
-		global $bridge_qode_options;
-
-		return $bridge_qode_options;
-	}
-}
-
 if ( ! function_exists( 'bridge_qode_get_search_page_template' ) ) {
     function bridge_qode_get_search_page_template( $template, $module, $slug = '', $params = array(), $plugin = false ) {
         $root          = $plugin ? apply_filters( 'bridge_qode_filter_edit_module_template_path', $root = 'framework/modules/' ) : 'framework/modules/';
@@ -1125,4 +1117,38 @@ if ( ! function_exists( 'bridge_qode_get_search_page_template' ) ) {
 
         bridge_qode_get_template_part( $template_path . '/' . $template, $slug, $params, $plugin );
     }
+}
+
+if ( ! function_exists( 'bridge_qode_get_escape_title_tag' ) ) {
+	/**
+	 * Function that escape title tag variable for modules
+	 *
+	 * @param string $title_tag
+	 *
+	 * @return string
+	 */
+	function bridge_qode_get_escape_title_tag( $title_tag ) {
+		$allowed_tags = array(
+			'h1',
+			'h2',
+			'h3',
+			'h4',
+			'h5',
+			'h6',
+			'p',
+			'span',
+			'ul',
+			'ol',
+			'div',
+		);
+		
+		$escaped_title_tag = '';
+		$title_tag         = strtolower( sanitize_key( $title_tag ) );
+		
+		if ( in_array( $title_tag, $allowed_tags, true ) ) {
+			$escaped_title_tag = $title_tag;
+		}
+		
+		return $escaped_title_tag;
+	}
 }

@@ -59,7 +59,7 @@ if ( ! empty( $el_id ) ) {
 	$wrapper_attributes[] = 'id="' . esc_attr( $el_id ) . '"';
 }
 $output = '';
-$tag = tag_escape( $font_container_data['values']['tag'] );
+$tag = $this->sanitize_tags( $font_container_data['values']['tag'] );
 if ( apply_filters( 'vc_custom_heading_template_use_wrapper', false ) ) {
 	$output .= '<div class="' . esc_attr( $css_class ) . '" ' . implode( ' ', $wrapper_attributes ) . '>';
 	$output .= '<' . $tag . ' ' . $style . ' >';

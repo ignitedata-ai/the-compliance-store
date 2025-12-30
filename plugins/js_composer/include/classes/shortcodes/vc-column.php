@@ -49,11 +49,11 @@ class WPBakeryShortCode_VC_Column extends WPBakeryShortCode {
 	 * @return string
 	 * @throws \Exception
 	 */
-	public function getColumnControls( $controls, $extended_css = '' ) {
+	public function getColumnControls( $controls, $extended_css = '' ) { // phpcs:ignore:Generic.Metrics.CyclomaticComplexity.TooHigh, CognitiveComplexity.Complexity.MaximumComplexity.TooHigh
 		$output = '<div class="vc_controls vc_control-column vc_controls-visible' . ( ! empty( $extended_css ) ? " {$extended_css}" : '' ) . '">';
 		$controls_end = '</div>';
 
-		if ( ' bottom-controls' === $extended_css ) {
+		if ( 'bottom-controls' === $extended_css ) {
 			$control_title = __( 'Append to this column', 'js_composer' );
 		} else {
 			$control_title = __( 'Prepend to this column', 'js_composer' );
@@ -162,7 +162,7 @@ class WPBakeryShortCode_VC_Column extends WPBakeryShortCode {
 	 *
 	 * @return string
 	 */
-	public function contentAdmin( $atts, $content = null ) {
+	public function contentAdmin( $atts, $content = null ) { // phpcs:ignore:Generic.Metrics.CyclomaticComplexity.TooHigh, CognitiveComplexity.Complexity.MaximumComplexity.TooHigh
 		$width = '';
 		$atts = vc_map_get_attributes( $this->getShortcode(), $atts );
 		// @codingStandardsIgnoreLine

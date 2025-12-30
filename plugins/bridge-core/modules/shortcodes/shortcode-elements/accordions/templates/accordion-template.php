@@ -1,4 +1,4 @@
-<<?php echo esc_attr($title_tag) ?> class="clearfix qode-title-holder">
+<<?php echo bridge_qode_get_escape_title_tag($title_tag) ?> class="clearfix qode-title-holder">
 <span class="qode-tab-title">
 	<?php if ($icon !== '' && $icon_pack !== false) { ?>
 		<span class="qode-tab-title-icon">
@@ -15,7 +15,7 @@
         <span class="icon_minus-06"></span>
     </span>
 </span>
-</<?php echo esc_attr($title_tag) ?>>
+</<?php echo bridge_qode_get_escape_title_tag($title_tag) ?>>
 <?php
 $accordion_id = '';
 if(isset($el_id) && !empty($el_id)){

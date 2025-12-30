@@ -50,7 +50,7 @@ class WPBakeryShortCode_VC_Accordion_Tab extends WPBakeryShortCode_VC_Tab {
 	 * @return string
 	 * @throws \Exception
 	 */
-	public function contentAdmin( $atts, $content = null ) {
+	public function contentAdmin( $atts, $content = null ) { // phpcs:ignore:Generic.Metrics.CyclomaticComplexity.TooHigh, CognitiveComplexity.Complexity.MaximumComplexity.TooHigh
 		$width = '';
 		// @codingStandardsIgnoreLine
 		extract( vc_map_get_attributes( $this->getShortcode(), $atts ) );

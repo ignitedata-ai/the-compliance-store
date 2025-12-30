@@ -369,7 +369,7 @@ if ( ! function_exists( 'vc_map_integrate_shortcode' ) ) :
 	 * @return array
 	 * @throws Exception
 	 */
-	function vc_map_integrate_shortcode( $shortcode, $field_prefix = '', $group_prefix = '', $change_fields = null, $dependency = null ) { // phpcs:ignore:Generic.Metrics.CyclomaticComplexity.TooHigh
+	function vc_map_integrate_shortcode( $shortcode, $field_prefix = '', $group_prefix = '', $change_fields = null, $dependency = null ) { // phpcs:ignore:Generic.Metrics.CyclomaticComplexity.TooHigh, CognitiveComplexity.Complexity.MaximumComplexity.TooHigh
 		if ( is_string( $shortcode ) ) {
 			$shortcode_data = WPBMap::getShortCode( $shortcode );
 		} else {

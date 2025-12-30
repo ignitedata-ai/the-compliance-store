@@ -98,7 +98,7 @@
 	$html .= "<div class='service_table_title_inner'><div class='service_table_title_inner2'>";
 	
 	if ( $title != "" ) {
-		$html .= "<" . esc_attr( $title_tag ) . " class='service_title' style='" . esc_attr($title_style) . "'>" . esc_html($title) . "</" . esc_attr($title_tag) . ">";
+		$html .= "<" . bridge_qode_get_escape_title_tag( $title_tag ) . " class='service_title' style='" . esc_attr($title_style) . "'>" . esc_html($title) . "</" . bridge_qode_get_escape_title_tag($title_tag) . ">";
 	}
 	
 	$html .= $icon_html;

@@ -39,7 +39,7 @@ if ( ! function_exists( 'vc_dropdown_form_field' ) ) :
 	 * @return string - html string.
 	 * @since 4.4
 	 */
-	function vc_dropdown_form_field( $settings, $value ) {
+	function vc_dropdown_form_field( $settings, $value ) { // phpcs:ignore:Generic.Metrics.CyclomaticComplexity.TooHigh, CognitiveComplexity.Complexity.MaximumComplexity.TooHigh
 		$output = '';
 		$css_option = str_replace( '#', 'hash-', vc_get_dropdown_option( $settings, $value ) );
 		$output .= '<select name="' . $settings['param_name'] . '" class="wpb_vc_param_value wpb-input wpb-select ' . $settings['param_name'] . ' ' . $settings['type'] . ' ' . $css_option . '" data-option="' . $css_option . '">';
@@ -203,6 +203,47 @@ if ( ! function_exists( 'vc_exploded_textarea_safe_form_field' ) ) :
 			$value = str_replace( ',', "\n", $value );
 		}
 		return '<textarea name="' . $settings['param_name'] . '" class="wpb_vc_param_value wpb-textarea ' . $settings['param_name'] . ' ' . $settings['type'] . '">' . $value . '</textarea>';
+	}
+endif;
+
+if ( ! function_exists( 'vc_range_form_field' ) ) :
+	/**
+	 * Range input and number input shortcode attribute type generator.
+	 *
+	 * @param array $settings
+	 * @param string $value
+	 *
+	 * @return string
+	 */
+	function vc_range_form_field( $settings, $value ) {
+		$value = is_string( $value ) ? htmlspecialchars( $value ) : '';
+		$value_type = isset( $settings['value_type'] ) ? $settings['value_type'] : 'html';
+		$placeholder = $settings['placeholder'] ?? '';
+		$min = isset( $settings['min'] ) ? $settings['min'] : 1;
+		$max = isset( $settings['max'] ) ? $settings['max'] : 100;
+
+		return '<div class="wpb-range-container">
+					<input
+						name="' . esc_attr( $settings['param_name'] ) . '-range" 
+						class="wpb_vc_param_value wpb-range ' . esc_attr( $settings['param_name'] ) . ' ' . esc_attr( $settings['type'] ) . '"
+						type="range"
+						step="1"
+						min="' . esc_attr( $min ) . '"
+						max="' . esc_attr( $max ) . '"
+						value="' . esc_attr( $value ) . '"
+						data-value-type="' . esc_attr( $value_type ) . '"
+						/>
+					<input
+						name="' . esc_attr( $settings['param_name'] ) . '"
+						class="wpb_vc_param_value wpb-textinput ' . esc_attr( $settings['param_name'] ) . ' ' . esc_attr( $settings['type'] ) . '"
+						type="number"
+						min="' . esc_attr( $min ) . '"
+						max="' . esc_attr( $max ) . '"
+						value="' . esc_attr( $value ) . '"
+						data-value-type="' . esc_attr( $value_type ) . '"
+						placeholder="' . esc_attr( $placeholder ) . '"
+						/>
+				</div>';
 	}
 endif;
 

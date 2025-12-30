@@ -22,7 +22,7 @@ add_action('init', function () {
 		require_once EXACTMETRICS_PLUGIN_DIR . 'includes/api/class-exactmetrics-api.php';
 		require_once EXACTMETRICS_PLUGIN_DIR . 'includes/api/class-exactmetrics-api-reports.php';
 		require_once EXACTMETRICS_PLUGIN_DIR . 'includes/api/class-exactmetrics-api-tracking.php';
-		
+
 		// Pro-only API
 		require_once EXACTMETRICS_PLUGIN_DIR . 'pro/includes/api/class-exactmetrics-api-ads.php';
 
@@ -87,6 +87,9 @@ add_action('init', function () {
 	require_once EXACTMETRICS_PLUGIN_DIR . 'pro/includes/gutenberg/frontend.php';
 	require_once EXACTMETRICS_PLUGIN_DIR . 'includes/connect.php';
 
+	// Custom conversion tracking.
+	require_once EXACTMETRICS_PLUGIN_DIR . 'pro/includes/admin/custom-conversion-tracking.php';
+
 	// Run hook to load ExactMetrics addons.
 	do_action( 'exactmetrics_load_plugins' ); // the updater class for each addon needs to be instantiated via `exactmetrics_updater`
 
@@ -95,3 +98,13 @@ add_action('init', function () {
 		require_once EXACTMETRICS_PLUGIN_DIR . 'pro/includes/ppc/class-exactmetrics-ppc-tracking-core.php';
 	}
 }, 0 );
+
+add_action( 'et_builder_ready', function() {
+	require_once EXACTMETRICS_PLUGIN_DIR . 'pro/includes/frontend/divi-button-module.php';
+
+	new ExactMetrics_Divi_Button_Module();
+
+	require_once EXACTMETRICS_PLUGIN_DIR . 'pro/includes/frontend/divi-image-module.php';
+
+	new ExactMetrics_Divi_Image_Module();
+}, 200 );

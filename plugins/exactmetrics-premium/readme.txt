@@ -4,7 +4,7 @@ Donate link: http://www.wpbeginner.com/wpbeginner-needs-your-help/
 Tags: analytics,google analytics,google analytics dashboard,google analytics plugin,website stats
 Requires at least: 5.6.0
 Tested up to: 6.8.3
-Stable tag: 8.9.0
+Stable tag: 8.10.0
 Requires PHP: 7.2
 License: GPL v3
 
@@ -131,6 +131,12 @@ You can translate Google Analytics Dashboard for WP by ExactMetrics on [translat
 4. Want more features? <a href="https://www.exactmetrics.com/?utm_source=wprepo&utm_medium=link&utm_campaign=liteversion">Purchase ExactMetrics Pro</a>!
 
 == Changelog ==
+= 8.10.0: November 13, 2025 =
+- New: Sync site annotations with GA4 automatically
+- New: Create custom conversions in GA and access detailed event tracking reports.
+- New: Product Feeds Report for enhanced insights for AdTribes users
+- Enhancements: Various performance improvements and bug fixes.
+
 = 8.9.1: October 16, 2025 =
 - Fixed: Minor updates and bug fixes
 

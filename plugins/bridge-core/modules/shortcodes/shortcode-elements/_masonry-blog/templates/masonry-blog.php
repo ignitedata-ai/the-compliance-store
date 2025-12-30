@@ -96,7 +96,7 @@
 			$html .= '</div>';
 			
 			$html .= '<div class="q_masonry_blog_post_text">';
-			$html .= '<'. esc_attr( $title_tag ) .' itemprop="name" class="q_masonry_blog_title entry_title"><a itemprop="url" href="' . get_permalink() . '">' . get_the_title() . '</a></'. esc_attr( $title_tag ) .'>';
+			$html .= '<'. bridge_qode_get_escape_title_tag( $title_tag ) .' itemprop="name" class="q_masonry_blog_title entry_title"><a itemprop="url" href="' . get_permalink() . '">' . get_the_title() . '</a></'. bridge_qode_get_escape_title_tag( $title_tag ) .'>';
 			$excerpt = ($text_length > 0) ? substr(get_the_excerpt(), 0, intval($text_length)) : get_the_excerpt();
 			$html .= '<p itemprop="description" class="q_masonry_blog_excerpt">'. wp_kses_post( $excerpt ).'...</p>';
 			$html .= '<div class="q_masonry_blog_post_info">';

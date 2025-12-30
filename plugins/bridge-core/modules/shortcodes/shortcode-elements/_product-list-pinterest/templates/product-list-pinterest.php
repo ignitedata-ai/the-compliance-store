@@ -110,7 +110,7 @@
 		} else {
 			$html .= '<div class="qode_product_category" ' . bridge_qode_get_inline_style( $category_style ) . '>' . wp_kses_post( $cat ) . '</div>';
 		}
-		$html .= '<' . esc_attr( $title_tag ) . ' itemprop="name" class="qode_product_title entry-title">' . wp_kses_post($title ) . '</' . esc_attr( $title_tag ) . '>';
+		$html .= '<' . bridge_qode_get_escape_title_tag( $title_tag ) . ' itemprop="name" class="qode_product_title entry-title">' . wp_kses_post($title ) . '</' . bridge_qode_get_escape_title_tag( $title_tag ) . '>';
 		$html .= '<div class="qode_product_separator separator center small" ' . bridge_qode_get_inline_style( $separator_style ) . '></div>';
 		$html .= '<div class="qode_product_price" ' . bridge_qode_get_inline_style( $price_style ) . '>' . wp_kses_post( $price ) . '</div>';
 		$html .= '</div>';
@@ -123,7 +123,7 @@
 		} else {
 			$html .= '<div class="qode_product_category" ' . bridge_qode_get_inline_style( $category_style ) . '>' . wp_kses_post( $cat ) . '</div>';
 		}
-		$html .= '<' . esc_attr( $title_tag ) . ' itemprop="name" class="qode_product_title entry-title"><a itemprop="url" class="product_list_link" href="' . get_the_permalink() . '" target="_self">' . wp_kses_post( $title ) . '</a></' . esc_attr( $title_tag ) . '>';
+		$html .= '<' . bridge_qode_get_escape_title_tag( $title_tag ) . ' itemprop="name" class="qode_product_title entry-title"><a itemprop="url" class="product_list_link" href="' . get_the_permalink() . '" target="_self">' . wp_kses_post( $title ) . '</a></' . bridge_qode_get_escape_title_tag( $title_tag ) . '>';
 		$html .= '<div class="qode_product_separator separator center small" ' . bridge_qode_get_inline_style( $separator_style ) . '></div>';
 		$html .= '<div class="qode_product_price" ' . bridge_qode_get_inline_style( $price_style ) . '>' . wp_kses_post($price ). '</div>';
 		$html .= '<div class="qode_product_button">' . wp_kses_post( $button ) . '</div>';

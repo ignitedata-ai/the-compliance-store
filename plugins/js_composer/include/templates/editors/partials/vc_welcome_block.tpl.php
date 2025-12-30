@@ -55,8 +55,7 @@ if ( vc_modules_manager()->is_module_on( 'vc-post-custom-layout' ) ) {
 					data-vc-element="add-element-action" href="#">
 					<i class="vc-composer-icon vc-c-icon-add_element"></i>
 					<span><?php esc_html_e( 'Add element', 'js_composer' ); ?></span>
-				</a>
-				<?php
+				</a><?php // phpcs:ignore:Squiz.PHP.EmbeddedPhp
 			endif;
 			if ( vc_user_access()->part( 'shortcodes' )->can( 'vc_column_text_all' )->get() ) :
 				?>
@@ -66,16 +65,16 @@ if ( vc_modules_manager()->is_module_on( 'vc-post-custom-layout' ) ) {
 					title="<?php esc_attr_e( 'Add text block', 'js_composer' ); ?>">
 					<i class="vc-composer-icon vc-c-icon-text-block"></i>
 					<span><?php esc_html_e( 'Add Text Block', 'js_composer' ); ?></span>
-				</a>
-			<?php endif; ?>
-			<?php
+				</a><?php // phpcs:ignore:Squiz.PHP.EmbeddedPhp
+			endif;
 			if ( $templates_total_count > 0 && vc_user_access()->part( 'templates' )->can()->get() ) :
 				?>
 				<a id="vc_templates-more-layouts" class="vc_general vc_ui-button vc_ui-button-shape-rounded vc_ui-button-info  vc_ui-button-info vc_welcome-visible-e" href="#">
 					<i class="vc-composer-icon vc-c-icon-add_template"></i>
 					<span><?php esc_html_e( 'Add template', 'js_composer' ); ?></span>
-				</a>
-			<?php endif; ?>
+				</a><?php // phpcs:ignore:Squiz.PHP.EmbeddedPhp
+			endif;
+			?>
 		</div>
 		<?php
 		if ( vc_user_access()->part( 'shortcodes' )->checkStateAny( true, 'custom', null )->get() && vc_user_access_check_shortcode_all( 'vc_row' ) && vc_user_access_check_shortcode_all( 'vc_column' ) ) :

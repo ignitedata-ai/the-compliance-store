@@ -228,6 +228,7 @@
 					width: '100%',
 					closeOnSelect: false,
 					allowHtml: true,
+					dropdownParent: $( '#vc_ui-panel-post-settings' ),
 					templateResult: function ( data ) {
 						if ( !data.id ) { return data.text; }
 						var $result = $( '<span class="wpb_select2-option-checkbox"></span>' );
@@ -253,6 +254,7 @@
 					tags: true,
 					tokenSeparators: [ ',' ],
 					minimumInputLength: 1,
+					dropdownParent: $( '#vc_ui-panel-post-settings' ),
 					ajax: {
 						url: window.ajaxurl,
 						type: 'POST',

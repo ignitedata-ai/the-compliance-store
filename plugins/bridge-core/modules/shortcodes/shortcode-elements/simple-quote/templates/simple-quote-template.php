@@ -24,10 +24,10 @@
 		<div class="qode-simple-quote-content-holder">
 			<div class="qode-simple-quote-content-holder-inner">
 				<div class="qode-simple-quote-text-holder" <?php if(!empty($simple_quote_spacing)){?> style="margin-bottom: <?php echo intval($simple_quote_spacing);?>px"<?php }?>>
-					<<?php echo esc_attr($text_title_tag);?> class="qode-simple-quote-text-title"> <?php echo esc_attr($simple_quote_text) ?>  </<?php echo esc_attr($text_title_tag);?>>
+					<<?php echo bridge_qode_get_escape_title_tag($text_title_tag);?> class="qode-simple-quote-text-title"> <?php echo esc_attr($simple_quote_text) ?>  </<?php echo bridge_qode_get_escape_title_tag($text_title_tag);?>>
 				</div>
 				<div class="qode-simple-quote-author-holder">
-					<<?php echo esc_attr($author_title_tag);?> class="qode-simple-quote-author-title"> <?php echo esc_attr($simple_quote_author) ?>  </<?php echo esc_attr($author_title_tag);?>>
+					<<?php echo bridge_qode_get_escape_title_tag($author_title_tag);?> class="qode-simple-quote-author-title"> <?php echo esc_attr($simple_quote_author) ?>  </<?php echo bridge_qode_get_escape_title_tag($author_title_tag);?>>
 				</div>
 			</div>
 		</div>

@@ -92,10 +92,6 @@
 			var shortcodeName = this.model.get( 'shortcode' ),
 				data = JSON.stringify( this.getParamsForSettingsPreset() );
 
-			if ( 'undefined' === typeof ( title ) || !title.length ) {
-				return;
-			}
-
 			if ( 'undefined' === typeof ( isDefault ) ) {
 				isDefault = false;
 			}
@@ -191,15 +187,12 @@
 				$prompt.on( 'submit', function () {
 					var title = $title.val();
 
-					if ( !title.length ) {
-						return false;
-					}
-
 					_this.saveSettings( title, _this.isSettingsPresetDefault ).done( function ( e ) {
 						var data = this.getParamsForSettingsPreset();
 						$title.val( '' );
 						_this.setCustomButtonMessage( $btn, undefined, undefined, true );
-						vc.events.trigger( 'vc:savePreset', e.id, _this.model.get( 'shortcode' ), title, data );
+						var savedTitle = e.title || title;
+						vc.events.trigger( 'vc:savePreset', e.id, _this.model.get( 'shortcode' ), savedTitle, data );
 						delay = _.delay( function () {
 							$prompt.removeClass( 'vc_visible' );
 							$contentContainer.removeClass( 'vc_ui-content-hidden' );

@@ -108,10 +108,6 @@ class Vc_Post_Admin {
 	public function update_post_data( $post_id, $is_autosave = false ) {
 		ob_start();
 
-		if ( ! vc_post_param( 'content' ) ) {
-			return;
-		}
-
 		$post = get_post( $post_id );
 
 		/**
@@ -122,30 +118,11 @@ class Vc_Post_Admin {
 		 */
 		$post = apply_filters( 'vc_before_update_post_data', $post );
 
-		$post = $this->set_post_content( $post );
-
-		$post = $this->set_post_title( $post );
-
-		$post = $this->set_post_status( $post );
-
-		$post = $this->set_post_excerpt( $post );
-
-		$post = $this->set_post_author( $post );
-
-		$post = $this->set_post_comments( $post );
-
-		$post = $this->set_post_pingbacks( $post );
-
-		$post = $this->set_post_template( $post );
-
-		$post = $this->set_post_featured_image( $post );
-
-		$post = $this->set_post_categories( $post );
-
-		$post = $this->set_post_tags( $post );
-
-		if ( ! $is_autosave ) {
-			$post = $this->set_post_name( $post );
+		foreach ( $this->get_post_param_list() as $param_name ) {
+			if ( $is_autosave && 'post_name' === $param_name ) {
+				continue;
+			}
+			$post = $this->set_post_param( $post, $param_name );
 		}
 
 		if ( vc_user_access()->part( 'unfiltered_html' )->checkStateAny( true, null )->get() ) {
@@ -159,6 +136,58 @@ class Vc_Post_Admin {
 
 		wp_cache_flush();
 		ob_clean();
+	}
+
+	/**
+	 * Get post params list name to update.
+	 *
+	 * @since 8.7
+	 * @return array
+	 */
+	public function get_post_param_list() {
+		/**
+		 * Filter post params names list to update.
+		 *
+		 * @since 8.7
+		 */
+		return apply_filters( 'wpb_update_post_param_list', [
+			'post_title',
+			'post_excerpt',
+			'post_author',
+			'post_name',
+			// all others below updated with special class special methods.
+			'post_content',
+			'post_status',
+			'post_comments',
+			'post_pingbacks',
+			'post_template',
+			'post_featured_image',
+			'post_categories',
+			'post_tags',
+		] );
+	}
+
+	/**
+	 * Set updated post param to post object.
+	 *
+	 * @since 8.7
+	 *
+	 * @param WP_Post $post
+	 * @param string $param_name
+	 * @return WP_Post
+	 */
+	public function set_post_param( $post, $param_name ) {
+		if ( method_exists( $this, 'set_' . $param_name ) ) {
+			return $this->{'set_' . $param_name}( $post );
+		} else {
+			$value = vc_post_param( $param_name );
+
+			if ( is_string( $value ) ) {
+				$post->$param_name = wp_unslash( $value );
+			}
+
+			return $post;
+		}
 	}
 
 	/**
@@ -315,54 +344,6 @@ class Vc_Post_Admin {
 	}
 
 	/**
-	 * Set post title.
-	 *
-	 * @since 7.4
-	 * @param WP_Post $post
-	 * @return WP_Post $post
-	 */
-	public function set_post_title( $post ) {
-		$post_title = vc_post_param( 'post_title' );
-		if ( null !== $post_title ) {
-			$post->post_title = $post_title;
-		}
-
-		return $post;
-	}
-
-	/**
-	 * Set post excerpt.
-	 *
-	 * @since 8.2
-	 * @param WP_Post $post
-	 * @return WP_Post $post
-	 */
-	public function set_post_excerpt( $post ) {
-		$post_excerpt = vc_post_param( 'post_excerpt' );
-		if ( null !== $post_excerpt ) {
-			$post->post_excerpt = $post_excerpt;
-		}
-
-		return $post;
-	}
-
-	/**
-	 * Set post author.
-	 *
-	 * @since 8.2
-	 * @param WP_Post $post
-	 * @return WP_Post $post
-	 */
-	public function set_post_author( $post ) {
-		$post_author = vc_post_param( 'vc_post_author' );
-		if ( null !== $post_author ) {
-			$post->post_author = $post_author;
-		}
-
-		return $post;
-	}
-
-	/**
 	 * Set post comments.
 	 *
 	 * @since 8.2
@@ -370,7 +351,7 @@ class Vc_Post_Admin {
 	 * @return WP_Post $post
 	 */
 	public function set_post_comments( $post ) {
-		$post_comments = vc_post_param( 'vc_post_comments' );
+		$post_comments = wp_unslash( vc_post_param( 'vc_post_comments' ) );
 		if ( null !== $post_comments ) {
 			$post->comment_status = 'true' === $post_comments ? 'open' : 'closed';
 		}
@@ -386,7 +367,7 @@ class Vc_Post_Admin {
 	 * @return WP_Post $post
 	 */
 	public function set_post_pingbacks( $post ) {
-		$post_pingbacks = vc_post_param( 'vc_post_pingbacks' );
+		$post_pingbacks = wp_unslash( vc_post_param( 'vc_post_pingbacks' ) );
 		if ( null !== $post_pingbacks ) {
 			$post->ping_status = 'true' === $post_pingbacks ? 'open' : 'closed';
 		}
@@ -402,8 +383,8 @@ class Vc_Post_Admin {
 	 * @return WP_Post $post
 	 */
 	public function set_post_status( $post ) {
-		$post_status = vc_post_param( 'post_status' );
-		if ( $post_status && 'publish' === $post_status ) {
+		$post_status = wp_unslash( vc_post_param( 'post_status' ) );
+		if ( 'publish' === $post_status ) {
 			if ( vc_user_access()->wpAll( [
 				get_post_type_object( $post->post_type )->cap->publish_posts,
 				$post->ID,
@@ -444,26 +425,11 @@ class Vc_Post_Admin {
 	 * @return WP_Post $post
 	 */
 	protected function set_post_featured_image( $post ) {
-		$featured_image = vc_post_param( 'vc_post_featured_image' );
+		$featured_image = wp_unslash( vc_post_param( 'vc_post_featured_image' ) );
 		if ( $featured_image ) {
 			set_post_thumbnail( $post->ID, $featured_image );
 		} else {
 			delete_post_thumbnail( $post->ID );
-		}
-		return $post;
-	}
-
-	/**
-	 * Set post name, that acts as a post slug.
-	 *
-	 * @param WP_Post $post
-	 * @return WP_Post $post
-	 * @since 8.2
-	 */
-	protected function set_post_name( $post ) {
-		$post_name = vc_post_param( 'post_name' );
-		if ( null !== $post_name ) {
-			$post->post_name = $post_name;
 		}
 		return $post;
 	}

@@ -3,7 +3,7 @@
  * Plugin Name: SupportCandy - Canned Reply
  * Plugin URI: https://supportcandy.net/
  * Description: Canned Reply add-on for SupportCandy
- * Version: 3.0.8
+ * Version: 3.1.0
  * Author: SupportCandy
  * Author URI: https://supportcandy.net/
  * Requires at least: 5.6
@@ -38,7 +38,7 @@ if ( ! class_exists( 'WPSC_Canned_Reply' ) ) :
 		 *
 		 * @var string
 		 */
-		public static $version = '3.0.8';
+		public static $version = '3.1.0';
 
 		/**
 		 * Database version
@@ -53,7 +53,6 @@ if ( ! class_exists( 'WPSC_Canned_Reply' ) ) :
 		public static function init() {
 
 			self::define_constants();
-			add_action( 'init', array( __CLASS__, 'load_textdomain' ), 1 );
 			self::load_files();
 
 			// Return if installation is in progress.
@@ -77,18 +76,6 @@ if ( ! class_exists( 'WPSC_Canned_Reply' ) ) :
 			self::define( 'WPSC_CR_PLUGIN_BASENAME', plugin_basename( __FILE__ ) );
 			self::define( 'WPSC_CR_STORE_ID', 271 );
 			self::define( 'WPSC_CR_VERSION', self::$version );
-		}
-
-		/**
-		 * Loads internationalization strings
-		 *
-		 * @return void
-		 */
-		public static function load_textdomain() {
-
-			$locale = apply_filters( 'plugin_locale', get_locale(), 'wpsc-cr' );
-			load_textdomain( 'wpsc-cr', WP_LANG_DIR . '/supportcandy/wpsc-cr-' . $locale . '.mo' );
-			load_plugin_textdomain( 'wpsc-cr', false, plugin_basename( __DIR__ ) . '/i18n' );
 		}
 
 		/**

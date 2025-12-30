@@ -78,7 +78,7 @@ class WpbakeryShortcodeParams {
 			$result = true;
 
 			if ( is_string( $script_url ) && ! in_array( $script_url, self::$scripts, true ) ) {
-				self::$scripts[] = $script_url;
+				self::$scripts[ $name ] = $script_url;
 			}
 		}
 

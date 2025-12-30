@@ -40,7 +40,19 @@ final class ExactMetrics_Report_Traffic_Overview extends ExactMetrics_Report {
 	 * @return mixed
 	 */
 	public function prepare_report_data( $data ) {
-		return apply_filters( 'exactmetrics_report_traffic_sessions_chart_data', $data, $this->start_date, $this->end_date );
+		// Allow filters to modify the initial data first.
+		$data = apply_filters( 'exactmetrics_report_traffic_sessions_chart_data', $data, $this->start_date, $this->end_date );
+
+		if ( ! empty( $data['data'] ) ) {
+			if ( empty( $data['data']['galinks'] ) || ! is_array( $data['data']['galinks'] ) ) {
+				$data['data']['galinks'] = array();
+			}
+
+			// Link to GA4 Traffic Acquisition (default channel group).
+			$data['data']['galinks']['traffic_channels'] = $this->get_ga_report_url( 'lifecycle-traffic-acquisition', $data['data'] );
+		}
+
+		return $data;
 	}
 
 }

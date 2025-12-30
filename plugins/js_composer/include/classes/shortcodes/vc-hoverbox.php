@@ -23,7 +23,7 @@ class WPBakeryShortCode_Vc_Hoverbox extends WPBakeryShortCode {
 	 * @return string
 	 * @throws \Exception
 	 */
-	public function getHeading( $tag, $atts, $align ) {
+	public function getHeading( $tag, $atts, $align ) { // phpcs:ignore:CognitiveComplexity.Complexity.MaximumComplexity.TooHigh
 		if ( isset( $atts[ $tag ] ) && '' !== trim( $atts[ $tag ] ) ) {
 			if ( isset( $atts[ 'use_custom_fonts_' . $tag ] ) && 'true' === $atts[ 'use_custom_fonts_' . $tag ] ) {
 				$custom_heading = wpbakery()->getShortCode( 'vc_custom_heading' );

@@ -1,3 +1,16 @@
+30.8.8.5
+- Added WooCommerce 10.3.x compatibility
+- Updated Revolution Slider to 6.7.38
+- Updated WPBakery page builder to 8.7.1
+- Updated Bridge Core to 3.3.4.5
+- Improved theme security
+
+30.8.8.4
+- Added WooCommerce 10.1.x compatibility
+- Updated Revolution Slider to 6.7.37
+- Updated Bridge Core to 3.3.4.4
+- Improved Image Gallery Elementor Widget
+
 30.8.8.3
 - Added WooCommerce 10.x.x compatibility
 - Updated Revolution Slider to 6.7.35

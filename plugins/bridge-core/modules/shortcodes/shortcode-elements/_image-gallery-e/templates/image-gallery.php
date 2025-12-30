@@ -99,7 +99,8 @@ $data_attr         = array();
 			if( is_array( $img_size ) ){
 				$thumbnail = bridge_qode_generate_thumbnail($image['id'], null, $img_size[0], $img_size[1]);
 			} else{
-				$thumbnail = '<img itemprop="image" src="' . wp_get_attachment_image_src($image['id'], $img_size)[0] . '" />';
+				$alt_text = get_post_meta($image['id'], '_wp_attachment_image_alt', true);
+				$thumbnail = '<img itemprop="image" src="' . wp_get_attachment_image_src($image['id'], $img_size)[0] . '"  alt="'. esc_attr( $alt_text ) .'" />';
 			}
 			
 			$large_img_src = wp_get_attachment_image_src($image['id'], $img_size)[0];

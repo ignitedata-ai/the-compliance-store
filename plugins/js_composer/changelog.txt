@@ -1,5 +1,40 @@
 *** WPBakery Page Builder changelog ***
 
+2025-10-27 - version 8.7.2
+  - Fix: Content and column vertical position works with the support for backward compatibility
+  - Fix: Gravity Forms element is working properly when retrieving data about available forms
+
+2025-10-16 - version 8.7.1
+  - Fix: Text block toolbar works properly in the Backend editor
+
+2025-10-13 - version 8.7
+  - New: Add-on and extension exposure in the “Add Element” window
+  - Update: A Caching mechanism for the element edit window to improve editors' performance
+  - Update: Support expiry notification added to the plugin, and the notification mechanism improved
+  - Compatibility: Improved compatibility with AddToAny Share buttons plugin
+  - Fix: The consecutive sentences check in SEO analysis panel works properly
+  - Fix: Editor control access on mobile works properly
+  - Fix: Titles have been improved for the parameters in the Backend editor
+  - Fix: The Copyright element does not have spacing issues
+  - Fix: Edit window dragging option works properly in the Frontend editor
+  - Fix: “Call to action” element works properly
+  - Fix: textarea_html works properly in Firefox
+  - Fix: Image preview in the Backend editor works poperly in Firefox
+  - Fix: “Loading” state on the buttons works properly
+  - Fix: Preformatted text does not overflow in the Backend editor
+  - Fix: Nested elements are editable in the Frontend editor
+  - Fix: Feature image settings work properly and not being impacted by drag and drop
+  - Fix: Vulnerability resolved for the Revolution Slider element
+  - Fix: Vulnerability resolved for encoded shortcodes
+  - Fix: Element editor form for 3rd party elements works properly
+  - Fix: The preview and editor views are synced properly
+  - Fix: Keyboard shortcuts work properly
+  - Fix: Apostrophes work properly in titles
+  - Fix: Double quotes work properly
+  - Fix: Select input styles work properly
+  - Fix: <br> is working properly in the elements
+  - Fix: Nivo Slider image is not getting shrinked
+
 2025-08-05 - version 8.6.1
   - Compatibility: WPBakery and WPRocket works properly
   - Fix: Design Options saving works properly

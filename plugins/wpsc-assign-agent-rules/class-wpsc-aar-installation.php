@@ -119,6 +119,15 @@ if ( ! class_exists( 'WPSC_AAR_Installation' ) ) :
 		 */
 		public static function upgrade() {
 
+			if ( version_compare( self::$current_version, '3.1.0', '<' ) ) {
+				// Add missing general settings.
+				$general_settings = get_option( 'wpsc-aar-general-settings', array() );
+				if ( empty( $general_settings ) ) {
+					$general_settings['auto-assign-agent'] = '0';
+					update_option( 'wpsc-aar-general-settings', $general_settings );
+				}
+			}
+
 			self::set_upgrade_complete();
 		}
 

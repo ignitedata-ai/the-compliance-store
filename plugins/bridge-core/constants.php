@@ -1,6 +1,6 @@
 <?php
 
-define( 'BRIDGE_CORE_VERSION', '3.3.4.3' );
+define( 'BRIDGE_CORE_VERSION', '3.3.4.5' );
 define( 'BRIDGE_CORE_ABS_PATH', dirname( __FILE__ ) );
 define( 'BRIDGE_CORE_REL_PATH', dirname( plugin_basename( __FILE__ ) ) );
 define( 'BRIDGE_CORE_URL_PATH', plugin_dir_url( __FILE__ ) );

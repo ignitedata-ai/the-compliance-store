@@ -6,9 +6,9 @@
 	<?php endif; ?>
 	<div class="qode-info-card-text-holder" <?php echo bridge_qode_get_inline_style($holder_style); ?>>
 		<?php if($title != '') : ?>
-			<<?php echo esc_attr($title_tag); ?> class="qode-info-card-title" <?php echo bridge_qode_get_inline_style($text_style) ?>>
+			<<?php echo bridge_qode_get_escape_title_tag($title_tag); ?> class="qode-info-card-title" <?php echo bridge_qode_get_inline_style($text_style) ?>>
 				<?php echo esc_attr($title); ?>
-			</<?php echo esc_attr($title_tag); ?>>
+			</<?php echo bridge_qode_get_escape_title_tag($title_tag); ?>>
 		<?php endif; ?>
 		<?php if($text != '') : ?>
 			<p class="qode-info-card-text" <?php echo bridge_qode_get_inline_style($text_style) ?>>

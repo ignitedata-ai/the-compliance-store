@@ -14,7 +14,7 @@ if ( ! defined( 'ABSPATH' ) ) {
  *
  * @return array
  */
-function vc_btn_element_params() {
+function vc_btn_element_params() { // phpcs:ignore:CognitiveComplexity.Complexity.MaximumComplexity.TooHigh
 
 	$pixel_icons = vc_get_shared( 'pixel icons' );
 	require_once vc_path_dir( 'CONFIG_DIR', 'content/vc-icon-element.php' );

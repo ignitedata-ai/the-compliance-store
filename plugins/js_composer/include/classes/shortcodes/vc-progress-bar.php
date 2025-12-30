@@ -19,7 +19,7 @@ class WPBakeryShortCode_Vc_Progress_Bar extends WPBakeryShortCode {
 	 * @param array $atts
 	 * @return mixed
 	 */
-	public static function convertAttributesToNewProgressBar( $atts ) {
+	public static function convertAttributesToNewProgressBar( $atts ) { // phpcs:ignore:Generic.Metrics.CyclomaticComplexity.TooHigh, CognitiveComplexity.Complexity.MaximumComplexity.TooHigh
 		if ( isset( $atts['values'] ) && strlen( $atts['values'] ) > 0 ) {
 			$values = vc_param_group_parse_atts( $atts['values'] );
 			if ( ! is_array( $values ) ) {

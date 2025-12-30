@@ -140,7 +140,7 @@ class Vc_Current_User_Access_Controller extends Vc_Role_Access_Controller {
 	 * @return $this
 	 * @throws \Exception
 	 */
-	public function can( $rule = '', $checkState = true ) {
+	public function can( $rule = '', $checkState = true ) { // phpcs:ignore:Generic.Metrics.CyclomaticComplexity.TooHigh, CognitiveComplexity.Complexity.MaximumComplexity.TooHigh
 		$part = $this->getPart();
 		if ( empty( $part ) ) {
 			throw new \Exception( 'partName for User\Access is not set, please use ->part(partName) method to set!' );

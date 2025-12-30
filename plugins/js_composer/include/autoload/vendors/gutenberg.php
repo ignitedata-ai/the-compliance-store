@@ -63,7 +63,7 @@ function vc_gutenberg_disable_render_callback() {
  * @param string $post_type
  * @return bool
  */
-function vc_gutenberg_check_disabled( $result, $post_type ) {
+function vc_gutenberg_check_disabled( $result, $post_type ) { // phpcs:ignore:CognitiveComplexity.Complexity.MaximumComplexity.TooHigh
 	global $pagenow;
 	if ( 'post.php' === $pagenow || 'post-new.php' === $pagenow ) {
 		// we are in single post type editing.

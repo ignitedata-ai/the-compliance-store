@@ -93,7 +93,7 @@
 		}
 		$html .= '<div class="qode_product_list_item_inner" ' . esc_attr( $product_item_style ) . '><div class="qode_product_list_item_table"><div class="qode_product_list_item_table_cell">';
 		$html .= '<div class="qode_product_category" ' . esc_attr( $category_style ) . '>' . wp_kses_post( $cat ). '</div>';
-		$html .= '<' . esc_attr( $title_tag ) . ' itemprop="name" class="qode_product_title entry-title">' . wp_kses_post( $title ) . '</' . esc_attr( $title_tag ) . '>';
+		$html .= '<' . bridge_qode_get_escape_title_tag( $title_tag ) . ' itemprop="name" class="qode_product_title entry-title">' . wp_kses_post( $title ) . '</' . bridge_qode_get_escape_title_tag( $title_tag ) . '>';
 		if ( $show_separator == 'yes' ) {
 			$html .= '<div class="qode_product_separator separator center" ' . esc_attr( $separator_style ) . '></div>';
 		}

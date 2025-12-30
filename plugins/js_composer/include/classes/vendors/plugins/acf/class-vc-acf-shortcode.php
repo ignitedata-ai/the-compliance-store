@@ -46,7 +46,7 @@ class WPBakeryShortCode_Vc_Acf extends WPBakeryShortCode {
 	 * @return string
 	 * @throws Exception
 	 */
-	protected function content( $atts, $content = null ) {
+	protected function content( $atts, $content = null ) { // phpcs:ignore:Generic.Metrics.CyclomaticComplexity.TooHigh, CognitiveComplexity.Complexity.MaximumComplexity.TooHigh
 		$atts = $atts + vc_map_get_attributes( $this->getShortcode(), $atts );
 
 		$field_group = $atts['field_group'];
@@ -99,6 +99,6 @@ class WPBakeryShortCode_Vc_Acf extends WPBakeryShortCode {
 			$output = '<div class="' . esc_attr( $css_string ) . '">' . $value . '</div>';
 		}
 
-		return $output;
+		return $output; // nosemgrep - we already escaped everything on this step.
 	}
 }

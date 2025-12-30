@@ -21,7 +21,7 @@ class WPBakeryShortCode_Vc_Btn extends WPBakeryShortCode {
 	 * @param array $atts
 	 * @return mixed
 	 */
-	public static function convertAttributesToButton3( $atts ) {
+	public static function convertAttributesToButton3( $atts ) { // phpcs:ignore:Generic.Metrics.CyclomaticComplexity.TooHigh, CognitiveComplexity.Complexity.MaximumComplexity.TooHigh
 		// size btn1 to size btn2.
 		$btn1_sizes = [
 			'wpb_regularsize',

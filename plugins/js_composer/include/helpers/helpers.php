@@ -537,7 +537,7 @@ if ( ! function_exists( 'vc_shortcode_custom_css_has_property' ) ) :
 	 * @return bool
 	 * @since 4.9
 	 */
-	function vc_shortcode_custom_css_has_property( $subject, $property, $strict = false ) {
+	function vc_shortcode_custom_css_has_property( $subject, $property, $strict = false ) { // phpcs:ignore:Generic.Metrics.CyclomaticComplexity.TooHigh, CognitiveComplexity.Complexity.MaximumComplexity.TooHigh
 		$styles = [];
 		$pattern = '/\{([^\}]*?)\}/i';
 		preg_match( $pattern, $subject, $styles );
@@ -688,7 +688,7 @@ if ( ! function_exists( 'wpb_get_image_data_by_source' ) ) :
 	 * @param string $img_size
 	 * @return array
 	 */
-	function wpb_get_image_data_by_source( $source, $post_id, $image_id, $img_size ) { // phpcs:ignore:Generic.Metrics.CyclomaticComplexity.TooHigh
+	function wpb_get_image_data_by_source( $source, $post_id, $image_id, $img_size ) { // phpcs:ignore:Generic.Metrics.CyclomaticComplexity.TooHigh, CognitiveComplexity.Complexity.MaximumComplexity.TooHigh
 		$image_src = '';
 		switch ( $source ) {
 			case 'media_library':
@@ -759,7 +759,7 @@ if ( ! function_exists( 'vc_get_image_by_size' ) ) :
 	 * @param string $size
 	 * @return array|false|mixed|string
 	 */
-	function vc_get_image_by_size( $id, $size ) {
+	function vc_get_image_by_size( $id, $size ) { // phpcs:ignore:CognitiveComplexity.Complexity.MaximumComplexity.TooHigh
 		global $_wp_additional_image_sizes;
 
 		$sizes = [
@@ -989,7 +989,7 @@ if ( ! function_exists( 'wpb_resize' ) ) :
 	 * @return array
 	 * @since 4.2
 	 */
-	function wpb_resize( $attach_id, $img_url, $width, $height, $crop = false ) { // phpcs:ignore:Generic.Metrics.CyclomaticComplexity.TooHigh
+	function wpb_resize( $attach_id, $img_url, $width, $height, $crop = false ) { // phpcs:ignore:Generic.Metrics.CyclomaticComplexity.TooHigh, CognitiveComplexity.Complexity.MaximumComplexity.TooHigh
 		// this is an attachment, so we have the ID.
 		$image_src = [];
 		if ( $attach_id ) {
@@ -1486,7 +1486,7 @@ if ( ! function_exists( 'vc_parse_options_string' ) ) :
 	 * @throws \Exception
 	 * @since 4.2
 	 */
-	function vc_parse_options_string( $initial_string, $tag, $param ) { // phpcs:ignore:Generic.Metrics.CyclomaticComplexity.TooHigh
+	function vc_parse_options_string( $initial_string, $tag, $param ) { // phpcs:ignore:Generic.Metrics.CyclomaticComplexity.TooHigh, CognitiveComplexity.Complexity.MaximumComplexity.TooHigh
 		$options = [];
 		$option_settings_list = [];
 		$settings = WPBMap::getParam( $tag, $param );
@@ -1638,25 +1638,23 @@ if ( ! function_exists( 'vc_get_shortcode_regex' ) ) :
 			return get_shortcode_regex();
 		}
 
-        //phpcs:disable:Generic.Strings.UnnecessaryStringConcat.Found
-		return '\\['                              // Opening bracket.
-			. '(\\[?)'                           // 1: Optional second opening bracket for escaping shortcodes: [[tag]].
-			. "($tagregexp)"                     // 2: Shortcode name.
-			. '(?![\\w\-])'                       // Not followed by word character or hyphen.
-			. '('                                // 3: Unroll the loop: Inside the opening shortcode tag.
-			. '[^\\]\\/]*'                   // Not a closing bracket or forward slash.
-			. '(?:' . '\\/(?!\\])'               // A forward slash not followed by a closing bracket.
-			. '[^\\]\\/]*'               // Not a closing bracket or forward slash.
-			. ')*?' . ')' . '(?:' . '(\\/)'                        // 4: Self closing tag .
-			. '\\]'                          // ... and closing bracket.
-			. '|' . '\\]'                          // Closing bracket.
-			. '(?:' . '('                        // 5: Unroll the loop: Optionally, anything between the opening and closing shortcode tags.
-			. '[^\\[]*+'             // Not an opening bracket.
-			. '(?:' . '\\[(?!\\/\\2\\])' // An opening bracket not followed by the closing shortcode tag.
-			. '[^\\[]*+'         // Not an opening bracket.
-			. ')*+' . ')' . '\\[\\/\\2\\]'             // Closing shortcode tag.
-			. ')?' . ')' . '(\\]?)';
-        //phpcs:enable:Generic.Strings.UnnecessaryStringConcat.Found
+		return '\\['                // Opening bracket.
+			. '(\\[?)'              // 1: Optional second opening bracket for escaping shortcodes: [[tag]].
+			. "($tagregexp)"        // 2: Shortcode name.
+			. '(?![\\w\-])'         // Not followed by word character or hyphen.
+			. '('                   // 3: Unroll the loop: Inside the opening shortcode tag.
+			. '[^\\]\\/]*'          // Not a closing bracket or forward slash.
+			. '(?:\\/(?!\\])'       // A forward slash not followed by a closing bracket.
+			. '[^\\]\\/]*'          // Not a closing bracket or forward slash.
+			. ')*?)(?:(\\/)'        // 4: Self closing tag .
+			. '\\]'                 // ... and closing bracket.
+			. '|\\]'                // Closing bracket.
+			. '(?:('                // 5: Unroll the loop: Optionally, anything between the opening and closing shortcode tags.
+			. '[^\\[]*+'            // Not an opening bracket.
+			. '(?:\\[(?!\\/\\2\\])' // An opening bracket not followed by the closing shortcode tag.
+			. '[^\\[]*+'            // Not an opening bracket.
+			. ')*+)\\[\\/\\2\\]'    // Closing shortcode tag.
+			. ')?)(\\]?)';
 	}
 endif;
 if ( ! function_exists( 'vc_message_warning' ) ) :
@@ -1831,7 +1829,7 @@ if ( ! function_exists( 'vc_do_shortcode' ) ) :
 	function vc_do_shortcode( $atts, $content = null, $tag = null ) {
 		ob_start();
         // @codingStandardsIgnoreStart
-        echo Vc_Shortcodes_Manager::getInstance()->getElementClass( $tag )->output( $atts, $content );
+        echo Vc_Shortcodes_Manager::getInstance()->getElementClass( $tag )->output( $atts, $content ); // nosemgrep - escaping handled inside templates.
         $content = ob_get_clean();
         global $wp_embed;
         if ( is_object( $wp_embed ) ) {
@@ -1940,16 +1938,21 @@ if ( ! function_exists( 'wpb_remove_custom_html' ) ) :
 	 * @since 6.3.0
 	 */
 	function wpb_remove_custom_html( $content ) {
-		$is_rest_request = ( defined( 'REST_REQUEST' ) && REST_REQUEST );
-		if ( ! empty( $content ) && ! $is_rest_request && ! vc_user_access()->part( 'unfiltered_html' )->checkStateAny( true, null )->get() ) {
-			// html encoded shortcodes.
-			$regex = vc_get_shortcode_regex( implode( '|', wpb_get_elements_with_custom_html() ) );
+		if ( empty( $content ) ) {
+			return $content;
+		}
 
-			// custom on click.
-			$button_regex = vc_get_shortcode_regex( 'vc_btn' );
-			$content = preg_replace_callback( '/' . $button_regex . '/', 'wpb_remove_custom_onclick', $content );
+		if ( vc_user_access()->part( 'unfiltered_html' )->checkStateAny( true, null )->get() ) {
+			return $content;
+		}
 
-			$content = preg_replace( '/' . $regex . '/', '', $content );
+		// custom on click.
+		$button_regex = vc_get_shortcode_regex( 'vc_btn' );
+		$content = preg_replace_callback( '/' . $button_regex . '/', 'wpb_remove_custom_onclick', $content );
+
+		$regex = '/' . vc_get_shortcode_regex( implode( '|', wpb_get_elements_with_custom_html() ) ) . '/';
+		while ( preg_match( $regex, $content ) ) {
+			$content = preg_replace( $regex, '', $content );
 		}
 
 		return $content;
@@ -2162,7 +2165,7 @@ if ( ! function_exists( 'vc_map_get_params_defaults' ) ) :
 	 * @return array
 	 * @since 4.12
 	 */
-	function vc_map_get_params_defaults( $params ) {
+	function vc_map_get_params_defaults( $params ) { // phpcs:ignore:CognitiveComplexity.Complexity.MaximumComplexity.TooHigh
 		$result_params = [];
 		foreach ( $params as $param ) {
 			if ( isset( $param['param_name'] ) && 'content' !== $param['param_name'] ) {
@@ -2230,7 +2233,7 @@ if ( ! function_exists( 'vc_map_check_param_field_against_regex' ) ) :
 	 * @since 7.8
 	 * @return array
 	 */
-	function vc_map_check_param_field_against_regex( $param, $regex_list, $condition ) { // phpcs:ignore:Generic.Metrics.CyclomaticComplexity.TooHigh
+	function vc_map_check_param_field_against_regex( $param, $regex_list, $condition ) { // phpcs:ignore:Generic.Metrics.CyclomaticComplexity.TooHigh, CognitiveComplexity.Complexity.MaximumComplexity.TooHigh
 		$check_against = 'exclude' === $condition ? 1 : 0;
 
 		if ( is_array( $regex_list ) && ! empty( $regex_list ) ) {
@@ -2293,7 +2296,7 @@ if ( ! function_exists( 'vc_map_integrate_get_params' ) ) :
 	 * @return array
 	 * @throws Exception
 	 */
-	function vc_map_integrate_get_params( $base_shortcode, $integrated_shortcode, $field_prefix = '' ) {
+	function vc_map_integrate_get_params( $base_shortcode, $integrated_shortcode, $field_prefix = '' ) { // phpcs:ignore:CognitiveComplexity.Complexity.MaximumComplexity.TooHigh
 		$shortcode_data = WPBMap::getShortCode( $base_shortcode );
 		$params = [];
 		if ( is_array( $shortcode_data ) && is_array( $shortcode_data['params'] ) && ! empty( $shortcode_data['params'] ) ) {
@@ -2546,5 +2549,17 @@ if ( ! function_exists( 'wpb_remove_emoji_assets' ) ) :
 		remove_action( 'wp_print_styles', 'print_emoji_styles' );
 		remove_action( 'admin_print_scripts', 'print_emoji_detection_script' );
 		remove_action( 'admin_print_styles', 'print_emoji_styles' );
+	}
+endif;
+
+if ( ! function_exists( 'vc_container_anchor' ) ) :
+	/**
+	 * Anchor container html.
+	 *
+	 * @return string
+	 * @since 4.2
+	 */
+	function vc_container_anchor() {
+		return vc_get_template( 'editors/partials/front_editor_container_anchor.tpl.php' );
 	}
 endif;

@@ -115,7 +115,7 @@
     &out-tr {
       //out left
       z-index: 1003;
-      right: -1px;
+      right: -1px; // for tta elements controls should be on the right side, because of their shape and structure
       top: -30px;
     }
     &out-r {
@@ -177,6 +177,23 @@
   > .vc_controls-out-tl {
     left: initial;
     right: -1px;
+    z-index: 1003;
+  }
+}
+
+// Grid Container controls
+.vc_vc_grid_container {
+  .vc_controls {
+    > .vc_controls-out-tl {
+      left: -2px;
+    }
+  }
+  &.vc_empty {
+    > .vc_controls {
+    > .vc_controls-out-tl {
+        top: -29px;
+      }
+    }
   }
 }
 
@@ -425,7 +442,9 @@
         }
       }
     }
-    > .element-vc_section {
+    > .element-vc_section,
+    > .element-vc_grid_container,
+    > .element-vc_flexbox_container {
       .vc_btn-content {
         background-color: @vc_controls_parent_background;
         border-color: @vc_controls_parent_border;

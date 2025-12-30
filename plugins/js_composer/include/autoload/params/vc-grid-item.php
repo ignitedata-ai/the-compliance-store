@@ -76,7 +76,7 @@ function vc_gitem_post_data_get_link_rel_frontend_editor( $rel ) {
  * @param string $title
  * @return string
  */
-function vc_gitem_create_link( $atts, $default_class = '', $title = '' ) {
+function vc_gitem_create_link( $atts, $default_class = '', $title = '' ) { // phpcs:ignore:Generic.Metrics.CyclomaticComplexity, CognitiveComplexity.Complexity.MaximumComplexity.TooHigh
 	$link = '';
 	$target = '';
 	$rel = '';
@@ -137,7 +137,7 @@ function vc_gitem_create_link( $atts, $default_class = '', $title = '' ) {
  * @param string $title
  * @return string
  */
-function vc_gitem_create_link_real( $atts, $post, $default_class = '', $title = '' ) {
+function vc_gitem_create_link_real( $atts, $post, $default_class = '', $title = '' ) { // phpcs:ignore:Generic.Metrics.CyclomaticComplexity.TooHigh, CognitiveComplexity.Complexity.MaximumComplexity.TooHigh
 	$link = '';
 	$target = '';
 	$rel = '';

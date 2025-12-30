@@ -1,5 +1,11 @@
-<svg width="35" height="34" viewBox="0 0 35 34" fill="none" xmlns="http://www.w3.org/2000/svg">
-<rect x="1.5" y="0.959961" width="32" height="6" rx="1" stroke="#00447F" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
-<rect x="1.5" y="12.96" width="32" height="6" rx="1" stroke="#00447F" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M21.5 26.96L2.5 26.96C1.94772 26.96 1.5 27.4077 1.5 27.96L1.5 31.96C1.5 32.5122 1.94772 32.96 2.5 32.96L32.5 32.96C33.0523 32.96 33.5 32.5122 33.5 31.96L33.5 27.96C33.5 27.4077 33.0523 26.96 32.5 26.96L27.5 26.96" stroke="#00447F" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="34px" height="34px" viewBox="0 0 34 34" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>row</title>
+    <g id="component:-featured-image" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="row" transform="translate(1, 1)" stroke-width="1.7">
+            <rect id="Rectangle" stroke="#00447F" fill="#00447F" x="0" y="0" width="32" height="32" rx="3"></rect>
+            <path d="M6,5 L26,5 C26.5522847,5 27,5.44771525 27,6 L27,12 C27,12.5522847 26.5522847,13 26,13 L6,13 C5.44771525,13 5,12.5522847 5,12 L5,6 C5,5.44771525 5.44771525,5 6,5 Z" id="Rectangle" stroke="#FFFFFF" stroke-linecap="round" stroke-linejoin="round"></path>
+            <path d="M17,19 L6,19 C5.44772,19 5,19.4477 5,20 L5,26 C5,26.5522 5.44772,27 6,27 L26,27 C26.5523,27 27,26.5522 27,26 L27,20 C27,19.4477 26.5523,19 26,19 L23,19" id="Path" stroke="#FFFFFF" stroke-linecap="round" stroke-linejoin="round"></path>
+        </g>
+    </g>
 </svg>

@@ -131,7 +131,7 @@ class Vc_Vendor_Woocommerce {
 	 * @return array
 	 * @since 4.9
 	 */
-	public function addShortcodeSettings( $tag ) {
+	public function addShortcodeSettings( $tag ) { // phpcs:ignore:Generic.Metrics.CyclomaticComplexity
 		$args = [
 			'type' => 'post',
 			'child_of' => 0,

@@ -152,7 +152,7 @@ class Vc_Vendor_YoastSeo {
 	 * @param int $id
 	 * @return array
 	 */
-	public function filterSitemapUrlImages( $images, $id ) {
+	public function filterSitemapUrlImages( $images, $id ) { // phpcs:ignore:CognitiveComplexity.Complexity.MaximumComplexity.TooHigh
 		if ( empty( $images ) ) {
 			$post = get_post( $id );
 			if ( $post && strpos( $post->post_content, '[vc_row' ) !== false ) {

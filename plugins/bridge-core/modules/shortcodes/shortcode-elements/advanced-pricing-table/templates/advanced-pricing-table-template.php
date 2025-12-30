@@ -1,14 +1,14 @@
 <div class="qode-advanced-pricing-table">
 	<div class="qode-apt-header qode-apt-row">
 		<div class="qode-apt-title-holder">
-			<<?php echo esc_attr($title_tag); ?> class="qode-apt-title">
+			<<?php echo bridge_qode_get_escape_title_tag($title_tag); ?> class="qode-apt-title">
 				<?php echo esc_attr($table_title); ?>
-			</<?php echo esc_attr($title_tag); ?>>
+			</<?php echo bridge_qode_get_escape_title_tag($title_tag); ?>>
 		</div>
 		<div class="qode-apt-column-title-holder">
-			<<?php echo esc_attr($title_tag); ?> class="qode-apt-title">
+			<<?php echo bridge_qode_get_escape_title_tag($title_tag); ?> class="qode-apt-title">
 				<?php echo esc_attr($column_title); ?>
-			</<?php echo esc_attr($title_tag); ?>>
+			</<?php echo bridge_qode_get_escape_title_tag($title_tag); ?>>
 		</div>
 	</div>
 	<?php foreach($pricing_items as $pricing_item):?>

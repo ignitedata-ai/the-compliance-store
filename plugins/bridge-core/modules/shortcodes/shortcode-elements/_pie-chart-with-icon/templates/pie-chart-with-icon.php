@@ -32,11 +32,11 @@
 	
 	$html .= '</div><div class="pie_chart_text">';
 	if (!empty($title)) {
-		$html .= '<' . esc_attr($title_tag) . ' class="pie_title"';
+		$html .= '<' . bridge_qode_get_escape_title_tag($title_tag) . ' class="pie_title"';
 		if (!empty($title_color)) {
 			$html .= ' style="color: ' . esc_attr($title_color) . ';"';
 		}
-		$html .= '>' . esc_html($title) . '</' . esc_attr($title_tag) . '>';
+		$html .= '>' . esc_html($title) . '</' . bridge_qode_get_escape_title_tag($title_tag) . '>';
 	}
 	
 	if (!empty($text)) {

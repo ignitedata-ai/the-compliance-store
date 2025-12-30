@@ -1,7 +1,7 @@
 <div class="qode-irc-holder" <?php echo bridge_qode_get_inline_attrs($irc_data); ?> <?php bridge_qode_inline_style($irt_background_color); ?>>
 	<div class="qode-irc-holder-inner">
 		<div class="qode-irc-title-holder">
-			<<?php echo esc_attr($irt_title_tag); ?>> <?php echo esc_attr($irt_title) ?> </<?php echo esc_attr($irt_title_tag); ?>>
+			<<?php echo bridge_qode_get_escape_title_tag($irt_title_tag); ?>> <?php echo esc_attr($irt_title) ?> </<?php echo bridge_qode_get_escape_title_tag($irt_title_tag); ?>>
 		</div>
 		<div class="qode-irc-sliders-holder">
 			<div class="qode-irc-range-slider-loan-holder">

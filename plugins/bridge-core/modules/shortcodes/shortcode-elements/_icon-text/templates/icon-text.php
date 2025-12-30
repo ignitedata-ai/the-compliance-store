@@ -302,7 +302,7 @@
 			$html .= wp_kses_post( $html_icon );
 			$html .= '</div>'; //close icon_holder
 		}
-		$html .= '<' . esc_attr( $title_tag ) . ' class="icon_title" style="' . esc_attr( $title_style ) . '">' . wp_kses_post( $title ) . '</' . esc_attr( $title_tag ). '>';
+		$html .= '<' . bridge_qode_get_escape_title_tag( $title_tag ) . ' class="icon_title" style="' . esc_attr( $title_style ) . '">' . wp_kses_post( $title ) . '</' . bridge_qode_get_escape_title_tag( $title_tag ). '>';
 		if ( $icon_position == "left_from_title" ) {
 			$html .= '</div>'; //close icon_title holder for icon from title
 		}
@@ -351,7 +351,7 @@
 		
 		//generate text html
 		$html .= '<div class="box_holder_inner ' . esc_attr( $box_size ) . ' center">';
-		$html .= '<' . esc_attr( $title_tag ) . ' class="icon_title" style="' . esc_attr( $title_style ) . '">' . wp_kses_post( $title ) . '</' . esc_attr( $title_tag ) . '>';
+		$html .= '<' . bridge_qode_get_escape_title_tag( $title_tag ) . ' class="icon_title" style="' . esc_attr( $title_style ) . '">' . wp_kses_post( $title ) . '</' . bridge_qode_get_escape_title_tag( $title_tag ) . '>';
 		if ( $separator == "yes" ) {
 			$html .= '<div class="separator small left" style="' . esc_attr( $separator_style ) . '"></div>';
 			//$html .= do_shortcode('[vc_separator type="small" position="left" color="'.$separator_color.'" thickness="2" width="'.$separator_width.'" up="'.$separator_top_margin.'" down="'.$separator_bottom_margin.'"]');

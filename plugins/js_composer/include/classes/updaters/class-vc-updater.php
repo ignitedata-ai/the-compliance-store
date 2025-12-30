@@ -147,7 +147,7 @@ class Vc_Updater {
 	 *
 	 * @return mixed|string|WP_Error
 	 */
-	public function preUpgradeFilter( $reply, $package, $updater ) {
+	public function preUpgradeFilter( $reply, $package, $updater ) { // phpcs:ignore:Generic.Metrics.CyclomaticComplexity.TooHigh
 		$condition1 = isset( $updater->skin->plugin ) && vc_plugin_name() === $updater->skin->plugin;
 		// Must use I18N otherwise France or other languages will not work.
 		$condition2 = isset( $updater->skin->plugin_info['Name'] ) && __( 'WPBakery Page Builder', 'js_composer' ) === $updater->skin->plugin_info['Name'];

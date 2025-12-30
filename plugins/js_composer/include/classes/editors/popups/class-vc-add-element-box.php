@@ -54,7 +54,7 @@ class Vc_Add_Element_Box {
 	 *
 	 * @return string
 	 */
-	public function renderButton( $params ) {
+	public function renderButton( $params ) { // phpcs:ignore Generic.Metrics.CyclomaticComplexity.TooHigh
 		if ( ! is_array( $params ) || empty( $params ) ) {
 			return '';
 		}
@@ -171,8 +171,8 @@ class Vc_Add_Element_Box {
 	 * @throws \Exception
 	 * @see WPBMap::getSortedUserShortCodes
 	 */
-	public function getControls() {
-		$output = '<div class="vc-panel-no-results-message">' . __( 'No elements found', 'js_composer' ) . '</div>';
+	public function getControls() { // phpcs:ignore Generic.Metrics.CyclomaticComplexity.TooHigh
+		$output = '';
 		$shortcodes = $this->shortcodes();
 		$most_used_elements = $this->getMostUsedElements( array_column( $shortcodes, 'base' ) );
 		if ( ! empty( $most_used_elements ) ) {
@@ -227,9 +227,30 @@ class Vc_Add_Element_Box {
 	/**
 	 * Renders the add element panel template.
 	 */
+	/**
+	 * Get element teasers data.
+	 *
+	 * @return array Array of teaser data.
+	 * @since 8.7
+	 */
+	protected function getTeasers() {
+		if ( ! class_exists( 'WPB_Element_Teasers' ) ) {
+			require_once vc_path_dir( 'EDITORS_DIR', 'popups/class-vc-element-teasers.php' );
+		}
+
+		$teasers_manager = new WPB_Element_Teasers();
+		return $teasers_manager->get_teasers();
+	}
+
+	/**
+	 * Renders the add element panel template.
+	 *
+	 * @since 8.7
+	 */
 	public function render() {
 		vc_include_template( 'editors/popups/vc_ui-panel-add-element.tpl.php', [
 			'box' => $this,
+			'teasers' => $this->getTeasers(),
 			'header_tabs_template_variables' => [
 				'categories' => $this->getCategories(),
 			],
@@ -312,6 +333,12 @@ class Vc_Add_Element_Box {
 				'active' => false,
 			];
 		}
+
+		$tabs[] = [
+			'name' => esc_html__( 'More add-ons', 'js_composer' ),
+			'filter' => '.wpb-teaser-item',
+			'active' => false,
+		];
 
 		if ( $other_tab ) {
 			$tabs[] = $other_tab;

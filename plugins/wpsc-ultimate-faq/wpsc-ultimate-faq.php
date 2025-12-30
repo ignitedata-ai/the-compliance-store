@@ -3,7 +3,7 @@
  * Plugin Name: SupportCandy - FAQ
  * Plugin URI: https://supportcandy.net/
  * Description: FAQ integration for SupportCandy!
- * Version: 3.0.6
+ * Version: 3.0.8
  * Author: SupportCandy
  * Author URI: https://supportcandy.net/
  * Requires at least: 5.6
@@ -39,7 +39,7 @@ if ( ! class_exists( 'WPSC_FAQ' ) ) :
 		 *
 		 * @var string
 		 */
-		public static $version = '3.0.6';
+		public static $version = '3.0.8';
 
 		/**
 		 * Constructor for main class
@@ -47,7 +47,6 @@ if ( ! class_exists( 'WPSC_FAQ' ) ) :
 		public static function init() {
 
 			self::define_constants();
-			add_action( 'init', array( __CLASS__, 'load_textdomain' ), 1 );
 			self::load_files();
 
 			// Return if installation is in progress.
@@ -71,18 +70,6 @@ if ( ! class_exists( 'WPSC_FAQ' ) ) :
 			self::define( 'WPSC_FAQ_PLUGIN_BASENAME', plugin_basename( __FILE__ ) );
 			self::define( 'WPSC_FAQ_VERSION', self::$version );
 			self::define( 'WPSC_FAQ_STORE_ID', 265 );
-		}
-
-		/**
-		 * Loads internationalization strings
-		 *
-		 * @return void
-		 */
-		public static function load_textdomain() {
-
-			$locale = apply_filters( 'plugin_locale', get_locale(), 'wpsc-faq' );
-			load_textdomain( 'wpsc-faq', WP_LANG_DIR . '/supportcandy/wpsc-faq-' . $locale . '.mo' );
-			load_plugin_textdomain( 'wpsc-faq', false, plugin_basename( __DIR__ ) . '/i18n' );
 		}
 
 		/**

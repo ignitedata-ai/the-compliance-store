@@ -102,7 +102,7 @@
 		
 		$html .= '<div class="product_category">' . wp_kses_post( $cat ) . '</div>';
 		
-		$html .= '<' . esc_attr( $title_tag ) . ' itemprop="name" class="product_title entry-title">' . wp_kses_post( $title ) . '</' . esc_attr( $title_tag ) . '>';
+		$html .= '<' . bridge_qode_get_escape_title_tag( $title_tag ) . ' itemprop="name" class="product_title entry-title">' . wp_kses_post( $title ) . '</' . bridge_qode_get_escape_title_tag( $title_tag ) . '>';
 		
 		$html .= '<div class="product_separator separator small center" ' . bridge_qode_get_inline_style( $separator_style ) . '></div>';
 		

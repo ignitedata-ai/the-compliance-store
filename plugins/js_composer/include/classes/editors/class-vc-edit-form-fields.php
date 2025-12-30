@@ -138,22 +138,55 @@ class Vc_Edit_Form_Fields {
 	/**
 	 * Enqueue js scripts for attributes types.
 	 *
+	 * @param array $params - since 8.7.
 	 * @return string
 	 * @since 4.4
 	 */
-	public function enqueueScripts() {
+	public function enqueueScripts( $params = [] ) {
+		$param_type_list = $this->get_param_types_list( $params );
+
 		$output = '';
 		$scripts = apply_filters( 'vc_edit_form_enqueue_script', WpbakeryShortcodeParams::getScripts() );
-		if ( is_array( $scripts ) ) {
-			foreach ( $scripts as $script ) {
-				$custom_tag = 'script';
-				// @todo Check posibility to use wp_add_inline_script
-                // @codingStandardsIgnoreLine
-                $output .= '<' . $custom_tag . ' src="' . esc_url( $script ) . '"></' . $custom_tag . '>';
+		if ( ! is_array( $scripts ) ) {
+			return $output;
+		}
+
+		foreach ( $scripts as $param_type => $script ) {
+			$is_edit_form_script = strpos( $script, 'edit-form' ) !== false;
+			$is_element_param_type = in_array( $param_type, $param_type_list, true );
+			if ( ! $is_element_param_type && ! $is_edit_form_script ) {
+				continue;
 			}
+
+			$custom_tag = 'script';
+			$output .= '<' . $custom_tag . ' src="' . esc_url( $script ) . '"></' . $custom_tag . '>';
 		}
 
 		return $output;
+	}
+
+	/**
+	 * Get list of unique parameter types from element setting.
+	 *
+	 * @param array $settings
+	 * @return array
+	 */
+	public function get_param_types_list( array $settings ) {
+		$types = [];
+
+		foreach ( $settings as $single_param ) {
+			if ( ! isset( $single_param['type'] ) ) {
+				continue;
+			} else {
+				$types[] = $single_param['type'];
+			}
+
+			if ( 'param_group' === $single_param['type'] ) {
+				$types = array_merge( $types, $this->get_param_types_list( $single_param['params'] ) );
+			}
+		}
+
+		return array_values( array_unique( $types ) );
 	}
 
 	/**
@@ -203,7 +236,7 @@ class Vc_Edit_Form_Fields {
 	 * @since 4.4
 	 * vc_filter: vc_edit_form_class - filter to override editor_css_classes array
 	 */
-	public function render() {
+	public function render() { // phpcs:ignore:Generic.Metrics.CyclomaticComplexity.TooHigh, CognitiveComplexity.Complexity.MaximumComplexity.TooHigh
 		$this->loadDefaultParams();
 		$output = $el_position = '';
 		$groups_content = $groups = [];
@@ -251,10 +284,10 @@ class Vc_Edit_Form_Fields {
 		}
 		$output .= $this->renderGroupedFields( $groups, $groups_content );
 		$output .= '</div>';
-		$output .= $this->enqueueScripts();
+		$output .= $this->enqueueScripts( $params );
 
-        // @codingStandardsIgnoreLine
-        echo $output;
+        // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
+		echo $output;
 		do_action( 'vc_edit_form_fields_after_render' );
 	}
 

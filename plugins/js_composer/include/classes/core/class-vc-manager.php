@@ -292,9 +292,7 @@ class Vc_Manager {
 		$this->mapper()->init(); // execute all required.
 		do_action( 'vc_after_mapping' ); // VC ACTION.
 		new Vc_Modifications();
-		if ( vc_user_access()->wpAny( 'manage_options' )->part( 'settings' )->can( 'vc-updater-tab' )->get() ) {
-			vc_license()->setupReminder();
-		}
+
 		do_action( 'vc_after_init' );
 	}
 

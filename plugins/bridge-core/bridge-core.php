@@ -5,7 +5,7 @@ Plugin URI: https://qodeinteractive.com
 Description: Plugin that adds additional features needed by our theme
 Author: Qode
 Author URI: https://qodeinteractive.com
-Version: 3.3.4.3
+Version: 3.3.4.5
 */
 if ( ! class_exists( 'BridgeCore' ) ) {
 	class BridgeCore {

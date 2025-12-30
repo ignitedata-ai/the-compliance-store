@@ -60,9 +60,9 @@
 			$html .=  "<div class='q_team_text_holder_inner'>";
 			$html .=  "<div class='q_team_text_inner'>";
 			$html .=  "<div class='q_team_title_holder'>";
-			$html .=  '<' . esc_attr( $title_tag ) . ' class="q_team_name" ' . bridge_qode_get_inline_style( $name_style ) . '>';
+			$html .=  '<' . bridge_qode_get_escape_title_tag( $title_tag ) . ' class="q_team_name" ' . bridge_qode_get_inline_style( $name_style ) . '>';
 			$html .= esc_html( $team_name );
-			$html .=  '</'. esc_attr( $title_tag ) . '>';
+			$html .=  '</'. bridge_qode_get_escape_title_tag( $title_tag ) . '>';
 			if ( $team_position != "" ) {
 				$html .= "<span " . bridge_qode_get_inline_style( $position_style ) . ">" . esc_html($team_position ) . "</span>";
 			}
@@ -127,9 +127,9 @@
 		$html .=  "<div class='q_team_text' ". bridge_qode_get_inline_style( $qteam_box_style ) .">";
 		$html .=  "<div class='q_team_text_inner'>";
 		$html .=  "<div class='q_team_title_holder'>";
-		$html .=  '<' . esc_attr( $title_tag ) . ' class="q_team_name" ' . bridge_qode_get_inline_style( $name_style ) . '>';
+		$html .=  '<' . bridge_qode_get_escape_title_tag( $title_tag ) . ' class="q_team_name" ' . bridge_qode_get_inline_style( $name_style ) . '>';
 		$html .= esc_html( $team_name );
-		$html .=  '</'. esc_attr( $title_tag ) . '>';
+		$html .=  '</'. bridge_qode_get_escape_title_tag( $title_tag ) . '>';
 		
 		if ( $team_position != "" ) {
 			$html .= "<span " . bridge_qode_get_inline_style( $position_style ) . ">" . $team_position . "</span>";
@@ -198,9 +198,9 @@
 		$html .=  "<div class='q_team_text' ". bridge_qode_get_inline_style( $qteam_box_style ) .">";
 		$html .=  '<div class="q_team_text_inner">';
 		$html .=  '<div class="q_team_title_holder">';
-		$html .=  '<' . esc_attr( $title_tag ) . ' class="q_team_name" '  . bridge_qode_get_inline_style( $name_style ) . ">";
+		$html .=  '<' . bridge_qode_get_escape_title_tag( $title_tag ) . ' class="q_team_name" '  . bridge_qode_get_inline_style( $name_style ) . ">";
 		$html .= esc_html( $team_name );
-		$html .=  '</' . esc_attr( $title_tag ) . '>';
+		$html .=  '</' . bridge_qode_get_escape_title_tag( $title_tag ) . '>';
 		if($team_position != "") {
 			$html .= "<span " . bridge_qode_get_inline_style( $position_style ) . ">" . esc_html( $team_position ) . "</span>";
 		}

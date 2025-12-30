@@ -47,11 +47,11 @@
 	
 	// Add title if it's provided
 	if ($title != "") {
-		$html .= '<' . $title_tag . ' class="pie_title"';
+		$html .= '<' . bridge_qode_get_escape_title_tag( $title_tag ) . ' class="pie_title"';
 		if ($title_color != "") {
 			$html .= ' style="color: ' . esc_attr($title_color) . ';"';
 		}
-		$html .= '>' . esc_html($title) . '</' . $title_tag . '>';
+		$html .= '>' . esc_html($title) . '</' . bridge_qode_get_escape_title_tag( $title_tag ) . '>';
 	}
 	
 	$separator_styles = "";

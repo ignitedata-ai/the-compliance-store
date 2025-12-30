@@ -20,7 +20,7 @@ $html .= '<img itemprop="image" src="' . esc_url( $image_src ) . '" alt="' . esc
 if( ! empty( $link ) && 'image_title' === $link_position ) {
 	$html .= '</a>';
 }
-$html .= '<'. esc_attr( $title_tag ) .' ';
+$html .= '<'. bridge_qode_get_escape_title_tag( $title_tag ) .' ';
 if ($title_color != "") {
     $html .= 'style="color:' . esc_attr( $title_color ) . ';"';
 }
@@ -32,7 +32,7 @@ $html .= $title;
 if( ! empty( $link ) && 'image_title' === $link_position ) {
 	$html .= '</a>';
 }
-$html .= '</' . esc_attr( $title_tag ) . '>';
+$html .= '</' . bridge_qode_get_escape_title_tag( $title_tag ) . '>';
 $html .= '<span style="margin: 6px 0px;" class="separator transparent"></span>';
 $html .= do_shortcode( $content );
 if( ! empty( $link ) && 'overlay' === $link_position ) {

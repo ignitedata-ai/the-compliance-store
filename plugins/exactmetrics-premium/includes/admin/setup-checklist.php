@@ -66,6 +66,7 @@ class ExactMetrics_Setup_Checklist {
 			'step_4_performance_addon'       => false,
 			'step_4_custom_dimensions'       => false,
 			'step_4_install_wpconsent'       => false,
+			'step_4_custom_events'           => false,
 			'step_5_check_out_growth_tools'  => false,
 			'step_5_embed_popular_posts'     => false,
 			'step_5_install_aioseo'          => false,

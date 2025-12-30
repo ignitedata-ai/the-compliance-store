@@ -3,7 +3,7 @@
  * Plugin Name: SupportCandy - Email Piping
  * Plugin URI: https://supportcandy.net/
  * Description: Email Piping add-on for SupportCandy
- * Version: 3.2.4
+ * Version: 3.2.7
  * Author: SupportCandy
  * Author URI: https://supportcandy.net/
  * Requires at least: 5.6
@@ -39,7 +39,7 @@ if ( ! class_exists( 'WPSC_EP' ) ) :
 		 *
 		 * @var string
 		 */
-		public static $version = '3.2.4';
+		public static $version = '3.2.7';
 
 		/**
 		 * Constructor for main class
@@ -47,7 +47,6 @@ if ( ! class_exists( 'WPSC_EP' ) ) :
 		public static function init() {
 
 			self::define_constants();
-			add_action( 'init', array( __CLASS__, 'load_textdomain' ), 1 );
 			self::load_files();
 
 			// Return if installation is in progress.
@@ -71,18 +70,6 @@ if ( ! class_exists( 'WPSC_EP' ) ) :
 			self::define( 'WPSC_EP_PLUGIN_BASENAME', plugin_basename( __FILE__ ) );
 			self::define( 'WPSC_EP_STORE_ID', 117 );
 			self::define( 'WPSC_EP_VERSION', self::$version );
-		}
-
-		/**
-		 * Loads internationalization strings
-		 *
-		 * @return void
-		 */
-		public static function load_textdomain() {
-
-			$locale = apply_filters( 'plugin_locale', get_locale(), 'wpsc-ep' );
-			load_textdomain( 'wpsc-ep', WP_LANG_DIR . '/supportcandy/wpsc-ep-' . $locale . '.mo' );
-			load_plugin_textdomain( 'wpsc-ep', false, plugin_basename( __DIR__ ) . '/i18n' );
 		}
 
 		/**

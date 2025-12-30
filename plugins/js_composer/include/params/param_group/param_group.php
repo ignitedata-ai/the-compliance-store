@@ -132,7 +132,7 @@ class Vc_ParamGroup {
 	 * @return mixed|string
 	 * @since 4.4
 	 */
-	public function render() {
+	public function render() { // phpcs:ignore:CognitiveComplexity.Complexity.MaximumComplexity.TooHigh
 		$output = '';
 		$edit_form = new Vc_ParamGroup_Edit_Form_Fields( $this->settings );
 

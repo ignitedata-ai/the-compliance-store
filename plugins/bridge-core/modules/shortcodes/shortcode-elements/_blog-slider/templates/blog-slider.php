@@ -142,7 +142,7 @@
 					$html .= '</div>';
 					
 					$html .= '<div class="blog_text_holder_inner">';
-					$html .= '<' . esc_attr( $title_tag ) . ' itemprop="name" class="blog_slider_title entry_title" ><a itemprop="url" href="' . get_permalink() . '" ' . bridge_qode_get_inline_style( $title_color_style ) . '>' . get_the_title() . '</a></' . esc_attr( $title_tag ) . '>';
+					$html .= '<' . bridge_qode_get_escape_title_tag( $title_tag ) . ' itemprop="name" class="blog_slider_title entry_title" ><a itemprop="url" href="' . get_permalink() . '" ' . bridge_qode_get_inline_style( $title_color_style ) . '>' . get_the_title() . '</a></' . bridge_qode_get_escape_title_tag( $title_tag ) . '>';
 					
 					if ( $show_categories == 'yes' ) {
 						$html .= '<div class="blog_slider_categories">';
@@ -194,7 +194,7 @@
 						$html .= '<meta itemprop="interactionCount" content="UserComments: ' . get_comments_number( bridge_qode_get_page_id() ) . '"/></span>';
 					}
 					
-					$html .= '<' . esc_attr( $title_tag ) . ' itemprop="name" class="blog_slider_title entry_title" ><a itemprop="url" href="' . get_permalink() . '" ' . bridge_qode_get_inline_style( $title_color_style ) . '>' . get_the_title() . '</a></' . esc_attr(  $title_tag ) . '>';
+					$html .= '<' . bridge_qode_get_escape_title_tag( $title_tag ) . ' itemprop="name" class="blog_slider_title entry_title" ><a itemprop="url" href="' . get_permalink() . '" ' . bridge_qode_get_inline_style( $title_color_style ) . '>' . get_the_title() . '</a></' . bridge_qode_get_escape_title_tag(  $title_tag ) . '>';
 					
 					if ( $show_categories == 'yes' ) {
 						$html .= '<div class="blog_slider_categories">';
@@ -250,7 +250,7 @@
 				$html .= '<div class = "blog_text_holder_inner">';
 				$html .= '<div class = "blog_text_holder_inner2" ' . bridge_qode_get_inline_style( $hover_box_style ) . '>';
 				if ( $post_info_position !== "above_title" ) {
-					$html .= '<' . esc_attr( $title_tag ) . ' itemprop="name"  class= "blog_slider_simple_title entry_title" ><a itemprop="url" href="' . get_permalink() . '" ' . bridge_qode_get_inline_style( $title_color_style ) . '>' . get_the_title() . '</a></' . esc_attr( $title_tag ) . '>';
+					$html .= '<' . bridge_qode_get_escape_title_tag( $title_tag ) . ' itemprop="name"  class= "blog_slider_simple_title entry_title" ><a itemprop="url" href="' . get_permalink() . '" ' . bridge_qode_get_inline_style( $title_color_style ) . '>' . get_the_title() . '</a></' . bridge_qode_get_escape_title_tag( $title_tag ) . '>';
 				}
 				if ( $show_categories == "yes" || $show_author == "yes" || $show_date == "yes" ) {
 					$html .= '<div class="blog_slider_simple_info">';
@@ -282,7 +282,7 @@
 					$html .= '</div>'; //close blog_slider_simple_info div
 				}
 				if ( $post_info_position == "above_title" ) {
-					$html .= '<' . esc_attr( $title_tag ) . ' itemprop="name" class= "blog_slider_simple_title entry_title" ><a itemprop="url" href="' . get_permalink() . '" ' . bridge_qode_get_inline_style( $title_color_style ) . '>' . get_the_title() . '</a></' . esc_attr( $title_tag ) . '>';
+					$html .= '<' . bridge_qode_get_escape_title_tag( $title_tag ) . ' itemprop="name" class= "blog_slider_simple_title entry_title" ><a itemprop="url" href="' . get_permalink() . '" ' . bridge_qode_get_inline_style( $title_color_style ) . '>' . get_the_title() . '</a></' . bridge_qode_get_escape_title_tag( $title_tag ) . '>';
 				}
 				if ( $show_excerpt == "yes" ) {
 					$excerpt = ( $excerpt_length > 0 ) ? substr( get_the_excerpt(), 0, intval( $excerpt_length ) ) . '...' : get_the_excerpt();

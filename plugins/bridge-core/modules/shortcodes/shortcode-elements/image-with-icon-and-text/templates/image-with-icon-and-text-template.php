@@ -19,9 +19,9 @@
 		</div>
 	</div>
 	<?php if($title != '') : ?>
-		<<?php echo esc_attr($title_tag); ?> class="qode-iwiat-title">
+		<<?php echo bridge_qode_get_escape_title_tag($title_tag); ?> class="qode-iwiat-title">
 			<?php echo esc_attr($title); ?>
-		</<?php echo esc_attr($title_tag); ?>>
+		</<?php echo bridge_qode_get_escape_title_tag($title_tag); ?>>
 	<?php endif; ?>
 	<?php if($text != '') : ?>
 		<p class="qode-iwiat-text">

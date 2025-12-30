@@ -70,7 +70,7 @@ class Vc_WXR_Parser_Regex {
 	 * @param string $file
 	 * @return array|\WP_Error
 	 */
-	public function parse( $file ) {
+	public function parse( $file ) { // phpcs:ignore:Generic.Metrics.CyclomaticComplexity.TooHigh, CognitiveComplexity.Complexity.MaximumComplexity.TooHigh
 		$wxr_version = false;
 		$in_post = false;
 
@@ -243,7 +243,7 @@ class Vc_WXR_Parser_Regex {
 	 * @param string $post
 	 * @return array
 	 */
-	public function process_post( $post ) {
+	public function process_post( $post ) { // phpcs:ignore:Generic.Metrics.CyclomaticComplexity.TooHigh, CognitiveComplexity.Complexity.MaximumComplexity.TooHigh
 		$post_id = $this->get_tag( $post, 'wp:post_id' );
 		$post_title = $this->get_tag( $post, 'title' );
 		$post_date = $this->get_tag( $post, 'wp:post_date' );

@@ -34,7 +34,7 @@ $output .= wpb_widget_title( [
 	'title' => $title,
 	'extraclass' => 'wpb_revslider_heading',
 ] );
-$output .= apply_filters( 'vc_revslider_shortcode', do_shortcode( '[rev_slider alias="' . $alias . '"]' ) );
+$output .= apply_filters( 'vc_revslider_shortcode', do_shortcode( '[rev_slider alias="' . esc_attr( $alias ) . '"]' ) );
 $output .= '</div>';
 
 echo $output; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped

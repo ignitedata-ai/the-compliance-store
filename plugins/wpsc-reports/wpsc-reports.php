@@ -3,7 +3,7 @@
  * Plugin Name: SupportCandy - Reports
  * Plugin URI: https://supportcandy.net/
  * Description: Reports for SupportCandy
- * Version: 3.1.1
+ * Version: 3.1.4
  * Author: SupportCandy
  * Author URI: https://supportcandy.net/
  * Requires at least: 5.6
@@ -39,7 +39,7 @@ if ( ! class_exists( 'WPSC_RP' ) ) :
 		 *
 		 * @var string
 		 */
-		public static $version = '3.1.1';
+		public static $version = '3.1.4';
 
 		/**
 		 * Constructor for main class
@@ -47,7 +47,6 @@ if ( ! class_exists( 'WPSC_RP' ) ) :
 		public static function init() {
 
 			self::define_constants();
-			add_action( 'init', array( __CLASS__, 'load_textdomain' ), 1 );
 			self::load_files();
 
 			// Return if installation is in progress.
@@ -71,18 +70,6 @@ if ( ! class_exists( 'WPSC_RP' ) ) :
 			self::define( 'WPSC_RP_PLUGIN_BASENAME', plugin_basename( __FILE__ ) );
 			self::define( 'WPSC_RP_STORE_ID', 3550 );
 			self::define( 'WPSC_RP_VERSION', self::$version );
-		}
-
-		/**
-		 * Loads internationalization strings
-		 *
-		 * @return void
-		 */
-		public static function load_textdomain() {
-
-			$locale = apply_filters( 'plugin_locale', get_locale(), 'wpsc-reports' );
-			load_textdomain( 'wpsc-reports', WP_LANG_DIR . '/supportcandy/wpsc-reports-' . $locale . '.mo' );
-			load_plugin_textdomain( 'wpsc-reports', false, plugin_basename( __DIR__ ) . '/i18n' );
 		}
 
 		/**

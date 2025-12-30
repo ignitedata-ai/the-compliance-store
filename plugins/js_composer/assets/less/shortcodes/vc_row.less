@@ -25,9 +25,12 @@
 }
 
 .vc_editor {
-  .vc_row{
+  .vc_row {
     &[data-vc-full-width] {
-      overflow: visible;
+      .vc_controls-bc {
+        z-index: 1002; // the same number as vc_controls-out-tl has
+        bottom: 19px;
+      }
     }
   }
 }

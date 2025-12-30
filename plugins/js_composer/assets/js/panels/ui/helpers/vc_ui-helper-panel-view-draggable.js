@@ -17,9 +17,22 @@
 				return;
 			}
 
+			var _this = this;
 			this.$el.draggable( _.extend({}, this.draggableOptions, {
-				start: this.fixElContainment,
-				stop: this.fixElContainment
+				start: function () {
+					if ( vc.$frame && vc.$frame.length ) {
+						// If the frame exists, we disable pointer events on it to allow dragging without interference.
+						// This is necessary to prevent the iframe from capturing mouse events while dragging.
+						vc.$frame.css( 'pointer-events', 'none' );
+					}
+					_this.fixElContainment();
+				},
+				stop: function () {
+					if ( vc.$frame && vc.$frame.length ) {
+						vc.$frame.css( 'pointer-events', 'auto' );
+					}
+					_this.fixElContainment();
+				}
 			}) );
 		}
 	};

@@ -323,7 +323,9 @@ class Vc_Backend_Editor extends Vc_Editor {
 			 */
 			wp_register_style( 'vc_animate-css', vc_asset_url( 'lib/vendor/dist/animate.css/animate.min.css' ), [], WPB_VC_VERSION );
 			wp_register_style( 'pickr', vc_asset_url( 'lib/vendor/dist/@simonwep/pickr/dist/themes/classic.min.css' ), [], WPB_VC_VERSION, false );
-			wp_register_style( 'vc_google_fonts', 'https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,500&display=swap', [], WPB_VC_VERSION );
+			// When version is added, we can't use multiple fonts, it only loads the last font from the url.
+			// phpcs:ignore WordPress.WP.EnqueuedResourceParameters.MissingVersion
+			wp_register_style( 'vc_google_fonts', 'https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,500;1,14..32,500&family=Open+Sans:ital,wght@1,600&family=Roboto:wght@400;700&family=Roboto:ital,wght@1,500&family=Sora:wght@600&display=swap&ver=' . WPB_VC_VERSION, [], null );
 		}
 
 		do_action( 'wpb_after_register_backend_editor_css', $this );

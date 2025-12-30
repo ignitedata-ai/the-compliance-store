@@ -63,22 +63,22 @@ $ cd js_composer-3rd-party-devs
 
 ```sh
 $ php composer.phar install
-$ npm run install-project
+$ yarn install-project
 ```
 
-You can also install npm packages separately.
+You can also install packages separately.
 
-Install npm packages for main project (inside the main project folder):
+Install packages for main project (inside the main project folder):
 
 ```sh
-$ npm install
+$ yarn install
 ```
 
-Install npm packages for assets vendor libraries:
+Install packages for assets vendor libraries:
 
 ```sh
 $ cd assets/lib/vendor
-$ npm install
+$ yarn install
 ```
 
 ### Build
@@ -91,17 +91,17 @@ The `build-prod` command will compile all JS, LESS and CSS files. The files will
 
 Build:
 ```sh
-npm run build
+yarn build
 ```
 
 Watch:
 ```sh
-npm run watch
+yarn watch
 ```
 
 Build production:
 ```sh
-npm run build-prod
+yarn build-prod
 ```
 
 ## Coding Rules
@@ -142,13 +142,13 @@ For JavaScript, we are using [ESLint](https://eslint.org/) to ensure a consisten
 To check your JS code against our code standards rules:
 
 ```sh
-$ npm run eslint
+$ yarn eslint
 ```
 
 To automatically fix errors and warnings, run:
 
 ```sh
-$ npm run eslint --fix
+$ yarn eslint --fix
 ```
 
 ### Run JavaScript tests
@@ -156,7 +156,7 @@ $ npm run eslint --fix
 To run JavaScript tests, we are using [Jest](https://jestjs.io/). The following command is available:
 
 ```sh
-npm run test
+yarn test
 ```
 
 ### Run PHPUnit tests

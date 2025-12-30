@@ -204,7 +204,7 @@ class Vc_License {
 	 *
 	 * @return bool
 	 */
-	public function finishActivationDeactivation( $isActivation, $user_token ) {
+	public function finishActivationDeactivation( $isActivation, $user_token ) { // phpcs:ignore:Generic.Metrics.CyclomaticComplexity.TooHigh, CognitiveComplexity.Complexity.MaximumComplexity.TooHigh
 		if ( ! $this->isValidToken( $user_token ) ) {
 			$this->showError( esc_html__( 'Token is not valid or has expired', 'js_composer' ) );
 
@@ -342,7 +342,7 @@ class Vc_License {
 	/**
 	 * Check license key
 	 */
-	public function checkLicenseKey() {
+	public function checkLicenseKey() { // phpcs:ignore:Generic.Metrics.CyclomaticComplexity.TooHigh, CognitiveComplexity.Complexity.MaximumComplexity.TooHigh
 		$site_url = self::getSiteUrl();
 		// Send request to remote server to check is license is activated on this domain.
 		$license_key = $this->getLicenseKey();
@@ -569,26 +569,6 @@ class Vc_License {
 	}
 
 	/**
-	 * Set up license activation notice if needed
-	 *
-	 * Don't show notice on dev environment
-	 */
-	public function setupReminder() {
-		if ( self::isDevEnvironment() ) {
-			return;
-		}
-
-		$version1 = isset( $_COOKIE['vchideactivationmsg_vc11'] ) ? sanitize_text_field( wp_unslash( $_COOKIE['vchideactivationmsg_vc11'] ) ) : '';
-
-		if ( ! $this->isActivated() && ( empty( $version1 ) || version_compare( $version1, WPB_VC_VERSION, '<' ) ) && ! ( vc_is_network_plugin() && is_network_admin() ) ) {
-			add_action( 'admin_notices', [
-				$this,
-				'adminNoticeLicenseActivation',
-			] );
-		}
-	}
-
-	/**
 	 * Check if current environment is dev
 	 *
 	 * Environment is considered dev if host is:
@@ -628,56 +608,6 @@ class Vc_License {
 		}
 
 		return false;
-	}
-
-	/**
-	 * Admin notice for license activation.
-	 */
-	public function adminNoticeLicenseActivation() {
-		if ( vc_is_network_plugin() ) {
-			update_site_option( 'wpb_js_composer_license_activation_notified', 'yes' );
-		} else {
-			vc_settings()->set( 'composer_license_activation_notified', 'yes' );
-		}
-		$redirect = esc_url( vc_updater()->getUpdaterUrl() );
-		$first_tag = 'style';
-		$second_tag = 'script';
-		// @codingStandardsIgnoreStart
-		?>
-		<<?php echo esc_attr( $first_tag ); ?>>
-			.vc_license-activation-notice {
-				position: relative;
-			}
-		</<?php echo esc_attr( $first_tag ); ?>>
-		<<?php echo esc_attr( $second_tag ); ?>>
-			(function ( $ ) {
-				var setCookie = function ( c_name, value, exdays ) {
-					var exdate = new Date();
-					exdate.setDate( exdate.getDate() + exdays );
-					var c_value = encodeURIComponent( value ) + ((null === exdays) ? "" : "; expires=" + exdate.toUTCString());
-					document.cookie = c_name + "=" + c_value;
-				};
-				$( document ).off( 'click.vc-notice-dismiss' ).on( 'click.vc-notice-dismiss',
-					'.vc-notice-dismiss',
-					function ( e ) {
-						e.preventDefault();
-						var $el = $( this ).closest(
-							'#vc_license-activation-notice' );
-						$el.fadeTo( 100, 0, function () {
-							$el.slideUp( 100, function () {
-								$el.remove();
-							} );
-						} );
-						setCookie( 'vchideactivationmsg_vc11',
-							'<?php echo esc_attr( WPB_VC_VERSION ); ?>',
-							30 );
-					} );
-			})( window.jQuery );
-		</<?php echo esc_attr( $second_tag ); ?>>
-		<?php
-		echo '<div class="updated vc_license-activation-notice" id="vc_license-activation-notice"><p>' . sprintf( esc_html__( 'Hola! Would you like to receive automatic updates and unlock premium support? Please %sactivate your copy%s of WPBakery Page Builder.', 'js_composer' ), '<a href="' . esc_url( wp_nonce_url( $redirect ) ) . '">', '</a>' ) . '</p>' . '<button type="button" class="notice-dismiss vc-notice-dismiss"><span class="screen-reader-text">' . esc_html__( 'Dismiss this notice.', 'js_composer' ) . '</span></button></div>';
-
-		// @codingStandardsIgnoreEnd
 	}
 
 	/**

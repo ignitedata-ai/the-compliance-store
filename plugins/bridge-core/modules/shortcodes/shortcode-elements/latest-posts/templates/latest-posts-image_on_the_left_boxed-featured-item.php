@@ -11,7 +11,7 @@
                                 <span itemprop="dateCreated" class="date entry_date updated"><?php echo get_the_time('d.m.Y');?> <meta itemprop="interactionCount" content="UserComments: <?php echo get_comments_number(bridge_qode_get_page_id()); ?>"/></span>
                             </span>
                     <?php } ?>
-                    <<?php echo esc_attr($title_tag); ?> itemprop="name" class="latest_post_title entry_title"><a itemprop="url" href="<?php echo get_permalink(); ?>"><?php echo get_the_title(); ?></a></<?php echo esc_attr($title_tag); ?>>
+                    <<?php echo bridge_qode_get_escape_title_tag($title_tag); ?> itemprop="name" class="latest_post_title entry_title"><a itemprop="url" href="<?php echo get_permalink(); ?>"><?php echo get_the_title(); ?></a></<?php echo bridge_qode_get_escape_title_tag($title_tag); ?>>
                     <div class="latest_post_image clearfix">
                         <a itemprop="url" href="<?php echo get_permalink(); ?>">
                             <?php echo wp_get_attachment_image( get_post_thumbnail_id(), $thumb_size ); ?>

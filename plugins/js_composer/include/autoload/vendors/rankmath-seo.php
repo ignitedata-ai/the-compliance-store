@@ -19,7 +19,7 @@ if ( ! defined( 'ABSPATH' ) ) {
  *
  * @return array
  */
-function vc_rank_math_seo_image_filter( $images, $id ) {
+function vc_rank_math_seo_image_filter( $images, $id ) { // phpcs:ignore:CognitiveComplexity.Complexity.MaximumComplexity.TooHigh
 	if ( empty( $images ) ) {
 		$post = get_post( $id );
 		if ( $post && strpos( $post->post_content, '[vc_row' ) !== false ) {

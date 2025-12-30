@@ -38,7 +38,7 @@ class WPBakeryShortCode_Vc_Gallery extends WPBakeryShortCode {
 	 * @param string $value
 	 * @return string
 	 */
-	public function singleParamHtmlHolder( $param, $value ) {
+	public function singleParamHtmlHolder( $param, $value ) { // phpcs:ignore:Generic.Metrics.CyclomaticComplexity.TooHigh, CognitiveComplexity.Complexity.MaximumComplexity.TooHigh
 		$output = '';
 		// Compatibility fixes.
 		$old_names = [

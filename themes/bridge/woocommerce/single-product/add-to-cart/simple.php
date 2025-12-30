@@ -10,9 +10,9 @@
  * happen. When this occurs the version of the template file will be bumped and
  * the readme will list any important changes.
  *
- * @see https://docs.woocommerce.com/document/template-structure/
- * @package WooCommerce/Templates
- * @version 7.0.1
+ * @see https://woocommerce.com/document/template-structure/
+ * @package WooCommerce\Templates
+ * @version 10.2.0
  */
 
 defined( 'ABSPATH' ) || exit;
@@ -28,8 +28,8 @@ if ( ! $product->is_purchasable() ) {
 $bridge_qode_options = bridge_qode_return_global_options();
 
 $button_classes = 'single_add_to_cart_button qbutton button alt';
-if (isset($bridge_qode_options['woo_products_add_to_cart_hover_type']) && $bridge_qode_options['woo_products_add_to_cart_hover_type'] !== ''){
-	$button_classes .= ' '.$bridge_qode_options['woo_products_add_to_cart_hover_type'];
+if ( isset( $bridge_qode_options['woo_products_add_to_cart_hover_type'] ) && $bridge_qode_options['woo_products_add_to_cart_hover_type'] !== '' ) {
+	$button_classes .= ' ' . $bridge_qode_options['woo_products_add_to_cart_hover_type'];
 }
 
 /*** Our code modification inside Woo template - end ***/

@@ -41,7 +41,7 @@ class WpbMap_Grid_Item extends WPBMap {
 	 * @param bool $force - force data generation even data already generated.
 	 * @throws \Exception
 	 */
-	protected static function generateGitemUserData( $force = false ) {
+	protected static function generateGitemUserData( $force = false ) { // phpcs:ignore:Generic.Metrics.CyclomaticComplexity.TooHigh, CognitiveComplexity.Complexity.MaximumComplexity.TooHigh
 		if ( ! $force && false !== self::$gitem_user_sc && false !== self::$gitem_user_categories ) {
 			return;
 		}

@@ -12,7 +12,7 @@
  *
  * @see         https://woocommerce.com/document/template-structure/
  * @package     WooCommerce\Templates
- * @version     9.6.0
+ * @version     10.3.0
  */
 
 if ( ! defined( 'ABSPATH' ) ) {
@@ -20,18 +20,31 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 /*** Our code modification inside Woo template - begin ***/
-$title_tag = 'h4';
-$title_tag_options = bridge_qode_options()->getOptionValue('woo_product_single_related_post_tag');
+$title_tag         = 'h4';
+$title_tag_options = bridge_qode_options()->getOptionValue( 'woo_product_single_related_post_tag' );
 if ( $title_tag_options != '' ) {
 	$title_tag = $title_tag_options;
 }
 
 $heading = apply_filters( 'woocommerce_product_related_products_heading', esc_html__( 'Related products', 'bridge' ) );
 
-if ( $related_products ) : ?>
+if ( $related_products ) :
+	/**
+	 * Ensure all images of related products are lazy loaded by increasing the
+	 * current media count to WordPress's lazy loading threshold if needed.
+	 * Because wp_increase_content_media_count() is a private function, we
+	 * check for its existence before use.
+	 */
+	if ( function_exists( 'wp_increase_content_media_count' ) ) {
+		$content_media_count = wp_increase_content_media_count( 0 );
+		if ( $content_media_count < wp_omit_loading_attr_threshold() ) {
+			wp_increase_content_media_count( wp_omit_loading_attr_threshold() - $content_media_count );
+		}
+	}
+	?>
 	
 	<div class="related products">
-		<<?php echo esc_attr($title_tag); ?> class="qode-related-upsells-title"><?php echo esc_html( $heading ); ?></<?php echo esc_attr($title_tag); ?>>
+		<<?php echo bridge_qode_get_escape_title_tag( $title_tag ); ?> class="qode-related-upsells-title"><?php echo esc_html( $heading ); ?></<?php echo bridge_qode_get_escape_title_tag($title_tag); ?>>
 		
 		<?php woocommerce_product_loop_start(); ?>
 		

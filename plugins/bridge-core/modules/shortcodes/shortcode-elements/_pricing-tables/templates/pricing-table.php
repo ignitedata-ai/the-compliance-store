@@ -52,7 +52,7 @@
 		}
 		
 		$html .= "<li class='cell qode_pt_title'>";
-		$html .= '<' . esc_attr( $title_tag ) . '>' . esc_html( $title ) . '</' . esc_attr( $title_tag ) . '>';
+		$html .= '<' . bridge_qode_get_escape_title_tag( $title_tag ) . '>' . esc_html( $title ) . '</' . bridge_qode_get_escape_title_tag( $title_tag ) . '>';
 		$html .= '</li>';
 		
 		if ( ! empty( $short_info ) ) {
@@ -97,7 +97,7 @@
 		if(empty($title_tag_standard)){
 			$html .= "<li class='cell table_title'><h3 class='title_content'>" . esc_html($title) . "</h3>";
 		} else {
-			$html .= "<li class='cell table_title'><" . esc_attr($title_tag_standard) . " class='qode_title_content_new'>" . esc_html($title) . "</" . esc_attr($title_tag_standard) . ">";
+			$html .= "<li class='cell table_title'><" . bridge_qode_get_escape_title_tag($title_tag_standard) . " class='qode_title_content_new'>" . esc_html($title) . "</" . bridge_qode_get_escape_title_tag($title_tag_standard) . ">";
 		}
 		
 		$html .= "<li class='prices'>";

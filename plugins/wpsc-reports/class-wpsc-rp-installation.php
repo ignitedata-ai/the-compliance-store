@@ -139,7 +139,6 @@ if ( ! class_exists( 'WPSC_RP_Installation' ) ) :
 		public static function upgrade() {
 
 			if ( version_compare( self::$current_version, '3.0.8', '<' ) ) {
-
 				// dashboard card / widget.
 				self::install_db_cards_widgets();
 			}

@@ -6,9 +6,9 @@
                     $counter = 0;
                     foreach ( $interactive_links as $interactive_link ){ ?>
                         <a itemprop="link" class="qode-il-link" href="<?php echo esc_url($interactive_link['item_link'])?>" target="<?php echo esc_attr($interactive_link['item_link_target'])?>" data-index="<?php echo esc_attr($counter)?>">
-                            <<?php echo esc_attr( $title_tag ); ?> class="qode-il-title-heading">
+                            <<?php echo bridge_qode_get_escape_title_tag( $title_tag ); ?> class="qode-il-title-heading">
                                 <span class="qode-il-title"><?php echo esc_html($interactive_link['item_title'])?></span>
-                            </<?php echo esc_attr( $title_tag ); ?>>
+                            </<?php echo bridge_qode_get_escape_title_tag( $title_tag ); ?>>
                         </a>
                         <?php $counter++; }
                 } ?>
@@ -24,11 +24,11 @@
                                 <?php echo wp_get_attachment_image($interactive_link['item_image'], 'full'); ?>
                             </a>
                             <div class="qode-il-responsive-title-holder">
-                                <<?php echo esc_attr( $title_tag ); ?> class="qode-il-links-holder">
+                                <<?php echo bridge_qode_get_escape_title_tag( $title_tag ); ?> class="qode-il-links-holder">
                                     <a itemprop="link" class="qode-il-link qode-il-responsive-title" href="<?php echo esc_url($interactive_link['item_link'])?>" target="<?php echo esc_attr($interactive_link['item_link_target'])?>" data-index="<?php echo esc_attr($counter)?>">
                                         <span class="qode-il-title"><?php echo esc_html($interactive_link['item_title'])?></span>
                                     </a>
-                                </<?php echo esc_attr( $title_tag ); ?>>
+                                </<?php echo bridge_qode_get_escape_title_tag( $title_tag ); ?>>
                             </div>
                         </div>
                         <?php $counter++; }

@@ -19,9 +19,9 @@
 	</div>
 	<div class="qode-icwi-text-holder">
 		<?php if($title != '') : ?>
-			<<?php echo esc_attr($title_tag); ?> class="qode-icwi-title">
+			<<?php echo bridge_qode_get_escape_title_tag($title_tag); ?> class="qode-icwi-title">
 				<?php echo esc_attr($title); ?>
-			</<?php echo esc_attr($title_tag); ?>>
+			</<?php echo bridge_qode_get_escape_title_tag($title_tag); ?>>
 		<?php endif; ?>
 		<?php if($text != '') : ?>
 			<p class="qode-icwi-text">

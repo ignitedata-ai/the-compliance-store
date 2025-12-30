@@ -40,6 +40,11 @@ class Vc_Shortcode_Edit_Form {
 			'renderFields',
 		] );
 
+		add_action( 'wp_ajax_wpb_add_element_edit_window_ajax_cache', [
+			$this,
+			'renderFields',
+		] );
+
 		add_filter( 'vc_single_param_edit', [
 			$this,
 			'changeEditFormFieldParams',
@@ -91,6 +96,11 @@ class Vc_Shortcode_Edit_Form {
 	 */
 	public function renderFields() {
 		$tag = vc_post_param( 'tag' );
+
+		if ( ! WPBMap::exists( $tag ) ) {
+			wp_send_json_error( esc_html__( 'Shortcode is not registered in WPBakery Page Builder', 'js_composer' ) );
+		}
+
 		vc_user_access()->checkAdminNonce()->validateDie( esc_html__( 'Access denied', 'js_composer' ) )->wpAny( [
 			'edit_post',
 			(int) vc_request_param( 'post_id' ),
@@ -98,12 +108,13 @@ class Vc_Shortcode_Edit_Form {
 
 		$params = (array) stripslashes_deep( vc_post_param( 'params' ) );
 		$params = array_map( 'vc_htmlspecialchars_decode_deep', $params );
-		$this->updateElementUsageCount( $tag );
+		if ( vc_post_param( 'escape_usage_count' ) ) {
+			$this->updateElementUsageCount( $tag );
+		}
 		require_once vc_path_dir( 'EDITORS_DIR', 'class-vc-edit-form-fields.php' );
 		$fields = new Vc_Edit_Form_Fields( $tag, $params );
-		$output = $fields->render();
-		// @codingStandardsIgnoreLine
-		wp_die( $output );
+		$fields->render();
+		wp_die();
 	}
 
 	/**

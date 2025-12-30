@@ -2,7 +2,7 @@
 	<ul class="qode-advanced-tabs-nav">
 		<?php foreach ($tabs_titles as $tab_title) { ?>
 			<li>
-				<<?php echo esc_attr($title_tag) ?>>
+				<<?php echo bridge_qode_get_escape_title_tag($title_tag) ?>>
 					<a href="#tab-<?php echo sanitize_title($tab_title)?>">
 						<?php if($icons_in_title) { ?>
 							<span class="qode-advanced-icon-frame"></span>
@@ -14,7 +14,7 @@
 							</span>
 						<?php } ?>
 					</a>
-				</<?php echo esc_attr($title_tag) ?>>
+				</<?php echo bridge_qode_get_escape_title_tag($title_tag) ?>>
 			</li>
 		<?php } ?>
 	</ul>

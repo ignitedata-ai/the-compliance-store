@@ -12786,6 +12786,166 @@ function buildTermsTree(flatTerms) {
 
 /***/ }),
 
+/***/ "./src/plugins/conversion-event/index.js":
+/*!***********************************************!*\
+  !*** ./src/plugins/conversion-event/index.js ***!
+  \***********************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _metabox_components_pro_badge__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../metabox/components/pro-badge */ "./src/plugins/metabox/components/pro-badge.js");
+
+const {
+  addFilter
+} = wp.hooks;
+const {
+  InspectorControls
+} = wp.blockEditor;
+const {
+  TextControl,
+  PanelBody,
+  ToggleControl
+} = wp.components;
+const {
+  createHigherOrderComponent
+} = wp.compose;
+const {
+  __
+} = wp.i18n;
+
+
+// Add custom attributes to the button block
+addFilter('blocks.registerBlockType', 'exactmetrics-extend-blocks/exactmetrics-add-attributes', (settings, name) => {
+  let supportedBlocks = ['core/button', 'core/image'];
+  if (!supportedBlocks.includes(name)) {
+    return settings;
+  }
+  return {
+    ...settings,
+    attributes: {
+      ...settings.attributes,
+      exactmetricsMarkAsConversionEvent: {
+        type: 'boolean',
+        default: false
+      },
+      exactmetricsMarkAsKeyEvent: {
+        type: 'boolean',
+        default: false
+      },
+      exactmetricsCustomEventName: {
+        type: 'string',
+        default: ''
+      }
+    }
+  };
+});
+
+// Add custom control to the block's sidebar
+const MonsterinsightsAddConversionEventControl = createHigherOrderComponent(BlockEdit => {
+  return props => {
+    let supportedBlocks = ['core/button', 'core/image'];
+    if (!supportedBlocks.includes(props.name)) {
+      return (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(BlockEdit, {
+        ...props
+      });
+    }
+    const {
+      license_type,
+      conversion_tracking_upgrade_url
+    } = exactmetrics_gutenberg_tool_vars;
+    if ('pro' !== license_type) {
+      return (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(react__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(BlockEdit, {
+        ...props
+      }), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(InspectorControls, null, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(PanelBody, {
+        title: "ExactMetrics"
+      }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(ToggleControl, {
+        label: "Mark as a conversion event",
+        checked: false,
+        disabled: true
+      }), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_metabox_components_pro_badge__WEBPACK_IMPORTED_MODULE_1__["default"], {
+        license: license_type,
+        upgrade_url: conversion_tracking_upgrade_url
+      }))));
+    }
+    const {
+      attributes,
+      setAttributes
+    } = props;
+    const {
+      exactmetricsMarkAsConversionEvent: markAsConversionEvent
+    } = attributes;
+    const onMarkAsKeyEventChange = newValue => {
+      if (false === newValue) {
+        setAttributes({
+          exactmetricsMarkAsKeyEvent: false
+        });
+        return;
+      }
+      if (!attributes.exactmetricsCustomEventName) {
+        wp.data.dispatch('core/notices').createInfoNotice('Please enter a custom event name to mark as a key event.', {
+          type: 'snackbar',
+          explicitDismiss: true
+        });
+        return;
+      }
+
+      // Check event name is more than 3 characters.
+      if (attributes.exactmetricsCustomEventName.length < 3) {
+        wp.data.dispatch('core/notices').createInfoNotice('Custom event name must be at least 3 characters long to be tracked as a key event.', {
+          type: 'snackbar',
+          explicitDismiss: true
+        });
+        return;
+      }
+
+      // Send ajax request to mark as key event. Send request to relay to mark as key event.
+      wp.ajax.post('exactmetrics_conversion_tracking_mark_as_key_event', {
+        eventName: attributes.exactmetricsCustomEventName,
+        nonce: exactmetrics_gutenberg_tool_vars.nonce
+      }).done(response => {
+        if (response) {
+          wp.data.dispatch('core/notices').createInfoNotice(response.message, {
+            type: 'snackbar',
+            explicitDismiss: true
+          });
+        }
+      });
+      setAttributes({
+        exactmetricsMarkAsKeyEvent: newValue
+      });
+    };
+    return (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(react__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(BlockEdit, {
+      ...props
+    }), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(InspectorControls, null, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(PanelBody, {
+      title: "ExactMetrics"
+    }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(ToggleControl, {
+      label: "Mark as a conversion event",
+      checked: markAsConversionEvent,
+      onChange: newValue => setAttributes({
+        exactmetricsMarkAsConversionEvent: newValue
+      })
+    }), markAsConversionEvent && (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(react__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(TextControl, {
+      label: "Custom Event Name",
+      value: attributes.exactmetricsCustomEventName,
+      onChange: newValue => setAttributes({
+        exactmetricsCustomEventName: newValue
+      }),
+      placeholder: "click-(elementID)"
+    }), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(ToggleControl, {
+      label: "Mark as Key Event",
+      checked: attributes.exactmetricsMarkAsKeyEvent,
+      onChange: onMarkAsKeyEventChange,
+      help: "Mark this click as a key event which can be tracked in all of your reports."
+    })))));
+  };
+}, 'MonsterinsightsAddConversionEventControl');
+addFilter('editor.BlockEdit', 'extend-button-block/exactmetrics-add-custom-control', MonsterinsightsAddConversionEventControl);
+
+/***/ }),
+
 /***/ "./src/plugins/exactmetrics-Headline-Analyzer/components/HeadlinePanelCharacterCount.js":
 /*!**********************************************************************************************!*\
   !*** ./src/plugins/exactmetrics-Headline-Analyzer/components/HeadlinePanelCharacterCount.js ***!
@@ -14008,9 +14168,11 @@ if ('undefined' !== typeof exactmetrics_gutenberg_tool_vars && exactmetrics_gute
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _GUTENBERG_APP_THEME_Headline_Analyzer__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./GUTENBERG_APP_THEME-Headline-Analyzer */ "./src/plugins/exactmetrics-Headline-Analyzer/index.js");
 /* harmony import */ var _metabox__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./metabox */ "./src/plugins/metabox/index.js");
+/* harmony import */ var _conversion_event__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./conversion-event */ "./src/plugins/conversion-event/index.js");
 /**
  * Import Sidebar Plugins
  */
+
 
 
 

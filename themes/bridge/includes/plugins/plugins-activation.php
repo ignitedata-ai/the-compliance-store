@@ -4,7 +4,7 @@ if(!function_exists('bridge_qode_set_plugins_array_to_install')){
 	function bridge_qode_set_plugins_array_to_install(){
 		global $default_plugins_array_to_install;
 		
-		$default_plugins_array_to_install = array( 'js_composer', 'elementor', 'bridge-core', 'revslider', 'envato-market', 'qode-instagram-widget', 'qi-addons-for-elementor', 'qi-blocks', 'qode-wishlist-for-woocommerce', 'qode-quick-view-for-woocommerce', 'qode-optimizer','leadin');
+		$default_plugins_array_to_install = array( 'js_composer', 'elementor', 'bridge-core', 'revslider', 'envato-market', 'qi-addons-for-elementor', 'qi-blocks', 'qode-wishlist-for-woocommerce', 'qode-quick-view-for-woocommerce', 'qode-optimizer','leadin');
 	}
 	
 	add_action('bridge_qode_action_before_options_map', 'bridge_qode_set_plugins_array_to_install');
@@ -17,7 +17,7 @@ if(!function_exists('bridge_qode_plugins_list')) {
 				'name'                  => esc_html__( 'Bridge Core', 'bridge' ),
 				'slug'                  => 'bridge-core',
 				'source'                => get_template_directory() . '/plugins/bridge-core.zip',
-				'version'               => '3.3.4.3',
+				'version'               => '3.3.4.5',
 				'required'				=> true,
 				'force_activation'		=> false,
 				'force_deactivation'	=> false,
@@ -28,7 +28,7 @@ if(!function_exists('bridge_qode_plugins_list')) {
 				'slug'					=> 'js_composer',
 				'source'				=> get_template_directory() . '/plugins/js_composer.zip',
 				'required'				=> false,
-				'version'				=> '8.6.1',
+				'version'				=> '8.7.1',
 				'force_activation'		=> false,
 				'force_deactivation'	=> false,
 				'external_url'			=> '',
@@ -63,7 +63,7 @@ if(!function_exists('bridge_qode_plugins_list')) {
 				'slug'     				=> 'revslider',
 				'source'   				=> get_template_directory() . '/plugins/revslider.zip',
 				'required' 				=> true,
-				'version' 				=> '6.7.35',
+				'version' 				=> '6.7.38',
 				'force_activation' 		=> false,
 				'force_deactivation' 	=> false,
 				'external_url' 			=> ''

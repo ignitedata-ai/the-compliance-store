@@ -32,4 +32,24 @@ final class ExactMetrics_Report_Traffic_Technology extends ExactMetrics_Report {
 		parent::__construct();
 	}
 
+	/**
+	 * Prepare report-specific data for output.
+	 *
+	 * @param array $data The data from the report before it gets sent to the frontend.
+	 *
+	 * @return mixed
+	 */
+	public function prepare_report_data( $data ) {
+		if ( isset( $data['data']['browser_breakdown'] ) && is_array( $data['data']['browser_breakdown'] ) ) {
+			$data['data']['galinks'] = array(
+				3 => sprintf(
+					'https://analytics.google.com/analytics/web/#/a%1$sp%2$s/reports/explorer?params=_u..nav%%3Dmaui%%26_r.explorerCard..selmet%%3D%%5B%%22activeUsers%%22%%5D%%26_r.explorerCard..seldim%%3D%%5B%%22browser%%22%%5D&collectionId=user&r=user-technology-detail',
+					ExactMetrics()->auth->get_accountid(),
+					ExactMetrics()->auth->get_propertyid()
+				),
+			);
+		}
+
+		return $data;
+	}
 }

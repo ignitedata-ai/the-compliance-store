@@ -59,10 +59,16 @@ function vc_action_save_settings_preset() {
 
 	$id = Vc_Settings_Preset::saveSettingsPreset( vc_post_param( 'shortcode_name' ), vc_post_param( 'title' ), vc_post_param( 'data' ), vc_post_param( 'is_default' ) );
 
+	$saved_title = '';
+	if ( $id ) {
+		$saved_title = get_post_field( 'post_title', $id );
+	}
+
 	$response = [
 		'success' => (bool) $id,
 		'html' => Vc_Settings_Preset::getRenderedSettingsPresetPopup( vc_post_param( 'shortcode_name' ) ),
 		'id' => $id,
+		'title' => $saved_title,
 	];
 
 	wp_send_json( $response );

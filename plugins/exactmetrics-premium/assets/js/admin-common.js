@@ -54,6 +54,20 @@ jQuery(document).ready(function ($) {
 
     location.href = exactmetrics.reports_url + '&open=exactmetrics_notification_sidebar';
   });
+
+  // Persist dismissal of Ads addon installed notice for 30 days
+  $('#exactmetrics-ads-addon-notice').on('click', 'button.notice-dismiss', function (e) {
+    e.preventDefault();
+    $.post(
+      exactmetrics_admin_common.ajax,
+      {
+        action: 'exactmetrics_dismiss_ads_addon_notice',
+        nonce: exactmetrics_admin_common.dismiss_notice_nonce
+      },
+      function () {},
+      'json'
+    );
+  });
 });
 
 var submenu_item = document.querySelector('.exactmetrics-upgrade-submenu');

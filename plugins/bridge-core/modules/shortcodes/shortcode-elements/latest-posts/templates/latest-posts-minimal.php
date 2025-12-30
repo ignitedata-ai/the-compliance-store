@@ -52,7 +52,7 @@
                                         <?php echo do_shortcode('[social_share]'); ?>
                                 <?php } ?>
                             </span>
-                            <<?php echo esc_attr($title_tag); ?> itemprop="name" class="latest_post_title entry_title"><a itemprop="url" href="<?php echo get_permalink(); ?>"><?php echo get_the_title(); ?></a></<?php echo esc_attr($title_tag); ?>>
+                            <<?php echo bridge_qode_get_escape_title_tag($title_tag); ?> itemprop="name" class="latest_post_title entry_title"><a itemprop="url" href="<?php echo get_permalink(); ?>"><?php echo get_the_title(); ?></a></<?php echo bridge_qode_get_escape_title_tag($title_tag); ?>>
                         </div>
                     </div>
                 </div>

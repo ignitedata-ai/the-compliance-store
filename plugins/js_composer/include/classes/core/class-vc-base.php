@@ -809,11 +809,12 @@ class Vc_Base {
 	 * @since 4.2
 	 */
 	public function fixPContent( $content = null ) {
-		if ( $content ) {
+		$action = vc_post_param( 'action' );
+		if ( $content && 'vc_load_shortcode' !== $action ) {
 			$s = [
 				'/' . preg_quote( '</div>', '/' ) . '[\s\n\f]*' . preg_quote( '</p>', '/' ) . '/i',
-				'/' . preg_quote( '<p>', '/' ) . '[\s\n\f]*' . preg_quote( '<div ', '/' ) . '/i',
-				'/' . preg_quote( '<p>', '/' ) . '[\s\n\f]*' . preg_quote( '<section ', '/' ) . '/i',
+				'/' . preg_quote( '<p>', '/' ) . '[\s\n\f]*' . preg_quote( '<div', '/' ) . '[\s\n\f]*/i',
+				'/' . preg_quote( '<p>', '/' ) . '[\s\n\f]*' . preg_quote( '<section', '/' ) . '[\s\n\f]*/i',
 				'/' . preg_quote( '</section>', '/' ) . '[\s\n\f]*' . preg_quote( '</p>', '/' ) . '/i',
 			];
 			$r = [
@@ -889,6 +890,16 @@ class Vc_Base {
 			'row_background_image' => esc_html__( 'Row background image', 'js_composer' ),
 			'column_background_color' => esc_html__( 'Column background color', 'js_composer' ),
 			'column_background_image' => esc_html__( 'Column background image', 'js_composer' ),
+			'grid_container_background_color' => esc_html__( 'Grid container background color', 'js_composer' ),
+			'grid_container_background_image' => esc_html__( 'Grid container background image', 'js_composer' ),
+			'grid_container_item_background_color' => esc_html__( 'Grid item background color', 'js_composer' ),
+			'grid_container_item_background_image' => esc_html__( 'Grid item background image', 'js_composer' ),
+			'flexbox_container_background_color' => esc_html__( 'Flexbox container background color', 'js_composer' ),
+			'flexbox_container_background_image' => esc_html__( 'Flexbox container background image', 'js_composer' ),
+			'flexbox_container_item_background_color' => esc_html__( 'Flexbox item background color', 'js_composer' ),
+			'flexbox_container_item_background_image' => esc_html__( 'Flexbox item background image', 'js_composer' ),
+			'gitem_background_image' => esc_html__( 'Grid builder item background image', 'js_composer' ),
+			'gitem_background_color' => esc_html__( 'Grid builder item background color', 'js_composer' ),
 			'guides_on' => esc_html__( 'Guides ON', 'js_composer' ),
 			'guides_off' => esc_html__( 'Guides OFF', 'js_composer' ),
 			'template_save' => esc_html__( 'New template successfully saved.', 'js_composer' ),
@@ -910,6 +921,8 @@ class Vc_Base {
 			'gfonts_loading_google_font' => esc_html__( 'Loading Font...', 'js_composer' ),
 			'gfonts_unable_to_load_google_fonts' => esc_html__( 'Unable to load Google Fonts', 'js_composer' ),
 			'no_title_parenthesis' => sprintf( '(%s)', esc_html__( 'no title', 'js_composer' ) ),
+			'no_elements_found' => esc_html__( 'No elements found', 'js_composer' ),
+			'no_addons_found' => esc_html__( 'No addons found', 'js_composer' ),
 			'error_while_saving_image_filtered' => esc_html__( 'Error while applying filter to the image. Check your server and memory settings.', 'js_composer' ),
 			'ui_saved' => sprintf( '<i class="vc-composer-icon vc-c-icon-check"></i> %s', esc_html__( 'Saved!', 'js_composer' ) ),
 			'ui_danger' => sprintf( '<i class="vc-composer-icon vc-c-icon-close"></i> %s', esc_html__( 'Failed to Save!', 'js_composer' ) ),

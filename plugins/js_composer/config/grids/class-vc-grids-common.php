@@ -107,7 +107,7 @@ if ( ! class_exists( 'VcGridsCommon' ) ) {
 		/**
 		 * Basic Grid Common Settings.
 		 */
-		public static function getBasicAtts() {
+		public static function getBasicAtts() { // phpcs:ignore:Generic.Metrics.CyclomaticComplexity.TooHigh, CognitiveComplexity.Complexity.MaximumComplexity.TooHigh
 
 			if ( self::$basicGrid ) {
 				return self::$basicGrid;

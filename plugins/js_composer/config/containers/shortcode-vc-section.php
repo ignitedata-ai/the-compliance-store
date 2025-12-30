@@ -16,7 +16,7 @@ return [
 	'show_settings_on_create' => false,
 	'category' => esc_html__( 'Content', 'js_composer' ),
 	'as_parent' => [
-		'only' => 'vc_row',
+		'only' => 'vc_row,vc_grid_container,vc_flexbox_container',
 	],
 	'as_child' => [
 		'only' => '', // Only root.

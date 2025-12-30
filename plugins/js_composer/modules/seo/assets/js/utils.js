@@ -234,8 +234,8 @@ if ( !window.vc ) {
 			// Check for consecutive sentences with the same start word
 			var consecutiveCount = 1;
 			for ( var i = 1; i < sentences.length; i++ ) {
-				var currentStartWord = sentences[i].split( ' ' )[0];
-				var previousStartWord = sentences[i - 1].split( ' ' )[0];
+				var currentStartWord = sentences[i].trim().split( ' ' )[0];
+				var previousStartWord = sentences[i - 1].trim().split( ' ' )[0];
 
 				if ( currentStartWord === previousStartWord ) {
 					consecutiveCount++;

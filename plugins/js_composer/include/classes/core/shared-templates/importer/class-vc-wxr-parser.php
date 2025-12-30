@@ -24,7 +24,7 @@ class Vc_WXR_Parser {
 	 * @param string $file
 	 * @return array|\WP_Error
 	 */
-	public function parse( $file ) {
+	public function parse( $file ) { // phpcs:ignore:Generic.Metrics.CyclomaticComplexity.TooHigh, CognitiveComplexity.Complexity.MaximumComplexity.TooHigh
 		// Attempt to use proper XML parsers first.
 		if ( extension_loaded( 'simplexml' ) ) {
 			$parser = new Vc_WXR_Parser_SimpleXML();

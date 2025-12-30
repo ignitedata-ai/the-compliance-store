@@ -77,7 +77,7 @@ class Vc_Vendor_NinjaForms {
 	 *
 	 * @return array
 	 */
-	private function get_forms() {
+	private function get_forms() { // phpcs:ignore:CognitiveComplexity.Complexity.MaximumComplexity.TooHigh
 		$ninja_forms = [];
 		if ( $this->is_ninja_forms_three() ) {
 
@@ -139,7 +139,7 @@ class Vc_Vendor_NinjaForms {
 		foreach ( $patterns as $pattern ) {
 			$output = preg_replace( '/' . $pattern . '/', '${1}' . $time . '${3}', $output );
 		}
-		$replace_to = <<<JS
+		$replace_to = <<<'JS'
 if (typeof nfForms !== 'undefined') {
   nfForms = nfForms.filter( function(item) {
     if (item && item.id) {

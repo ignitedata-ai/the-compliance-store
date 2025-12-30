@@ -36,7 +36,7 @@ if ( $price_font_size !== '' ) {
 $html .= '<li class="qode_pricing_list_item clearfix">';
 
 $html .= '<div class="qode_pricing_item_text">';
-$html .= '<' . esc_attr( $title_tag ) . ' class="qode_pricing_item_title" style="' . esc_attr( $title_styles ) . '">' . esc_html( $title ) . '</' . esc_attr( $title_tag ) . '>';
+$html .= '<' . bridge_qode_get_escape_title_tag( $title_tag ) . ' class="qode_pricing_item_title" style="' . esc_attr( $title_styles ) . '">' . esc_html( $title ) . '</' . bridge_qode_get_escape_title_tag( $title_tag ) . '>';
 $html .= '<p style="' . esc_attr( $text_styles ) . '">' . esc_html( $text ) . '</p>';
 $html .= '</div>'; //close div.qode_pricing_item_text
 

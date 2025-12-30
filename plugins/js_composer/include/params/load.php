@@ -75,4 +75,5 @@ $vc_params_list = [
 	'el_id',
 	'gutenberg',
 	'textarea_ace',
+	'range',
 ];

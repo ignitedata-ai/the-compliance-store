@@ -89,11 +89,7 @@ $button_classes = [
 	'vc_btn3-style-' . $style,
 ];
 
-if ( strpos( $title, '<br' ) !== false ) {
-	$button_html = wp_kses_post( $title );
-} else {
-	$button_html = wp_kses_post( nl2br( $title ) );
-}
+$button_html = wp_kses_post( $title );
 
 if ( '' === trim( $title ) ) {
 	$button_classes[] = 'vc_btn3-o-empty';

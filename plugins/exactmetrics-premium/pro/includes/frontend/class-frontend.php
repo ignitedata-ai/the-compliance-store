@@ -269,6 +269,8 @@ function exactmetrics_scroll_tracking_output_after_script() {
 		}
 		/* End ExactMetrics Scroll Tracking */
 		<?php
+		exactmetrics_send_gutenberg_conversion_event_script();
+
 		echo PHP_EOL;
 		$scroll_script = ob_get_clean();
 
@@ -305,3 +307,241 @@ function exactmetrics_skip_page_tracking( $skipped ) {
 }
 
 add_filter( 'exactmetrics_skip_tracking', 'exactmetrics_skip_page_tracking' );
+
+/**
+ * Inject ExactMetrics data attributes into core/button markup on render.
+ *
+ * We rely on block comment serialization (JS) and read attributes here so
+ * front-end HTML stays unchanged unless explicitly enabled on the block.
+ *
+ * @param string $block_content Rendered HTML of the block.
+ * @param array  $block         Full block data including name and attrs.
+ *
+ * @return string Possibly modified block HTML
+ */
+function exactmetrics_render_core_button_add_attributes( $block_content, $block ) {
+	if ( empty( $block ) || ! is_array( $block ) ) {
+		return $block_content;
+	}
+
+	$block_name = isset( $block['blockName'] ) ? $block['blockName'] : '';
+
+	$supported_blocks = [ 'core/button', 'core/image' ];
+
+	if ( ! in_array( $block_name, $supported_blocks ) ) {
+		return $block_content;
+	}
+
+	$attrs = isset( $block['attrs'] ) && is_array( $block['attrs'] ) ? $block['attrs'] : array();
+
+	// Require explicit enablement to avoid affecting existing buttons.
+	if ( empty( $attrs['exactmetricsMarkAsConversionEvent'] ) ) {
+		return $block_content;
+	}
+
+	$license_type = ExactMetrics()->license->get_license_type();
+
+	// Do not allow the conversion tracking if the license is plus.
+	if ( 'plus' === $license_type ) {
+		return $block_content;
+	}
+
+	// Prevent double-injection.
+	if ( false !== stripos( $block_content, 'data-mi-conversion-event' ) ) {
+		return $block_content;
+	}
+
+	$attributes_to_inject = ' data-mi-conversion-event="1"';
+
+	if ( ! empty( $attrs['exactmetricsCustomEventName'] ) ) {
+		$attributes_to_inject .= ' data-mi-event-name="' . esc_attr( $attrs['exactmetricsCustomEventName'] ) . '"';
+	}
+
+	// Add attributes to the first <a ...> tag in the button block HTML only.
+	$updated = preg_replace( '/<a\b(?![^>]*\bdata-mi-conversion-event\b)/i', '<a' . $attributes_to_inject . ' ', $block_content, 1 );
+
+	return is_string( $updated ) ? $updated : $block_content;
+}
+
+add_filter( 'render_block', 'exactmetrics_render_core_button_add_attributes', 10, 2 );
+
+/**
+ * Script to send the conversion event.
+ */
+function exactmetrics_send_gutenberg_conversion_event_script() {
+	$license_type = ExactMetrics()->license->get_license_type();
+
+	// Do not allow the conversion tracking if the license is plus.
+	if ( 'plus' === $license_type ) {
+		return;
+	}
+	?>
+	/* ExactMetrics Conversion Event */
+	jQuery(document).ready(function() {
+		jQuery('a[data-mi-conversion-event]')
+			.off('click.exactmetricsConversion')
+			.on('click.exactmetricsConversion', function() {
+				if ( typeof(__gtagTracker) !== 'undefined' && __gtagTracker ) {
+					var $link = jQuery(this);
+					var eventName = $link.attr('data-mi-event-name');
+					if ( typeof eventName === 'undefined' || ! eventName ) {
+						// Fallback to first word of the <a> tag, lowercase, strip html
+						var text = $link.text().trim();
+						text = text.replace(/(<([^>]+)>)/gi, '').toLowerCase();
+						var firstWord = text.split(/\s+/)[0] || '';
+
+						if ( firstWord ) {
+							eventName = 'click-' + firstWord;
+						} else {
+							eventName = $link.parent().hasClass('wp-block-image') ? 'image-click' : 'button-click';
+						}
+					}
+					__gtagTracker('event', 'mi-' + eventName);
+				}
+			});
+	});
+	/* End ExactMetrics Conversion Event */
+	<?php
+}
+
+/**
+ * Add custom control to the Elementor button widget.
+ */
+function exactmetrics_add_elementor_button_control( \Elementor\Controls_Stack $element, $args ) {
+
+	// Add your custom control or logic directly to button widget
+	$element->start_controls_section(
+		'exactmetrics_custom_conversion_event_section',
+		[
+			'label' => 'ExactMetrics',
+			'tab'   => \Elementor\Controls_Manager::TAB_ADVANCED,
+		]
+	);
+
+	$element->add_control(
+		'exactmetrics_mark_as_conversion_event',
+		[
+			'label'   => esc_html__( 'Mark as a conversion event', 'exactmetrics-premium' ),
+			'type'    => \Elementor\Controls_Manager::SWITCHER,
+			'default' => 'no',
+		]
+	);
+
+	$element->add_control(
+		'exactmetrics_custom_event_name',
+		[
+			'label'   => esc_html__( 'Custom event name', 'exactmetrics-premium' ),
+			'type'    => \Elementor\Controls_Manager::TEXT,
+			'default' => '',
+			'label_block' => true,
+			'placeholder' => 'click-(elementID)',
+			'condition' => [
+				'exactmetrics_mark_as_conversion_event' => 'yes',
+			],
+		]
+	);
+
+	$element->add_control(
+		'exactmetrics_mark_as_key_event',
+		[
+			'label'   => esc_html__( 'Mark as a key event', 'exactmetrics-premium' ),
+			'type'    => \Elementor\Controls_Manager::SWITCHER,
+			'default' => 'no',
+			'description' => esc_html__( 'Mark this click as a key event which can be tracked in all of your reports.', 'exactmetrics-premium' ),
+			'condition' => [
+				'exactmetrics_mark_as_conversion_event' => 'yes',
+			],
+		]
+	);
+
+	$element->end_controls_section();
+
+}
+add_action( 'elementor/element/button/section_style/after_section_end', 'exactmetrics_add_elementor_button_control', 10, 2 );
+add_action( 'elementor/element/image/section_style_image/after_section_end', 'exactmetrics_add_elementor_button_control', 10, 2 );
+
+/**
+ * Inject data attributes into Elementor Button and Image widgets when enabled.
+ *
+ * @param \Elementor\Element_Base $element The widget element instance.
+ */
+function exactmetrics_elementor_add_conversion_event_attribute( \Elementor\Element_Base $element ) {
+	$widget_name = $element->get_name();
+
+	if ( 'button' !== $widget_name && 'image' !== $widget_name ) {
+		return;
+	}
+
+	$settings = $element->get_settings_for_display();
+
+	if ( empty( $settings['exactmetrics_mark_as_conversion_event'] ) || 'yes' !== $settings['exactmetrics_mark_as_conversion_event'] ) {
+		return;
+	}
+
+	$license_type = ExactMetrics()->license->get_license_type();
+
+	// Do not allow the conversion tracking if the license is plus.
+	if ( 'plus' === $license_type ) {
+		return;
+	}
+
+	if ( empty( $settings['exactmetrics_custom_event_name'] ) ) {
+		$event_name = 'click-' . $element->get_id();
+	} else {
+		$event_name = $settings['exactmetrics_custom_event_name'];
+	}
+
+	if ( 'button' === $widget_name ) {
+		$element->add_render_attribute( 'button', 'data-mi-conversion-event', '1' );
+		$element->add_render_attribute( 'button', 'data-mi-event-name', $event_name );
+	} else { // image
+		// Add to the link wrapper when image is linked.
+		$element->add_render_attribute( 'link', 'data-mi-conversion-event', '1' );
+		$element->add_render_attribute( 'link', 'data-mi-event-name', $event_name );
+	}
+}
+
+add_action( 'elementor/frontend/widget/before_render', 'exactmetrics_elementor_add_conversion_event_attribute' );
+
+function exactmetrics_elementor_enqueue_editor_scripts() {
+	$nonce = wp_create_nonce( 'exactmetrics_gutenberg_headline_nonce' );
+	?>
+	<script>
+		jQuery(document).ready(function($) {
+			// Delegate to document so it works for dynamically loaded Elementor controls
+			$(document).on('change', 'input.elementor-switch-input[data-setting="exactmetrics_mark_as_key_event"]', function() {
+				var $input = $(this);
+				var isChecked = $input.prop('checked');
+				if (isChecked) {
+					var eventName = $('input[data-setting="exactmetrics_custom_event_name"]').val().trim();
+					if ( eventName ) {
+						// Send ajax request to mark as key event. Send request to relay to mark as key event.
+						wp.ajax.post( 'exactmetrics_conversion_tracking_mark_as_key_event', {
+							eventName: eventName,
+							nonce: "<?php echo esc_js( $nonce ); ?>",
+						} ).done( function( response ) {
+							if ( response ) {
+								elementorCommon.dialogsManager.createWidget( 'alert', {
+									headerMessage: 'ExactMetrics',
+									message: response.message,
+									strings: { confirm: 'Close' },
+								} )
+								.show();
+							}
+						});
+					} else {
+						elementorCommon.dialogsManager.createWidget( 'alert', {
+							headerMessage: 'ExactMetrics',
+							message: 'Event name cannot be empty to mark as Key Event.',
+							strings: { confirm: 'Close' },
+						} )
+						.show();
+						$input.prop('checked', false);
+					}
+				}
+			});
+		});
+	</script>
+	<?php
+}
+add_action( 'elementor/editor/footer', 'exactmetrics_elementor_enqueue_editor_scripts', 100 );

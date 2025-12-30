@@ -113,7 +113,7 @@ if ( ! class_exists( 'WPSC_RP_Ticket_Calculations' ) ) :
 				}
 
 				// average response delay.
-				$ticket->ard = ceil( $delay / $count );
+				$ticket->ard = $count ? ceil( $delay / $count ) : 0;
 
 				// communication gap.
 				$ticket->cg = count( $threads );

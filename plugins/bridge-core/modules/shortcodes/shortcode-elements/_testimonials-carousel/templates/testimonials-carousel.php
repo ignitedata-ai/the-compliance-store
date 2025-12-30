@@ -63,7 +63,7 @@
 			}
 			if($show_title == "yes" && $title !== ''){
 				$html .= '<div class="testimonial_title_holder">';
-				$html .= '<' . esc_attr( $title_tag ) . '>' . esc_html( $title ) . '</' . esc_attr( $title_tag ) . '>';
+				$html .= '<' . bridge_qode_get_escape_title_tag( $title_tag ) . '>' . esc_html( $title ) . '</' . bridge_qode_get_escape_title_tag( $title_tag ) . '>';
 				$html .= '</div>';
 			}
 			if($show_rating == "yes" && $rating !== ''){

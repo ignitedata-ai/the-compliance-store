@@ -16,6 +16,7 @@
 			'touchstart > .vc_controls .vc_element .vc_control-btn-delete': 'destroy',
 			'click > .vc_controls .vc_element .vc_control-btn-edit': 'edit',
 			'touchstart > .vc_controls .vc_element .vc_control-btn-edit': 'edit',
+			'mouseenter > .vc_controls .vc_element .vc_control-btn-edit': 'cacheEditPanel',
 			'click > .vc_controls .vc_element .vc_control-btn-clone': 'clone',
 			'touchstart > .vc_controls .vc_element .vc_control-btn-clone': 'clone',
 			'click > .vc_controls .vc_element .vc_control-btn-copy': 'copy',

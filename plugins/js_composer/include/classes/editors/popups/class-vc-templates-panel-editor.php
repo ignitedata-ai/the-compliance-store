@@ -103,7 +103,7 @@ class Vc_Templates_Panel_Editor {
 	 * @param array $category
 	 * @return mixed
 	 */
-	public function renderTemplateBlock( $category ) {
+	public function renderTemplateBlock( $category ) { // phpcs:ignore Generic.Metrics.CyclomaticComplexity.TooHigh, CognitiveComplexity.Complexity.MaximumComplexity.TooHigh
 		if ( 'my_templates' === $category['category'] ) {
 			$category['output'] = '';
 
@@ -112,9 +112,9 @@ class Vc_Templates_Panel_Editor {
 				<div class="vc_column vc_col-sm-12" data-vc-hide-on-search="true">
 					<div class="vc_element_label">' . esc_html__( 'Save current layout as a template', 'js_composer' ) . '</div>
 					<div class="vc_input-group">
-						<input name="padding" data-js-element="vc-templates-input" class="vc_form-control wpb-textinput vc_panel-templates-name" type="text" value="" placeholder="' . esc_attr__( 'Template name', 'js_composer' ) . '" data-vc-disable-empty="#vc_ui-save-template-btn">
+						<input name="padding" data-js-element="vc-templates-input" class="vc_form-control wpb-textinput vc_panel-templates-name" type="text" value="" placeholder="' . esc_attr__( 'Template name', 'js_composer' ) . '">
 						<span class="vc_input-group-btn">
-							<button class="vc_general vc_ui-button vc_ui-button-size-md vc_ui-button-action vc_ui-button-shape-rounded vc_template-save-btn" id="vc_ui-save-template-btn" disabled data-vc-ui-element="button-save">' . esc_html__( 'Save Template', 'js_composer' ) . '</button>
+							<button class="vc_general vc_ui-button vc_ui-button-size-md vc_ui-button-action vc_ui-button-shape-rounded vc_template-save-btn" id="vc_ui-save-template-btn" data-vc-ui-element="button-save">' . esc_html__( 'Save Template', 'js_composer' ) . '</button>
 						</span>
 					</div>
 					<span class="vc_description">' . esc_html__( 'Save layout and reuse it on different sections of this site.', 'js_composer' ) . '</span>
@@ -329,9 +329,16 @@ class Vc_Templates_Panel_Editor {
 
 		$template_name = vc_post_param( 'template_name' );
 		$template = vc_post_param( 'template' );
-		if ( ! isset( $template_name ) || '' === trim( $template_name ) || ! isset( $template ) || '' === trim( $template ) ) {
+
+		if ( ! isset( $template ) || '' === trim( $template ) ) {
 			header( ':', true, 500 );
 			throw new Exception( 'Error: Vc_Templates_Panel_Editor::save:1' );
+		}
+
+		// Trim the template name and use '(no title)' if empty.
+		$template_name = isset( $template_name ) ? trim( $template_name ) : '';
+		if ( '' === $template_name ) {
+			$template_name = __( '(no title)', 'js_composer' );
 		}
 
 		$template_arr = [
@@ -533,7 +540,7 @@ class Vc_Templates_Panel_Editor {
 	 * @return array - all templates with name/unique_id/category_key(optional)/image
 	 * @since 4.4
 	 */
-	public function getAllTemplates() {
+	public function getAllTemplates() { // phpcs:ignore Generic.Metrics.CyclomaticComplexity.TooHigh, CognitiveComplexity.Complexity.MaximumComplexity.TooHigh
 		$data = [];
 		// Here we go..
 		if ( apply_filters( 'vc_show_user_templates', true ) ) {
@@ -885,7 +892,7 @@ class Vc_Templates_Panel_Editor {
 						<div class="vc_ui-list-bar-item">
 HTML;
 		$output .= apply_filters( 'vc_templates_render_template', $name, $template );
-		$output .= <<<HTML
+		$output .= <<<'HTML'
 						</div>
 						<div class="vc_ui-template-content" data-js-content>
 						</div>

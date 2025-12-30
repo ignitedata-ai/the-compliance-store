@@ -95,7 +95,7 @@ class WPBakeryShortCode_Vc_Media_Grid extends WPBakeryShortCode_Vc_Basic_Grid {
 	 * @param string $value
 	 * @return string
 	 */
-	public function singleParamHtmlHolder( $param, $value ) {
+	public function singleParamHtmlHolder( $param, $value ) { // phpcs:ignore:Generic.Metrics.CyclomaticComplexity.TooHigh, CognitiveComplexity.Complexity.MaximumComplexity.TooHigh
 		$output = '';
 		// Compatibility fixes
 		// TODO: check $old_names & &new_names. Leftover from copypasting?

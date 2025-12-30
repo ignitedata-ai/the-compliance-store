@@ -142,10 +142,23 @@ class ExactMetrics_Admin_Assets {
 			)
 		);
 
+		// Load setup wizard handler script for all admin pages where the setup wizard link might appear
+		// This includes ExactMetrics pages and any admin page where the setup notice might show
+		wp_enqueue_script( 'exactmetrics-admin-setup-wizard', plugins_url( 'assets/js/admin-setup-wizard.js', EXACTMETRICS_PLUGIN_FILE ), array( 'jquery' ), exactmetrics_get_asset_version(), true );
+
+		wp_localize_script(
+			'exactmetrics-admin-setup-wizard',
+			'exactmetrics',
+			array(
+				'ajax'  => admin_url( 'admin-ajax.php' ),
+				'nonce' => wp_create_nonce( 'mi-admin-nonce' ),
+			)
+		);
+
 		// Get current screen.
 		$screen = get_current_screen();
 
-		// Bail if we're not on a ExactMetrics screen.
+		// Bail if we're not on a ExactMetrics screen for other scripts.
 		if ( empty( $screen->id ) || strpos( $screen->id, 'exactmetrics' ) === false ) {
 			return;
 		}
@@ -245,6 +258,8 @@ class ExactMetrics_Admin_Assets {
 					'timezone'                        => date( 'e' ), // phpcs:ignore WordPress.DateTime.RestrictedFunctions.date_date -- We need this to depend on the runtime timezone.
 					'funnelkit_stripe_woo_page_url'   => admin_url( 'admin.php?page=wc-settings&tab=fkwcs_api_settings' ),
 					'funnelkit_stripe_woo_nonce'      => wp_create_nonce( 'exactmetrics-funnelkit-stripe-woo-nonce' ),
+					'site_notes_export_synced'        => exactmetrics_get_option( 'site_notes_export_synced', 0 ),
+					'site_notes_import_synced'        => exactmetrics_get_option( 'site_notes_import_synced', 0 ),
 					'license'                         => $license_info,
 				)
 			);
@@ -306,6 +321,7 @@ class ExactMetrics_Admin_Assets {
 					'feedback'            => ExactMetrics_Feature_Feedback::get_settings(),
 					'addons_pre_check'    => array(
 						'ai_insights' => is_plugin_active( 'exactmetrics-ai-insights/exactmetrics-ai-insights.php' ),
+						'woo_product_feed_pro' => is_plugin_active( 'woo-product-feed-pro/woocommerce-sea.php' ),
 					),
 					'license'             => $license_info,
 					'charitablewp_notice' => $this->show_charitablewp_notice(),

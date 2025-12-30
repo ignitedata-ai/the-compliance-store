@@ -113,6 +113,7 @@ function exactmetrics_gutenberg_editor_assets() {
 			'page_insights_nonce'          => wp_create_nonce( 'mi-admin-nonce' ),
 			'isnetwork'                    => is_network_admin(),
 			'is_v4'                        => true,
+			'conversion_tracking_upgrade_url' => exactmetrics_get_upgrade_link( 'conversion-tracking', 'products' ),
 		) )
 	);
 

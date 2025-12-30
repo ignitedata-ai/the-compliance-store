@@ -12,7 +12,7 @@
  *
  * @see     https://woocommerce.com/document/template-structure/
  * @package WooCommerce\Templates
- * @version 9.4.0
+ * @version 10.1.0
  *
  * @var bool   $readonly If the input should be set to readonly mode.
  * @var string $type     The input type attribute.
@@ -43,7 +43,6 @@ if ( $max_value && $min_value === $max_value ) {
 		<input type="button" value="-" class="minus" />
 		<input type="text"
 		       id="<?php echo esc_attr( $input_id ); ?>"
-		       step="<?php echo esc_attr( $step ); ?>"
 		       min="<?php echo esc_attr( $min_value ); ?>"
 		       max="<?php echo esc_attr( 0 < $max_value ? $max_value : '' ); ?>"
 		       name="<?php echo esc_attr( $input_name ); ?>"
@@ -54,8 +53,13 @@ if ( $max_value && $min_value === $max_value ) {
 					size="4"
 				<?php endif; ?>
 		       pattern="<?php echo esc_attr( $pattern ); ?>"
-		       inputmode="<?php echo esc_attr( $inputmode ); ?>"
 		       aria-labelledby="<?php echo ! empty( $args['product_name'] ) ? sprintf( esc_attr__( '%s quantity', 'bridge' ), $args['product_name'] ) : ''; ?>"
+				<?php if ( ! $readonly ) : ?>
+					step="<?php echo esc_attr( $step ); ?>"
+					placeholder="<?php echo esc_attr( $placeholder ); ?>"
+					inputmode="<?php echo esc_attr( $inputmode ); ?>"
+					autocomplete="<?php echo esc_attr( isset( $autocomplete ) ? $autocomplete : 'on' ); ?>"
+				<?php endif; ?>
 		/>
 		<input type="button" value="+" class="plus" />
 	<?php } ?>

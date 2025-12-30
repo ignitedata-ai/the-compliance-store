@@ -100,7 +100,7 @@
 		$html .= "<div class='hover_feature_holder'>";
 		$html .= '<div class="hover_feature_holder_outer">';
 		$html .= '<div class="hover_feature_holder_inner">';
-		$html .= '<' . esc_attr( $title_tag ) . ' itemprop="name" class="portfolio_title entry_title"><a itemprop="url" href="' . esc_url( $portfolio_link ) . '" target="' . esc_attr( $target ) . '">' . wp_kses_post( $title ) . '</a></' . esc_attr( $title_tag ) . '>';
+		$html .= '<' . bridge_qode_get_escape_title_tag( $title_tag ) . ' itemprop="name" class="portfolio_title entry_title"><a itemprop="url" href="' . esc_url( $portfolio_link ) . '" target="' . esc_attr( $target ) . '">' . wp_kses_post( $title ) . '</a></' . bridge_qode_get_escape_title_tag( $title_tag ) . '>';
 		$separator_class = ( $separator == "no" ) ? " transparent" : "";
 		
 		$html .= '<span class="separator small' . esc_attr($separator_class) . '"></span>';

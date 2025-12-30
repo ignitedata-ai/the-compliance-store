@@ -128,7 +128,7 @@ class Vc_Roles {
 	 * @return array
 	 * @throws \Exception
 	 */
-	public function save( $params = [] ) {
+	public function save( $params = [] ) { // phpcs:ignore:Generic.Metrics.CyclomaticComplexity.TooHigh, CognitiveComplexity.Complexity.MaximumComplexity.TooHigh
 		$data = [ 'message' => '' ];
 		$roles = $this->getWpRoles();
 		$editable_roles = get_editable_roles();

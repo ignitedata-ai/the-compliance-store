@@ -1,28 +1,41 @@
-#, fuzzy
+# Copyright (C) 2025 SupportCandy
+# This file is distributed under the same license as the SupportCandy - Email Piping plugin.
 msgid ""
 msgstr ""
-"Project-Id-Version: SupportCandy - Email Piping\n"
-"POT-Creation-Date: 2024-02-02 17:03+0530\n"
-"PO-Revision-Date: 2022-10-14 11:26+0530\n"
-"Last-Translator: \n"
-"Language-Team: \n"
+"Project-Id-Version: SupportCandy - Email Piping 3.2.7\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wpsc-email-piping\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
-"X-Generator: Poedit 3.0.1\n"
-"X-Poedit-Basepath: ..\n"
-"X-Poedit-Flags-xgettext: --add-comments=translators:\n"
-"X-Poedit-WPHeader: wpsc-email-piping.php\n"
-"X-Poedit-SourceCharset: UTF-8\n"
-"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
-"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;"
-"_n_noop:1,2;_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
-"X-Poedit-SearchPath-0: .\n"
-"X-Poedit-SearchPathExcluded-0: *.min.js\n"
+"POT-Creation-Date: 2025-10-09T04:40:24+00:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.12.0\n"
+"X-Domain: wpsc-ep\n"
+
+#. Plugin Name of the plugin
+#: wpsc-email-piping.php
+msgid "SupportCandy - Email Piping"
+msgstr ""
+
+#. Plugin URI of the plugin
+#. Author URI of the plugin
+#: wpsc-email-piping.php
+msgid "https://supportcandy.net/"
+msgstr ""
+
+#. Description of the plugin
+#: wpsc-email-piping.php
+msgid "Email Piping add-on for SupportCandy"
+msgstr ""
+
+#. Author of the plugin
+#: wpsc-email-piping.php
+msgid "SupportCandy"
+msgstr ""
 
 #: includes/admin/email-notifications/class-wpsc-en-ep-warning-settings.php:66
-#: includes/class-wpsc-ep-cron.php:40
 #: includes/settings/class-wpsc-ep-settings.php:68
 msgid "Email Piping"
 msgstr ""
@@ -43,21 +56,6 @@ msgstr ""
 msgid "Closed ticket warning"
 msgstr ""
 
-#: includes/admin/email-notifications/class-wpsc-en-ep-warning-settings.php:130
-#: includes/admin/email-notifications/class-wpsc-ep-close-ticket-warning-setting.php:179
-#: includes/admin/email-notifications/class-wpsc-ep-close-ticket-warning-setting.php:213
-#: includes/admin/email-notifications/class-wpsc-ep-new-email-warning-setting.php:171
-#: includes/admin/email-notifications/class-wpsc-ep-new-email-warning-setting.php:205
-#: includes/admin/email-notifications/class-wpsc-ep-reply-email-warning-setting.php:178
-#: includes/admin/email-notifications/class-wpsc-ep-reply-email-warning-setting.php:212
-#: includes/admin/email-notifications/class-wpsc-ep-usertype-warning-setting.php:172
-#: includes/admin/email-notifications/class-wpsc-ep-usertype-warning-setting.php:206
-#: includes/class-wpsc-ep-license.php:109
-#: includes/class-wpsc-ep-license.php:159
-#: includes/settings/class-wpsc-ep-settings.php:138
-msgid "Unauthorized access!"
-msgstr ""
-
 #: includes/admin/email-notifications/class-wpsc-ep-close-ticket-warning-setting.php:71
 #: includes/admin/email-notifications/class-wpsc-ep-new-email-warning-setting.php:69
 #: includes/admin/email-notifications/class-wpsc-ep-reply-email-warning-setting.php:70
@@ -65,112 +63,156 @@ msgstr ""
 msgid "Email body"
 msgstr ""
 
-#: includes/class-wpsc-en-from.php:78
-msgid "Forwarded From (Email Piping)"
-msgstr ""
-
-#: includes/class-wpsc-en-from.php:127
-msgid "One condition per line!"
-msgstr ""
-
-#: includes/class-wpsc-ep-email.php:394 includes/class-wpsc-ep-email.php:530
+#: includes/class-wpsc-ep-email.php:496
+#: includes/class-wpsc-ep-email.php:655
 msgid "No email body found!"
 msgstr ""
 
-#: includes/class-wpsc-ep-license.php:114
-#: includes/class-wpsc-ep-license.php:164
-#: includes/settings/class-wpsc-ep-settings-imap.php:155
-#: includes/settings/class-wpsc-ep-settings-imap.php:161
-#: includes/settings/class-wpsc-ep-settings-imap.php:170
-#: includes/settings/class-wpsc-ep-settings-imap.php:176
-#: includes/settings/class-wpsc-ep-settings-pipe-rules.php:505
-#: includes/settings/class-wpsc-ep-settings-pipe-rules.php:511
-#: includes/settings/class-wpsc-ep-settings-pipe-rules.php:517
-#: includes/settings/class-wpsc-ep-settings-pipe-rules.php:525
-msgid "Bad request!"
+#: includes/settings/class-wpsc-ep-email-logs.php:60
+#: includes/settings/class-wpsc-ep-email-logs.php:197
+msgid "Subject"
 msgstr ""
 
-#. translators: Click here to see the documentation
-#: includes/settings/class-wpsc-ep-settings-general.php:120
-#: includes/settings/class-wpsc-ep-settings-gmail.php:66
-#: includes/settings/class-wpsc-ep-settings-me.php:82
-#, php-format
-msgid "%s to see the documentation!"
+#: includes/settings/class-wpsc-ep-email-logs.php:61
+#: includes/settings/class-wpsc-ep-email-logs.php:200
+msgid "From"
 msgstr ""
 
-#: includes/settings/class-wpsc-ep-settings-general.php:121
-#: includes/settings/class-wpsc-ep-settings-gmail.php:67
-#: includes/settings/class-wpsc-ep-settings-me.php:83
-msgid "Click here"
+#: includes/settings/class-wpsc-ep-email-logs.php:62
+#: includes/settings/class-wpsc-ep-email-logs.php:203
+msgid "To"
 msgstr ""
 
-#: includes/settings/class-wpsc-ep-settings-general.php:127
+#: includes/settings/class-wpsc-ep-email-logs.php:63
+msgid "Date Created"
+msgstr ""
+
+#: includes/settings/class-wpsc-ep-email-logs.php:64
+msgid "Status"
+msgstr ""
+
+#: includes/settings/class-wpsc-ep-email-logs.php:65
+msgid "Action"
+msgstr ""
+
+#: includes/settings/class-wpsc-ep-email-logs.php:143
+msgid "Success"
+msgstr ""
+
+#: includes/settings/class-wpsc-ep-email-logs.php:143
+msgid "Fail"
+msgstr ""
+
+#: includes/settings/class-wpsc-ep-email-logs.php:148
+msgid "View"
+msgstr ""
+
+#: includes/settings/class-wpsc-ep-email-logs.php:191
+msgid "Email Logs details"
+msgstr ""
+
+#: includes/settings/class-wpsc-ep-email-logs.php:206
+msgid "CC"
+msgstr ""
+
+#: includes/settings/class-wpsc-ep-email-logs.php:210
+msgid "Logs"
+msgstr ""
+
+#: includes/settings/class-wpsc-ep-settings-general.php:130
 msgid "Connection"
 msgstr ""
 
-#: includes/settings/class-wpsc-ep-settings-general.php:142
+#: includes/settings/class-wpsc-ep-settings-general.php:145
 msgid "Reply above text"
 msgstr ""
 
-#: includes/settings/class-wpsc-ep-settings-general.php:149
+#: includes/settings/class-wpsc-ep-settings-general.php:152
 msgid "Allowed emails"
 msgstr ""
 
-#: includes/settings/class-wpsc-ep-settings-general.php:152
+#: includes/settings/class-wpsc-ep-settings-general.php:155
 msgid "All emails"
 msgstr ""
 
-#: includes/settings/class-wpsc-ep-settings-general.php:153
+#: includes/settings/class-wpsc-ep-settings-general.php:156
 msgid "New emails only"
 msgstr ""
 
-#: includes/settings/class-wpsc-ep-settings-general.php:154
+#: includes/settings/class-wpsc-ep-settings-general.php:157
 msgid "Reply emails only"
 msgstr ""
 
-#: includes/settings/class-wpsc-ep-settings-general.php:160
+#: includes/settings/class-wpsc-ep-settings-general.php:163
 msgid "Allowed users"
 msgstr ""
 
-#: includes/settings/class-wpsc-ep-settings-general.php:163
+#: includes/settings/class-wpsc-ep-settings-general.php:166
 msgid "Anyone (including guest users)"
 msgstr ""
 
-#: includes/settings/class-wpsc-ep-settings-general.php:164
+#: includes/settings/class-wpsc-ep-settings-general.php:167
 msgid "Registered users only"
 msgstr ""
 
-#: includes/settings/class-wpsc-ep-settings-general.php:170
+#: includes/settings/class-wpsc-ep-settings-general.php:173
 msgid "Email body preference"
 msgstr ""
 
-#: includes/settings/class-wpsc-ep-settings-general.php:174
+#: includes/settings/class-wpsc-ep-settings-general.php:177
 msgid "HTML"
 msgstr ""
 
-#: includes/settings/class-wpsc-ep-settings-general.php:180
+#: includes/settings/class-wpsc-ep-settings-general.php:183
 msgid "Import other emails as additional recipients"
 msgstr ""
 
-#: includes/settings/class-wpsc-ep-settings-general.php:190
-msgid ""
-"Time frequency to check new emails (minutes). Must be less than 60 minutes."
+#: includes/settings/class-wpsc-ep-settings-general.php:193
+msgid "Time frequency to check new emails (minutes). Must be less than 60 minutes."
 msgstr ""
 
-#: includes/settings/class-wpsc-ep-settings-general.php:197
+#: includes/settings/class-wpsc-ep-settings-general.php:200
 msgid "Block by email address (one per line)"
 msgstr ""
 
-#: includes/settings/class-wpsc-ep-settings-general.php:205
+#: includes/settings/class-wpsc-ep-settings-general.php:208
 msgid "Block by subject (one per line)"
 msgstr ""
 
-#: includes/settings/class-wpsc-ep-settings-general.php:213
+#: includes/settings/class-wpsc-ep-settings-general.php:216
 msgid "Forwarding email addresses (one per line)"
 msgstr ""
 
-#: includes/settings/class-wpsc-ep-settings-general.php:221
+#: includes/settings/class-wpsc-ep-settings-general.php:224
 msgid "Use forwarding address as \"From Email\" in ticket email notifications"
+msgstr ""
+
+#: includes/settings/class-wpsc-ep-settings-general.php:234
+msgid "Spam filter"
+msgstr ""
+
+#: includes/settings/class-wpsc-ep-settings-general.php:244
+msgid "Delete email logs after"
+msgstr ""
+
+#: includes/settings/class-wpsc-ep-settings-general.php:247
+msgid "7 days"
+msgstr ""
+
+#: includes/settings/class-wpsc-ep-settings-general.php:248
+msgid "15 days"
+msgstr ""
+
+#: includes/settings/class-wpsc-ep-settings-general.php:249
+msgid "30 days"
+msgstr ""
+
+#: includes/settings/class-wpsc-ep-settings-general.php:250
+msgid "90 days"
+msgstr ""
+
+#: includes/settings/class-wpsc-ep-settings-general.php:251
+msgid "180 days"
 msgstr ""
 
 #: includes/settings/class-wpsc-ep-settings-gmail.php:73
@@ -180,19 +222,19 @@ msgstr ""
 
 #: includes/settings/class-wpsc-ep-settings-gmail.php:109
 #: includes/settings/class-wpsc-ep-settings-imap.php:108
-#: includes/settings/class-wpsc-ep-settings-me.php:109
+#: includes/settings/class-wpsc-ep-settings-me.php:114
 msgid "Save & Connect"
 msgstr ""
 
 #: includes/settings/class-wpsc-ep-settings-gmail.php:119
 #: includes/settings/class-wpsc-ep-settings-imap.php:117
-#: includes/settings/class-wpsc-ep-settings-me.php:130
+#: includes/settings/class-wpsc-ep-settings-me.php:135
 msgid "Connected !"
 msgstr ""
 
 #: includes/settings/class-wpsc-ep-settings-gmail.php:123
 #: includes/settings/class-wpsc-ep-settings-imap.php:121
-#: includes/settings/class-wpsc-ep-settings-me.php:134
+#: includes/settings/class-wpsc-ep-settings-me.php:139
 msgid "Not Connected !"
 msgstr ""
 
@@ -205,12 +247,12 @@ msgid "Invalid Email Address!"
 msgstr ""
 
 #: includes/settings/class-wpsc-ep-settings-gmail.php:165
-#: includes/settings/class-wpsc-ep-settings-me.php:197
+#: includes/settings/class-wpsc-ep-settings-me.php:202
 msgid "Client ID should not be empty!"
 msgstr ""
 
 #: includes/settings/class-wpsc-ep-settings-gmail.php:171
-#: includes/settings/class-wpsc-ep-settings-me.php:203
+#: includes/settings/class-wpsc-ep-settings-me.php:208
 msgid "Client Secret should not be empty!"
 msgstr ""
 
@@ -222,55 +264,39 @@ msgstr ""
 msgid "SupportCandy: Email piping IMAP not connected!"
 msgstr ""
 
-#: includes/settings/class-wpsc-ep-settings-imap.php:287
-msgid "Dismiss"
-msgstr ""
-
-#: includes/settings/class-wpsc-ep-settings-me.php:119
-msgid "Field"
-msgstr ""
-
-#: includes/settings/class-wpsc-ep-settings-me.php:120
-msgid "Value"
-msgstr ""
-
-#: includes/settings/class-wpsc-ep-settings-me.php:125
-msgid "Status"
-msgstr ""
-
-#: includes/settings/class-wpsc-ep-settings-me.php:141
+#: includes/settings/class-wpsc-ep-settings-me.php:146
 msgid "Redirect URI"
 msgstr ""
 
-#: includes/settings/class-wpsc-ep-settings-me.php:145
+#: includes/settings/class-wpsc-ep-settings-me.php:150
 msgid "Piping Address"
 msgstr ""
 
-#: includes/settings/class-wpsc-ep-settings-me.php:149
+#: includes/settings/class-wpsc-ep-settings-me.php:154
 msgid "Last Error"
 msgstr ""
 
-#: includes/settings/class-wpsc-ep-settings-me.php:433
+#: includes/settings/class-wpsc-ep-settings-me.php:438
 msgid "Initializing..."
 msgstr ""
 
-#: includes/settings/class-wpsc-ep-settings-pipe-rules.php:125
+#: includes/settings/class-wpsc-ep-settings-pipe-rules.php:127
 msgid "No rules found!"
 msgstr ""
 
-#: includes/settings/class-wpsc-ep-settings-pipe-rules.php:304
+#: includes/settings/class-wpsc-ep-settings-pipe-rules.php:306
 msgid "Condition"
 msgstr ""
 
-#: includes/settings/class-wpsc-ep-settings-pipe-rules.php:310
+#: includes/settings/class-wpsc-ep-settings-pipe-rules.php:312
 msgid "Forwarding email address (one per line)"
 msgstr ""
 
-#: includes/settings/class-wpsc-ep-settings-pipe-rules.php:318
+#: includes/settings/class-wpsc-ep-settings-pipe-rules.php:320
 msgid "From email address (one per line)"
 msgstr ""
 
-#: includes/settings/class-wpsc-ep-settings-pipe-rules.php:327
+#: includes/settings/class-wpsc-ep-settings-pipe-rules.php:329
 msgid "Has Words (one per line)"
 msgstr ""
 

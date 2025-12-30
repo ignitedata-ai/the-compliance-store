@@ -71,10 +71,6 @@
 						// eslint-disable-next-line no-unused-vars
 						$button = _this.$el.find( _this.settingsButtonSelector );
 
-					if ( !title.length ) {
-						return false;
-					}
-
 					var data = {
 						action: vc.templates_panel_view.save_template_action,
 						template: vc.shortcodes.singleStringify( _this.model.get( 'id' ), 'template' ),

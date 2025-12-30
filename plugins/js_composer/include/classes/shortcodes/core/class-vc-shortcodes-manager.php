@@ -185,7 +185,7 @@ class Vc_Shortcodes_Manager {
 		if ( null !== $tag ) {
 			_deprecated_argument( __METHOD__, '7.9', '$tag' );
 		}
-		return $this->getElementClass( $this->tag )->output( $atts, $content );
+		return $this->getElementClass( $this->tag )->output( $atts, $content ); // nosemgrep - escaping handled inside templates.
 	}
 
 	/**

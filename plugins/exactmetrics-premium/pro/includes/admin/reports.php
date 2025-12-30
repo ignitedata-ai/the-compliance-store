@@ -128,6 +128,10 @@ final class ExactMetrics_Admin_Pro_Reports {
 		$ecommerce_cart_abandonment_report = new ExactMetrics_Report_Cart_Abandonment();
 		ExactMetrics()->reporting->add_report( $ecommerce_cart_abandonment_report );
 
+		require_once EXACTMETRICS_PLUGIN_DIR . 'pro/includes/admin/reports/report-ecommerce-product-feed.php';
+		$ecommerce_product_feed_report = new ExactMetrics_Report_Ecommerce_Product_Feed();
+		ExactMetrics()->reporting->add_report( $ecommerce_product_feed_report );
+
 		require_once EXACTMETRICS_PLUGIN_DIR . 'pro/includes/admin/reports/report-engagement-pages.php';
 		$engagement_pages_report = new ExactMetrics_Report_Engagement_Pages();
 		ExactMetrics()->reporting->add_report( $engagement_pages_report );
@@ -135,5 +139,9 @@ final class ExactMetrics_Admin_Pro_Reports {
 		require_once EXACTMETRICS_PLUGIN_DIR . 'pro/includes/admin/reports/report-site-insights.php';
 		$site_insights = new ExactMetrics_Report_SiteInsights();
 		ExactMetrics()->reporting->add_report( $site_insights );
+
+		require_once EXACTMETRICS_PLUGIN_DIR . 'pro/includes/admin/reports/report-custom-events.php';
+		$custom_events = new ExactMetrics_Report_Custom_Events();
+		ExactMetrics()->reporting->add_report( $custom_events );
 	}
 }

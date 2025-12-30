@@ -1,9 +1,9 @@
 <div class="qode-report-sheet qode-rs-<?php echo esc_attr($columns); ?>">
 	
 	<div class="qode-rs-title-holder">
-		<<?php echo esc_attr($title_tag); ?> class='qode-rs-title'> 
+		<<?php echo bridge_qode_get_escape_title_tag($title_tag); ?> class='qode-rs-title'>
 			<?php echo wp_kses_post($report_sheet_title); ?>
-		</<?php echo esc_attr($title_tag); ?>>
+		</<?php echo bridge_qode_get_escape_title_tag($title_tag); ?>>
 	</div>
 	
 
@@ -12,41 +12,41 @@
 							
 				<?php if($column_one_title != '') { ?>
 					<div class="qode-rs-column-title-holder qode-rs-table-column">
-						<<?php echo esc_attr($column_title_tag); ?> class="qode-rs-column-title">
+						<<?php echo bridge_qode_get_escape_title_tag($column_title_tag); ?> class="qode-rs-column-title">
 							<?php echo esc_attr($column_one_title); ?>
-						</<?php echo esc_attr($column_title_tag); ?>>
+						</<?php echo bridge_qode_get_escape_title_tag($column_title_tag); ?>>
 					</div>
 				<?php } ?>
 
 				<?php if($column_two_title != '') { ?>
 					<div class="qode-rs-column-title-holder qode-rs-table-column">
-						<<?php echo esc_attr($column_title_tag); ?> class="qode-rs-column-title">
+						<<?php echo bridge_qode_get_escape_title_tag($column_title_tag); ?> class="qode-rs-column-title">
 							<?php echo esc_attr($column_two_title); ?>
-						</<?php echo esc_attr($column_title_tag); ?>>
+						</<?php echo bridge_qode_get_escape_title_tag($column_title_tag); ?>>
 					</div>
 				<?php } ?>
 
 				<?php if($column_three_title != '') { ?>
 					<div class="qode-rs-column-title-holder qode-rs-table-column">
-						<<?php echo esc_attr($column_title_tag); ?> class="qode-rs-column-title">
+						<<?php echo bridge_qode_get_escape_title_tag($column_title_tag); ?> class="qode-rs-column-title">
 							<?php echo esc_attr($column_three_title); ?>
-						</<?php echo esc_attr($column_title_tag); ?>>
+						</<?php echo bridge_qode_get_escape_title_tag($column_title_tag); ?>>
 					</div>
 				<?php } ?>
 
 				<?php if($column_four_title != '') { ?>
 					<div class="qode-rs-column-title-holder qode-rs-table-column">
-						<<?php echo esc_attr($column_title_tag); ?> class="qode-rs-column-title">
+						<<?php echo bridge_qode_get_escape_title_tag($column_title_tag); ?> class="qode-rs-column-title">
 							<?php echo esc_attr($column_four_title); ?>
-						</<?php echo esc_attr($column_title_tag); ?>>
+						</<?php echo bridge_qode_get_escape_title_tag($column_title_tag); ?>>
 					</div>
 				<?php } ?>
 
 				<?php if($column_five_title != '') { ?>
 					<div class="qode-rs-column-title-holder qode-rs-table-column">
-						<<?php echo esc_attr($column_title_tag); ?> class="qode-rs-column-title">
+						<<?php echo bridge_qode_get_escape_title_tag($column_title_tag); ?> class="qode-rs-column-title">
 							<?php echo esc_attr($column_five_title); ?>
-						</<?php echo esc_attr($column_title_tag); ?>>
+						</<?php echo bridge_qode_get_escape_title_tag($column_title_tag); ?>>
 					</div>
 				<?php } ?>
 
@@ -64,7 +64,7 @@
 
 										if(isset($row_title_tag) && $row_title_tag != ''){
 											?>
-												<<?php echo esc_attr($row_title_tag); ?>>
+												<<?php echo bridge_qode_get_escape_title_tag($row_title_tag); ?>>
 											<?php
 										}
 
@@ -74,7 +74,7 @@
 
 										if(isset($row_title_tag) && $row_title_tag != ''){
 											?>
-												</<?php echo esc_attr($row_title_tag); ?>>
+												</<?php echo bridge_qode_get_escape_title_tag($row_title_tag); ?>>
 											<?php
 										}
 
@@ -86,7 +86,7 @@
 
 										if(isset($row_subtitle_tag) && $row_subtitle_tag != ''){
 											?>
-												<<?php echo esc_attr($row_subtitle_tag); ?>>
+												<<?php echo bridge_qode_get_escape_title_tag($row_subtitle_tag); ?>>
 											<?php
 										}
 
@@ -96,7 +96,7 @@
 
 										if(isset($row_subtitle_tag) && $row_subtitle_tag != ''){
 											?>
-												</<?php echo esc_attr($row_subtitle_tag); ?>>
+												</<?php echo bridge_qode_get_escape_title_tag($row_subtitle_tag); ?>>
 											<?php
 										}
 
@@ -108,9 +108,9 @@
 						case 'two-columns':	?>
 							<div class="qode-rs-table-column clearfix">
 								<div class="qode-rs-table-column-title-header">
-									<<?php echo esc_attr($column_title_tag); ?> class="qode-rs-column-title">
+									<<?php echo bridge_qode_get_escape_title_tag($column_title_tag); ?> class="qode-rs-column-title">
 										<?php echo esc_attr($column_one_title); ?>
-									</<?php echo esc_attr($column_title_tag); ?>>
+									</<?php echo bridge_qode_get_escape_title_tag($column_title_tag); ?>>
 								</div>
 								<div class="qode-rs-table-column-inner">
 									<div class="qode-rs-table-column-title">
@@ -118,7 +118,7 @@
 
 										if(isset($row_title_tag) && $row_title_tag != ''){
 											?>
-												<<?php echo esc_attr($row_title_tag); ?>>
+												<<?php echo bridge_qode_get_escape_title_tag($row_title_tag); ?>>
 											<?php
 										}
 
@@ -128,7 +128,7 @@
 
 										if(isset($row_title_tag) && $row_title_tag != ''){
 											?>
-												</<?php echo esc_attr($row_title_tag); ?>>
+												</<?php echo bridge_qode_get_escape_title_tag($row_title_tag); ?>>
 											<?php
 										}
 
@@ -140,7 +140,7 @@
 
 										if(isset($row_subtitle_tag) && $row_subtitle_tag != ''){
 											?>
-												<<?php echo esc_attr($row_subtitle_tag); ?>>
+												<<?php echo bridge_qode_get_escape_title_tag($row_subtitle_tag); ?>>
 											<?php
 										}
 
@@ -150,7 +150,7 @@
 
 										if(isset($row_subtitle_tag) && $row_subtitle_tag != ''){
 											?>
-												</<?php echo esc_attr($row_subtitle_tag); ?>>
+												</<?php echo bridge_qode_get_escape_title_tag($row_subtitle_tag); ?>>
 											<?php
 										}
 										
@@ -160,9 +160,9 @@
 							</div>
 							<div class="qode-rs-table-column clearfix">
 								<div class="qode-rs-table-column-title-header">
-									<<?php echo esc_attr($column_title_tag); ?> class="qode-rs-column-title">
+									<<?php echo bridge_qode_get_escape_title_tag($column_title_tag); ?> class="qode-rs-column-title">
 										<?php echo esc_attr($column_two_title); ?>
-									</<?php echo esc_attr($column_title_tag); ?>>
+									</<?php echo bridge_qode_get_escape_title_tag($column_title_tag); ?>>
 								</div>
 								<div class="qode-rs-table-column-inner">
 									<div class="qode-rs-table-column-title">
@@ -170,7 +170,7 @@
 
 										if(isset($row_title_tag) && $row_title_tag != ''){
 											?>
-												<<?php echo esc_attr($row_title_tag); ?>>
+												<<?php echo bridge_qode_get_escape_title_tag($row_title_tag); ?>>
 											<?php
 										} 
 
@@ -180,7 +180,7 @@
 
 										if(isset($row_title_tag) && $row_title_tag != ''){
 											?>
-												</<?php echo esc_attr($row_title_tag); ?>>
+												</<?php echo bridge_qode_get_escape_title_tag($row_title_tag); ?>>
 											<?php
 										}
 
@@ -192,7 +192,7 @@
 
 										if(isset($row_subtitle_tag) && $row_subtitle_tag != ''){
 											?>
-												<<?php echo esc_attr($row_subtitle_tag); ?>>
+												<<?php echo bridge_qode_get_escape_title_tag($row_subtitle_tag); ?>>
 											<?php
 										}
 
@@ -202,7 +202,7 @@
 
 										if(isset($row_subtitle_tag) && $row_subtitle_tag != ''){
 											?>
-												</<?php echo esc_attr($row_subtitle_tag); ?>>
+												</<?php echo bridge_qode_get_escape_title_tag($row_subtitle_tag); ?>>
 											<?php
 										}
 										
@@ -215,9 +215,9 @@
 						case 'three-columns':	?>
 							<div class="qode-rs-table-column clearfix">
 								<div class="qode-rs-table-column-title-header">
-									<<?php echo esc_attr($column_title_tag); ?> class="qode-rs-column-title">
+									<<?php echo bridge_qode_get_escape_title_tag($column_title_tag); ?> class="qode-rs-column-title">
 										<?php echo esc_attr($column_one_title); ?>
-									</<?php echo esc_attr($column_title_tag); ?>>
+									</<?php echo bridge_qode_get_escape_title_tag($column_title_tag); ?>>
 								</div>
 								<div class="qode-rs-table-column-inner">
 									<div class="qode-rs-table-column-title">
@@ -225,7 +225,7 @@
 
 										if(isset($row_title_tag) && $row_title_tag != ''){
 											?>
-												<<?php echo esc_attr($row_title_tag); ?>>
+												<<?php echo bridge_qode_get_escape_title_tag($row_title_tag); ?>>
 											<?php
 										}
 
@@ -235,7 +235,7 @@
 
 										if(isset($row_title_tag) && $row_title_tag != ''){
 											?>
-												</<?php echo esc_attr($row_title_tag); ?>>
+												</<?php echo bridge_qode_get_escape_title_tag($row_title_tag); ?>>
 											<?php
 										}
 
@@ -247,7 +247,7 @@
 
 										if(isset($row_subtitle_tag) && $row_subtitle_tag != ''){
 											?>
-												<<?php echo esc_attr($row_subtitle_tag); ?>>
+												<<?php echo bridge_qode_get_escape_title_tag($row_subtitle_tag); ?>>
 											<?php
 										}
 
@@ -257,7 +257,7 @@
 
 										if(isset($row_subtitle_tag) && $row_subtitle_tag != ''){
 											?>
-												</<?php echo esc_attr($row_subtitle_tag); ?>>
+												</<?php echo bridge_qode_get_escape_title_tag($row_subtitle_tag); ?>>
 											<?php
 										}
 										
@@ -267,9 +267,9 @@
 							</div>
 							<div class="qode-rs-table-column clearfix">
 								<div class="qode-rs-table-column-title-header">
-									<<?php echo esc_attr($column_title_tag); ?> class="qode-rs-column-title">
+									<<?php echo bridge_qode_get_escape_title_tag($column_title_tag); ?> class="qode-rs-column-title">
 										<?php echo esc_attr($column_two_title); ?>
-									</<?php echo esc_attr($column_title_tag); ?>>
+									</<?php echo bridge_qode_get_escape_title_tag($column_title_tag); ?>>
 								</div>
 								<div class="qode-rs-table-column-inner">
 									<div class="qode-rs-table-column-title">
@@ -277,7 +277,7 @@
 
 										if(isset($row_title_tag) && $row_title_tag != ''){
 											?>
-												<<?php echo esc_attr($row_title_tag); ?>>
+												<<?php echo bridge_qode_get_escape_title_tag($row_title_tag); ?>>
 											<?php
 										}
 
@@ -287,7 +287,7 @@
 
 										if(isset($row_title_tag) && $row_title_tag != ''){
 											?>
-												</<?php echo esc_attr($row_title_tag); ?>>
+												</<?php echo bridge_qode_get_escape_title_tag($row_title_tag); ?>>
 											<?php
 										}
 
@@ -299,7 +299,7 @@
 
 										if(isset($row_subtitle_tag) && $row_subtitle_tag != ''){
 											?>
-												<<?php echo esc_attr($row_subtitle_tag); ?>>
+												<<?php echo bridge_qode_get_escape_title_tag($row_subtitle_tag); ?>>
 											<?php
 										}
 
@@ -309,7 +309,7 @@
 
 										if(isset($row_subtitle_tag) && $row_subtitle_tag != ''){
 											?>
-												</<?php echo esc_attr($row_subtitle_tag); ?>>
+												</<?php echo bridge_qode_get_escape_title_tag($row_subtitle_tag); ?>>
 											<?php
 										}
 
@@ -320,9 +320,9 @@
 							</div>
 							<div class="qode-rs-table-column clearfix">
 								<div class="qode-rs-table-column-title-header">
-									<<?php echo esc_attr($column_title_tag); ?> class="qode-rs-column-title">
+									<<?php echo bridge_qode_get_escape_title_tag($column_title_tag); ?> class="qode-rs-column-title">
 										<?php echo esc_attr($column_three_title); ?>
-									</<?php echo esc_attr($column_title_tag); ?>>
+									</<?php echo bridge_qode_get_escape_title_tag($column_title_tag); ?>>
 								</div>
 								<div class="qode-rs-table-column-inner">
 									<div class="qode-rs-table-column-title">
@@ -330,7 +330,7 @@
 
 										if(isset($row_title_tag) && $row_title_tag != ''){
 											?>
-												<<?php echo esc_attr($row_title_tag); ?>>
+												<<?php echo bridge_qode_get_escape_title_tag($row_title_tag); ?>>
 											<?php
 										}
 
@@ -340,7 +340,7 @@
 
 										if(isset($row_title_tag) && $row_title_tag != ''){
 											?>
-												</<?php echo esc_attr($row_title_tag); ?>>
+												</<?php echo bridge_qode_get_escape_title_tag($row_title_tag); ?>>
 											<?php
 										}
 
@@ -352,7 +352,7 @@
 
 										if(isset($row_subtitle_tag) && $row_subtitle_tag != ''){
 											?>
-												<<?php echo esc_attr($row_subtitle_tag); ?>>
+												<<?php echo bridge_qode_get_escape_title_tag($row_subtitle_tag); ?>>
 											<?php
 										}
 
@@ -362,7 +362,7 @@
 
 										if(isset($row_subtitle_tag) && $row_subtitle_tag != ''){
 											?>
-												</<?php echo esc_attr($row_subtitle_tag); ?>>
+												</<?php echo bridge_qode_get_escape_title_tag($row_subtitle_tag); ?>>
 											<?php
 										}
 										
@@ -375,9 +375,9 @@
 						case 'four-columns':	?>
 							<div class="qode-rs-table-column clearfix">
 								<div class="qode-rs-table-column-title-header">
-									<<?php echo esc_attr($column_title_tag); ?> class="qode-rs-column-title">
+									<<?php echo bridge_qode_get_escape_title_tag($column_title_tag); ?> class="qode-rs-column-title">
 										<?php echo esc_attr($column_one_title); ?>
-									</<?php echo esc_attr($column_title_tag); ?>>
+									</<?php echo bridge_qode_get_escape_title_tag($column_title_tag); ?>>
 								</div>
 								<div class="qode-rs-table-column-inner">
 									<div class="qode-rs-table-column-title">
@@ -385,7 +385,7 @@
 
 										if(isset($row_title_tag) && $row_title_tag != ''){
 											?>
-												<<?php echo esc_attr($row_title_tag); ?>>
+												<<?php echo bridge_qode_get_escape_title_tag($row_title_tag); ?>>
 											<?php
 										}
 
@@ -395,7 +395,7 @@
 
 										if(isset($row_title_tag) && $row_title_tag != ''){
 											?>
-												</<?php echo esc_attr($row_title_tag); ?>>
+												</<?php echo bridge_qode_get_escape_title_tag($row_title_tag); ?>>
 											<?php
 										}
 
@@ -407,7 +407,7 @@
 
 										if(isset($row_subtitle_tag) && $row_subtitle_tag != ''){
 											?>
-												<<?php echo esc_attr($row_subtitle_tag); ?>>
+												<<?php echo bridge_qode_get_escape_title_tag($row_subtitle_tag); ?>>
 											<?php
 										} 
 
@@ -417,7 +417,7 @@
 
 										if(isset($row_subtitle_tag) && $row_subtitle_tag != ''){
 											?>
-												</<?php echo esc_attr($row_title_tag); ?>>
+												</<?php echo bridge_qode_get_escape_title_tag($row_title_tag); ?>>
 											<?php
 										}
 										
@@ -427,9 +427,9 @@
 							</div>
 							<div class="qode-rs-table-column clearfix">
 								<div class="qode-rs-table-column-title-header">
-									<<?php echo esc_attr($column_title_tag); ?> class="qode-rs-column-title">
+									<<?php echo bridge_qode_get_escape_title_tag($column_title_tag); ?> class="qode-rs-column-title">
 										<?php echo esc_attr($column_two_title); ?>
-									</<?php echo esc_attr($column_title_tag); ?>>
+									</<?php echo bridge_qode_get_escape_title_tag($column_title_tag); ?>>
 								</div>
 								<div class="qode-rs-table-column-inner">
 									<div class="qode-rs-table-column-title">
@@ -437,7 +437,7 @@
 
 										if(isset($row_title_tag) && $row_title_tag != ''){
 											?>
-												<<?php echo esc_attr($row_title_tag); ?>>
+												<<?php echo bridge_qode_get_escape_title_tag($row_title_tag); ?>>
 											<?php
 										}
 
@@ -447,7 +447,7 @@
 
 										if(isset($row_title_tag) && $row_title_tag != ''){
 											?>
-												</<?php echo esc_attr($row_title_tag); ?>>
+												</<?php echo bridge_qode_get_escape_title_tag($row_title_tag); ?>>
 											<?php
 										}
 
@@ -459,7 +459,7 @@
 
 										if(isset($row_subtitle_tag) && $row_subtitle_tag != ''){
 											?>
-												<<?php echo esc_attr($row_subtitle_tag); ?>>
+												<<?php echo bridge_qode_get_escape_title_tag($row_subtitle_tag); ?>>
 											<?php
 										}
 
@@ -469,7 +469,7 @@
 
 										if(isset($row_subtitle_tag) && $row_subtitle_tag != ''){
 											?>
-												</<?php echo esc_attr($row_subtitle_tag); ?>>
+												</<?php echo bridge_qode_get_escape_title_tag($row_subtitle_tag); ?>>
 											<?php
 										}
 										
@@ -479,9 +479,9 @@
 							</div>
 							<div class="qode-rs-table-column clearfix">
 								<div class="qode-rs-table-column-title-header">
-									<<?php echo esc_attr($column_title_tag); ?> class="qode-rs-column-title">
+									<<?php echo bridge_qode_get_escape_title_tag($column_title_tag); ?> class="qode-rs-column-title">
 										<?php echo esc_attr($column_three_title); ?>
-									</<?php echo esc_attr($column_title_tag); ?>>
+									</<?php echo bridge_qode_get_escape_title_tag($column_title_tag); ?>>
 								</div>
 								<div class="qode-rs-table-column-inner">
 									<div class="qode-rs-table-column-title">
@@ -489,7 +489,7 @@
 
 										if(isset($row_title_tag) && $row_title_tag != ''){
 											?>
-												<<?php echo esc_attr($row_title_tag); ?>>
+												<<?php echo bridge_qode_get_escape_title_tag($row_title_tag); ?>>
 											<?php
 										}
 
@@ -499,7 +499,7 @@
 
 										if(isset($row_title_tag) && $row_title_tag != ''){
 											?>
-												</<?php echo esc_attr($row_title_tag); ?>>
+												</<?php echo bridge_qode_get_escape_title_tag($row_title_tag); ?>>
 											<?php
 										}
 
@@ -511,7 +511,7 @@
 
 										if(isset($row_subtitle_tag) && $row_subtitle_tag != ''){
 											?>
-												<<?php echo esc_attr($row_subtitle_tag); ?>>
+												<<?php echo bridge_qode_get_escape_title_tag($row_subtitle_tag); ?>>
 											<?php
 										}
 
@@ -521,7 +521,7 @@
 
 										if(isset($row_subtitle_tag) && $row_subtitle_tag != ''){
 											?>
-												</<?php echo esc_attr($row_subtitle_tag); ?>>
+												</<?php echo bridge_qode_get_escape_title_tag($row_subtitle_tag); ?>>
 											<?php
 										}
 										
@@ -531,9 +531,9 @@
 							</div>
 							<div class="qode-rs-table-column clearfix">
 								<div class="qode-rs-table-column-title-header">
-									<<?php echo esc_attr($column_title_tag); ?> class="qode-rs-column-title">
+									<<?php echo bridge_qode_get_escape_title_tag($column_title_tag); ?> class="qode-rs-column-title">
 										<?php echo esc_attr($column_four_title); ?>
-									</<?php echo esc_attr($column_title_tag); ?>>
+									</<?php echo bridge_qode_get_escape_title_tag($column_title_tag); ?>>
 								</div>
 								<div class="qode-rs-table-column-inner">
 									<div class="qode-rs-table-column-title">
@@ -541,7 +541,7 @@
 
 										if(isset($row_title_tag) && $row_title_tag != ''){
 											?>
-												<<?php echo esc_attr($row_title_tag); ?>>
+												<<?php echo bridge_qode_get_escape_title_tag($row_title_tag); ?>>
 											<?php
 										} 
 
@@ -551,7 +551,7 @@
 
 										if(isset($row_title_tag) && $row_title_tag != ''){
 											?>
-												</<?php echo esc_attr($row_title_tag); ?>>
+												</<?php echo bridge_qode_get_escape_title_tag($row_title_tag); ?>>
 											<?php
 										}
 
@@ -563,7 +563,7 @@
 
 										if(isset($row_subtitle_tag) && $row_subtitle_tag != ''){
 											?>
-												<<?php echo esc_attr($row_subtitle_tag); ?>>
+												<<?php echo bridge_qode_get_escape_title_tag($row_subtitle_tag); ?>>
 											<?php
 										}
 
@@ -573,7 +573,7 @@
 
 										if(isset($row_subtitle_tag) && $row_subtitle_tag != ''){
 											?>
-												<<?php echo esc_attr($row_subtitle_tag); ?>>
+												<<?php echo bridge_qode_get_escape_title_tag($row_subtitle_tag); ?>>
 											<?php
 										}
 										
@@ -587,9 +587,9 @@
 							?>
 							<div class="qode-rs-table-column clearfix">
 								<div class="qode-rs-table-column-title-header">
-									<<?php echo esc_attr($column_title_tag); ?> class="qode-rs-column-title">
+									<<?php echo bridge_qode_get_escape_title_tag($column_title_tag); ?> class="qode-rs-column-title">
 										<?php echo esc_attr($column_one_title); ?>
-									</<?php echo esc_attr($column_title_tag); ?>>
+									</<?php echo bridge_qode_get_escape_title_tag($column_title_tag); ?>>
 								</div>
 								<div class="qode-rs-table-column-inner">
 									<div class="qode-rs-table-column-title">
@@ -597,7 +597,7 @@
 
 										if(isset($row_title_tag) && $row_title_tag != ''){
 											?>
-												<<?php echo esc_attr($row_title_tag); ?>>
+												<<?php echo bridge_qode_get_escape_title_tag($row_title_tag); ?>>
 											<?php
 										}
 
@@ -607,7 +607,7 @@
 
 										if(isset($row_title_tag) && $row_title_tag != ''){
 											?>
-												</<?php echo esc_attr($row_title_tag); ?>>
+												</<?php echo bridge_qode_get_escape_title_tag($row_title_tag); ?>>
 											<?php
 										}
 
@@ -619,7 +619,7 @@
 
 										if(isset($row_subtitle_tag) && $row_subtitle_tag != ''){
 											?>
-												<<?php echo esc_attr($row_subtitle_tag); ?>>
+												<<?php echo bridge_qode_get_escape_title_tag($row_subtitle_tag); ?>>
 											<?php
 										}
 
@@ -629,7 +629,7 @@
 
 										if(isset($row_subtitle_tag) && $row_subtitle_tag != ''){
 											?>
-												</<?php echo esc_attr($row_subtitle_tag); ?>>
+												</<?php echo bridge_qode_get_escape_title_tag($row_subtitle_tag); ?>>
 											<?php
 										}
 										
@@ -639,9 +639,9 @@
 							</div>
 							<div class="qode-rs-table-column clearfix">
 								<div class="qode-rs-table-column-title-header">
-									<<?php echo esc_attr($column_title_tag); ?> class="qode-rs-column-title">
+									<<?php echo bridge_qode_get_escape_title_tag($column_title_tag); ?> class="qode-rs-column-title">
 										<?php echo esc_attr($column_two_title); ?>
-									</<?php echo esc_attr($column_title_tag); ?>>
+									</<?php echo bridge_qode_get_escape_title_tag($column_title_tag); ?>>
 								</div>
 								<div class="qode-rs-table-column-inner">
 									<div class="qode-rs-table-column-title">
@@ -649,7 +649,7 @@
 
 										if(isset($row_title_tag) && $row_title_tag != ''){
 											?>
-												<<?php echo esc_attr($row_title_tag); ?>>
+												<<?php echo bridge_qode_get_escape_title_tag($row_title_tag); ?>>
 											<?php
 										}
 
@@ -659,7 +659,7 @@
 
 										if(isset($row_title_tag) && $row_title_tag != ''){
 											?>
-												</<?php echo esc_attr($row_title_tag); ?>>
+												</<?php echo bridge_qode_get_escape_title_tag($row_title_tag); ?>>
 											<?php
 										}
 
@@ -671,7 +671,7 @@
 
 										if(isset($row_subtitle_tag) && $row_subtitle_tag != ''){
 											?>
-												<<?php echo esc_attr($row_subtitle_tag); ?>>
+												<<?php echo bridge_qode_get_escape_title_tag($row_subtitle_tag); ?>>
 											<?php
 										}
 
@@ -681,7 +681,7 @@
 
 										if(isset($row_subtitle_tag) && $row_subtitle_tag != ''){
 											?>
-												</<?php echo esc_attr($row_subtitle_tag); ?>>
+												</<?php echo bridge_qode_get_escape_title_tag($row_subtitle_tag); ?>>
 											<?php
 										}
 										
@@ -691,9 +691,9 @@
 							</div>
 							<div class="qode-rs-table-column clearfix">
 								<div class="qode-rs-table-column-title-header">
-									<<?php echo esc_attr($column_title_tag); ?> class="qode-rs-column-title">
+									<<?php echo bridge_qode_get_escape_title_tag($column_title_tag); ?> class="qode-rs-column-title">
 										<?php echo esc_attr($column_three_title); ?>
-									</<?php echo esc_attr($column_title_tag); ?>>
+									</<?php echo bridge_qode_get_escape_title_tag($column_title_tag); ?>>
 								</div>
 								<div class="qode-rs-table-column-inner">
 									<div class="qode-rs-table-column-title">
@@ -701,7 +701,7 @@
 
 										if(isset($row_title_tag) && $row_title_tag != ''){
 											?>
-												<<?php echo esc_attr($row_title_tag); ?>>
+												<<?php echo bridge_qode_get_escape_title_tag($row_title_tag); ?>>
 											<?php
 										}
 
@@ -711,7 +711,7 @@
 
 										if(isset($row_title_tag) && $row_title_tag != ''){
 											?>
-												</<?php echo esc_attr($row_title_tag); ?>>
+												</<?php echo bridge_qode_get_escape_title_tag($row_title_tag); ?>>
 											<?php
 										}
 
@@ -723,7 +723,7 @@
 
 										if(isset($row_subtitle_tag) && $row_subtitle_tag != ''){
 											?>
-												<<?php echo esc_attr($row_subtitle_tag); ?>>
+												<<?php echo bridge_qode_get_escape_title_tag($row_subtitle_tag); ?>>
 											<?php
 										}
 
@@ -733,7 +733,7 @@
 
 										if(isset($row_subtitle_tag) && $row_subtitle_tag != ''){
 											?>
-												</<?php echo esc_attr($row_subtitle_tag); ?>>
+												</<?php echo bridge_qode_get_escape_title_tag($row_subtitle_tag); ?>>
 											<?php
 										}
 										
@@ -743,9 +743,9 @@
 							</div>
 							<div class="qode-rs-table-column clearfix">
 								<div class="qode-rs-table-column-title-header">
-									<<?php echo esc_attr($column_title_tag); ?> class="qode-rs-column-title">
+									<<?php echo bridge_qode_get_escape_title_tag($column_title_tag); ?> class="qode-rs-column-title">
 										<?php echo esc_attr($column_four_title); ?>
-									</<?php echo esc_attr($column_title_tag); ?>>
+									</<?php echo bridge_qode_get_escape_title_tag($column_title_tag); ?>>
 								</div>
 								<div class="qode-rs-table-column-inner">
 									<div class="qode-rs-table-column-title">
@@ -753,7 +753,7 @@
 
 										if(isset($row_title_tag) && $row_title_tag != ''){
 											?>
-												<<?php echo esc_attr($row_title_tag); ?>>
+												<<?php echo bridge_qode_get_escape_title_tag($row_title_tag); ?>>
 											<?php
 										}
 
@@ -763,7 +763,7 @@
 
 										if(isset($row_title_tag) && $row_title_tag != ''){
 											?>
-												</<?php echo esc_attr($row_title_tag); ?>>
+												</<?php echo bridge_qode_get_escape_title_tag($row_title_tag); ?>>
 											<?php
 										}
 
@@ -775,7 +775,7 @@
 
 										if(isset($row_subtitle_tag) && $row_subtitle_tag != ''){
 											?>
-												<<?php echo esc_attr($row_subtitle_tag); ?>>
+												<<?php echo bridge_qode_get_escape_title_tag($row_subtitle_tag); ?>>
 											<?php
 										}
 
@@ -785,7 +785,7 @@
 
 										if(isset($row_subtitle_tag) && $row_subtitle_tag != ''){
 											?>
-												</<?php echo esc_attr($row_subtitle_tag); ?>>
+												</<?php echo bridge_qode_get_escape_title_tag($row_subtitle_tag); ?>>
 											<?php
 										}
 										
@@ -795,9 +795,9 @@
 							</div>
 							<div class="qode-rs-table-column clearfix">
 								<div class="qode-rs-table-column-title-header">
-									<<?php echo esc_attr($column_title_tag); ?> class="qode-rs-column-title">
+									<<?php echo bridge_qode_get_escape_title_tag($column_title_tag); ?> class="qode-rs-column-title">
 										<?php echo esc_attr($column_five_title); ?>
-									</<?php echo esc_attr($column_title_tag); ?>>
+									</<?php echo bridge_qode_get_escape_title_tag($column_title_tag); ?>>
 								</div>
 								<div class="qode-rs-table-column-inner">
 									<div class="qode-rs-table-column-title">
@@ -805,7 +805,7 @@
 
 										if(isset($row_title_tag) && $row_title_tag != ''){
 											?>
-												<<?php echo esc_attr($row_title_tag); ?>>
+												<<?php echo bridge_qode_get_escape_title_tag($row_title_tag); ?>>
 											<?php
 										}
 
@@ -815,7 +815,7 @@
 
 										if(isset($row_title_tag) && $row_title_tag != ''){
 											?>
-												</<?php echo esc_attr($row_title_tag); ?>>
+												</<?php echo bridge_qode_get_escape_title_tag($row_title_tag); ?>>
 											<?php
 										}
 
@@ -827,7 +827,7 @@
 
 										if(isset($row_subtitle_tag) && $row_subtitle_tag != ''){
 											?>
-												<<?php echo esc_attr($row_subtitle_tag); ?>>
+												<<?php echo bridge_qode_get_escape_title_tag($row_subtitle_tag); ?>>
 											<?php
 										} 
 
@@ -837,13 +837,13 @@
 
 										if(isset($row_subtitle_tag) && $row_subtitle_tag != ''){
 											?>
-												<<?php echo esc_attr($row_subtitle_tag); ?>>
+												<<?php echo bridge_qode_get_escape_title_tag($row_subtitle_tag); ?>>
 											<?php
 										}
 
 										if(isset($row_subtitle_tag) && $row_subtitle_tag != ''){
 											?>
-												</<?php echo esc_attr($row_subtitle_tag); ?>>
+												</<?php echo bridge_qode_get_escape_title_tag($row_subtitle_tag); ?>>
 											<?php
 										}
 										

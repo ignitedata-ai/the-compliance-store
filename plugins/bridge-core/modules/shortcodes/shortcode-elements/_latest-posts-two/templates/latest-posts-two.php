@@ -140,7 +140,7 @@
 		
 		$html .= '<div class="latest_post_two_text">';
 		
-		$html .= '<' . esc_html($title_tag) . ' itemprop="name" class="latest_post_two_title entry_title"><a itemprop="url" href="' . get_permalink() . '" ' . bridge_qode_get_inline_style( $title_style)  . '>' . get_the_title() . '</a></' . esc_html($title_tag) . '>';
+		$html .= '<' . bridge_qode_get_escape_title_tag($title_tag) . ' itemprop="name" class="latest_post_two_title entry_title"><a itemprop="url" href="' . get_permalink() . '" ' . bridge_qode_get_inline_style( $title_style)  . '>' . get_the_title() . '</a></' . bridge_qode_get_escape_title_tag($title_tag) . '>';
 		
 		$html .= '<div class="separator small left ' . esc_attr( $separator_class ) . '" ' . bridge_qode_get_inline_style( $separator_style ) . '></div>';
 		

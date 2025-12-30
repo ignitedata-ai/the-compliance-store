@@ -131,7 +131,7 @@ class Vc_IconPicker {
 	 * @return string - rendered param field for editor panel
 	 * @since 4.4
 	 */
-	public function render() {
+	public function render() { // phpcs:ignore:CognitiveComplexity.Complexity.MaximumComplexity.TooHigh
 
 		$output = '<div class="vc-iconpicker-wrapper"><select class="vc-iconpicker">';
 

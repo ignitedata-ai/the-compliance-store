@@ -119,7 +119,7 @@ class Vc_Mapper {
 	 * @since  4.2
 	 * @access public
 	 */
-	protected function callActivities() {
+	protected function callActivities() { // phpcs:ignore:Generic.Metrics.CyclomaticComplexity.TooHigh
 		do_action( 'vc_mapper_call_activities_before' );
 		foreach ( $this->init_activity as $activity ) {
 			list( $object, $method, $params ) = $activity;

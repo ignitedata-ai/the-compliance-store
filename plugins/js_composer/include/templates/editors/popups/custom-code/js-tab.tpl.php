@@ -30,7 +30,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 			}
 			?>
 		</div>
-		<pre id="wpb_js_header_editor" class="wpb_content_element custom_code" data-code-type="javascript" data-ace-location="page-js"><?php echo esc_textarea( $page_settings_data['custom_js_header'] ); ?></pre>
+		<pre id="wpb_js_header_editor" class="wpb_content_element custom_code <?php echo $page_settings_data['can_unfiltered_html_cap'] ? '' : 'wpb_missing_unfiltered_html'; ?>" data-code-type="javascript" data-ace-location="page-js"><?php echo $page_settings_data['can_unfiltered_html_cap'] ? esc_textarea( $page_settings_data['custom_js_header'] ) : esc_html( wpbakery()->getEditorsLocale()['unfiltered_html_access'] ); ?></pre>
 		<p class="wpb-code-editor-tag">&lt;/script&gt;</p>
 	</div>
 </div>
@@ -55,7 +55,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 			}
 			?>
 		</div>
-		<pre id="wpb_js_footer_editor" class="wpb_content_element custom_code" data-code-type="javascript" data-ace-location="page-js"><?php echo esc_textarea( $page_settings_data['custom_js_footer'] ); ?></pre>
+		<pre id="wpb_js_footer_editor" class="wpb_content_element custom_code <?php echo $page_settings_data['can_unfiltered_html_cap'] ? '' : 'wpb_missing_unfiltered_html'; ?>" data-code-type="javascript" data-ace-location="page-js"><?php echo $page_settings_data['can_unfiltered_html_cap'] ? esc_textarea( $page_settings_data['custom_js_footer'] ) : esc_html( wpbakery()->getEditorsLocale()['unfiltered_html_access'] ); ?></pre>
 		<p class="wpb-code-editor-tag">&lt;/script&gt;</p>
 	</div>
 </div>

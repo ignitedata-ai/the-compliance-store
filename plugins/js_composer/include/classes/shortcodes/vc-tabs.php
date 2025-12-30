@@ -62,7 +62,7 @@ class WPBakeryShortCode_Vc_Tabs extends WPBakeryShortCode {
 	 * @return mixed|string
 	 * @throws \Exception
 	 */
-	public function contentAdmin( $atts, $content = null ) {
+	public function contentAdmin( $atts, $content = null ) { // phpcs:ignore:Generic.Metrics.CyclomaticComplexity.TooHigh, CognitiveComplexity.Complexity.MaximumComplexity.TooHigh
 		$width = $custom_markup = '';
 		$shortcode_attributes = [ 'width' => '1/1' ];
 		foreach ( $this->settings['params'] as $param ) {

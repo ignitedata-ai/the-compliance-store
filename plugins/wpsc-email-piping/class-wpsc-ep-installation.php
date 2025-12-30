@@ -207,6 +207,20 @@ if ( ! class_exists( 'WPSC_EP_Installation' ) ) :
 				)
 			);
 
+			// microsoft exchange piping settings.
+			update_option(
+				'wpsc-ep-me-settings',
+				array(
+					'email-address' => '',
+					'client-id'     => '',
+					'client-secret' => '',
+					'is-active'     => 0,
+					'last-error'    => '',
+					'refresh-token' => '',
+					'delta-url'     => '',
+				)
+			);
+
 			// close ticket warning settings.
 			$translation = '<p>Hello {{customer_name}},</p><p>The ticket #{{ticket_id}} is closed. Please create a new ticket on our website for further queries!</p>';
 			update_option(

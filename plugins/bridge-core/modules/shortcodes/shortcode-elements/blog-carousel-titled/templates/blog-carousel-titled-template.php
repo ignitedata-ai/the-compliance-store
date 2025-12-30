@@ -8,9 +8,9 @@
 			</span>
 		</a>
 			<?php if($title): ?>
-					<<?php echo esc_attr($title_tag); ?>>
+					<<?php echo bridge_qode_get_escape_title_tag($title_tag); ?>>
 						<?php echo esc_attr($title); ?>
-					</<?php echo esc_attr($title_tag); ?>>
+					</<?php echo bridge_qode_get_escape_title_tag($title_tag); ?>>
 			<?php endif; ?>
 	<a class="qode-bct-caroufredsel-next" href="#">
 		<span class="qode-bct-caroufredsel-nav-inner">
@@ -34,9 +34,9 @@
 							</div>
 						<?php endif; ?>
 						<div class="qode-bct-post-text">
-							<<?php echo esc_attr($posts_title_tag); ?> class="qode-bct-post-title entry_title" itemprop="name">
+							<<?php echo bridge_qode_get_escape_title_tag($posts_title_tag); ?> class="qode-bct-post-title entry_title" itemprop="name">
 								<a href="<?php the_permalink() ?>" itemprop="url"><?php the_title(); ?></a>
-							</<?php echo esc_attr($posts_title_tag); ?>>
+							</<?php echo bridge_qode_get_escape_title_tag($posts_title_tag); ?>>
 							<?php $excerpt = ($params['excerpt_length'] !== '' && $params['excerpt_length'] > 0) ? substr(get_the_excerpt(), 0, intval($params['excerpt_length'])).'...' : get_the_excerpt(); ?>
 							<p itemprop="description" class = "qode-bct-post-excerpt"> <?php print wp_kses_post($excerpt); ?></p>
 							<div class="qode-bct-post-date entry_date updated" itemprop="dateCreated">

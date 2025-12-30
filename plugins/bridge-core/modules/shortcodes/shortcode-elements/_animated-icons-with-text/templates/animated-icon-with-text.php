@@ -62,9 +62,9 @@ $html .= '<div class="animated_text_holder_inner">';
 
 $html .= '<div class="animated_title">';
 $html .= '<div class="animated_title_inner">';
-$html .= '<' . esc_attr( $title_tag ) . '>';
+$html .= '<' . bridge_qode_get_escape_title_tag( $title_tag ) . '>';
 $html .= esc_html( $title );
-$html .= '</' . esc_attr( $title_tag ) . '>';
+$html .= '</' . bridge_qode_get_escape_title_tag( $title_tag ) . '>';
 $html .= '</div>';
 $html .= '</div>';
 $html .= '<div class="animated_text">';

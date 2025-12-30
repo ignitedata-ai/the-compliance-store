@@ -323,7 +323,7 @@ class Vc_Ai_Api_Connector {
 	 * @param array $data
 	 * @return string | WP_Error
 	 */
-	public function get_resolved_route_optionality( $optionality, $data ) {
+	public function get_resolved_route_optionality( $optionality, $data ) { // phpcs:ignore Generic.Metrics.CyclomaticComplexity.TooHigh
 		if ( is_string( $optionality ) ) {
 			return $optionality;
 		}

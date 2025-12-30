@@ -71,6 +71,11 @@ if ( ! class_exists( 'WPSC_EP_Settings_ME' ) ) :
 			} elseif ( 'yes' === get_transient( 'wpsc_ep_connection_init' ) ) {
 				delete_transient( 'wpsc_ep_connection_init' );
 			}
+			// Clear last-error if connection is valid and initialized.
+			if ( $me['is-active'] === 1 && $me['is-init'] === 1 && ! empty( $me['last-error'] ) ) {
+				$me['last-error'] = '';
+				update_option( 'wpsc-ep-me-settings', $me );
+			}
 			?>
 
 			<form action="#" onsubmit="return false;" class="wpsc-ep-me-settings">

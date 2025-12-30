@@ -14,4 +14,4 @@ if( ! empty( $responsive_title ) && $responsive_title ){
 }
 ?>
 
-<<?php echo esc_attr($title_tag); ?> class="qode-ipl-title <?php echo esc_attr( $title_additional_class ); ?>" <?php echo bridge_qode_get_inline_style($title_styles); ?>><?php echo wp_kses(get_the_title(), array('br' => true, 'span' => array('class' => true))); ?><a itemprop="url" class="qode-ipl-link" href="<?php echo esc_url( $project_link  ); ?>" target="<?php echo esc_attr( $project_link_target ); ?>"></a></<?php echo esc_attr($title_tag); ?>>
+<<?php echo bridge_qode_get_escape_title_tag($title_tag); ?> class="qode-ipl-title <?php echo esc_attr( $title_additional_class ); ?>" <?php echo bridge_qode_get_inline_style($title_styles); ?>><?php echo wp_kses(get_the_title(), array('br' => true, 'span' => array('class' => true))); ?><a itemprop="url" class="qode-ipl-link" href="<?php echo esc_url( $project_link  ); ?>" target="<?php echo esc_attr( $project_link_target ); ?>"></a></<?php echo bridge_qode_get_escape_title_tag($title_tag); ?>>

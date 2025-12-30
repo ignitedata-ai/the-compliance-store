@@ -15,7 +15,7 @@
                 <div class="latest_post_text">
                     <div class="latest_post_inner">
                         <div class="latest_post_text_inner">
-                            <<?php echo esc_attr($title_tag); ?> itemprop="name" class="latest_post_title entry_title"><a itemprop="url" href="<?php echo get_permalink(); ?>"><?php echo get_the_title(); ?></a></<?php echo esc_attr($title_tag); ?>>
+                            <<?php echo bridge_qode_get_escape_title_tag($title_tag); ?> itemprop="name" class="latest_post_title entry_title"><a itemprop="url" href="<?php echo get_permalink(); ?>"><?php echo get_the_title(); ?></a></<?php echo bridge_qode_get_escape_title_tag($title_tag); ?>>
                             <?php echo wp_kses_post($this_object->getExcerpt(get_the_ID(), $params['text_length'])); ?>
 
                             <span class="post_infos">

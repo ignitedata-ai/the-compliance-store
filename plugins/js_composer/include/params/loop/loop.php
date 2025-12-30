@@ -49,7 +49,7 @@ function vc_loop_form_field( $settings, $value ) {
  * @return string
  * @since 4.2
  */
-function vc_loop_get_value( $param ) {
+function vc_loop_get_value( $param ) { // phpcs:ignore:Generic.Metrics.CyclomaticComplexity.TooHigh, CognitiveComplexity.Complexity.MaximumComplexity.TooHigh
 	$value = [];
 	$selected_values = (array) $param['value'];
 	if ( isset( $param['options'] ) && is_array( $param['options'] ) ) {
@@ -388,7 +388,7 @@ class VcLoopSettings {
 	 * @param array $settings
 	 * @since 4.2
 	 */
-	public function __construct( $value, $settings = [] ) {
+	public function __construct( $value, $settings = [] ) { // phpcs:ignore:CognitiveComplexity.Complexity.MaximumComplexity.TooHigh
 		$this->parts = [
 			'size' => esc_html__( 'Post count', 'js_composer' ),
 			'order_by' => esc_html__( 'Order by', 'js_composer' ),

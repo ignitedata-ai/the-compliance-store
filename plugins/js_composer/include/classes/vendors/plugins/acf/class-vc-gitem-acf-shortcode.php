@@ -23,7 +23,7 @@ class Vc_Gitem_Acf_Shortcode extends WPBakeryShortCode {
 	 *
 	 * @return mixed
 	 */
-	protected function content( $atts, $content = null ) {
+	protected function content( $atts, $content = null ) { // phpcs:ignore:Generic.Metrics.CyclomaticComplexity.TooHigh, CognitiveComplexity.Complexity.MaximumComplexity.TooHigh
 		$field_key = $label = '';
 		extract( shortcode_atts( [
 			'el_class' => '', // string $el_class.
@@ -46,6 +46,6 @@ class Vc_Gitem_Acf_Shortcode extends WPBakeryShortCode {
 		}
 		$css_class = 'vc_gitem-acf' . ( strlen( $el_class ) ? ' ' . $el_class : '' ) . ( strlen( $align ) ? ' vc_gitem-align-' . $align : '' ) . ( strlen( $field_key ) ? ' ' . $field_key : '' );
 
-		return '<div ' . $field_key . ' class="' . esc_attr( $css_class ) . '">{{ acf' . ( ! empty( $field_key ) ? ':' . $field_key : '' ) . ' }}</div>';
+		return '<div ' . $field_key . ' class="' . esc_attr( $css_class ) . '">{{ acf' . ( ! empty( $field_key ) ? ':' . $field_key : '' ) . ' }}</div>'; // nosemgrep - we already escaped everything on this step.
 	}
 }

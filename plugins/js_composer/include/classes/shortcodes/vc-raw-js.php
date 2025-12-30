@@ -53,6 +53,6 @@ class WPBakeryShortCode_Vc_Raw_Js extends WPBakeryShortCode_Vc_Raw_html {
 			</div>
 		';
 
-		return $output;
+		return $output; // nosemgrep - we already escaped everything on this step.
 	}
 }

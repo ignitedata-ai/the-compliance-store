@@ -20,7 +20,7 @@ class Vc_WXR_Parser_SimpleXML {
 	 * @param string $file
 	 * @return array|\WP_Error
 	 */
-	public function parse( $file ) {
+	public function parse( $file ) { // phpcs:ignore:Generic.Metrics.CyclomaticComplexity, CognitiveComplexity.Complexity.MaximumComplexity.TooHigh
 		$authors = [];
 		$posts = [];
 		$categories = [];

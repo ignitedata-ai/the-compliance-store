@@ -5,9 +5,9 @@
 		</div>
 	<?php endif; ?>
 	<div class="qode-specification-list-text-holder">
-		<<?php echo esc_attr($title_tag); ?> class="qode-specification-list-title">
+		<<?php echo bridge_qode_get_escape_title_tag($title_tag); ?> class="qode-specification-list-title">
 			<?php echo esc_attr($title); ?>
-		</<?php echo esc_attr($title_tag); ?>>
+		</<?php echo bridge_qode_get_escape_title_tag($title_tag); ?>>
 		<div class="qode-specification-list-items">
 			<?php foreach($list_items as $list_items):?>
 				<div class="qode-specification-list-item">

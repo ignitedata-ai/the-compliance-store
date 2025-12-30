@@ -32,7 +32,7 @@ class WPBakeryShortCode_Vc_Pricing_Table extends WPBakeryShortCode {
 	 * @param string $content
 	 * @throws Exception
 	 */
-	public function buildTemplate( $atts, $content ) {
+	public function buildTemplate( $atts, $content ) { // phpcs:ignore:Generic.Metrics.CyclomaticComplexity.TooHigh
 		$output = [];
 		$inline_css = [];
 

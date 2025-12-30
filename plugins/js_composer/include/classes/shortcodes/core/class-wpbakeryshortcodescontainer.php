@@ -81,7 +81,7 @@ abstract class WPBakeryShortCodesContainer extends WPBakeryShortCode {
 	 * @return string
 	 * @throws \Exception
 	 */
-	public function getColumnControls( $controls = 'full', $extended_css = '' ) {
+	public function getColumnControls( $controls = 'full', $extended_css = '' ) { // phpcs:ignore:Generic.Metrics.CyclomaticComplexity.TooHigh, CognitiveComplexity.Complexity.MaximumComplexity.TooHigh
 		$controls_html = [];
 
 		$controls_html['start'] = '<div class="vc_controls vc_controls-visible controls_column' . ( ! empty( $extended_css ) ? " {$extended_css}" : '' ) . '">';
@@ -173,7 +173,7 @@ abstract class WPBakeryShortCodesContainer extends WPBakeryShortCode {
 		}
 		$output .= '</div>';
 
-		return $output;
+		return $output; // nosemgrep - we already escaped everything on this step.
 	}
 
 	/**

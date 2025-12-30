@@ -29,6 +29,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 			<div class="vc_add-element-container">
 				<div class="wpb-elements-list vc_filter-all" data-vc-ui-filter="*"
 					data-vc-ui-element="panel-add-element-list">
+					<div class="vc-panel-no-results-message" style="display: none;"><?php esc_html_e( 'No elements found', 'js_composer' ); ?></div>
 					<ul class="wpb-content-layouts-container">
 						<li class="vc_add-element-deprecated-warning">
 							<div class="wpb_element_wrapper">
@@ -55,6 +56,9 @@ if ( ! defined( 'ABSPATH' ) ) {
 							</li>
 						<?php endif; ?>
 					</ul>
+					<?php
+					vc_include_template( 'editors/popups/partials/element_teasers.tpl.php', [ 'teasers' => $teasers ] );
+					?>
 					<div class="vc_clearfix"></div>
 					<?php if ( vc_user_access()->part( 'presets' )->checkStateAny( true, null )->get() ) : ?>
 						<div class="vc_align_center">

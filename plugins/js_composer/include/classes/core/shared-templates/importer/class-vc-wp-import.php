@@ -247,7 +247,7 @@ if ( class_exists( 'WP_Importer' ) ) {
 		 * is already noted as imported or a post with the same title and date already exists.
 		 * Note that new/updated terms, comments and meta are imported for the last of the above.
 		 */
-		public function process_posts() {
+		public function process_posts() { // phpcs:ignore:Generic.Metrics.CyclomaticComplexity, CognitiveComplexity.Complexity.MaximumComplexity.TooHigh
 			$status = [];
 			$this->posts = apply_filters( 'vc_import_posts', $this->posts );
 			if ( is_array( $this->posts ) && ! empty( $this->posts ) ) {

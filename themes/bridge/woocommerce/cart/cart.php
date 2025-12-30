@@ -12,7 +12,7 @@
  *
  * @see     https://woocommerce.com/document/template-structure/
  * @package WooCommerce\Templates
- * @version 10.0.0
+ * @version 10.1.0
  */
 
 defined( 'ABSPATH' ) || exit;
@@ -86,18 +86,10 @@ do_action( 'woocommerce_before_cart' ); ?>
 						
 						/*** Our code modification inside Woo template - begin ***/
 						
-						if ( version_compare( WOOCOMMERCE_VERSION, '3.0' ) >= 0 ) {
-							if ( ! $product_permalink ) {
-								echo wp_kses_post( apply_filters( 'woocommerce_cart_item_name', esc_html( $_product->get_name() ), $cart_item, $cart_item_key ) . '&nbsp;' );
-							} else {
-								echo wp_kses_post( apply_filters( 'woocommerce_cart_item_name', sprintf( '<a href="%s">%s</a>', esc_url( $product_permalink ), esc_html( $_product->get_name() ) ), $cart_item, $cart_item_key ) );
-							}
+						if ( ! $product_permalink ) {
+							echo wp_kses_post( apply_filters( 'woocommerce_cart_item_name', esc_html( $_product->get_name() ), $cart_item, $cart_item_key ) . '&nbsp;' );
 						} else {
-							if ( ! $product_permalink ) {
-								echo apply_filters( 'woocommerce_cart_item_name', $_product->get_title(), $cart_item, $cart_item_key ) . '&nbsp;';
-							} else {
-								echo apply_filters( 'woocommerce_cart_item_name', sprintf( '<a href="%s">%s</a>', esc_url( $product_permalink ), $_product->get_title() ), $cart_item, $cart_item_key );
-							}
+							echo wp_kses_post( apply_filters( 'woocommerce_cart_item_name', sprintf( '<a href="%s">%s</a>', esc_url( $product_permalink ), esc_html( $_product->get_name() ) ), $cart_item, $cart_item_key ) );
 						}
 						
 						/*** Our code modification inside Woo template - end ***/

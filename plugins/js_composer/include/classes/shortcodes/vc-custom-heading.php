@@ -141,6 +141,25 @@ class WPBakeryShortCode_Vc_Custom_Heading extends WPBakeryShortCode {
 
 
 	/**
+	 * Sanitizes HTML tag to prevent XSS attacks by removing dangerous tags
+	 *
+	 * @param string $tag The HTML tag to sanitize.
+	 * @param string $default_tag The default tag to use if the provided tag is dangerous.
+	 *
+	 * @return string Sanitized HTML tag
+	 * @since 8.7
+	 */
+	public function sanitize_tags( $tag, $default_tag = 'h2' ) {
+		$allowed_tags = [ 'h1', 'h2', 'h3', 'h4', 'h5', 'h6', 'p', 'div' ];
+		$tag = trim( strtolower( $tag ) );
+
+		// Return default tag if it is not allowed tag.
+		$tag = in_array( $tag, $allowed_tags, true ) ? $tag : $default_tag;
+
+		return $tag;
+	}
+
+	/**
 	 * Parses google_fonts_data and font_container_data to get needed css styles to markup
 	 *
 	 * @param string $el_class
@@ -152,7 +171,7 @@ class WPBakeryShortCode_Vc_Custom_Heading extends WPBakeryShortCode {
 	 * @return array
 	 * @since 4.3
 	 */
-	public function getStyles( $el_class, $css, $google_fonts_data, $font_container_data, $atts ) {
+	public function getStyles( $el_class, $css, $google_fonts_data, $font_container_data, $atts ) { // phpcs:ignore:Generic.Metrics.CyclomaticComplexity.TooHigh, CognitiveComplexity.Complexity.MaximumComplexity.TooHigh
 		$styles = [];
 		if ( ! empty( $font_container_data ) && isset( $font_container_data['values'] ) ) {
 			foreach ( $font_container_data['values'] as $key => $value ) {

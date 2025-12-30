@@ -502,7 +502,7 @@ abstract class WPBakeryShortCode {
 	 * @throws \Exception
 	 */
 	protected function content( $atts, $content = null ) {
-		return $this->loadTemplate( $atts, $content );
+		return $this->loadTemplate( $atts, $content ); // nosemgrep - escaping handled inside templates.
 	}
 
 	/**
@@ -571,7 +571,7 @@ abstract class WPBakeryShortCode {
 			$output .= $elem;
 		}
 
-		return $output;
+		return $output; // nosemgrep - we already escaped everything on this step.
 	}
 
 	/**
@@ -613,7 +613,7 @@ abstract class WPBakeryShortCode {
 	 * @return string
 	 * @throws \Exception
 	 */
-	public function output( $atts, $content = null, $base = '' ) {
+	public function output( $atts, $content = null, $base = '' ) { // phpcs:ignore:CognitiveComplexity.Complexity.MaximumComplexity.TooHigh
 		if ( '' !== $base ) {
 			_deprecated_argument( __METHOD__, '7.9', '$base' );
 		}
@@ -828,7 +828,7 @@ abstract class WPBakeryShortCode {
 	 * @return string
 	 * @throws \Exception
 	 */
-	public function getColumnControls( $controls, $extended_css = '' ) {
+	public function getColumnControls( $controls, $extended_css = '' ) { // phpcs:ignore:Generic.Metrics.CyclomaticComplexity.TooHigh, CognitiveComplexity.Complexity.MaximumComplexity.TooHigh
 		$controls_start = '<div class="vc_controls controls_element' . ( ! empty( $extended_css ) ? " {$extended_css}" : '' ) . '">';
 
 		$controls_end = '</div>';
@@ -865,7 +865,7 @@ abstract class WPBakeryShortCode {
 	 * @return array
 	 * @throws \Exception
 	 */
-	public function getControlsList() {
+	public function getControlsList() { // phpcs:ignore:CognitiveComplexity.Complexity.MaximumComplexity.TooHigh
 		$editAccess = vc_user_access_check_shortcode_edit( $this->shortcode );
 		$allAccess = vc_user_access_check_shortcode_all( $this->shortcode );
 		if ( $allAccess ) {
@@ -954,7 +954,7 @@ abstract class WPBakeryShortCode {
 	 *
 	 * @return string
 	 */
-	public function singleParamHtmlHolder( $param, $value ) {
+	public function singleParamHtmlHolder( $param, $value ) { // phpcs:ignore:Generic.Metrics.CyclomaticComplexity.TooHigh
 		$value = apply_filters( 'vc_wpbakeryshortcode_single_param_html_holder_value', $value, $param, $this->settings, $this->atts );
 		$output = '';
 		// Compatibility fixes.
@@ -1111,7 +1111,7 @@ abstract class WPBakeryShortCode {
 	 * @throws \Exception
 	 * @since 4.5
 	 */
-	protected function customMarkup( $markup, $content = '' ) {
+	protected function customMarkup( $markup, $content = '' ) { // phpcs:ignore:Generic.Metrics.CyclomaticComplexity.TooHigh, CognitiveComplexity.Complexity.MaximumComplexity.TooHigh
 		$pattern = '/\{\{([\s\S][^\n]+?)\}\}|<%([\s\S][^\n]+?)%>|%([\s\S][^\n]+?)%/';
 		preg_match_all( $pattern, $markup, $matches, PREG_SET_ORDER );
 		if ( is_array( $matches ) && ! empty( $matches ) ) {

@@ -91,7 +91,7 @@
 	} else if ( $type == "icon_type" ) {
 		$html .= '<i class="fa ' . esc_attr( $icon ) . ' ' . esc_attr( $size ) . '" style="' . esc_attr( $icon_style ) . '"></i>';
 	} else if ( $type == "text_type" ) {
-		$html .= '<' . esc_attr( $text_in_circle_tag ) . ' class="q_text_in_circle" style="' . esc_attr( $text_in_circle_style ) . '">' . esc_html( $text_in_circle ) . '</' . esc_attr( $text_in_circle_tag ) . '>';
+		$html .= '<' . bridge_qode_get_escape_title_tag( $text_in_circle_tag ) . ' class="q_text_in_circle" style="' . esc_attr( $text_in_circle_style ) . '">' . esc_html( $text_in_circle ) . '</' . bridge_qode_get_escape_title_tag( $text_in_circle_tag ) . '>';
 	}
 	
 	$html .= '</span></span>';
@@ -104,7 +104,7 @@
 		$html .= '<div class="q_circle_text_holder">';
 		
 		if ( $title != "" ) {
-			$html .= '<' . esc_attr( $title_tag ) . ' class="q_circle_title" style="' . esc_attr( $title_style ) . '">' . esc_html( $title ) . '</' . esc_attr( $title_tag ) . '>';
+			$html .= '<' . bridge_qode_get_escape_title_tag( $title_tag ) . ' class="q_circle_title" style="' . esc_attr( $title_style ) . '">' . esc_html( $title ) . '</' . bridge_qode_get_escape_title_tag( $title_tag ) . '>';
 		}
 		
 		if ( $text != "" ) {

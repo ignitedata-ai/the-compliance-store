@@ -14,6 +14,9 @@
 	 */
 	window.vc.EditElementPanelView = vc.PanelView
 		.vcExtendUI( vc.HelperAjax )
+		.vcExtendUI( vc.HelperEditPanelCache )
+		.vcExtendUI( vc.HelperEditorElementsAjaxCache )
+		.vcExtendUI( vc.HelperAddElementEditPanelAjaxCache )
 		.vcExtendUI( vc.ExtendPresets )
 		.vcExtendUI( vc.ExtendTemplates )
 		.vcExtendUI( vc.HelperPrompts )
@@ -149,31 +152,58 @@
 					this.customButtonMessageTimeout = false;
 				}
 			},
+			showPanel: function ( element ) {
+				element.css( 'visibility', 'visible' );
+				element.css( 'opacity', '1' );
+			},
+			hidePanel: function ( element ) {
+				element.css( 'visibility', 'hidden' );
+				element.css( 'opacity', '0' );
+			},
 			/**
 			 *
 			 * @param model
-			 * @param notRequestTemplate @deprecated 4.7
 			 * @param isUsageCount
+			 * @param toCache
 			 * @returns {vc.EditElementPanelView}
 			 */
-			render: function ( model, notRequestTemplate, isUsageCount ) {
-				var params;
-				if ( this.$el.is( ':hidden' ) ) {
-					vc.closeActivePanel();
-				}
-				// @deprecated 4.7
-				if ( notRequestTemplate ) {
-					this.notRequestTemplate = true;
-				}
+			render: function ( model, isUsageCount, toCache = false ) {
 				this.model = model;
+				var modelId = this.model.get( 'id' );
+
+				if ( toCache ) {
+					this.addEditPanelToCache( modelId, this.$el );
+
+					return this.processRender( model, isUsageCount, true );
+				} else {
+					if ( this.isEditPanelCached( modelId ) ) {
+						this.showPanel( window.vc.editPanelCache.element );
+						this.removeEditPanelCache();
+					} else {
+						vc.closeActivePanel();
+
+						return this.processRender( model, isUsageCount );
+					}
+				}
+			},
+			processRender: function ( model, isUsageCount, isHidden = false ) {
+				var params;
+				this.model = model;
+
 				this.currentModelParams = this.model.get( 'params' );
 				vc.active_panel = this;
 				this.resetMinimize();
 				this.clicked = false;
 				this.$el.css( 'height', 'auto' );
 				this.$el.css( 'maxHeight', '75vh' );
+				if ( isHidden ) {
+					this.hidePanel( this.$el );
+				} else {
+					this.showPanel( this.$el );
+				}
 				params = this.model.setting( 'params' ) || [];
-				this.$el.attr( 'data-vc-shortcode', this.model.get( 'shortcode' ) );
+				var tag = this.model.get( 'shortcode' );
+				this.$el.attr( 'data-vc-shortcode', tag );
 				this.tabsInit = false;
 				this.panelInit = false;
 				this.activeTabIndex = 0;
@@ -185,13 +215,24 @@
 				}, this );
 				this.trigger( 'render' );
 				this.show();
-				this.checkAjax();
+				this.processRenderAjax( tag, model, isUsageCount ).then();
 
+				return this;
+			},
+			processRenderAjax: async function ( tag, model, isUsageCount ) {
 				var modelId = this.model.get( 'id' );
-				// we cache panel in rare cases when user click edit element and do not change anything
-				if ( this.isEditElementPanelCache( modelId ) ) {
-					this.buildParamsContent( window.vc.EditElementPanelCache[modelId]);
+				var isAddElement = model.attributes && model.attributes.is_add_element;
+
+				// we cache ajax for add element panel here.
+				if ( isAddElement && await this.waitAddElementEditPanelAjaxCache( tag ) ) {
+					delete model.attributes.is_add_element;
+					this.buildParamsContent( this.getAddElementEditPanelAjaxCache( tag ) );
+				// we cache ajax for edit panel for editor elements here.
+				} else if ( this.isEditPanelEditorElementAjaxCached( modelId ) ) {
+					this.buildParamsContent( this.getEditPanelEditorElementAjaxCache( modelId ) );
 				} else {
+					this.checkAjax();
+
 					this.ajax = $.ajax({
 						type: 'POST',
 						url: window.ajaxurl,
@@ -199,12 +240,9 @@
 						context: this
 					}).done( this.buildParamsContent ).always( this.resetAjax );
 				}
-
-				return this;
 			},
 			prepareContentBlock: function () {
-				this.$content = this.notRequestTemplate ? this.$el : this.$el.find( this.contentSelector ).removeClass(
-					'vc_with-tabs' );
+				this.$content = this.$el.find( this.contentSelector ).removeClass( 'vc_with-tabs' );
 				this.$content.empty(); // if pressed multiple times
 				this.$spinner = $( '<span class="vc_ui-wp-spinner vc_ui-wp-spinner-lg vc_ui-wp-spinner-dark"></span>' );
 				this.$content.prepend( this.$spinner );
@@ -212,7 +250,7 @@
 			buildParamsContent: function ( data ) {
 				var $data, $tabs, $panelHeader, $panelTab;
 				var modelId = this.model.get( 'id' );
-				this.setEditElementPanelCache( modelId, data );
+				this.setEditPanelEditorElementAjaxCache( modelId, data );
 
 				var externalScripts = this.getExternalScriptsFromDataHtml( data );
 				data = this.removeExternalScriptsFromDataHtml( data );
@@ -256,13 +294,8 @@
 					_self.dependent_elements = {};
 					_self.requiredParamsInitialized = false;
 					_self.$content.find( '[data-vc-param-initialized]' ).removeAttr( 'data-vc-param-initialized' );
-					// Show panel and emove spinner once render is complete
-					$panelTab.removeClass( 'visually-hidden' );
-					_self.$content.find( '.vc_ui-wp-spinner' ).remove();
-					_self.init();
-					// In Firefox, scrollTop(0) is buggy, scrolling to non-0 value first fixes it
-					_self.$content.parent().scrollTop( 1 ).scrollTop( 0 );
-					_self.$content.removeClass( 'vc_properties-list-init' );
+					// Show panel and remove spinner
+					_self.showPanelContent( $panelTab );
 					/**
 					 * @deprecated 4.7
 					 */
@@ -302,21 +335,6 @@
 					this.loadScriptsSequentially( scripts, callback );
 				}.bind( this );
 				document.head.appendChild( script );
-			},
-			setEditElementPanelCache: function ( modelId, data ) {
-				if ( !window.vc.EditElementPanelCache ) {
-					window.vc.EditElementPanelCache = {};
-				}
-
-				window.vc.EditElementPanelCache[modelId] = data;
-			},
-			removeElementEditElementPanelCache: function ( modelId ) {
-				if ( window.vc.EditElementPanelCache && window.vc.EditElementPanelCache[modelId]) {
-					delete window.vc.EditElementPanelCache[modelId];
-				}
-			},
-			isEditElementPanelCache: function ( modelId ) {
-				return window.vc.EditElementPanelCache && window.vc.EditElementPanelCache[modelId];
 			},
 			resetMinimize: function () {
 				this.$el.removeClass( 'vc_panel-opacity' );
@@ -546,7 +564,7 @@
 					return;
 				}
 				var modelId = this.model.get( 'id' );
-				this.removeElementEditElementPanelCache( modelId );
+				this.removeEditPanelEditorElementAjaxCache( modelId );
 				vc.saveInProcess = true;
 				var isTextModeAutoSave = e && e.target && e.target.classList.contains( 'textarea_html' );
 				var isTextModeButtonSave = function () {
@@ -586,6 +604,7 @@
 					this.hide();
 				}
 				$this.trigger( 'save' );
+				vc.events.trigger( 'editElementPanel:saved', this.model );
 				vc.saveInProcess = false;
 			},
 			show: function () {
@@ -684,6 +703,28 @@
 			buildTabs: function () {
 				var $tabs = this.content().find( '[data-vc-ui-element="panel-tabs-controls"]' );
 				$tabs.prependTo( '[data-vc-ui-element="panel-header-content"]' );
+			},
+			showPanelContent: function ( $panelTab ) {
+				var _self = this;
+				var hasTinyMCE = $panelTab.find( '.textarea_html' ).length > 0;
+				var cleanupPanel = function () {
+					$panelTab.removeClass( 'visually-hidden' );
+					_self.$content.find( '.vc_ui-wp-spinner' ).remove();
+					_self.$content.removeClass( 'vc_properties-list-init' );
+					// Firefox scrollTop fix - needs non-0 first
+					_self.$content.parent().scrollTop( 1 ).scrollTop( 0 );
+				};
+
+				if ( hasTinyMCE ) {
+					// Initialize with panel hidden to prevent scroll jump
+					_self.init();
+					_self.$content.parent().scrollTop( 0 );
+					setTimeout( cleanupPanel, 300 );
+				} else {
+					// Non-TinyMCE panels can show immediately
+					cleanupPanel();
+					_self.init();
+				}
 			},
 			changeTab: function ( e ) {
 				if ( e && e.preventDefault ) {

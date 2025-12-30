@@ -97,7 +97,7 @@ function vc_attachment_filter_field( $form_fields, $post ) {
  * Optional _POST params:
  * - array filters: mapped array of ids and filters to apply
  */
-function vc_media_editor_add_image() {
+function vc_media_editor_add_image() { // phpcs:ignore:Generic.Metrics.CyclomaticComplexity.TooHigh, CognitiveComplexity.Complexity.MaximumComplexity.TooHigh
 	vc_user_access()->checkAdminNonce()->validateDie()->wpAny( 'upload_files' )->validateDie();
 
 	require_once vc_path_dir( 'HELPERS_DIR', 'class-vc-image-filter-helper.php' );
@@ -218,7 +218,7 @@ function vc_media_editor_add_image() {
  * @return void Results are sent out as json
  * @throws \Exception
  */
-function vc_media_editor_preview_image() {
+function vc_media_editor_preview_image() { // phpcs:ignore:Generic.Metrics.CyclomaticComplexity.TooHigh
 	vc_user_access()->checkAdminNonce()->validateDie()->wpAny( 'upload_files' )->validateDie();
 
 	require_once vc_path_dir( 'HELPERS_DIR', 'class-vc-image-filter-helper.php' );

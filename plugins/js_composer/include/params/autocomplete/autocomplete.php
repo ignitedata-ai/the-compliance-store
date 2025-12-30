@@ -61,7 +61,7 @@ class Vc_AutoComplete {
 	 * @since 4.4
 	 * vc_filter: vc_autocomplete_{shortcode_tag}_{param_name}_render - hook to define output for autocomplete item
 	 */
-	public function render() {
+	public function render() { // phpcs:ignore:Generic.Metrics.CyclomaticComplexity.TooHigh, CognitiveComplexity.Complexity.MaximumComplexity.TooHigh
 		$output = sprintf( '<div class="vc_autocomplete-field"><ul class="vc_autocomplete%s">', ( isset( $this->settings['settings'], $this->settings['settings']['display_inline'] ) && true === $this->settings['settings']['display_inline'] ) ? ' vc_autocomplete-inline' : '' );
 
 		if ( isset( $this->value ) && strlen( $this->value ) > 0 ) {

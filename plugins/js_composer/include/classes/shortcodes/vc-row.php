@@ -59,7 +59,7 @@ class WPBakeryShortCode_Vc_Row extends WPBakeryShortCode {
 	protected function content( $atts, $content = null ) {
 		$prefix = '';
 
-		return $prefix . $this->loadTemplate( $atts, $content );
+		return $prefix . $this->loadTemplate( $atts, $content ); // nosemgrep - escaping handled inside templates.
 	}
 
 	/**
@@ -85,7 +85,7 @@ class WPBakeryShortCode_Vc_Row extends WPBakeryShortCode {
 	 * @return string
 	 * @throws \Exception
 	 */
-	public function getColumnControls( $controls, $extended_css = '' ) {
+	public function getColumnControls( $controls, $extended_css = '' ) { // phpcs:ignore:Generic.Metrics.CyclomaticComplexity.TooHigh, CognitiveComplexity.Complexity.MaximumComplexity.TooHigh
 		$output = '<div class="vc_controls vc_controls-row controls_row vc_clearfix">';
 		$controls_end = '</div>';
 		// Create columns.
@@ -191,7 +191,7 @@ class WPBakeryShortCode_Vc_Row extends WPBakeryShortCode {
 		$output .= '</div>';
 		$output .= '</div>';
 
-		return $output;
+		return $output; // nosemgrep - we already escaped everything on this step.
 	}
 
 	/**
@@ -232,7 +232,7 @@ class WPBakeryShortCode_Vc_Row extends WPBakeryShortCode {
 	 * @return string
 	 * @deprecated 4.5
 	 */
-	public function buildStyle( $bg_image = '', $bg_color = '', $bg_image_repeat = '', $font_color = '', $padding = '', $margin_bottom = '' ) {
+	public function buildStyle( $bg_image = '', $bg_color = '', $bg_image_repeat = '', $font_color = '', $padding = '', $margin_bottom = '' ) { // phpcs:ignore:Generic.Metrics.CyclomaticComplexity.TooHigh, CognitiveComplexity.Complexity.MaximumComplexity.TooHigh
 		// this function is deprecated.
 
 		$has_image = false;

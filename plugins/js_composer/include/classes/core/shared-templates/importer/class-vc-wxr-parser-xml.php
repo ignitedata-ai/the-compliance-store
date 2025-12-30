@@ -143,7 +143,7 @@ class Vc_WXR_Parser_XML {
 	 * @param string $tag
 	 * @param array $attr
 	 */
-	public function tag_open( $parse, $tag, $attr ) {
+	public function tag_open( $parse, $tag, $attr ) { // phpcs:ignore:Generic.Metrics.CyclomaticComplexity.TooHigh
 		if ( in_array( $tag, $this->wp_tags, true ) ) {
 			$this->in_tag = substr( $tag, 3 );
 
@@ -223,7 +223,7 @@ class Vc_WXR_Parser_XML {
 	 * @param mixed $parser
 	 * @param string $tag
 	 */
-	public function tag_close( $parser, $tag ) {
+	public function tag_close( $parser, $tag ) { // phpcs:ignore:Generic.Metrics.CyclomaticComplexity, CognitiveComplexity.Complexity.MaximumComplexity.TooHigh
 		switch ( $tag ) {
 			case 'wp:comment':
 				unset( $this->sub_data['key'], $this->sub_data['value'] ); // remove meta sub_data.

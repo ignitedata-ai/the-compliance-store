@@ -3,7 +3,7 @@
  * Plugin Name: SupportCandy - Timer
  * Plugin URI: https://supportcandy.net/
  * Description: Timer add-on for SupportCandy
- * Version: 3.1.4
+ * Version: 3.1.6
  * Author: SupportCandy
  * Author URI: https://supportcandy.net/
  * Requires at least: 5.6
@@ -39,7 +39,7 @@ if ( ! class_exists( 'WPSC_Timer' ) ) :
 		 *
 		 * @var string
 		 */
-		public static $version = '3.1.4';
+		public static $version = '3.1.6';
 
 		/**
 		 * Constructor for main class
@@ -47,7 +47,6 @@ if ( ! class_exists( 'WPSC_Timer' ) ) :
 		public static function init() {
 
 			self::define_constants();
-			add_action( 'init', array( __CLASS__, 'load_textdomain' ), 1 );
 			self::load_files();
 
 			// Return if installation is in progress.
@@ -71,18 +70,6 @@ if ( ! class_exists( 'WPSC_Timer' ) ) :
 			self::define( 'WPSC_TIMER_PLUGIN_BASENAME', plugin_basename( __FILE__ ) );
 			self::define( 'WPSC_TIMER_STORE_ID', 23906 );
 			self::define( 'WPSC_TIMER_VERSION', self::$version );
-		}
-
-		/**
-		 * Loads internationalization strings
-		 *
-		 * @return void
-		 */
-		public static function load_textdomain() {
-
-			$locale = apply_filters( 'plugin_locale', get_locale(), 'wpsc-timer' );
-			load_textdomain( 'wpsc-timer', WP_LANG_DIR . '/supportcandy/wpsc-timer-' . $locale . '.mo' );
-			load_plugin_textdomain( 'wpsc-timer', false, plugin_basename( __DIR__ ) . '/i18n' );
 		}
 
 		/**

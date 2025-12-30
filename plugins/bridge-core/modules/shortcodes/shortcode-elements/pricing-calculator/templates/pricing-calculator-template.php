@@ -9,9 +9,9 @@
 					</label>
 				</div>
 				<div class="qode-pricing-calculator-title-holder">
-					<<?php echo esc_attr($title_tag); ?>>
+					<<?php echo bridge_qode_get_escape_title_tag($title_tag); ?>>
 						<?php echo esc_attr($pricing_item['item_title']); ?>
-					</<?php echo esc_attr($title_tag); ?>>
+					</<?php echo bridge_qode_get_escape_title_tag($title_tag); ?>>
 				</div>
 			</div>
 		<?php endforeach; ?>
@@ -22,9 +22,9 @@
 			--><span class="qode-pricing-calculator-total-price"><?php echo esc_attr($total_price); ?></span>
 		</span>
 		<?php if($subtitle): ?>
-			<<?php echo esc_attr($subtitle_title_tag); ?> class="qode-pricing-calculator-subtitle">
+			<<?php echo bridge_qode_get_escape_title_tag($subtitle_title_tag); ?> class="qode-pricing-calculator-subtitle">
 				<?php echo esc_attr($subtitle); ?>
-			</<?php echo esc_attr($subtitle_title_tag); ?>>
+			</<?php echo bridge_qode_get_escape_title_tag($subtitle_title_tag); ?>>
 		<?php endif; ?>
 		<?php if($text): ?>
 			<p class="qode-pricing-calculator-text"><?php echo esc_attr($text); ?></p>

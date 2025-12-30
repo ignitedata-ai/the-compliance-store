@@ -6,6 +6,7 @@
 		events: {
 			'click > .vc_controls [data-vc-control="destroy"]': 'destroy',
 			'click > .vc_controls [data-vc-control="edit"]': 'edit',
+			'mouseenter > .vc_controls [data-vc-control="edit"]': 'cacheEditPanel',
 			'click > .vc_controls [data-vc-control="clone"]': 'clone',
 			'click > .vc_controls [data-vc-control="copy"]': 'copy',
 			'click > .vc_controls [data-vc-control="paste"]': 'paste',
@@ -13,6 +14,7 @@
 			'click > .vc_controls [data-vc-control="append"]': 'appendElement',
 			'click > .vc_controls [data-vc-control="parent.destroy"]': 'destroyParent',
 			'click > .vc_controls [data-vc-control="parent.edit"]': 'editParent',
+			'mouseenter > .vc_controls [data-vc-control="parent.edit"]': 'cacheEditPanelParent',
 			'click > .vc_controls [data-vc-control="parent.clone"]': 'cloneParent',
 			'click > .vc_controls [data-vc-control="parent.copy"]': 'copyParent',
 			'click > .vc_controls [data-vc-control="parent.paste"]': 'pasteParent',

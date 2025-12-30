@@ -32,7 +32,7 @@ if ( isset( $atts['source'] ) && 'post_title' === $atts['source'] ) {
 }
 
 $output = '';
-$tag = tag_escape( $font_container_data['values']['tag'] );
+$tag = $this->sanitize_tags( $font_container_data['values']['tag'] );
 if ( apply_filters( 'vc_custom_heading_template_use_wrapper', false ) ) {
 	$output .= '<div class="' . esc_attr( $css_class ) . '" >';
 	$output .= '<' . $tag . ' ' . $style . ' >';

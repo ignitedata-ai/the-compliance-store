@@ -266,18 +266,18 @@ if ( ! class_exists( 'WPSC_EP_Gmail_Importer' ) ) :
 			$text = self::get_header( $headers, 'From' );
 			$email->reply_to = self::get_header( $headers, 'Reply-To' );
 			if (
-				preg_match( '/^"([\s\S]+)"\s?<(\S+)>$/i', $text, $matches ) || // "John Doe" <john@doe.org>.
-				preg_match( '/^([\s\S]+)\s?<(\S+)>$/i', $text, $matches )      // John Doe <john@doe.org>.
+				preg_match( '/^"([\s\S]+)"\s?<([^>]+)>$/i', $text, $matches ) || // "John Doe" <john@doe.org>.
+				preg_match( '/^([\s\S]+)\s?<([^>]+)>$/i', $text, $matches )      // John Doe <john@doe.org>.
 			) {
-
 				$email->from_name = trim( $matches[1] );
-				$email->from_email = $email->reply_to ? $email->reply_to : trim( $matches[2] );
-
+				$from_email = $email->reply_to ? $email->reply_to : trim( $matches[2] );
+				$email->from_email = trim( str_replace( array( '<', '>' ), '', $from_email ) );
 			} else { // john@doe.org, <john@doe.org>.
-
 				preg_match( '/[\._a-zA-Z0-9-]+@[\._a-zA-Z0-9-]+/i', $text, $matches );
-				$email->from_name = $matches[0];
-				$email->from_email = $email->reply_to ? $email->reply_to : $matches[0];
+				$plain_email = $email->reply_to ? $email->reply_to : $matches[0];
+				$plain_email = trim( str_replace( array( '<', '>' ), '', $plain_email ) );
+				$email->from_name = $plain_email;
+				$email->from_email = $plain_email;
 			}
 
 			return $email;

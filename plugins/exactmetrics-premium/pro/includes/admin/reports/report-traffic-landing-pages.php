@@ -40,7 +40,17 @@ final class ExactMetrics_Report_Traffic_Landing_Pages extends ExactMetrics_Repor
 	 * @return mixed
 	 */
 	public function prepare_report_data( $data ) {
-		return apply_filters( 'exactmetrics_report_traffic_sessions_chart_data', $data, $this->start_date, $this->end_date );
+		// Allow filters to modify the initial data first.
+		$data = apply_filters( 'exactmetrics_report_traffic_sessions_chart_data', $data, $this->start_date, $this->end_date );
+
+		// Add GA links similar to Overview report.
+		if ( ! empty( $data['data'] ) ) {
+			$data['data']['galinks'] = array(
+				'landing_pages' => $this->get_ga_report_url( 'all-pages-and-screens', $data['data'] ),
+			);
+		}
+
+		return $data;
 	}
 
 }

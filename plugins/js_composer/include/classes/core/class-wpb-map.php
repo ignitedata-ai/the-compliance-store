@@ -71,7 +71,7 @@ class WPBMap {
 	/**
 	 * User-specific sorted shortcodes.
 	 *
-	 * @var bool
+	 * @var array
 	 */
 	protected static $user_sorted_sc = false;
 
@@ -213,7 +213,7 @@ class WPBMap {
 	 *
 	 * @return bool
 	 */
-	public static function map( $tag, $attributes ) {
+	public static function map( $tag, $attributes ) { // phpcs:ignore:Generic.Metrics.CyclomaticComplexity.TooHigh, CognitiveComplexity.Complexity.MaximumComplexity.TooHigh
 		if ( in_array( $tag, self::$removedElements, true ) ) {
 			return false;
 		}
@@ -316,7 +316,7 @@ class WPBMap {
 	 * @param bool $force - force data generation even data already generated.
 	 * @throws \Exception
 	 */
-	protected static function generateUserData( $force = false ) {
+	protected static function generateUserData( $force = false ) { // phpcs:ignore:Generic.Metrics.CyclomaticComplexity.TooHigh, CognitiveComplexity.Complexity.MaximumComplexity.TooHigh
 		if ( ! $force && false !== self::$user_sc && false !== self::$user_categories ) {
 			return;
 		}
@@ -444,7 +444,7 @@ class WPBMap {
 	 * Sorting depends on the weight attribute and mapping order.
 	 *
 	 * @static
-	 * @return bool
+	 * @return array
 	 * @throws \Exception
 	 */
 	public static function getSortedUserShortCodes() {
@@ -594,7 +594,7 @@ class WPBMap {
 	 * @return bool| array
 	 * @throws \Exception
 	 */
-	public static function getParam( $tag, $param_name ) {
+	public static function getParam( $tag, $param_name ) { // phpcs:ignore:Generic.Metrics.CyclomaticComplexity.TooHigh
 		$currentScope = self::getScope();
 		$element = false;
 		if ( 'default' !== $currentScope ) {
@@ -637,7 +637,7 @@ class WPBMap {
 	 *
 	 * @return bool - true if added, false if scheduled/rejected
 	 */
-	public static function addParam( $name, $attribute = [] ) {
+	public static function addParam( $name, $attribute = [] ) { // phpcs:ignore:Generic.Metrics.CyclomaticComplexity.TooHigh, CognitiveComplexity.Complexity.MaximumComplexity.TooHigh
 		$currentScope = self::getScope();
 		if ( 'default' !== $currentScope ) {
 			self::setScope( 'default' );
@@ -900,7 +900,7 @@ class WPBMap {
 	 * @param array $shortcodes
 	 * @return array
 	 */
-	public static function collectCategories( &$shortcodes ) {
+	public static function collectCategories( &$shortcodes ) { // phpcs:ignore:Generic.Metrics.CyclomaticComplexity.TooHigh, CognitiveComplexity.Complexity.MaximumComplexity.TooHigh
 		$categories_list = [];
 		$deprecated = 'deprecated';
 		$add_deprecated = false;
@@ -946,7 +946,7 @@ class WPBMap {
 	 * @throws \Exception
 	 * @since 4.9
 	 */
-	public static function setElementSettings( $tag ) {
+	public static function setElementSettings( $tag ) { // phpcs:ignore:Generic.Metrics.CyclomaticComplexity.TooHigh, CognitiveComplexity.Complexity.MaximumComplexity.TooHigh
 		$currentScope = self::getScope();
 		if ( 'default' !== $currentScope ) {
 			if ( isset( self::$scopes[ $currentScope ], self::$scopes[ $currentScope ][ $tag ] ) && ! in_array( $tag, self::$removedElements, true ) ) {

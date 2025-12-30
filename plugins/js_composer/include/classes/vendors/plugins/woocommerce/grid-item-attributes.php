@@ -19,7 +19,7 @@ if ( ! defined( 'ABSPATH' ) ) {
  *
  * @return string
  */
-function vc_gitem_template_attribute_woocommerce_product( $value, $data ) {
+function vc_gitem_template_attribute_woocommerce_product( $value, $data ) { // phpcs:ignore:Generic.Metrics.CyclomaticComplexity.TooHigh
 	$label = '';
 	extract( array_merge( [
 		'post' => null,
@@ -88,7 +88,7 @@ function vc_gitem_template_attribute_woocommerce_product( $value, $data ) {
  *
  * @return string
  */
-function vc_gitem_template_attribute_woocommerce_order( $value, $data ) {
+function vc_gitem_template_attribute_woocommerce_order( $value, $data ) { // phpcs:ignore:Generic.Metrics.CyclomaticComplexity.TooHigh
 	$label = '';
 	extract( array_merge( [
 		'post' => null,

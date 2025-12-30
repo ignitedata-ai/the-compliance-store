@@ -218,6 +218,12 @@ class Vc_Settings_Preset {
 	 * @return mixed int|false Post ID
 	 */
 	public static function saveSettingsPreset( $shortcode_name, $title, $content, $is_default = false ) {
+		// Trim the title and use '(no title)' if empty.
+		$title = isset( $title ) ? trim( $title ) : '';
+		if ( '' === $title ) {
+			$title = __( '(no title)', 'js_composer' );
+		}
+
 		$post_id = wp_insert_post( [
 			'post_title' => $title,
 			'post_content' => $content,
@@ -398,7 +404,7 @@ class Vc_Settings_Preset {
 						$shortcodes_and_presets[ $preset_id ] = [
 							'name' => $preset,
 							'base' => $shortcode['base'],
-							'description' => $shortcode['description'],
+							'description' => '', // Presets intentionally don't show descriptions.
 							'presetId' => $preset_id,
 							'_category_ids' => [ '_my_elements_' ],
 						];

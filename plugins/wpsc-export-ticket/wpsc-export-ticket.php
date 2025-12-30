@@ -3,7 +3,7 @@
  * Plugin Name: SupportCandy - Export Ticket
  * Plugin URI: https://supportcandy.net/
  * Description: Export Ticket for SupportCandy!
- * Version: 3.1.1
+ * Version: 3.1.3
  * Author: SupportCandy
  * Author URI: https://supportcandy.net/
  * Requires at least: 5.6
@@ -38,7 +38,7 @@ if ( ! class_exists( 'WPSC_EXPORT' ) ) :
 		 *
 		 * @var string
 		 */
-		public static $version = '3.1.1';
+		public static $version = '3.1.3';
 
 		/**
 		 * Constructor for main class
@@ -46,7 +46,6 @@ if ( ! class_exists( 'WPSC_EXPORT' ) ) :
 		public static function init() {
 
 			self::define_constants();
-			add_action( 'init', array( __CLASS__, 'load_textdomain' ), 1 );
 			self::load_files();
 
 			// Return if installation is in progress.
@@ -70,18 +69,6 @@ if ( ! class_exists( 'WPSC_EXPORT' ) ) :
 			self::define( 'WPSC_EXPORT_PLUGIN_BASENAME', plugin_basename( __FILE__ ) );
 			self::define( 'WPSC_EXPORT_VERSION', self::$version );
 			self::define( 'WPSC_EXPORT_STORE_ID', 205 );
-		}
-
-		/**
-		 * Loads internationalization strings
-		 *
-		 * @return void
-		 */
-		public static function load_textdomain() {
-
-			$locale = apply_filters( 'plugin_locale', get_locale(), 'wpsc-et' );
-			load_textdomain( 'wpsc-et', WP_LANG_DIR . '/supportcandy/wpsc-et-' . $locale . '.mo' );
-			load_plugin_textdomain( 'wpsc-et', false, plugin_basename( __DIR__ ) . '/i18n' );
 		}
 
 		/**

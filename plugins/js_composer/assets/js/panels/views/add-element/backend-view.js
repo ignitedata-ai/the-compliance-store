@@ -10,8 +10,10 @@
 	window.vc.element_start_index = 0;
 
 	window.vc.AddElementUIPanelBackendEditor = vc.PanelView
+		.vcExtendUI( vc.HelperAjax )
 		.vcExtendUI( vc.HelperPanelViewHeaderFooter )
 		.vcExtendUI( vc.HelperPanelTabs )
+		.vcExtendUI( vc.HelperAddElementEditPanelAjaxCache )
 		.extend({
 			el: '#vc_ui-panel-add-element',
 			searchSelector: '#vc_elements_name_filter',
@@ -21,6 +23,7 @@
 				'click [data-vc-ui-element="button-close"]': 'hide',
 				'touchstart [data-vc-ui-element="button-close"]': 'hide',
 				'click .vc_shortcode-link': 'createElement',
+				'mouseenter .vc_shortcode-link': 'cacheElement',
 				'keyup #vc_elements_name_filter': 'handleFiltering',
 				'search #vc_elements_name_filter': 'handleFiltering',
 				'cut #vc_elements_name_filter': 'handleFiltering',
@@ -43,6 +46,32 @@
 				}
 
 				this.handleFiltering( e );
+			},
+			isOnTeasersTab: function () {
+				return this.$el.find( '.vc_active [data-filter=".wpb-teaser-item"]' ).length > 0;
+			},
+			toggleTeasersVisibility: function ( showTeasers ) {
+				$( '.wpb-content-layouts-container' ).toggle( !showTeasers );
+				$( '.wpb-teasers-wrapper' ).toggle( showTeasers );
+			},
+			searchInTeasers: function ( searchTerm ) {
+				var $teasersWrapper = $( '.wpb-teasers-wrapper' );
+				var $noResultsMessage = this.$el.find( '.vc-panel-no-results-message' );
+
+				if ( !searchTerm ) {
+					$( '.wpb-teaser-item' ).show();
+					$teasersWrapper.find( '.wpb-teasers-description, .wpb-teasers-grid' ).show();
+					$noResultsMessage.hide();
+					return;
+				}
+
+				var $visibleItems = $( '.wpb-teaser-item:containsi("' + searchTerm + '")' );
+				$( '.wpb-teaser-item' ).hide();
+				$visibleItems.show();
+
+				var hasResults = $visibleItems.length > 0;
+				$teasersWrapper.find( '.wpb-teasers-description, .wpb-teasers-grid' ).toggle( hasResults );
+				$noResultsMessage.text( window.i18nLocale.no_addons_found ).toggle( !hasResults );
 			},
 			initialize: function () {
 				window.vc.AddElementUIPanelBackendEditor.__super__.initialize.call( this );
@@ -72,6 +101,12 @@
 
 				// must be after show()
 				this.$el.find( '[data-vc-ui-element="panel-tabs-controls"]' ).vcTabsLine( 'moveTabs' );
+
+				// Hide teasers tab if no teasers available
+				var $teasersTab = this.$el.find( '[data-filter=".wpb-teaser-item"]' );
+				if ( $teasersTab.length && $( '.wpb-teasers-wrapper .wpb-teaser-item' ).length === 0 ) {
+					$teasersTab.parent().hide();
+				}
 
 				if ( !vc.is_mobile ) {
 					$( this.searchSelector ).trigger( 'focus' );
@@ -132,7 +167,14 @@
 				this.$el.find( '[data-vc-ui-element="panel-add-element-tab"].vc_active' ).removeClass( 'vc_active' );
 				this.$el.find( '[data-vc-ui-element="panel-add-element-tab"]:first' ).addClass( 'vc_active' );
 				this.$el.find( '[data-filter]' ).each( function () {
-					if ( !$( $( this ).data( 'filter' ) + '.vc_visible:not(.vc_inappropriate)',
+					var filter = $( this ).data( 'filter' );
+
+					if ( '.wpb-teaser-item' === filter ) {
+						$( this ).parent().toggle( $( '.wpb-teasers-wrapper .wpb-teaser-item' ).length > 0 );
+						return;
+					}
+
+					if ( !$( filter + '.vc_visible:not(.vc_inappropriate)',
 						_this.$content ).length ) {
 						$( this ).parent().hide();
 					} else {
@@ -196,6 +238,7 @@
 
 				this.$content.removeClass( 'vc_filter-all' );
 				var $parent = $control.closest( '.vc_ui-tabs-line' );
+				var $noResultsMessage = $( '.vc-panel-no-results-message' );
 
 				$parent.parent().find( '[data-vc-ui-element="panel-add-element-tab"].vc_active' ).removeClass( 'vc_active' );
 
@@ -203,6 +246,17 @@
 					$control.parent().addClass( 'vc_active' );
 
 					filterValue = $control.data( 'filter' );
+
+					// Handle teaser elements tab
+					if ( '.wpb-teaser-item' === filterValue ) {
+						this.toggleTeasersVisibility( true );
+						$( this.searchSelector ).val( '' );
+						this.searchInTeasers( '' );
+						return;
+					} else {
+						this.toggleTeasersVisibility( false );
+					}
+
 					filter += filterValue;
 
 					if ( '*' === filterValue ) {
@@ -215,10 +269,30 @@
 
 					$( this.searchSelector ).val( '' );
 				} else if ( nameFilter.length ) {
-					filter += ':containsi("' + nameFilter + '"):not(".vc_element-deprecated")';
+					// Check if we're on the teasers tab
+					if ( this.isOnTeasersTab() ) {
+						this.toggleTeasersVisibility( true );
+						this.searchInTeasers( nameFilter );
+						return;
+					} else {
+						// When searching in other tabs, show main content and hide teasers
+						$( '.wpb-content-layouts-container' ).show();
+						$( '.wpb-teasers-wrapper' ).hide();
 
-					this.$content.attr( 'data-vc-ui-filter', 'name:' + nameFilter );
+						filter += ':containsi("' + nameFilter + '"):not(".vc_element-deprecated")';
+
+						this.$content.attr( 'data-vc-ui-filter', 'name:' + nameFilter );
+					}
 				} else if ( !nameFilter.length ) {
+					// When clearing search, restore the view based on active tab
+					if ( this.isOnTeasersTab() ) {
+						this.toggleTeasersVisibility( true );
+						this.searchInTeasers( '' );
+						return;
+					} else {
+						this.toggleTeasersVisibility( false );
+					}
+
 					$( '[data-vc-ui-element="panel-tab-control"][data-filter="*"]' ).parent().addClass( 'vc_active' );
 
 					this.$content
@@ -241,7 +315,6 @@
 
 				// Hide section title in case there are no filtered elements in a section
 				var anyVisible = false;
-				var $noResultsMessage = $( '.vc-panel-no-results-message' );
 
 				this.$content.find( '.wpb-content-layouts' ).each( function () {
 					var $section = $( this );
@@ -256,162 +329,151 @@
 				});
 
 				// Show error message if there are no elements in any section
-				if ( !anyVisible ) {
-					$noResultsMessage.show();
-				} else {
+				if ( !anyVisible && !this.isOnTeasersTab() ) {
+					$noResultsMessage.text( window.i18nLocale.no_elements_found ).show();
+				} else if ( !this.isOnTeasersTab() ) {
 					$noResultsMessage.hide();
 				}
 			},
+			/**
+			 * Builds options object for element creation.
+			 * @param {string} shortcode - The shortcode name.
+			 * @param {Object} [params] - Parameters for the shortcode.
+			 * @param {string|number} [parentId] - Parent element ID.
+			 * @param {string} [preset] - Preset value.
+			 * @param {string} [presetType] - Preset type.
+			 * @param {string} tag - Tag name.
+			 * @param {number} [order] - Order index.
+			 * @param {string|number} [rootId] - Root element ID.
+			 * @param {boolean} [isAddElement] - Flag for add element.
+			 * @returns {Object} Options object.
+			 */
+			buildOptions: function ( shortcode, params, parentId, preset, presetType, tag, order, rootId, isAddElement ) {
+				var options = { shortcode: shortcode };
+				if ( params ) {
+					options.params = params;
+				}
+				if ( parentId ) {
+					options.parent_id = parentId;
+				}
+				if ( typeof order !== 'undefined' ) {
+					options.order = order;
+				}
+				if ( rootId ) {
+					options.root_id = rootId;
+				}
+				if ( preset && presetType === tag ) {
+					options.preset = preset;
+				}
+				if ( isAddElement ) {
+					options.is_add_element = true;
+				}
+				return options;
+			},
+
+			/**
+			 * Handler functions for different element tags.
+			 * Each handler is responsible for creating the appropriate structure.
+			 */
+			elementHandlers: {
+				/**
+				 * Handles creation of a vc_section element.
+				 */
+				vc_section: function ( view, tag, preset, presetType ) {
+					var options = view.buildOptions( tag, null, null, preset, presetType, tag );
+					view.model = vc.shortcodes.create( options );
+				},
+				/**
+				 * Handles creation of a vc_grid_container element.
+				 */
+				vc_grid_container: function ( view, tag, preset, presetType ) {
+					var options = view.buildOptions( 'vc_grid_container', null, null, preset, presetType, tag );
+					view.model = vc.shortcodes.create( options );
+					var rows = parseInt( view.model.getParam( 'rows' ) ) || 1;
+					var columns = parseInt( view.model.getParam( 'columns' ) ) || 1;
+					var items = rows * columns;
+					for ( var i = 0; i < items; i++ ) {
+						var itemOptions = {
+							shortcode: 'vc_grid_container_item',
+							parent_id: view.model.get( 'id' )
+						};
+						if ( preset && 'vc_grid_container_item' === presetType ) {
+							itemOptions.preset = preset;
+						}
+						vc.shortcodes.create( itemOptions );
+					}
+				},
+				/**
+				 * Handles creation of a vc_flexbox_container element.
+				 */
+				vc_flexbox_container: function ( view, tag, preset, presetType, parentId, order, rootId ) {
+					var options = view.buildOptions( 'vc_flexbox_container', null, parentId, preset, presetType, tag, order, rootId );
+					view.model = view.createFlexboxContainer( options, preset, presetType );
+				},
+				/**
+				 * Handles creation of a vc_row or vc_row_inner element depending on context.
+				 */
+				vc_row: function ( view, tag, preset, presetType, parentId, order, rootId ) {
+					if ( parentId && view.model.get( 'shortcode' ) !== 'vc_section' ) {
+						// Add row_inner
+						var innerRowOptions = view.buildOptions( 'vc_row_inner', {}, parentId, null, null, 'vc_row_inner', order, rootId );
+						var row = vc.shortcodes.create( innerRowOptions );
+						var columnOptions = view.buildOptions( 'vc_column_inner', { width: '1/1' }, row.id, null, null, 'vc_column_inner', undefined, row.id );
+						vc.shortcodes.create( columnOptions );
+						view.model = row;
+					} else {
+						var rowOptions = view.buildOptions( 'vc_row', {}, parentId, null, null, 'vc_row', order, rootId );
+						var row = vc.shortcodes.create( rowOptions );
+						var columnOptions = view.buildOptions( 'vc_column', { width: '1/1' }, row.id, null, null, 'vc_column', undefined, row.id );
+						vc.shortcodes.create( columnOptions );
+						view.model = row;
+					}
+				},
+				/**
+				 * Default handler for generic elements.
+				 */
+				default: function ( view, tag, preset, presetType, parentId, order, rootId ) {
+					if ( ! parentId ) {
+						// Create row, column, and element
+						var rowOptions = view.buildOptions( 'vc_row', {}, null, preset, presetType, 'vc_row' );
+						var row = vc.shortcodes.create( rowOptions );
+						var columnOptions = view.buildOptions( 'vc_column', { width: '1/1' }, row.id, preset, presetType, 'vc_column', undefined, row.id );
+						var column = vc.shortcodes.create( columnOptions );
+						var elementOptions = view.buildOptions( tag, null, column.id, preset, presetType, tag, undefined, row.id, true );
+						view.model = vc.shortcodes.create( elementOptions );
+					} else {
+						var options = view.buildOptions( tag, null, parentId, preset, presetType, tag, order, rootId, true );
+						view.model = vc.shortcodes.create( options );
+					}
+				}
+			},
+
+			/**
+			 * Main createElement method using handler mapping for clarity and maintainability.
+			 * @param {Event} e - The event object.
+			 */
 			createElement: function ( e ) {
-				var options;
-				if ( e && e.preventDefault ) {
-					e.preventDefault();
-				}
+				e && e.preventDefault && e.preventDefault();
 
-				var model,
-					column,
-					row,
-					showSettings,
-					shortcode,
-					rowParams,
-					innerRowParams,
-					columnParams,
-					innerColumnParams,
-					tag,
-					$control,
-					preset,
-					presetType,
-					closestPreset;
-
-				$control = $( e.currentTarget );
-				tag = $control.data( 'tag' );
-
-				rowParams = {};
-
-				columnParams = { width: '1/1' };
-
-				closestPreset = $control.closest( '[data-preset]' );
-				if ( closestPreset ) {
-					preset = closestPreset.data( 'preset' );
-					presetType = closestPreset.data( 'element' );
-				}
+				var $control = $( e.currentTarget );
+				var tag = $control.data( 'tag' );
+				var closestPreset = $control.closest( '[data-preset]' );
+				var preset = closestPreset ? closestPreset.data( 'preset' ) : undefined;
+				var presetType = closestPreset ? closestPreset.data( 'element' ) : undefined;
+				var order = this.prepend ? this.getFirstPositionIndex() : vc.shortcodes.getNextOrder();
+				var parentId = this.model ? this.model.id : null;
+				var rootId = this.model ? this.model.get( 'root_id' ) : null;
 
 				if ( false === this.model ) {
 					window.vc.storage.lock();
-					if ( 'vc_section' === tag ) {
-						var modelOptions = {
-							shortcode: tag
-						};
-						if ( preset && 'vc_section' === presetType ) {
-							modelOptions.preset = preset;
-						}
-						model = vc.shortcodes.create( modelOptions );
-
-					} else {
-						var rowOptions = {
-							shortcode: 'vc_row',
-							params: rowParams
-						};
-						if ( preset && presetType === tag ) {
-							rowOptions.preset = preset;
-						}
-						row = vc.shortcodes.create( rowOptions );
-
-						var columnOptions = {
-							shortcode: 'vc_column',
-							params: columnParams,
-							parent_id: row.id,
-							root_id: row.id
-						};
-						if ( preset && 'vc_column' === presetType ) {
-							columnOptions.preset = preset;
-						}
-						column = vc.shortcodes.create( columnOptions );
-
-						model = row;
-
-						if ( 'vc_row' !== tag ) {
-							options = {
-								shortcode: tag,
-								parent_id: column.id,
-								root_id: row.id
-							};
-
-							if ( preset && presetType === tag ) {
-								options.preset = preset;
-							}
-
-							model = vc.shortcodes.create( options );
-						}
-					}
-				} else {
-					if ( 'vc_row' === tag ) {
-						if ( 'vc_section' === this.model.get( 'shortcode' ) ) {
-							// we can add real row!
-							window.vc.storage.lock();
-
-							row = vc.shortcodes.create({
-								shortcode: 'vc_row',
-								params: rowParams,
-								parent_id: this.model.id,
-								order: ( this.prepend ? this.getFirstPositionIndex() : vc.shortcodes.getNextOrder() )
-							});
-
-							column = vc.shortcodes.create({
-								shortcode: 'vc_column',
-								params: columnParams,
-								parent_id: row.id,
-								root_id: row.id
-							});
-
-							model = row;
-						} else {
-							// we can add only row_inner!
-							innerRowParams = {};
-
-							innerColumnParams = { width: '1/1' };
-
-							window.vc.storage.lock();
-							row = vc.shortcodes.create({
-								shortcode: 'vc_row_inner',
-								params: innerRowParams,
-								parent_id: this.model.id,
-								order: ( this.prepend ? this.getFirstPositionIndex() : vc.shortcodes.getNextOrder() )
-							});
-							column = vc.shortcodes.create({
-								shortcode: 'vc_column_inner',
-								params: innerColumnParams,
-								parent_id: row.id,
-								root_id: row.id
-							});
-							model = row;
-						}
-					} else {
-						options = {
-							shortcode: tag,
-							parent_id: this.model.id,
-							order: ( this.prepend ? this.getFirstPositionIndex() : vc.shortcodes.getNextOrder() ),
-							root_id: this.model.get( 'root_id' )
-						};
-
-						if ( preset && presetType === tag ) {
-							options.preset = preset;
-						}
-						model = vc.shortcodes.create( options );
-					}
 				}
 
-				this.model = model;
-				window.vc.latestAddedElement = model;
+				var handler = this.elementHandlers[tag] || this.elementHandlers.default;
+				handler( this, tag, preset, presetType, parentId, order, rootId );
 
-				showSettings = !( _.isBoolean( vc.getMapped( tag ).show_settings_on_create ) && false === vc.getMapped(
-					tag ).show_settings_on_create );
+				this.model && ( window.vc.latestAddedElement = this.model );
 
-				// extend default params with settings presets if there are any
-				// TODO: check if shortcode is used
-				// eslint-disable-next-line no-unused-vars
-				shortcode = this.model.get( 'shortcode' );
-
+				var showSettings = !( _.isBoolean( vc.getMapped( tag ).show_settings_on_create ) && false === vc.getMapped( tag ).show_settings_on_create );
 				this.hide();
 
 				if ( showSettings ) {
@@ -433,7 +495,7 @@
 				this.trigger( 'hide' );
 			},
 			showEditForm: function () {
-				window.vc.edit_element_block_view.render( this.model, false, true );
+				window.vc.edit_element_block_view.render( this.model, true );
 			},
 			updateAddElementPopUp: function ( id, shortcode, title, data ) {
 				// element pop up box
@@ -466,6 +528,25 @@
 					e.preventDefault();
 				}
 				window.vc.preset_panel_view.render().show();
+			},
+			createFlexboxContainer: function ( options, preset, presetType ) {
+				if ( !options ) {
+					options = {
+						shortcode: 'vc_flexbox_container'
+					};
+				}
+				var flexbox = vc.shortcodes.create( options );
+
+				var itemOptions = {
+					shortcode: 'vc_flexbox_container_item',
+					parent_id: flexbox.id,
+					root_id: flexbox.id
+				};
+				if ( preset && 'vc_flexbox_container_item' === presetType ) {
+					itemOptions.preset = preset;
+				}
+				vc.shortcodes.create( itemOptions );
+				return flexbox;
 			}
 		});
 

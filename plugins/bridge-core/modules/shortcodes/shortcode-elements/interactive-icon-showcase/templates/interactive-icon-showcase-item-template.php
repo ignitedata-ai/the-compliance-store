@@ -8,7 +8,7 @@
 		<div class="qode-showcase-content-table">
 			<div class="qode-showcase-content-cell">
 				<?php if ($title !== '') { ?>
-					<<?php echo esc_attr($title_tag);?>><?php echo esc_html($title); ?></<?php echo esc_attr($title_tag);?>>
+					<<?php echo bridge_qode_get_escape_title_tag($title_tag);?>><?php echo esc_html($title); ?></<?php echo bridge_qode_get_escape_title_tag($title_tag);?>>
 				<?php } ?>
 				<?php if ($text !== '') { ?>
 					<div class="qode-showcase-content-inner">

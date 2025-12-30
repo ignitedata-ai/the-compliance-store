@@ -98,7 +98,7 @@ class Vc_Vendor_Layerslider {
 	 * @return array
 	 * @since 4.9
 	 */
-	public function addShortcodeSettings( $tag ) {
+	public function addShortcodeSettings( $tag ) { // phpcs:ignore:Generic.Metrics.CyclomaticComplexity.TooHigh, CognitiveComplexity.Complexity.MaximumComplexity.TooHigh
 		$use_old = class_exists( 'LS_Sliders' );
 		if ( ! class_exists( 'LS_Sliders' ) && defined( 'LS_ROOT_PATH' ) && false === strpos( LS_ROOT_PATH, '.php' ) ) {
 			include_once LS_ROOT_PATH . '/classes/class.ls.sliders.php';

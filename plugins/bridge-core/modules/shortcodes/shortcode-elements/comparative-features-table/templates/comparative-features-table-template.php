@@ -1,78 +1,78 @@
 <div class="qode-comparative-features-table qode-cft-<?php echo esc_attr($columns); ?>">
 	<div class="qode-cft-header qode-cft-row">
 		<div class="qode-cft-title-holder">
-			<<?php echo esc_attr($title_tag); ?> class="qode-cft-title">
+			<<?php echo bridge_qode_get_escape_title_tag($title_tag); ?> class="qode-cft-title">
 			<?php echo esc_attr($table_title); ?>
-		</<?php echo esc_attr($title_tag); ?>>
+		</<?php echo bridge_qode_get_escape_title_tag($title_tag); ?>>
 	</div>
 	<?php if($column_one_title != '') : ?>
 	<div class="qode-cft-column-title-holder">
-		<<?php echo esc_attr($title_tag); ?> class="qode-cft-title">
+		<<?php echo bridge_qode_get_escape_title_tag($title_tag); ?> class="qode-cft-title">
 		<?php echo esc_attr($column_one_title); ?>
-	</<?php echo esc_attr($title_tag); ?>>
+	</<?php echo bridge_qode_get_escape_title_tag($title_tag); ?>>
 </div>
 <?php endif; ?>
 <?php if($column_two_title != '') : ?>
 	<div class="qode-cft-column-title-holder">
-	<<?php echo esc_attr($title_tag); ?> class="qode-cft-title">
+	<<?php echo bridge_qode_get_escape_title_tag($title_tag); ?> class="qode-cft-title">
 	<?php echo esc_attr($column_two_title); ?>
-	</<?php echo esc_attr($title_tag); ?>>
+	</<?php echo bridge_qode_get_escape_title_tag($title_tag); ?>>
 	</div>
 <?php endif; ?>
 <?php if($column_three_title != '') : ?>
 	<div class="qode-cft-column-title-holder">
-	<<?php echo esc_attr($title_tag); ?> class="qode-cft-title">
+	<<?php echo bridge_qode_get_escape_title_tag($title_tag); ?> class="qode-cft-title">
 	<?php echo esc_attr($column_three_title); ?>
-	</<?php echo esc_attr($title_tag); ?>>
+	</<?php echo bridge_qode_get_escape_title_tag($title_tag); ?>>
 	</div>
 <?php endif; ?>
 </div>
 <?php foreach($features as $feature_item): ?>
 	<div class="qode-cft-feature qode-cft-row">
-	<<?php echo esc_attr($feature_title_tag); ?> class="qode-cft-feature-title">
+	<<?php echo bridge_qode_get_escape_title_tag($feature_title_tag); ?> class="qode-cft-feature-title">
 	<?php echo esc_attr($feature_item['feature_title']); ?>
-	</<?php echo esc_attr($feature_title_tag); ?>>
+	</<?php echo bridge_qode_get_escape_title_tag($feature_title_tag); ?>>
 	<?php switch($columns):
 		case 'one-column': ?>
 			<div class="qode-cft-feature-value">
-			<<?php echo esc_attr($feature_title_tag); ?> class="qode-cft-feature-item-title-responsive">
+			<<?php echo bridge_qode_get_escape_title_tag($feature_title_tag); ?> class="qode-cft-feature-item-title-responsive">
 			<?php echo esc_attr($feature_item['feature_title']); ?>
-			</<?php echo esc_attr($feature_title_tag); ?>>
+			</<?php echo bridge_qode_get_escape_title_tag($feature_title_tag); ?>>
 			<?php echo bridge_core_comparative_feature_table_mark($feature_item['column_one_active']); ?>
 			</div>
 			<?php break;
 		case 'two-columns':	?>
 			<div class="qode-cft-feature-value">
-			<<?php echo esc_attr($feature_title_tag); ?> class="qode-cft-feature-item-title-responsive">
+			<<?php echo bridge_qode_get_escape_title_tag($feature_title_tag); ?> class="qode-cft-feature-item-title-responsive">
 			<?php echo esc_attr($feature_item['feature_title']); ?>
-			</<?php echo esc_attr($feature_title_tag); ?>>
+			</<?php echo bridge_qode_get_escape_title_tag($feature_title_tag); ?>>
 			<?php echo bridge_core_comparative_feature_table_mark($feature_item['column_one_active']); ?>
 			</div>
 			<div class="qode-cft-feature-value">
-			<<?php echo esc_attr($feature_title_tag); ?> class="qode-cft-feature-item-title-responsive">
+			<<?php echo bridge_qode_get_escape_title_tag($feature_title_tag); ?> class="qode-cft-feature-item-title-responsive">
 			<?php echo esc_attr($feature_item['feature_title']); ?>
-			</<?php echo esc_attr($feature_title_tag); ?>>
+			</<?php echo bridge_qode_get_escape_title_tag($feature_title_tag); ?>>
 			<?php echo bridge_core_comparative_feature_table_mark($feature_item['column_two_active']); ?>
 			</div>
 			<?php break;
 		default:
 			?>
 			<div class="qode-cft-feature-value">
-			<<?php echo esc_attr($feature_title_tag); ?> class="qode-cft-feature-item-title-responsive">
+			<<?php echo bridge_qode_get_escape_title_tag($feature_title_tag); ?> class="qode-cft-feature-item-title-responsive">
 			<?php echo esc_attr($feature_item['feature_title']); ?>
-			</<?php echo esc_attr($feature_title_tag); ?>>
+			</<?php echo bridge_qode_get_escape_title_tag($feature_title_tag); ?>>
 			<?php echo bridge_core_comparative_feature_table_mark($feature_item['column_one_active']); ?>
 			</div>
 			<div class="qode-cft-feature-value">
-			<<?php echo esc_attr($feature_title_tag); ?> class="qode-cft-feature-item-title-responsive">
+			<<?php echo bridge_qode_get_escape_title_tag($feature_title_tag); ?> class="qode-cft-feature-item-title-responsive">
 			<?php echo esc_attr($feature_item['feature_title']); ?>
-			</<?php echo esc_attr($feature_title_tag); ?>>
+			</<?php echo bridge_qode_get_escape_title_tag($feature_title_tag); ?>>
 			<?php echo bridge_core_comparative_feature_table_mark($feature_item['column_two_active']); ?>
 			</div>
 			<div class="qode-cft-feature-value">
-			<<?php echo esc_attr($feature_title_tag); ?> class="qode-cft-feature-item-title-responsive">
+			<<?php echo bridge_qode_get_escape_title_tag($feature_title_tag); ?> class="qode-cft-feature-item-title-responsive">
 			<?php echo esc_attr($feature_item['feature_title']); ?>
-			</<?php echo esc_attr($feature_title_tag); ?>>
+			</<?php echo bridge_qode_get_escape_title_tag($feature_title_tag); ?>>
 			<?php echo bridge_core_comparative_feature_table_mark($feature_item['column_three_active']); ?>
 			</div>
 			<?php

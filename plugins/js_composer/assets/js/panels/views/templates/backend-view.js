@@ -54,33 +54,28 @@
 			var name, data, shortcodes, _this;
 			name = this.$name.val();
 			_this = this;
-			if ( _.isString( name ) && name.length ) {
-				shortcodes = this.getPostContent();
-				if ( !shortcodes.trim().length ) {
-					this.showMessage( window.i18nLocale.template_is_empty, 'error' );
-					return false;
-				}
-				data = {
-					action: this.save_template_action,
-					template: shortcodes,
-					template_name: name,
-					vc_inline: true,
-					_vcnonce: window.vcAdminNonce
-				};
-				this
-					.setButtonMessage( undefined, undefined )
-					.reloadTemplateList( data, function () {
-						// success
-						_this.$name.val( '' ).trigger( 'change' );
-					}, function () {
-						// error
-						_this.showMessage( window.i18nLocale.template_save_error, 'error' );
-						_this.clearButtonMessage();
-					});
-			} else {
-				this.showMessage( window.i18nLocale.please_enter_templates_name, 'error' );
+			shortcodes = this.getPostContent();
+			if ( !shortcodes.trim().length ) {
+				this.showMessage( window.i18nLocale.template_is_empty, 'error' );
 				return false;
 			}
+			data = {
+				action: this.save_template_action,
+				template: shortcodes,
+				template_name: name,
+				vc_inline: true,
+				_vcnonce: window.vcAdminNonce
+			};
+			this
+				.setButtonMessage( undefined, undefined )
+				.reloadTemplateList( data, function () {
+					// success
+					_this.$name.val( '' ).trigger( 'change' );
+				}, function () {
+					// error
+					_this.showMessage( window.i18nLocale.template_save_error, 'error' );
+					_this.clearButtonMessage();
+				});
 		},
 		checkInput: function ( e ) {
 			if ( 13 === e.which ) {

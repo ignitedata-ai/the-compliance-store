@@ -590,7 +590,7 @@ class WPBakeryShortCode_Vc_Basic_Grid extends WPBakeryShortCode_Vc_Pageable {
 	 * @param array $atts
 	 * @return array
 	 */
-	public function buildQuery( $atts ) {
+	public function buildQuery( $atts ) { // phpcs:ignore Generic.Metrics.CyclomaticComplexity.TooHigh, CognitiveComplexity.Complexity.MaximumComplexity.TooHigh
 		// Set include & exclude.
 		if ( 'ids' !== $atts['post_type'] && ! empty( $atts['exclude'] ) ) {
 			$atts['exclude'] .= ',' . implode( ',', $this->excludedIds() );

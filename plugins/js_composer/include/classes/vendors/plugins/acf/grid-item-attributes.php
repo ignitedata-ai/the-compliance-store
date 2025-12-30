@@ -21,7 +21,7 @@ require_once vc_path_dir( 'VENDORS_DIR', 'plugins/acf/class-wpb-acf-provider.php
  *
  * @return string
  */
-function vc_gitem_template_attribute_acf( $value, $data ) {
+function vc_gitem_template_attribute_acf( $value, $data ) { // phpcs:ignore:Generic.Metrics.CyclomaticComplexity.TooHigh, CognitiveComplexity.Complexity.MaximumComplexity.TooHigh
 	extract( array_merge( [
 		'post' => null,
 		'data' => '',

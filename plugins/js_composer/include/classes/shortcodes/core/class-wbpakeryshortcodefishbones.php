@@ -153,7 +153,7 @@ class WPBakeryShortCodeFishBones extends WPBakeryShortCode {
 	 * @throws \Exception
 	 */
 	public function render( $atts, $content = null, $tag = null ) {
-		return self::getElementClass( $tag )->output( $atts, $content );
+		return self::getElementClass( $tag )->output( $atts, $content ); // nosemgrep - escaping handled inside templates.
 	}
 
 	/**

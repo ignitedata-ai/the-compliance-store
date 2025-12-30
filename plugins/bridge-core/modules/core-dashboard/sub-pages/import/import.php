@@ -35,7 +35,7 @@ class BridgeCoreImport {
 		return self::$instance;
 	}
 	
-	public $message = array();
+	public $message;
 	public $data    = array();
 	public $status;
 	public $attachments = false;
@@ -168,9 +168,12 @@ class BridgeCoreImport {
 		$file_content = $this->file_content( $file );
 		
 		if ( $file_content ) {
+			
 			$unserialized_content = unserialize( base64_decode( $file_content ) );
 			
-			return $unserialized_content;
+			if ( $unserialized_content ) {
+				return $unserialized_content;
+			}
 		}
 		
 		return false;
@@ -181,7 +184,7 @@ class BridgeCoreImport {
 		$response = wp_remote_get( $url );
 		
 		if ( is_wp_error( $response ) ) {
-			$this->message[] = $response->get_error_message() . ' ' . $path;
+			$this->set_message( $response->get_error_message() . ' ' . $path );
 			return false;
 		}
 		
@@ -193,7 +196,6 @@ class BridgeCoreImport {
 		}
 		
 		$body  = wp_remote_retrieve_body( $response );
-		
 		
 		return $body;
 	}

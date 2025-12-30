@@ -97,7 +97,7 @@ class WPBakeryShortCode_Vc_Gitem extends WPBakeryShortCodesContainer {
 	 * @return string
 	 * @throws \Exception
 	 */
-	public function getControls( $controls ) {
+	public function getControls( $controls ) { // phpcs:ignore:Generic.Metrics.CyclomaticComplexity.TooHigh, CognitiveComplexity.Complexity.MaximumComplexity.TooHigh
 		if ( ! is_array( $controls ) || empty( $controls ) ) {
 			return '';
 		}

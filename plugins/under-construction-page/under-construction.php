@@ -4,7 +4,7 @@
   Plugin URI: https://underconstructionpage.com/
   Description: Put your site behind a great looking under construction, coming soon, maintenance mode or landing page.
   Author: WebFactory Ltd
-  Version: 4.02
+  Version: 4.03
   Requires at least: 4.0
   Requires PHP: 5.2
   Tested up to: 6.8
@@ -2644,6 +2644,52 @@ class UCP
                 'vertical-align',
                 'width',
                 'display',
+                'white-space',
+                'word-break',
+                'word-wrap',
+                'max-width',
+                'min-width',
+                'max-height',
+                'min-height',
+                'opacity',
+                'box-shadow',
+                'text-shadow',
+                'background-image',
+                'background-position',
+                'background-repeat',
+                'background-size',
+                'outline',
+                'outline-color',
+                'outline-style',
+                'outline-width',
+                'list-style',
+                'list-style-type',
+                'list-style-position',
+                'list-style-image',
+                'position',
+                'top',
+                'left',
+                'right',
+                'bottom',
+                'z-index',
+                'transform',
+                'transition',
+                'animation',
+                'animation-name',
+                'animation-duration',
+                'animation-delay',
+                'animation-iteration-count',
+                'animation-timing-function',
+                'clip-path',
+                'filter',
+                'align-items',
+                'justify-content',
+                'flex',
+                'flex-direction',
+                'flex-wrap',
+                'gap',
+                'row-gap',
+                'column-gap',
             );
 
             foreach ($styles_wf as $style_wf) {
