@@ -86,23 +86,56 @@ function bridge_child_register_demo_metabox() {
 		'desc' => esc_html__( 'To generate Google File link Click on File=>Publish to the web, copy link and add only link here.', 'bridge-child' ),
 		'type' => 'oembed',
 	) );
-	$cmb_demo->add_field( array(
+
+	// Register separate metabox for Additional Details
+	$cmb_additional = new_cmb2_box( array(
+		'id'            => $document_prefix . 'additional_details',
+		'title'         => esc_html__( 'Additional Details', 'bridge-child' ),
+		'object_types'  => array( 'documents' ), // post type
+		'context'       => 'normal',
+		'priority'      => 'high',
+	) );
+
+	$cmb_additional->add_field( array(
+		'name' => esc_html__( 'Source', 'bridge-child' ),
+		'desc' => esc_html__( 'Enter the source of this document.', 'bridge-child' ),
+		'id'   => '_' . $document_prefix . 'source',
+		'type' => 'text',
+	) );
+
+	$cmb_additional->add_field( array(
+		'name' => esc_html__( 'Short Title', 'bridge-child' ),
+		'desc' => esc_html__( 'Enter a short title for this document.', 'bridge-child' ),
+		'id'   => '_' . $document_prefix . 'short_title',
+		'type' => 'text',
+	) );
+
+	$cmb_additional->add_field( array(
+		'name' => esc_html__( 'Short Description', 'bridge-child' ),
+		'desc' => esc_html__( 'Enter a short description for this document.', 'bridge-child' ),
+		'id'   => '_' . $document_prefix . 'short_description',
+		'type' => 'text',
+	) );
+
+	$cmb_additional->add_field( array(
 		'name' => esc_html__( 'Effective Begin Date', 'bridge-child' ),
 		'id'   => '_' . $document_prefix . 'effective_begin_date',
 		'type' => 'text_date',
 		'date_format' => 'Y-m-d',
+		'default' => date('Y-m-d'),
 		'after_field' => esc_html__( 'Select the effective begin date for this document.', 'bridge-child' ),
 	) );
 
-	$cmb_demo->add_field( array(
+	$cmb_additional->add_field( array(
 		'name' => esc_html__( 'Effective End Date', 'bridge-child' ),
 		'id'   => '_' . $document_prefix . 'effective_end_date',
 		'type' => 'text_date',
 		'date_format' => 'Y-m-d',
+		'default' => '2100-12-31',
 		'after_field' => esc_html__( 'Select the effective end date for this document.', 'bridge-child' ),
 	) );
 
-	$cmb_demo->add_field( array(
+	$cmb_additional->add_field( array(
 		'name' => esc_html__( 'Pending Flag', 'bridge-child' ),
 		'id'   => '_' . $document_prefix . 'pending_flag',
 		'type' => 'select',
