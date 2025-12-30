@@ -1,0 +1,13 @@
+.aar_edit_agent_opt {
+	padding: 10px;
+	background-color: #eee;
+	border-radius: 3px;
+}
+
+.aar_edit_agent_radio, .aar_edit_ag_radio {
+	margin-top: 10px;
+}
+
+.radio-sub-option {
+	margin-right: 20px !important;
+}

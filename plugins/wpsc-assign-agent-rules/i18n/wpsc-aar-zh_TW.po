@@ -1,0 +1,82 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: wpsc-aar\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-05-24 10:10+0530\n"
+"PO-Revision-Date: 2023-05-24 10:13+0530\n"
+"Last-Translator: Alen Lin\n"
+"Language-Team: Chinese (Taiwan)\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Poedit 3.0.1\n"
+"X-Loco-Source-Locale: en-US\n"
+"X-Loco-Project-Id: 131491\n"
+"X-Loco-Api-Version: 1.0.26 20220711-1\n"
+
+#: includes/class-wpsc-aar-license.php:107
+#: includes/class-wpsc-aar-license.php:157
+#: includes/settings/class-wpsc-aar-settings-general.php:90
+#: includes/settings/class-wpsc-aar-settings-general.php:117
+#: includes/settings/class-wpsc-aar-settings.php:112
+msgid "Unauthorized access!"
+msgstr ""
+
+#: includes/class-wpsc-aar-license.php:112
+#: includes/class-wpsc-aar-license.php:162
+msgid "Bad request!"
+msgstr ""
+
+#: includes/settings/class-wpsc-aar-rules.php:133
+msgid "Add New Rule"
+msgstr "新增規則"
+
+#: includes/settings/class-wpsc-aar-rules.php:266
+msgid "Agents"
+msgstr "客服人員"
+
+#: includes/settings/class-wpsc-aar-rules.php:271
+msgid "Select Agents"
+msgstr "選擇客服人員"
+
+#: includes/settings/class-wpsc-aar-rules.php:290
+msgid "Assign all of above"
+msgstr "指派以上所有"
+
+#: includes/settings/class-wpsc-aar-rules.php:297
+msgid "Assign one of above"
+msgstr "指派以上之一"
+
+#: includes/settings/class-wpsc-aar-rules.php:301
+msgid "Closest working hours"
+msgstr "最近的工作時間"
+
+#: includes/settings/class-wpsc-aar-rules.php:305
+msgid "Minimum workload"
+msgstr "最小工作量"
+
+#: includes/settings/class-wpsc-aar-settings-general.php:53
+msgid "Auto-assign first responder to unassigned ticket"
+msgstr "將第一回覆者自動分配給未分配的工單"
+
+#: includes/settings/class-wpsc-aar-settings.php:55
+msgid "Assign Agent Rules"
+msgstr "指派客服人員規則"
+
+#: includes/settings/class-wpsc-aar-settings.php:78
+msgid "Assign Rules"
+msgstr "指派客服人員規則"
+
+#~ msgid "SupportCandy - Assign Agent Rules"
+#~ msgstr "指派客服人員規則"
+
+#~ msgid "https://supportcandy.net/"
+#~ msgstr "https://supportcandy.net/"
+
+#~ msgid "Assign Agent Rules addon for SupportCandy"
+#~ msgstr "指派客服人員規則外掛套件"
+
+#~ msgid "SupportCandy"
+#~ msgstr "SupportCandy"

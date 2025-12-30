@@ -1,0 +1,73 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: SupportCandy - Assign Agent Rules\n"
+"POT-Creation-Date: 2023-10-05 17:50+0530\n"
+"PO-Revision-Date: 2024-01-25 10:35+0530\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: fa\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n==0 || n==1);\n"
+"X-Generator: Poedit 3.0.1\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-Flags-xgettext: --add-comments=translators:\n"
+"X-Poedit-WPHeader: wpsc-assign-agent-rules.php\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.min.js\n"
+
+#: includes/class-wpsc-aar-license.php:107
+#: includes/class-wpsc-aar-license.php:157
+#: includes/settings/class-wpsc-aar-settings-general.php:90
+#: includes/settings/class-wpsc-aar-settings-general.php:117
+#: includes/settings/class-wpsc-aar-settings.php:112
+msgid "Unauthorized access!"
+msgstr "دسترسی غیرمجاز!"
+
+#: includes/class-wpsc-aar-license.php:112
+#: includes/class-wpsc-aar-license.php:162
+msgid "Bad request!"
+msgstr "درخواست نادرست!"
+
+#: includes/settings/class-wpsc-aar-rules.php:133
+msgid "Add New Rule"
+msgstr "افزودن قانون جدید"
+
+#: includes/settings/class-wpsc-aar-rules.php:266
+msgid "Agents"
+msgstr "پشتیبان‌ها"
+
+#: includes/settings/class-wpsc-aar-rules.php:271
+msgid "Select Agents"
+msgstr "انتخاب پشتیبان"
+
+#: includes/settings/class-wpsc-aar-rules.php:290
+msgid "Assign all of above"
+msgstr "انتصاب تمام موارد فوق"
+
+#: includes/settings/class-wpsc-aar-rules.php:297
+msgid "Assign one of above"
+msgstr "انتصاب یکی از موارد فوق"
+
+#: includes/settings/class-wpsc-aar-rules.php:301
+msgid "Closest working hours"
+msgstr "نزدیک‌ترین ساعت کاری"
+
+#: includes/settings/class-wpsc-aar-rules.php:305
+msgid "Minimum workload"
+msgstr "کمترین حجم کاری"
+
+#: includes/settings/class-wpsc-aar-settings-general.php:53
+msgid "Auto-assign first responder to unassigned ticket"
+msgstr "انتصاب خودکار اولین پشتیبان به تیکت فاقد پشتیبان"
+
+#: includes/settings/class-wpsc-aar-settings.php:55
+msgid "Assign Agent Rules"
+msgstr "قوانین انتصاب پشتیبان"
+
+#: includes/settings/class-wpsc-aar-settings.php:78
+msgid "Assign Rules"
+msgstr "قوانین انتصاب"

@@ -1,0 +1,271 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: SupportCandy - Timer\n"
+"POT-Creation-Date: 2024-04-18 16:23+0530\n"
+"PO-Revision-Date: 2024-04-18 16:25+0530\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: tr_TR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 3.0.1\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-Flags-xgettext: --add-comments=translators:\n"
+"X-Poedit-WPHeader: wpsc-timer.php\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;"
+"_n_noop:1,2;_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.min.js\n"
+
+#: class-wpsc-timer-installation.php:148
+#: includes/class-wpsc-timer-ag-settings.php:182
+#: includes/class-wpsc-timer-ag-settings.php:306
+#: includes/dashboard/widgets/class-wpsc-dbw-agents-active-timer.php:118
+#: includes/widget/class-wpsc-tw-timer.php:1209
+#: includes/widget/class-wpsc-tw-timer.php:1348
+msgid "Time Spent"
+msgstr "Harcanan Zaman"
+
+#: class-wpsc-timer-installation.php:250
+#: includes/dashboard/widgets/class-wpsc-dbw-active-timer.php:123
+#: includes/settings/class-wpsc-timer-settings.php:68
+#: includes/settings/class-wpsc-timer-settings.php:89
+#: includes/workflow/class-wpsc-wf-action-timer.php:34
+msgid "Timer"
+msgstr "Zamanlayıcı"
+
+#: class-wpsc-timer-installation.php:281
+#, fuzzy
+#| msgid "Stop Timer"
+msgid "Active Timer"
+msgstr "Durdurma Zamanlayıcısı"
+
+#: class-wpsc-timer-installation.php:296
+#, fuzzy
+#| msgid "Stop Timer"
+msgid "Agents Active Timer"
+msgstr "Durdurma Zamanlayıcısı"
+
+#: includes/class-wpsc-timer-admin.php:44
+msgid "Please enter a valid time!"
+msgstr ""
+
+#: includes/class-wpsc-timer-ag-settings.php:64
+#: includes/class-wpsc-timer-ag-settings.php:92
+msgid "Modify others time log"
+msgstr "Başkalarının zaman günlüğünü değiştirme"
+
+#: includes/class-wpsc-timer-ag-settings.php:120
+msgid "Total time spent"
+msgstr "Toplam geçirilen zaman"
+
+#. translators: %1$s: time spent (e.g. 2h 3m)
+#: includes/class-wpsc-timer-ag-settings.php:234
+#, php-format
+msgid "Total time spent: %1$s"
+msgstr "Toplam harcanan süre: %1$s"
+
+#: includes/class-wpsc-timer-ag-settings.php:261
+msgid "Timer logs"
+msgstr "Zamanlayıcı günlükleri"
+
+#: includes/class-wpsc-timer-ag-settings.php:304
+#: includes/widget/class-wpsc-tw-timer.php:608
+#: includes/widget/class-wpsc-tw-timer.php:1000
+#: includes/widget/class-wpsc-tw-timer.php:1207
+#: includes/widget/class-wpsc-tw-timer.php:1346
+#: includes/widget/class-wpsc-tw-timer.php:1494
+msgid "Author"
+msgstr "Yazar"
+
+#: includes/class-wpsc-timer-ag-settings.php:305
+#: includes/widget/class-wpsc-tw-timer.php:1208
+#: includes/widget/class-wpsc-tw-timer.php:1347
+msgid "Date Started"
+msgstr "Başlangıç tarihi"
+
+#: includes/class-wpsc-timer-license.php:108
+#: includes/class-wpsc-timer-license.php:168
+#: includes/settings/class-wpsc-timer-settings.php:82
+#: includes/settings/class-wpsc-timer-settings.php:191
+#: includes/settings/class-wpsc-timer-settings.php:219
+#: includes/widget/class-wpsc-tw-timer.php:825
+#: includes/widget/class-wpsc-tw-timer.php:920
+#: includes/widget/class-wpsc-tw-timer.php:1304
+#: includes/widget/class-wpsc-tw-timer.php:1707
+msgid "Unauthorized access!"
+msgstr ""
+
+#: includes/class-wpsc-timer-license.php:113
+#: includes/class-wpsc-timer-license.php:173
+#: includes/widget/class-wpsc-tw-timer.php:925
+msgid "Bad request!"
+msgstr ""
+
+#: includes/dashboard/widgets/class-wpsc-dbw-active-timer.php:121
+#: includes/dashboard/widgets/class-wpsc-dbw-agents-active-timer.php:115
+#: includes/widget/class-wpsc-tw-timer.php:1345
+msgid "Ticket"
+msgstr ""
+
+#: includes/dashboard/widgets/class-wpsc-dbw-active-timer.php:122
+#: includes/dashboard/widgets/class-wpsc-dbw-agents-active-timer.php:117
+msgid "Subject"
+msgstr ""
+
+#: includes/dashboard/widgets/class-wpsc-dbw-agents-active-timer.php:116
+msgid "Agent"
+msgstr ""
+
+#: includes/settings/class-wpsc-timer-settings.php:95
+msgid "Auto start on create new ticket"
+msgstr "Yeni bilet oluştur sırasında otomatik başlat"
+
+#: includes/settings/class-wpsc-timer-settings.php:104
+msgid "Default agent for auto start"
+msgstr "Otomatik başlatma için varsayılan aracı"
+
+#: includes/settings/class-wpsc-timer-settings.php:118
+msgid "Auto stop on close ticket"
+msgstr "Yakın bilet üzerinde otomatik durdurma"
+
+#: includes/widget/class-wpsc-tw-timer.php:219
+msgid "Pause"
+msgstr "Duraklat"
+
+#: includes/widget/class-wpsc-tw-timer.php:220
+#: includes/widget/class-wpsc-tw-timer.php:225
+msgid "Stop Timer"
+msgstr "Durdurma Zamanlayıcısı"
+
+#: includes/widget/class-wpsc-tw-timer.php:224
+msgid "Resume"
+msgstr "Devam et"
+
+#: includes/widget/class-wpsc-tw-timer.php:230
+msgid "Start Timer"
+msgstr "Zamanlayıcıyı Başlat"
+
+#: includes/widget/class-wpsc-tw-timer.php:239
+msgid "Running"
+msgstr "Çalışıyor"
+
+#: includes/widget/class-wpsc-tw-timer.php:240
+msgid "Paused"
+msgstr "Durduruldu"
+
+#: includes/widget/class-wpsc-tw-timer.php:241
+msgid "Stopped"
+msgstr "Durduruldu"
+
+#: includes/widget/class-wpsc-tw-timer.php:272
+msgid "Just started"
+msgstr "Yeni başladı"
+
+#. translators: %1$s: time spent %2$s: timer status e.g. 1h 45m (Running)
+#: includes/widget/class-wpsc-tw-timer.php:282
+#, php-format
+msgid "%1$s (%2$s)"
+msgstr "%1$s (%2$s)"
+
+#: includes/widget/class-wpsc-tw-timer.php:292
+#: includes/workflow/class-wpsc-wf-action-timer.php:68
+#, fuzzy
+#| msgid "Stopped"
+msgid "Stop"
+msgstr "Durduruldu"
+
+#: includes/widget/class-wpsc-tw-timer.php:309
+#: includes/widget/class-wpsc-tw-timer.php:569
+#: includes/widget/class-wpsc-tw-timer.php:960
+msgid "Add new log"
+msgstr "Yeni günlük ekle"
+
+#: includes/widget/class-wpsc-tw-timer.php:310
+msgid "View logs"
+msgstr "Logları göster"
+
+#: includes/widget/class-wpsc-tw-timer.php:311
+#, fuzzy
+#| msgid "Edit log"
+msgid "Export logs"
+msgstr "Logu düzenle"
+
+#: includes/widget/class-wpsc-tw-timer.php:315
+msgid "Reset timer"
+msgstr "Zamanlayıcıyı sıfırla"
+
+#: includes/widget/class-wpsc-tw-timer.php:579
+#: includes/widget/class-wpsc-tw-timer.php:970
+#: includes/widget/class-wpsc-tw-timer.php:1464
+msgid "Time spent"
+msgstr "Harcanan zaman"
+
+#: includes/widget/class-wpsc-tw-timer.php:589
+#: includes/widget/class-wpsc-tw-timer.php:980
+#: includes/widget/class-wpsc-tw-timer.php:1474
+msgid "Date started"
+msgstr "Başlangıç tarihi"
+
+#: includes/widget/class-wpsc-tw-timer.php:627
+#: includes/widget/class-wpsc-tw-timer.php:1015
+#: includes/widget/class-wpsc-tw-timer.php:1210
+#: includes/widget/class-wpsc-tw-timer.php:1349
+#: includes/widget/class-wpsc-tw-timer.php:1509
+msgid "Description"
+msgstr "Açıklama"
+
+#: includes/widget/class-wpsc-tw-timer.php:686
+#: includes/widget/class-wpsc-tw-timer.php:1566
+msgid "Delete log"
+msgstr "Günlüğü sil"
+
+#: includes/widget/class-wpsc-tw-timer.php:853
+msgid "Allowed for customer"
+msgstr "Müşteri için izin verildi"
+
+#: includes/widget/class-wpsc-tw-timer.php:1191
+msgid "Time logs"
+msgstr "Zaman günlükleri"
+
+#: includes/widget/class-wpsc-tw-timer.php:1199
+msgid "Total time spent:"
+msgstr "Harcanan toplam süre:"
+
+#: includes/widget/class-wpsc-tw-timer.php:1454
+msgid "Edit log"
+msgstr "Logu düzenle"
+
+#: includes/workflow/class-wpsc-wf-action-timer.php:67
+#, fuzzy
+#| msgid "Start Timer"
+msgid "Start"
+msgstr "Zamanlayıcıyı Başlat"
+
+#: includes/workflow/class-wpsc-wf-action-timer.php:86
+msgid "Fallback agent"
+msgstr ""
+
+#: includes/workflow/class-wpsc-wf-action-timer.php:148
+msgid "Timer not selectd!"
+msgstr ""
+
+#: includes/workflow/class-wpsc-wf-action-timer.php:158
+msgid "Agent not selectd!"
+msgstr ""
+
+#~ msgid "SupportCandy - Timer"
+#~ msgstr "SupportCandy - Zamanlayıcı"
+
+#~ msgid "https://supportcandy.net/"
+#~ msgstr "https://supportcandy.net/"
+
+#~ msgid "Timer add-on for SupportCandy"
+#~ msgstr "SupportCandy için zamanlayıcı eklentisi"
+
+#~ msgid "SupportCandy"
+#~ msgstr "SupportCandy"

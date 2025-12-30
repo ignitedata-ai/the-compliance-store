@@ -1,0 +1,228 @@
+# Copyright (C) 2025 MonsterInsights Team
+# This file is distributed under the same license as the MonsterInsights - Dimensions Addon plugin.
+msgid ""
+msgstr ""
+"Project-Id-Version: MonsterInsights - Dimensions Addon 2.2.1\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/monsterinsights-dimensions\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2025-01-15T13:59:10+00:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.12.0-alpha\n"
+"X-Domain: monsterinsights-dimensions\n"
+
+#. Plugin Name of the plugin
+#: monsterinsights-dimensions.php
+msgid "MonsterInsights - Dimensions Addon"
+msgstr ""
+
+#. Plugin URI of the plugin
+#. Author URI of the plugin
+#: monsterinsights-dimensions.php
+msgid "https://www.monsterinsights.com"
+msgstr ""
+
+#. Description of the plugin
+#: monsterinsights-dimensions.php
+msgid "Adds custom dimension tracking options to MonsterInsights"
+msgstr ""
+
+#. Author of the plugin
+#: monsterinsights-dimensions.php
+msgid "MonsterInsights Team"
+msgstr ""
+
+#: includes/admin/class-dimensions.php:61
+msgid "Logged in"
+msgstr ""
+
+#: includes/admin/class-dimensions.php:62
+msgid "Number of logged-in sessions"
+msgstr ""
+
+#: includes/admin/class-dimensions.php:63
+msgid "This shows sessions from users who are logged into your site. Compare how many pages logged-in visitors view against those not signed in. You can use this data to customize content for registered users to increase their engagement and loyalty."
+msgstr ""
+
+#: includes/admin/class-dimensions.php:68
+msgid "User ID"
+msgstr ""
+
+#: includes/admin/class-dimensions.php:69
+#: includes/admin/class-dimensions.php:70
+msgid "Top logged-in users by sessions"
+msgstr ""
+
+#: includes/admin/class-dimensions.php:75
+msgid "Post type"
+msgstr ""
+
+#: includes/admin/class-dimensions.php:76
+msgid "Most popular post types"
+msgstr ""
+
+#: includes/admin/class-dimensions.php:77
+msgid "This shows which types of posts attract the most views on your site. You can use this information to focus on creating content that resonates with your audience, optimizing your efforts toward what truly engages them."
+msgstr ""
+
+#: includes/admin/class-dimensions.php:82
+msgid "Author"
+msgstr ""
+
+#: includes/admin/class-dimensions.php:83
+msgid "Most popular authors"
+msgstr ""
+
+#: includes/admin/class-dimensions.php:84
+msgid "This shows which authors' articles receive the most views on your site. You can use this to help you identify top-performing writers."
+msgstr ""
+
+#: includes/admin/class-dimensions.php:89
+msgid "Category"
+msgstr ""
+
+#: includes/admin/class-dimensions.php:90
+msgid "Most popular categories"
+msgstr ""
+
+#: includes/admin/class-dimensions.php:91
+msgid "Reveals the topics that attract the most interest from your audience. You can use this data to create content on subjects that engage and resonate with your visitors."
+msgstr ""
+
+#: includes/admin/class-dimensions.php:96
+msgid "Published at"
+msgstr ""
+
+#: includes/admin/class-dimensions.php:97
+msgid "Best publication time"
+msgstr ""
+
+#: includes/admin/class-dimensions.php:98
+msgid "Determines when your content receives the most views and interaction. You can use this insight to schedule your posts when they're likely to achieve the highest engagement."
+msgstr ""
+
+#: includes/admin/class-dimensions.php:103
+msgid "Modified at"
+msgstr ""
+
+#: includes/admin/class-dimensions.php:104
+msgid "Best modification time"
+msgstr ""
+
+#: includes/admin/class-dimensions.php:109
+msgid "Publish day of the week"
+msgstr ""
+
+#: includes/admin/class-dimensions.php:110
+msgid "Best Publish day of the week"
+msgstr ""
+
+#: includes/admin/class-dimensions.php:115
+msgid "Link Type"
+msgstr ""
+
+#: includes/admin/class-dimensions.php:116
+msgid "Best Link Types"
+msgstr ""
+
+#: includes/admin/class-dimensions.php:121
+msgid "Tags"
+msgstr ""
+
+#: includes/admin/class-dimensions.php:122
+msgid "Most popular tags"
+msgstr ""
+
+#: includes/admin/class-dimensions.php:123
+msgid "Identifies the tags associated with your most viewed content. You can use this information to tag future posts effectively, aligning them with topics that interest your audience and increase content visibility."
+msgstr ""
+
+#: includes/admin/class-dimensions.php:128
+msgid "SEO Score"
+msgstr ""
+
+#: includes/admin/class-dimensions.php:129
+#: includes/admin/class-dimensions.php:130
+msgid "Best SEO score"
+msgstr ""
+
+#: includes/admin/class-dimensions.php:135
+msgid "Focus Keyword"
+msgstr ""
+
+#: includes/admin/class-dimensions.php:136
+#: includes/admin/class-dimensions.php:137
+msgid "Most popular focus keywords"
+msgstr ""
+
+#: includes/admin/class-dimensions.php:142
+msgid "TruSeo Score"
+msgstr ""
+
+#: includes/admin/class-dimensions.php:143
+msgid "TruSEO Score (AIOSEO)"
+msgstr ""
+
+#: includes/admin/class-dimensions.php:144
+msgid "TruSEO Score, provided by All in One SEO, rates your content's on-page SEO on a scale of 100. It reflects how well your page or post is optimized, combining analysis of the page itself, your focus's effectiveness, and additional keyphrases."
+msgstr ""
+
+#: includes/admin/class-dimensions.php:149
+msgid "Focus Keyphrase"
+msgstr ""
+
+#: includes/admin/class-dimensions.php:150
+msgid "Focus Keyphrase (AIOSEO)"
+msgstr ""
+
+#: includes/admin/class-dimensions.php:151
+msgid "Track and analyze the keywords targeted by your posts and pages. Use this data to refine your content strategy, improve your search engine rankings, and attract more visitors to your site."
+msgstr ""
+
+#: includes/admin/class-dimensions.php:156
+#: includes/admin/class-dimensions.php:157
+msgid "RankMath SEO Score"
+msgstr ""
+
+#: includes/admin/class-dimensions.php:162
+#: includes/admin/class-dimensions.php:163
+msgid "RankMath Focus Keyword"
+msgstr ""
+
+#: includes/admin/class-dimensions.php:168
+#: includes/admin/class-dimensions.php:169
+msgid "SEOPress Score"
+msgstr ""
+
+#: includes/admin/class-dimensions.php:174
+#: includes/admin/class-dimensions.php:175
+msgid "SEOPress Target Keywords"
+msgstr ""
+
+#: includes/admin/class-settings.php:40
+msgid "%1$sWarning!%2$s Deactivating Wordpress SEO will stop your SEO custom dimensions from working in Google Analytics. Please visit your %3$sGoogle Analytics settings%4$s to see which custom dimensions have been disabled."
+msgstr ""
+
+#: includes/admin/class-settings.php:57
+msgid "%1$sWarning!%2$s Deactivating All-In-One-SEO will stop your SEO custom dimensions from working in Google Analytics. Please visit your %3$sGoogle Analytics settings%4$s to see which custom dimensions have been disabled."
+msgstr ""
+
+#: includes/compatibility-check.php:260
+msgid "Sorry, but your current version of PHP does not meet the minimum required version %1$s%2$s%3$s or newer to run MonsterInsights Dimensions Addon properly. For information on how to upgrade your PHP version, contact your web host. %4$sClick here to return to the Dashboard%5$s."
+msgstr ""
+
+#: includes/compatibility-check.php:293
+msgid "Sorry, but your WordPress version is not %1$s%2$s%3$s or newer. Please update your WordPress version and then activate MonsterInsights Dimensions Addon. For help on how to update your WordPress %4$sclick here%5$s."
+msgstr ""
+
+#. Translators: 1: Opening hyperlink 2: Closing hyperlink
+#: includes/custom-definitions.php:70
+msgid "MonsterInsights Dimensions Addon could not create custom dimensions and metrics in order to work properly. Please %1$stry again%2$s."
+msgstr ""
+
+#: monsterinsights-dimensions.php:222
+msgid "Enable the MonsterInsights PRO plugin to manage auto-updates"
+msgstr ""
